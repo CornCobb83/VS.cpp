@@ -1,10 +1,6 @@
-// CS 112 Fall 2023 - Week 01 Lab
-//
-/*---
-CS 112 Week 01 Lab - C++ code compilation and inspection
-by: David Tuttle
-last modified: 24 August 2023
----*/
+// CS 112 Fall 2023 – Week 01 Lab
+// Jordan Cobb
+
 #include <cstdlib>
 #include <iostream>
 #include <string>
