@@ -4,7 +4,7 @@
 
 using namespace std;
 
-bool letter_match(string, )
+bool letter_match(string word1, string word2, int pos)
 {
 
 }
