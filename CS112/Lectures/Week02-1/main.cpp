@@ -13,8 +13,8 @@ int main()
 
     cout << "*** TESTING letter_mathch ***" << endl;
 
-    cout << (letter_match("guess", "grass", 3) returns true) << endl;
-    cout << (letter_match("guess", "grass", 2) returns false) << endl;
+    //cout << (letter_match("guess", "grass", 3) returns true) << endl;
+    //cout << (letter_match("guess", "grass", 2) returns false) << endl;
 
     return 0;
 }
