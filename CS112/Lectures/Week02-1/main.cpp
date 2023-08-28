@@ -16,5 +16,5 @@ int main()
     cout << (letter_match("guess", "grass", 3) returns true) << endl;
     cout << (letter_match("guess", "grass", 2) returns false) << endl;
 
-    return EXIT_SUCCESS;
+    return 0;
 }
