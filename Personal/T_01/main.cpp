@@ -24,6 +24,7 @@ int main() {
    //float Product1 = Product + 0.000;
    //float Average1 = Average + 0.000;
 
+    cout << "test";
 
    cout << Product << " " << Average << endl;
 
