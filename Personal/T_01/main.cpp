@@ -21,13 +21,13 @@ int main() {
    //auto num7 = num3 + 0.000;
    //auto num8 = num4 + 0.000,
 
-   float Product1 = Product + 0.000;
-   float Average1 = Average + 0.000;
+   //float Product1 = Product + 0.000;
+   //float Average1 = Average + 0.000;
 
 
    cout << Product << " " << Average << endl;
 
-   cout << Product1 << " " << Average1 << endl;
+   //cout << Product1 << " " << Average1 << endl;
 
    return 0;
 }
