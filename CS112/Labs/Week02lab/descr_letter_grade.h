@@ -1,6 +1,6 @@
 // CS 112 Fall 2023 Week 02 Lab
 
-// Jordan Cobb
+// Jordan Cobb and Aja Brunet
 
 #ifndef DESCR_LETTER_GRADE_H
 #define DESCR_LETTER_GRADE_H
