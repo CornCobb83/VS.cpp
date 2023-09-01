@@ -40,7 +40,7 @@ int main() {
     for (int i = 0; i < num; i++)
     {
       cout << endl;
-      cout << "Enter a letter grade, including + or -: " << endl;
+      cout << i + 1 << "Enter a letter grade, including + or -: " << endl;
       getline(cin, entered_grade);
       descr_grade(i, entered_grade);
     }
