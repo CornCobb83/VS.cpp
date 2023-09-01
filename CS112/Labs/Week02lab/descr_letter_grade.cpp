@@ -51,6 +51,8 @@ string array[100];
 
 string entered_grade;
 
+
+
 string get_grade()
 {
     cout << endl;
@@ -117,4 +119,13 @@ string descr_letter_grade(string letter_grade) {
     }
 
     return grade_descr;
+}
+
+void print(int i)
+{
+    for (int j; j < i; j++)
+    {
+        cout << array[j];
+        cout << descr_letter_grade(array[j]) << endl;
+    }
 }

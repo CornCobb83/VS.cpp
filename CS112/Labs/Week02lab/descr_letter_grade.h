@@ -18,6 +18,8 @@ void input_num(int num);
 
 string get_grade();
 
+void print(int i);
+
 string descr_letter_grade(string letter_grade);
 
 #endif
