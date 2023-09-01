@@ -44,7 +44,7 @@ int main() {
       cout << endl;
       cout << "Enter a letter grade, including + or -: " << endl;
       getline(cin, entered_grade);
-      descr_grade(i, entered_grade)
+      descr_grade(i, entered_grade);
     }
 
     //cout << endl;
