@@ -39,15 +39,20 @@ int main() {
     cout << "How many grades do you have to enter?" << endl;
     cin >> num;
 
-    
+    input_num(num);
 
-    cout << endl;
-    cout << "Enter a letter grade, including + or -: " << endl;
-    getline(cin, entered_grade);
+    for (int i = 0; i < num; i++)
+    {
+      
+    }
 
-    cout << endl;
-    cout << "Grade description: ";
-    cout << descr_letter_grade(entered_grade) << endl;
+    //cout << endl;
+    //cout << "Enter a letter grade, including + or -: " << endl;
+    //getline(cin, entered_grade);
+
+    //cout << endl;
+    //cout << "Grade description: ";
+    //cout << descr_letter_grade(entered_grade) << endl;
 
     // Code for further testing should be inserted here
 
