@@ -49,6 +49,14 @@ int number;
 
 string array[100];
 
+string get_grade(sting input)
+{
+    int counter = i + 1;
+    cout << endl;
+    cout << counter << "Enter a letter grade, including + or -: " << endl;
+    getline(cin, entered_grade);
+}
+
 void descr_grade(int i, string s)
 {
 
