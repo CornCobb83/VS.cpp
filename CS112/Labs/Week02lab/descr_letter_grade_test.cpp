@@ -22,6 +22,8 @@ int main() {
     cout << (descr_letter_grade("b-") == "Commendable achievement - Minus") << " ";
     cout << (descr_letter_grade("c") == "Satisfactory achievement") << " ";
     cout << (descr_letter_grade("C-") == "Satisfactory achievement - Minus") << " ";
+    cout << (descr_letter_grade("d") == "Sub Par achievement") << " ";
+    cout << (descr_letter_grade("D-") == "Sub Par achievement - Minus") << " ";
     cout << (descr_letter_grade("G") == "Try again") << " ";
     cout << (descr_letter_grade("H+") == "Try again - Plus") << " ";
     cout << (descr_letter_grade("What?") == "Try again") << " ";
