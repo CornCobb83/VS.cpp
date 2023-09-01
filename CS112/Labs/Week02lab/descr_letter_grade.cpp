@@ -45,6 +45,8 @@
 #include <cmath>
 using namespace std;
 
+string array[];
+
 string descr_grade(string s)
 {
     return s;
