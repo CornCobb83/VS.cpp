@@ -39,8 +39,9 @@ int main() {
 
     for (int i = 0; i < num; i++)
     {
+      int counter = i + 1;
       cout << endl;
-      cout << i + 1 << "Enter a letter grade, including + or -: " << endl;
+      cout << counter << "Enter a letter grade, including + or -: " << endl;
       getline(cin, entered_grade);
       descr_grade(i, entered_grade);
     }
