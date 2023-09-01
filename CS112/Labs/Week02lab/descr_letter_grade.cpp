@@ -126,7 +126,7 @@ int print(int i)
     for (int j; j < i; j++)
     {
         cout << array[j];
-        cout << "test" << descr_letter_grade(array[j]) << endl;
+        cout << descr_letter_grade(array[j]) << endl;
     }
 
     return 0;
