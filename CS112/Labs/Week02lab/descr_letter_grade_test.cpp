@@ -33,6 +33,11 @@ int main() {
     cout << descr_grade("Test");
 
     string entered_grade;
+    int num;
+
+    cout << endl;
+    cout << "How many grades do you have to enter?" << endl;
+    cin >> num;
 
     cout << endl;
     cout << "Enter a letter grade, including + or -: " << endl;
