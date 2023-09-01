@@ -43,7 +43,7 @@ int main() {
       descr_grade(i, entered_grade);
     }
 
-    print(int num);
+    print(num);
 
     //cout << endl;
     //cout << "Enter a letter grade, including + or -: " << endl;
