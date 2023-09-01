@@ -16,7 +16,7 @@ void descr_grade(int i, string s);
 
 void input_num(int num);
 
-string get_grade(string input);
+string get_grade();
 
 string descr_letter_grade(string letter_grade);
 
