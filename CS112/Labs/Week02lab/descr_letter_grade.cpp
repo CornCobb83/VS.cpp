@@ -20,6 +20,10 @@
       if the letter grade is followed by anything but + or -, that also
       is ignored.)
 
+    signature: descr_grade:string -> array -> string
+    purpose: expects a letter grade in the form of a string that tests with descr)letter.
+    It asks userfor list of letter grades then tests based on ho wmany they entered. 
+
   tests:
       descr_letter_grade("A+") == "Outstanding achievement - Plus"
       descr_letter_grade("a") == "Outstanding achievement"
