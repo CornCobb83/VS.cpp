@@ -121,13 +121,11 @@ string descr_letter_grade(string letter_grade) {
     return grade_descr;
 }
 
-int print(int i)
+void print(int i)
 {
-    for (int j; j < i; j++)
+    for (int j = 0; j < i; j++)
     {
         cout << array[j];
-        cout << descr_letter_grade(array[j]) << endl;
+        cout << " " << descr_letter_grade(array[j]) << endl;
     }
-
-    return 0;
 }
