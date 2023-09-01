@@ -23,8 +23,8 @@
   tests:
       descr_letter_grade("A+") == "Outstanding achievement - Plus"
       descr_letter_grade("a") == "Outstanding achievement"
-      descr_letter_grade("B") == "Commendable achievement"
-      descr_letter_grade("b-") == "Commendable achievement - Minus"
+      descr_letter_grade("B") == "Good Enough achievement"
+      descr_letter_grade("b-") == "Good Enough achievement - Minus"
       descr_letter_grade("c") == "Satisfactory achievement"
       descr_letter_grade("C-") == "Satisfactory achievement - Minus"
       descr_letter_grade("d") == "Sub Par achievement"
@@ -64,12 +64,12 @@ string descr_letter_grade(string letter_grade) {
 
         case 'c':
         case 'C':
-            grade_descr = "Satisfactory achievement";
+            grade_descr = "Good Enough achievement";
             break;
 
         case 'd':
         case 'D':
-            grade_descr = "Satisfactory achievement";
+            grade_descr = "Sub Par achievement";
             break;
 
         default:
