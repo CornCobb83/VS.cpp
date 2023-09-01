@@ -45,9 +45,9 @@
 #include <cmath>
 using namespace std;
 
-void string descr_grade(string s)
+string descr_grade(string s)
 {
-    cout << "Test";
+    cout << s;
 }
 
 string descr_letter_grade(string letter_grade) {
