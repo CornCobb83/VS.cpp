@@ -49,9 +49,9 @@ int number;
 
 string array[];
 
-string descr_grade(string s)
+void descr_grade(int i; string s)
 {
-    return s;
+    array[i] = s;
 }
 
 void input_num(int num)
