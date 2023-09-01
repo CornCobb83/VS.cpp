@@ -1,10 +1,6 @@
 // CS 112 Fall 2023 Week 02 Lab
 
-/*----
-  Demonstration of syntax for a foreach loop
-
-  last modified: 31 August 2023
-----*/
+// Jordan Cobb
 
 #include <cstdlib>
 #include <iostream>

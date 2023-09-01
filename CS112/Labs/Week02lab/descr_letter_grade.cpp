@@ -1,39 +1,6 @@
 // CS 112 Fall 2023 Week 02 Lab
 
-/*----
-  signature: descr_letter_grade: string -> string
-  purpose: expects a letter grade (in the form of a string)
-      that may include + or -, and returns a text description
-      of that grade. Letter grades supported are A, B, C,
-      and descriptions are inspired by those on p. 46 of
-      the 2020-2021 Humboldt Catalog, followed by " - Plus" if letter
-      grade is followed by + and followed by " - Minus" if letter
-      grade is followed by -
-
-      (Any grade that does not start with
-      A, B, or C will return a description of "Try again", followed by
-      " - Plus" if followed by + and " - Minus" if followed by -.)
-
-      (If letter grades are longer than 2 characters, the rest are ignored;
-      if the letter grade is followed by anything but + or -, that also
-      is ignored.)
-
-  tests:
-      descr_letter_grade("A+") == "Outstanding achievement - Plus"
-      descr_letter_grade("a") == "Outstanding achievement"
-      descr_letter_grade("B") == "Commendable achievement"
-      descr_letter_grade("b-") == "Commendable achievement - Minus"
-      descr_letter_grade("c") == "Satisfactory achievement"
-      descr_letter_grade("C-") == "Satisfactory achievement - Minus"
-      descr_letter_grade("G") == "Try again"
-      descr_letter_grade("H+") == "Try again - Plus"
-      descr_letter_grade("What?") == "Try again"
-      descr_letter_grade("Awwww!") == "Outstanding achievement"
-      descr_letter_grade("B+C") == "Commendable achievement - Plus"
-
-  by: David C. Tuttle
-  last modified: 31 August 2023
-----*/
+// Jordan Cobb
 
 #include <cstdlib>
 #include <iostream>

@@ -1,9 +1,6 @@
 // CS 112 Fall 2023 Week 02 Lab
 
-/*----
-  by: David C. Tuttle
-  last modified: 31 August 2023
-----*/
+// Jordan Cobb
 
 #include <cstdlib>
 #include <iostream>
