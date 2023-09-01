@@ -57,7 +57,7 @@ string get_grade()
 {
     cout << endl;
     cout << "Enter a letter grade, including + or -: " << endl;
-    getline(cin, entered_grade);
+    cin >> entered_grade;
 
     return entered_grade;
 }
