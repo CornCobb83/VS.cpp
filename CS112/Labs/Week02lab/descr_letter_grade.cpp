@@ -55,6 +55,8 @@ string get_grade(sting input)
     cout << endl;
     cout << counter << "Enter a letter grade, including + or -: " << endl;
     getline(cin, entered_grade);
+
+    return entered_grade;
 }
 
 void descr_grade(int i, string s)
