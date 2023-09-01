@@ -27,6 +27,8 @@
       descr_letter_grade("b-") == "Commendable achievement - Minus"
       descr_letter_grade("c") == "Satisfactory achievement"
       descr_letter_grade("C-") == "Satisfactory achievement - Minus"
+      descr_letter_grade("d") == "Sub Par achievement"
+      descr_letter_grade("D-") == "Sub Par achievement - Minus"
       descr_letter_grade("G") == "Try again"
       descr_letter_grade("H+") == "Try again - Plus"
       descr_letter_grade("What?") == "Try again"
@@ -62,6 +64,11 @@ string descr_letter_grade(string letter_grade) {
 
         case 'c':
         case 'C':
+            grade_descr = "Satisfactory achievement";
+            break;
+
+        case 'd':
+        case 'D':
             grade_descr = "Satisfactory achievement";
             break;
 
