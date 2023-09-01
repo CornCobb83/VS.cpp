@@ -36,6 +36,7 @@ int main() {
     cout << endl;
     cout << "How many grades do you have to enter?" << endl;
     cin >> num;
+    cout << endl;
 
     for (int i = 0; i < num; i++)
     {
