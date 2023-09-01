@@ -45,7 +45,10 @@
 #include <cmath>
 using namespace std;
 
-void string descr_grade(string s);
+void string descr_grade(string s)
+{
+    cout << "Test";
+}
 
 string descr_letter_grade(string letter_grade) {
     string grade_descr = "";
@@ -93,9 +96,4 @@ string descr_letter_grade(string letter_grade) {
     }
 
     return grade_descr;
-}
-
-descr_grade(s)
-{
-    cout << s;
 }
