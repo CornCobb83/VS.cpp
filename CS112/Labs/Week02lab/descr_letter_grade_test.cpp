@@ -39,7 +39,7 @@ int main() {
 
     for (int i = 0; i < num; i++)
     {
-      get_grade();
+      entered_grade = get_grade();
       descr_grade(i, entered_grade);
     }
 
