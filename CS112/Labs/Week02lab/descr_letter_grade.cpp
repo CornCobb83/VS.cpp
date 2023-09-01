@@ -125,8 +125,8 @@ void print(int i)
 {
     for (int j = 0; j < i; j++)
     {
-        count = j + 1;
-        cout << count;
+        int count = j + 1;
+        cout << count << ": ";
         cout << array[j];
         cout << " " << descr_letter_grade(array[j]) << endl;
     }
