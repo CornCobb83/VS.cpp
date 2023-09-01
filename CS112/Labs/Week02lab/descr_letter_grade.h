@@ -12,7 +12,7 @@
 
 using namespace std;
 
-void descr_grade(int i; string s);
+void descr_grade(int i, string s);
 
 void input_num(int num);
 

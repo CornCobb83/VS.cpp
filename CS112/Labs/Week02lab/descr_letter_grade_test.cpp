@@ -30,8 +30,6 @@ int main() {
     cout << (descr_letter_grade("Awwww!") == "Outstanding achievement") << " ";
     cout << (descr_letter_grade("B+C") == "Commendable achievement - Plus") << endl;
 
-    cout << descr_grade("Test");
-
     string entered_grade;
     int num;
 

@@ -47,10 +47,11 @@ using namespace std;
 
 int number;
 
-string array[];
+string array[100];
 
-void descr_grade(int i; string s)
+void descr_grade(int i, string s)
 {
+
     array[i] = s;
 }
 
