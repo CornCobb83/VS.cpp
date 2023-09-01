@@ -12,6 +12,8 @@
 
 using namespace std;
 
+void string descr_grade(string s);
+
 string descr_letter_grade(string letter_grade);
 
 #endif

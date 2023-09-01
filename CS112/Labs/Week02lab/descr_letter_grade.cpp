@@ -97,5 +97,5 @@ string descr_letter_grade(string letter_grade) {
 
 descr_grade(s)
 {
-    cout << "Test";
+    cout << s;
 }
