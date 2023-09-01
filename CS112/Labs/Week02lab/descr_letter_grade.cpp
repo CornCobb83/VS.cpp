@@ -49,7 +49,7 @@ int number;
 
 string array[100];
 
-string get_grade(sting input)
+string get_grade(string input)
 {
     int counter = i + 1;
     cout << endl;
