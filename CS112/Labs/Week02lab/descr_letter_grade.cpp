@@ -45,11 +45,18 @@
 #include <cmath>
 using namespace std;
 
+int number;
+
 string array[];
 
 string descr_grade(string s)
 {
     return s;
+}
+
+void input_num(int num)
+{
+    num = number;
 }
 
 string descr_letter_grade(string letter_grade) {

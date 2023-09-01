@@ -39,6 +39,8 @@ int main() {
     cout << "How many grades do you have to enter?" << endl;
     cin >> num;
 
+    
+
     cout << endl;
     cout << "Enter a letter grade, including + or -: " << endl;
     getline(cin, entered_grade);
