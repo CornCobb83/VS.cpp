@@ -47,7 +47,7 @@ using namespace std;
 
 string descr_grade(string s)
 {
-    cout << s;
+    return s;
 }
 
 string descr_letter_grade(string letter_grade) {
