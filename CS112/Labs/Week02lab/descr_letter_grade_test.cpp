@@ -10,6 +10,8 @@
 
 using namespace std;
 
+void descr_grade();
+
 int main() {
     cout << boolalpha;
 
@@ -45,4 +47,9 @@ int main() {
     // Code for further testing should be inserted here
 
     return EXIT_SUCCESS;
+}
+
+void descr_grade()
+{
+  
 }
