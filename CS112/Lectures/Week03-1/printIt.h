@@ -8,3 +8,5 @@
 using namespace std;
 
 void printIt(int);
+
+#endif
