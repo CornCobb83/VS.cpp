@@ -4,3 +4,9 @@
 #include "printIt.h"
 
 using namespace std;
+
+void printIt(int anInt)
+{
+    cout << anInt << endl;
+    return;
+}
