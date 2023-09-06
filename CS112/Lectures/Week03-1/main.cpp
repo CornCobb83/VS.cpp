@@ -7,7 +7,8 @@ using namespace std;
 
 int main()
 {
-    printIt("Test");
+    string var =  "Test";
+    printIt(var);
 
     return 0;
 }
