@@ -5,25 +5,25 @@
 
 using namespace std;
 
-void printIt(int anInt)
+void printIt(int& anInt)
 {
     cout << anInt << endl;
     return;
 }
 
-void printIt(string aString)
+void printIt(string& aString)
 {
     cout << aString << endl;
     return;
 }
 
-void printIt(bool aBool)
+void printIt(bool& aBool)
 {
     cout << aBool << endl;
     return;
 }
 
-void printIt(double aDouble)
+void printIt(double& aDouble)
 {
     cout << aDouble << endl;
     return;

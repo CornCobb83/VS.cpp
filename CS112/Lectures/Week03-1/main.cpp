@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-    printIt(9 + 10);
+    printIt();
 
     return 0;
 }
