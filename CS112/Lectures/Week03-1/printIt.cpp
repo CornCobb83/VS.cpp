@@ -10,3 +10,21 @@ void printIt(int anInt)
     cout << anInt << endl;
     return;
 }
+
+void printIt(string aString)
+{
+    cout << aString << endl;
+    return;
+}
+
+void printIt(bool aBool)
+{
+    cout << aBool << endl;
+    return;
+}
+
+void printIt(double aDouble)
+{
+    cout << aDouble << endl;
+    return;
+}

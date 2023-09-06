@@ -8,5 +8,8 @@
 using namespace std;
 
 void printIt(int);
+void printIt(string);
+void printIt(double);
+void printIt(bool);
 
 #endif
