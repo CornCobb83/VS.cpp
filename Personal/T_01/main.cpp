@@ -1,129 +1,143 @@
 #include <iostream>
-#include <curses.h>
-#include <cstdlib>
-#include <ctime>
+#include <conio.h>
+#include <windows.h>
 
 using namespace std;
 
+bool gameOver;
 const int width = 20;
 const int height = 10;
-
-int pacManX, pacManY;
-int ghostX, ghostY;
-int fruitX, fruitY;
-bool gameOver;
-int score;
-
+int x, y, fruitX, fruitY, score;
+int tailX[100], tailY[100];
+int nTail;
 enum eDirection { STOP = 0, LEFT, RIGHT, UP, DOWN };
 eDirection dir;
-
-char board[height][width];
 
 void Setup() {
     gameOver = false;
     dir = STOP;
-    pacManX = width / 2;
-    pacManY = height / 2;
-    ghostX = 0;
-    ghostY = 0;
+    x = width / 2;
+    y = height / 2;
     fruitX = rand() % width;
     fruitY = rand() % height;
     score = 0;
-
-    // Initialize the game board
-    for (int i = 0; i < height; i++) {
-        for (int j = 0; j < width; j++) {
-            if (i == 0 || i == height - 1 || j == 0 || j == width - 1)
-                board[i][j] = '#';
-            else
-                board[i][j] = ' ';
-        }
-    }
-
-    board[pacManY][pacManX] = 'P';
-    board[ghostY][ghostX] = 'G';
-    board[fruitY][fruitX] = 'F';
 }
 
 void Draw() {
-    clear();  // Clear the screen
+    system("cls");
+    for (int i = 0; i < width + 2; i++)
+        cout << "#";
+    cout << endl;
+
     for (int i = 0; i < height; i++) {
         for (int j = 0; j < width; j++) {
-            mvaddch(i, j, board[i][j]);
+            if (j == 0)
+                cout << "#";
+            if (i == y && j == x)
+                cout << "O";
+            else if (i == fruitY && j == fruitX)
+                cout << "F";
+            else {
+                bool print = false;
+                for (int k = 0; k < nTail; k++) {
+                    if (tailX[k] == j && tailY[k] == i) {
+                        cout << "o";
+                        print = true;
+                    }
+                }
+                if (!print)
+                    cout << " ";
+            }
+
+            if (j == width - 1)
+                cout << "#";
         }
+        cout << endl;
     }
-    mvprintw(height + 1, 0, "Score: %d", score);
-    refresh();
+
+    for (int i = 0; i < width + 2; i++)
+        cout << "#";
+    cout << endl;
+    cout << "Score:" << score << endl;
 }
 
 void Input() {
-    int ch = getch();
-    switch (ch) {
-        case 'a':
-            dir = LEFT;
-            break;
-        case 'd':
-            dir = RIGHT;
-            break;
-        case 'w':
-            dir = UP;
-            break;
-        case 's':
-            dir = DOWN;
-            break;
-        case 'x':
-            gameOver = true;
-            break;
+    if (_kbhit()) {
+        switch (_getch()) {
+            case 'a':
+                dir = LEFT;
+                break;
+            case 'd':
+                dir = RIGHT;
+                break;
+            case 'w':
+                dir = UP;
+                break;
+            case 's':
+                dir = DOWN;
+                break;
+            case 'x':
+                gameOver = true;
+                break;
+        }
     }
 }
 
 void Logic() {
-    int prevX = pacManX;
-    int prevY = pacManY;
+    int prevX = tailX[0];
+    int prevY = tailY[0];
+    int prev2X, prev2Y;
+    tailX[0] = x;
+    tailY[0] = y;
+
+    for (int i = 1; i < nTail; i++) {
+        prev2X = tailX[i];
+        prev2Y = tailY[i];
+        tailX[i] = prevX;
+        tailY[i] = prevY;
+        prevX = prev2X;
+        prevY = prev2Y;
+    }
 
     switch (dir) {
         case LEFT:
-            pacManX--;
+            x--;
             break;
         case RIGHT:
-            pacManX++;
+            x++;
             break;
         case UP:
-            pacManY--;
+            y--;
             break;
         case DOWN:
-            pacManY++;
+            y++;
+            break;
+        default:
             break;
     }
 
-    if (pacManX == fruitX && pacManY == fruitY) {
+    if (x >= width) x = 0; else if (x < 0) x = width - 1;
+    if (y >= height) y = 0; else if (y < 0) y = height - 1;
+
+    for (int i = 0; i < nTail; i++)
+        if (tailX[i] == x && tailY[i] == y)
+            gameOver = true;
+
+    if (x == fruitX && y == fruitY) {
         score += 10;
         fruitX = rand() % width;
         fruitY = rand() % height;
+        nTail++;
     }
-
-    board[prevY][prevX] = ' ';
-    board[pacManY][pacManX] = 'P';
 }
 
 int main() {
-    srand(time(NULL));  // Seed the random number generator
-    initscr();          // Initialize curses
-    noecho();           // Don't echo user input
-    cbreak();           // Line buffering disabled
-    keypad(stdscr, TRUE); // Enable keypad input
-    nodelay(stdscr, TRUE); // Non-blocking input
-
     Setup();
     while (!gameOver) {
         Draw();
         Input();
         Logic();
-        // Add ghost movement logic here
+        Sleep(10); // Sleep for 10 milliseconds
     }
-
-    getch(); // Wait for a key press before exiting
-    endwin(); // Clean up curses
     return 0;
 }
-
