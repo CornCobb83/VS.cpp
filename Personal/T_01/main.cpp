@@ -1,5 +1,7 @@
 #include <iostream>
-#include <conio.h>  // For _getch() function on Windows
+#include <ncurses.h>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -44,35 +46,34 @@ void Setup() {
 }
 
 void Draw() {
-    system("cls");  // Clear the console
+    clear();  // Clear the screen
     for (int i = 0; i < height; i++) {
         for (int j = 0; j < width; j++) {
-            cout << board[i][j];
+            mvaddch(i, j, board[i][j]);
         }
-        cout << endl;
     }
-    cout << "Score: " << score << endl;
+    mvprintw(height + 1, 0, "Score: %d", score);
+    refresh();
 }
 
 void Input() {
-    if (_kbhit()) {
-        switch (_getch()) {
-            case 'a':
-                dir = LEFT;
-                break;
-            case 'd':
-                dir = RIGHT;
-                break;
-            case 'w':
-                dir = UP;
-                break;
-            case 's':
-                dir = DOWN;
-                break;
-            case 'x':
-                gameOver = true;
-                break;
-        }
+    int ch = getch();
+    switch (ch) {
+        case 'a':
+            dir = LEFT;
+            break;
+        case 'd':
+            dir = RIGHT;
+            break;
+        case 'w':
+            dir = UP;
+            break;
+        case 's':
+            dir = DOWN;
+            break;
+        case 'x':
+            gameOver = true;
+            break;
     }
 }
 
@@ -106,6 +107,13 @@ void Logic() {
 }
 
 int main() {
+    srand(time(NULL));  // Seed the random number generator
+    initscr();          // Initialize ncurses
+    noecho();           // Don't echo user input
+    cbreak();           // Line buffering disabled
+    keypad(stdscr, TRUE); // Enable keypad input
+    nodelay(stdscr, TRUE); // Non-blocking input
+
     Setup();
     while (!gameOver) {
         Draw();
@@ -113,5 +121,8 @@ int main() {
         Logic();
         // Add ghost movement logic here
     }
+
+    getch(); // Wait for a key press before exiting
+    endwin(); // Clean up ncurses
     return 0;
 }
