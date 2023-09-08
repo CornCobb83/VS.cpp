@@ -1,5 +1,5 @@
 #include <iostream>
-#include <ncurses.h>
+#include <curses.h>
 #include <cstdlib>
 #include <ctime>
 
@@ -108,7 +108,7 @@ void Logic() {
 
 int main() {
     srand(time(NULL));  // Seed the random number generator
-    initscr();          // Initialize ncurses
+    initscr();          // Initialize curses
     noecho();           // Don't echo user input
     cbreak();           // Line buffering disabled
     keypad(stdscr, TRUE); // Enable keypad input
@@ -123,6 +123,7 @@ int main() {
     }
 
     getch(); // Wait for a key press before exiting
-    endwin(); // Clean up ncurses
+    endwin(); // Clean up curses
     return 0;
 }
+
