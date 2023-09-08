@@ -1,34 +1,45 @@
 #include <iostream>
-#include <iomanip>
+#include <string>
+
 using namespace std;
 
 int main() {
-   int num1;
-   int num2;
-   int num3;
-   int num4;
+    string fullName;
 
-   cin >> num1;
-   cin >> num2;
-   cin >> num3;
-   cin >> num4;
+    // Prompt the user to enter their full name
+    cout << "Enter your full name: ";
+    getline(cin, fullName);
 
-   int Product = (num1 * num2 * num3 * num4);
-   int Average = (num1 + num2 + num3 + num4) / 4;
+    // Initialize strings to store the last name and initials
+    string lastName = "";
+    string initials = "";
 
-   //auto num5 = num1 + 0.000;
-   //auto num6 = num2 + 0.000;
-   //auto num7 = num3 + 0.000;
-   //auto num8 = num4 + 0.000,
+    // Find the last space in the full name (assumes last name comes after the last space)
+    size_t lastSpacePos = fullName.find_last_of(' ');
 
-   //float Product1 = Product + 0.000;
-   //float Average1 = Average + 0.000;
+    if (lastSpacePos != string::npos) {
+        // Extract the last name
+        lastName = fullName.substr(lastSpacePos + 1);
 
-    cout << "test";
+        // Extract and concatenate the first and middle initials
+        for (size_t i = 0; i < lastSpacePos; i++) {
+            if (i == 0 || fullName[i - 1] == ' ') {
+                initials += fullName[i];
+            }
+        }
+    } else {
+        // If there's no space, consider the entire name as the last name
+        lastName = fullName;
+    }
 
-   cout << Product << " " << Average << endl;
+    // Output the last name followed by the initials
+    cout << "Last Name: " << lastName << endl;
+    cout << "Initials: " << initials << endl;
 
-   //cout << Product1 << " " << Average1 << endl;
-
-   return 0;
+    return 0;
 }
+
+
+
+
+
