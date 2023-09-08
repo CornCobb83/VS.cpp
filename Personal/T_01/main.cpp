@@ -1,45 +1,117 @@
 #include <iostream>
-#include <string>
+#include <conio.h>  // For _getch() function on Windows
 
 using namespace std;
 
-int main() {
-    string fullName;
+const int width = 20;
+const int height = 10;
 
-    // Prompt the user to enter their full name
-    cout << "Enter your full name: ";
-    getline(cin, fullName);
+int pacManX, pacManY;
+int ghostX, ghostY;
+int fruitX, fruitY;
+bool gameOver;
+int score;
 
-    // Initialize strings to store the last name and initials
-    string lastName = "";
-    string initials = "";
+enum eDirection { STOP = 0, LEFT, RIGHT, UP, DOWN };
+eDirection dir;
 
-    // Find the last space in the full name (assumes last name comes after the last space)
-    size_t lastSpacePos = fullName.find_last_of(' ');
+char board[height][width];
 
-    if (lastSpacePos != string::npos) {
-        // Extract the last name
-        lastName = fullName.substr(lastSpacePos + 1);
+void Setup() {
+    gameOver = false;
+    dir = STOP;
+    pacManX = width / 2;
+    pacManY = height / 2;
+    ghostX = 0;
+    ghostY = 0;
+    fruitX = rand() % width;
+    fruitY = rand() % height;
+    score = 0;
 
-        // Extract and concatenate the first and middle initials
-        for (size_t i = 0; i < lastSpacePos; i++) {
-            if (i == 0 || fullName[i - 1] == ' ') {
-                initials += fullName[i];
-            }
+    // Initialize the game board
+    for (int i = 0; i < height; i++) {
+        for (int j = 0; j < width; j++) {
+            if (i == 0 || i == height - 1 || j == 0 || j == width - 1)
+                board[i][j] = '#';
+            else
+                board[i][j] = ' ';
         }
-    } else {
-        // If there's no space, consider the entire name as the last name
-        lastName = fullName;
     }
 
-    // Output the last name followed by the initials
-    cout << "Last Name: " << lastName << endl;
-    cout << "Initials: " << initials << endl;
-
-    return 0;
+    board[pacManY][pacManX] = 'P';
+    board[ghostY][ghostX] = 'G';
+    board[fruitY][fruitX] = 'F';
 }
 
+void Draw() {
+    system("cls");  // Clear the console
+    for (int i = 0; i < height; i++) {
+        for (int j = 0; j < width; j++) {
+            cout << board[i][j];
+        }
+        cout << endl;
+    }
+    cout << "Score: " << score << endl;
+}
 
+void Input() {
+    if (_kbhit()) {
+        switch (_getch()) {
+            case 'a':
+                dir = LEFT;
+                break;
+            case 'd':
+                dir = RIGHT;
+                break;
+            case 'w':
+                dir = UP;
+                break;
+            case 's':
+                dir = DOWN;
+                break;
+            case 'x':
+                gameOver = true;
+                break;
+        }
+    }
+}
 
+void Logic() {
+    int prevX = pacManX;
+    int prevY = pacManY;
 
+    switch (dir) {
+        case LEFT:
+            pacManX--;
+            break;
+        case RIGHT:
+            pacManX++;
+            break;
+        case UP:
+            pacManY--;
+            break;
+        case DOWN:
+            pacManY++;
+            break;
+    }
 
+    if (pacManX == fruitX && pacManY == fruitY) {
+        score += 10;
+        fruitX = rand() % width;
+        fruitY = rand() % height;
+    }
+
+    board[prevY][prevX] = ' ';
+    board[pacManY][pacManX] = 'P';
+}
+
+int main() {
+    Setup();
+    while (!gameOver) {
+        Draw();
+        Input();
+        Logic();
+        // Add ghost movement logic here
+    }
+    return 0;
+}
