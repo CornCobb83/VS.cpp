@@ -11,3 +11,5 @@
 using namespace std;
 
 void getChange(int&, int&, int&, int&);
+
+#endif
