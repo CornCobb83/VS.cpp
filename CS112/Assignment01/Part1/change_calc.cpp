@@ -33,7 +33,7 @@ void print(int val)
     string temp = to_string(val);
 
     if (temp.length() >= 3)
-        cout << "$" << temp.at(0) << "." << temp.at(1) << temp.at(2) << endl;
+        cout << "$" << temp.substr(0, temp.length()-3) << "." << temp.at(temp.length()-2) << temp.at(temp.length()-1) << endl;
     else if (temp.length() == 2)
         cout << "$0." << temp.at(0) << temp.at(1) << endl;
     else
