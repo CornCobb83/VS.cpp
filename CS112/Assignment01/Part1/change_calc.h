@@ -12,4 +12,6 @@ using namespace std;
 
 void getChange(int&, int&, int&, int&);
 
+void print(int);
+
 #endif

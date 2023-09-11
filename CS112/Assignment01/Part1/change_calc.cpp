@@ -27,3 +27,8 @@ void getChange(int& pennies, int& nickles, int& dimes, int& quarters)
 
     cout << endl;
 }
+
+void print(int val)
+{
+    if 
+}

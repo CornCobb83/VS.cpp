@@ -14,7 +14,9 @@ int main()
 
     getChange(pennies, nickles, dimes, quarters);
 
-    cout << pennies + nickles + dimes + quarters << endl;
+    int total = pennies + nickles + dimes + quarters;
+
+    print(total);
 
     return 0;
 }
