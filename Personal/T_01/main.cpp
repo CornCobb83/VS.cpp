@@ -1,4 +1,3 @@
-
 #include <iostream>
 using namespace std;
 
@@ -11,7 +10,7 @@ int main() {
    result = 0;
 
    for (n = 0; n < 10; ++n) {
-      result += n + 3;
+      result += n * 2;
       if (result > stop) {
          cout << "n=" << n;
          cout << endl;
