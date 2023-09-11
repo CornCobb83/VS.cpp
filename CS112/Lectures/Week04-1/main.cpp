@@ -6,3 +6,12 @@
 #include <string>
 
 using namespace std;
+
+int main()
+{
+    cout << boolalpha;
+
+    int *a_ptr;
+
+    return EXIT_SUCCESS;
+}

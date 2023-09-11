@@ -4,5 +4,13 @@
 #include <cstdlib>
 #include <iostream>
 #include <string>
+#include "change_calc.h"
 
 using namespace std;
+
+int getChange()
+{
+    cout << "Test";
+
+    return 0;
+}
