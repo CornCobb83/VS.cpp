@@ -10,6 +10,6 @@
 
 using namespace std;
 
-int change_calc(int, int, int, int);
+double change_calc(int, int, int, int);
 
 #endif
