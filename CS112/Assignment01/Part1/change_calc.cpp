@@ -34,7 +34,7 @@ void print(int val)
     cout << temp.length() << endl;
 
     if (temp.length() >= 3)
-        cout << "$" << temp.substr(0, temp.length()-3) << "." << temp.at(temp.length()-2) << temp.at(temp.length()-1) << endl;
+        cout << "$" << temp.substr(0, temp.length()-2) << "." << temp.at(temp.length()-2) << temp.at(temp.length()-1) << endl;
     else if (temp.length() == 2)
         cout << "$0." << temp.at(0) << temp.at(1) << endl;
     else
