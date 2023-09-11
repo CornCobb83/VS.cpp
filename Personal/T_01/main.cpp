@@ -1,12 +1,15 @@
 #include <iostream>
-#include <conio.h>
-#include <windows.h>
-
 using namespace std;
 
-int main()
-{
+int main() {
+   int userInput;
 
+	cin >> userInput;
 
-    return 0;
+   for (int j = userInput; j <= 8; j + 2);
+   {
+      cout << j << endl;
+   }
+
+   return 0;
 }
