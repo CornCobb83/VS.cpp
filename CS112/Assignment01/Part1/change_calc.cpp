@@ -33,5 +33,5 @@ void print(int val)
     string temp = to_string(val);
 
     if (temp.length() == 3)
-        cout << 
+        cout << "$" << temp.at(0) << "." << temp.at(1) << temp.at(2) << endl;
 }
