@@ -4,19 +4,23 @@ using namespace std;
 int main() {
    int stop;
    int result;
-   int n;
+   int a;
+   int b;
 
    cin >> stop;
    result = 0;
 
-   for (n = 0; n < 10; ++n) {
-      result += n * 2;
-      if (result > stop) {
-         cout << "n=" << n;
-         cout << endl;
-         break;
+   for (a = 0; a < 4; ++a) {
+      cout << a << ": ";
+      for (b = 0; b < 3; ++b) {
+         result += a + b;
+         if (result > stop) {
+            cout << "_ ";
+            continue;
+         }
+         cout << result << ",";
       }
-      cout << result << endl;
+      cout << endl;
    }
 
    return 0;
