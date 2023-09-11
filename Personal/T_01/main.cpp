@@ -6,7 +6,7 @@ int main() {
 
 	cin >> userInput;
 
-   for (int j = userInput; j <= 8; j + 2);
+   for (int j = userInput; j <= 8; j += 2);
    {
       cout << j << endl;
    }
