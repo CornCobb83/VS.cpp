@@ -12,5 +12,5 @@ int main()
 {
     int pennies, nickles, dimes, quarters;
 
-    pennies = getChange();
+    pennies = getChange(pennies);
 }
