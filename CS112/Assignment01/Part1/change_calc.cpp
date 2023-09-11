@@ -30,5 +30,5 @@ void getChange(int& pennies, int& nickles, int& dimes, int& quarters)
 
 void print(int val)
 {
-    cout << 
+    cout << "$" << val / 100 << "." << val % 100 << endl;
 }
