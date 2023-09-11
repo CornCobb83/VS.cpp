@@ -4,6 +4,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <string>
+#include <iomanip>
 #include "change_calc.h"
 
 using namespace std;
@@ -34,5 +35,5 @@ void getChange(int& pennies, int& nickles, int& dimes, int& quarters)
 
 void print(int val)
 {
-    cout << "$" << val / 100 << "." << val % 100 << endl;
+    cout << "$" << val / 100 << "." << setw(2) << setfill('0') << val % 100 << endl;
 }
