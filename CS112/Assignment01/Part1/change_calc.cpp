@@ -8,12 +8,7 @@
 
 using namespace std;
 
-int getChange(int pennies, int nickles, int dimes, int quarters)
+void getChange(int pennies, int nickles, int dimes, int quarters)
 {
     cout << "Test";
-
-    return pennies;
-    return nickles;
-    return dimes;
-    return quarters; 
 }

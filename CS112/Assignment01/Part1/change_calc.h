@@ -10,4 +10,4 @@
 
 using namespace std;
 
-int getChange(int, int, int, int);
+void getChange(int&, int&, int&, int&);
