@@ -27,5 +27,7 @@ int main()
     cout << "a_ptr is pointer to int, adress is " << a_ptr
         << ", value stored there = " << *a_ptr << endl;
 
+        
+
     return EXIT_SUCCESS;
 }
