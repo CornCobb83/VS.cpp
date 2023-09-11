@@ -1,12 +1,24 @@
+
 #include <iostream>
 using namespace std;
 
 int main() {
-    int userInput = 2; // You should assign a value to userInput
+   int stop;
+   int result;
+   int n;
 
-    for (int j = userInput; j <= 8; j += 2) {
-        cout << j << endl;
-    }
+   cin >> stop;
+   result = 0;
 
-    return 0;
+   for (n = 0; n < 10; ++n) {
+      result += n + 3;
+      if (result > stop) {
+         cout << "n=" << n;
+         cout << endl;
+         break;
+      }
+      cout << result << endl;
+   }
+
+   return 0;
 }
