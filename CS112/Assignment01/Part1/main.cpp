@@ -12,7 +12,7 @@ int main()
 {
     int pennies = 0, nickles = 0, dimes = 0, quarters = 0;
 
-    getChange(pennies&, nickles&, dimes&, quarters&);
+    getChange(pennies, nickles, dimes, quarters);
 
     return 0;
 }

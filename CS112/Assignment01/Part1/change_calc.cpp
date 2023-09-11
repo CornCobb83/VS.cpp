@@ -10,5 +10,5 @@ using namespace std;
 
 void getChange(int& pennies, int& nickles, int& dimes, int& quarters)
 {
-    cout << "Test";
+    cout << "How many" << endl;
 }

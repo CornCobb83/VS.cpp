@@ -6,3 +6,9 @@
 #include <string>
 
 using namespace std;
+
+void use_pointer(int *a_ptr)
+{
+    cout << "Let's increment that puppy!" << endl;
+    (*the_ptr)++;
+}
