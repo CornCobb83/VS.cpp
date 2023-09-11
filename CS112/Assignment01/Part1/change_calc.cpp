@@ -9,7 +9,7 @@
 
 using namespace std;
 
-void change_calc(int& pennies, int& nickles, int& dimes, int& quarters)
+void change_calc(int pennies, int nickles, int dimes, int quarters)
 {
     quarters = quarters * 25;
     //cout << quarters << endl;
