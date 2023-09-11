@@ -27,7 +27,10 @@ int main()
     cout << "a_ptr is pointer to int, adress is " << a_ptr
         << ", value stored there = " << *a_ptr << endl;
 
-        
+        *a_ptr = 250;
+
+        cout << "a_ptr points  to stored value " << *a_ptr << endl
+            << "Value of someVal is now " << someVal << endl;
 
     return EXIT_SUCCESS;
 }
