@@ -9,7 +9,7 @@
 
 using namespace std;
 
-void getChange(int& pennies, int& nickles, int& dimes, int& quarters)
+void change_calc(int& pennies, int& nickles, int& dimes, int& quarters)
 {
     cout << "How many quarters?" << endl;
     cin >> quarters;
@@ -31,9 +31,4 @@ void getChange(int& pennies, int& nickles, int& dimes, int& quarters)
     //cout << pennies << endl;
 
     cout << endl;
-}
-
-void print(int val)
-{
-    cout << "$" << val / 100 << "." << setw(2) << setfill('0') << val % 100 << endl;
 }

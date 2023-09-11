@@ -10,8 +10,6 @@
 
 using namespace std;
 
-void getChange(int&, int&, int&, int&);
-
-void print(int);
+void change_calc(int&, int&, int&, int&);
 
 #endif
