@@ -13,21 +13,21 @@ void getChange(int& pennies, int& nickles, int& dimes, int& quarters)
     cout << "How many quarters?" << endl;
     cin >> quarters;
     quarters = quarters * 25;
-    cout << quarters << endl;
+    //cout << quarters << endl;
 
     cout << "How many dimes?" << endl;
     cin >> dimes;
-    dimes << dimes * 10;
-    cout << dimes << endl;
+    dimes = dimes * 10;
+    //cout << dimes << endl;
 
     cout << "How many nickles?" << endl;
     cin >> nickles;
     nickles = nickles * 5;
-    cout << nickles << endl;
+    //cout << nickles << endl;
 
     cout << "How many pennies?" << endl;
     cin >> pennies;
-    cout << pennies << endl;
+    //cout << pennies << endl;
 
     cout << endl;
 }
