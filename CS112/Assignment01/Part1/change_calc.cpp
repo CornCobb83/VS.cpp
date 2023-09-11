@@ -30,5 +30,8 @@ void getChange(int& pennies, int& nickles, int& dimes, int& quarters)
 
 void print(int val)
 {
-    if 
+    string temp = to_string(val);
+
+    if (temp.length() == 3)
+        cout << 
 }
