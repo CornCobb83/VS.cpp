@@ -12,7 +12,7 @@ using namespace std;
 
 void rochambeau()
 {
-    char input;
+    string input;
     string temp, comp;
 
     cout << "Enter 'r' (rock), 'p' (paper), 's' (scissors), anything else to quit";
