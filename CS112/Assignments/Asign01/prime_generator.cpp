@@ -15,6 +15,8 @@ void prime_generator()
     cout << "Enter a num\n";
     cin >> num;
 
-    
+    for (int i = 2; i <= num; i++) {
+        
+    }
 
 }
