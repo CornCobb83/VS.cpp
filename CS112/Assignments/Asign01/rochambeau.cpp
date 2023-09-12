@@ -14,8 +14,9 @@ void rochambeau()
 {
     char input;
     string temp, comp;
+    int score, score1;
 
-    cout << "Enter 'r' (rock), 'p' (paper), 's' (scissors), anything else to quit";
+    cout << "Enter 'r' (rock), 'p' (paper), 's' (scissors), anything else to quit\n";
     cin >> input;
     tolower(input);
 
@@ -39,9 +40,9 @@ void rochambeau()
             temp = "scissors";
 
         //output
-        cout << "(You): " << temp << "(Computer): " << comp;
+        cout << "(You): " << temp << "  (Computer): " << comp << endl;
 
-        cout << "Enter 'r' (rock), 'p' (paper), 's' (scissors), anything else to quit";
+        cout << "Enter 'r' (rock), 'p' (paper), 's' (scissors), anything else to quit\n";
         cin >> input;
         tolower(input);
     }
