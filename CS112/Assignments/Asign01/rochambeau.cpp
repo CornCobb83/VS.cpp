@@ -12,10 +12,30 @@ using namespace std;
 
 void rochambeau()
 {
-    srand(time(NULL));
-    int num = (rand() % 3) + 1;
     char input;
+    string temp, comp;
 
-    cout << "Enter 'r' (rock), 'p' (paper), 's' (scissors)";
-    cin >> 
+    cout << "Enter 'r' (rock), 'p' (paper), 's' (scissors), anything else to quit";
+    cin >> input;
+    tolower(input);
+
+    while ((input == 'r' || input == 'p' || input == 's'))
+    {
+        //computer
+        int num = (rand() % 3) + 1;
+        if (num == 1)
+            comp == "rock";
+        else if (num == 2)
+            comp == "paper";
+        else
+            comp == "scissors";
+
+        //player
+        if (input == 'r')
+            temp = "rock";
+        else if (input == 'p')
+            temp = "paper";
+        else
+            temp = "scissors";
+    }
 }
