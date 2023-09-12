@@ -16,7 +16,7 @@ void rochambeau()
 
     cout << "Enter 'r' (rock), 'p' (paper), 's' (scissors), anything else to quit";
     cin >> input;
-    tolower(input);
+    tolower(input.at(0));
 
     while ((input == "r" || input == "p" || input == "s"))
     {
