@@ -93,7 +93,7 @@ void rochambeau()
         //output score
         cout << "\nYour Score: " << score << "  Computer Score: " << score1 << endl;
 
-        cout << "Enter 'r' (rock), 'p' (paper), 's' (scissors), anything else to quit\n";
+        cout << "\nEnter 'r' (rock), 'p' (paper), 's' (scissors), anything else to quit\n";
         cin >> input;
         tolower(input);
     }
