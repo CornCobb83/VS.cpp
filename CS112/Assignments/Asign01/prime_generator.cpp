@@ -29,5 +29,5 @@ void prime_generator()
         else
             cout << i << " ";
     }
-
+    cout << endl;
 }
