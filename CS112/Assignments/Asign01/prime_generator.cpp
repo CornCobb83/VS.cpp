@@ -24,7 +24,10 @@ void prime_generator()
             cout << 5 << " ";
         else if (i == 7)
             cout << 7 << " ";
-        
+        else if ((i % 2 == 0) || (i % 3 == 0) || (i % 5 == 0) || (i % 7 == 0))
+            cout << "";
+        else
+            cout << i << " ";
     }
 
 }
