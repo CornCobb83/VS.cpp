@@ -12,7 +12,7 @@ using namespace std;
 void prime_generator()
 {
     int num;
-    cout << "Enter a num\n";
+    cout << "Enter a possitive integer\n";
     cin >> num;
 
     for (int i = 2; i <= num; i++) {
