@@ -37,5 +37,12 @@ void rochambeau()
             temp = "paper";
         else
             temp = "scissors";
+
+        //output
+        cout << "(You): " << temp << "(Computer): " << comp;
+
+        cout << "Enter 'r' (rock), 'p' (paper), 's' (scissors), anything else to quit";
+        cin >> input;
+        tolower(input);
     }
 }
