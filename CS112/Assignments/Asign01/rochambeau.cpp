@@ -12,14 +12,13 @@ using namespace std;
 
 void rochambeau()
 {
-    string input;
-    string temp, comp;
+    string input, temp, comp;
 
     cout << "Enter 'r' (rock), 'p' (paper), 's' (scissors), anything else to quit";
     cin >> input;
     tolower(input);
 
-    while ((input == 'r' || input == 'p' || input == 's'))
+    while ((input == "r" || input == "p" || input == "s"))
     {
         //computer
         int num = (rand() % 3) + 1;
@@ -31,9 +30,9 @@ void rochambeau()
             comp == "scissors";
 
         //player
-        if (input == 'r')
+        if (input == "r")
             temp = "rock";
-        else if (input == 'p')
+        else if (input == "p")
             temp = "paper";
         else
             temp = "scissors";
