@@ -5,11 +5,12 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
+#include <cmath>
 #include "rochambeau.h"
 
 using namespace std;
 
 void rochambeau()
 {
-    
+
 }
