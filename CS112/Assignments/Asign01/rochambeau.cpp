@@ -15,8 +15,7 @@ void rochambeau()
     string input, temp, comp;
 
     cout << "Enter 'r' (rock), 'p' (paper), 's' (scissors), anything else to quit";
-    cin >> input;
-    tolower(input.at(0));
+    gettline(cin,);
 
     while ((input == "r" || input == "p" || input == "s"))
     {
@@ -42,6 +41,5 @@ void rochambeau()
 
         cout << "Enter 'r' (rock), 'p' (paper), 's' (scissors), anything else to quit";
         cin >> input;
-        tolower(input.at(0));
     }
 }
