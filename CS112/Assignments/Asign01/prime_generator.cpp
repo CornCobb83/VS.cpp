@@ -16,6 +16,14 @@ void prime_generator()
     cin >> num;
 
     for (int i = 2; i <= num; i++) {
+        if (i == 2)
+            cout << 2 << " ";
+        else if (i == 3)
+            cout << 3 << " ";
+        else if (i == 5)
+            cout << 5 << " ";
+        else if (i == 7)
+            cout << 7 << " ";
         
     }
 
