@@ -4,7 +4,7 @@
 #include <cmath>
 #include "change_calc.h"
 #include "mton_to_ounce.h"
-// #include "prime_generator.h"
+#include "prime_generator.h"
 // #include "rochambeau.h"
 // UNCOMMENT EACH LINE ABOVE AS YOU FINISH EACH ASSIGNED PROBLEM
 using namespace std;
@@ -29,8 +29,8 @@ cout << endl;
 // PROBLEM 3
 cout << "*** TESTING prime_generator ***" << endl;
 // UNCOMMENT THE LINES BELOW TO TEST YOUR PROBLEM 3 CODE INTERACTIVELY
-// prime_generator();
-// cout << endl;
+prime_generator();
+cout << endl;
 // PROBLEM 4
 cout << "*** TESTING rochambeau ***" << endl;
 // UNCOMMENT THE LINES BELOW TO TEST YOUR PROBLEM 4 CODE INTERACTIVELY
