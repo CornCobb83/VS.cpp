@@ -5,7 +5,7 @@
 #include "change_calc.h"
 #include "mton_to_ounce.h"
 #include "prime_generator.h"
-// #include "rochambeau.h"
+#include "rochambeau.h"
 // UNCOMMENT EACH LINE ABOVE AS YOU FINISH EACH ASSIGNED PROBLEM
 using namespace std;
 int main() {
@@ -34,7 +34,7 @@ cout << endl;
 // PROBLEM 4
 cout << "*** TESTING rochambeau ***" << endl;
 // UNCOMMENT THE LINES BELOW TO TEST YOUR PROBLEM 4 CODE INTERACTIVELY
-// rochambeau();
-// cout << endl;
+rochambeau();
+cout << endl;
 return EXIT_SUCCESS;
 }

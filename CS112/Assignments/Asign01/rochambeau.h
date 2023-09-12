@@ -10,6 +10,6 @@
 
 using namespace std;
 
-double change_calc(int, int, int, int);
+void rochambeau();
 
 #endif
