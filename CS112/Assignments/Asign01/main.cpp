@@ -3,7 +3,7 @@
 #include <string>
 #include <cmath>
 #include "change_calc.h"
-// #include "mton_to_ounce.h"
+#include "mton_to_ounce.h"
 // #include "prime_generator.h"
 // #include "rochambeau.h"
 // UNCOMMENT EACH LINE ABOVE AS YOU FINISH EACH ASSIGNED PROBLEM
@@ -24,8 +24,8 @@ cout << endl << endl;
 // PROBLEM 2
 cout << "*** TESTING mton_to_ounce ***" << endl;
 // UNCOMMENT THE LINES BELOW TO TEST YOUR PROBLEM 2 CODE INTERACTIVELY
-// mton_to_ounce();
-// cout << endl;
+mton_to_ounce();
+cout << endl;
 // PROBLEM 3
 cout << "*** TESTING prime_generator ***" << endl;
 // UNCOMMENT THE LINES BELOW TO TEST YOUR PROBLEM 3 CODE INTERACTIVELY
