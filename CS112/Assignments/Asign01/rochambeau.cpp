@@ -14,7 +14,7 @@ void rochambeau()
 {
     char input;
     string temp, comp;
-    int score, score1;
+    int score = 0, score1 = 0;
 
     cout << "Enter 'r' (rock), 'p' (paper), 's' (scissors), anything else to quit\n";
     cin >> input;
@@ -25,11 +25,11 @@ void rochambeau()
         //computer
         int num = (rand() % 3) + 1;
         if (num == 1)
-            comp == "rock";
+            comp = "rock";
         else if (num == 2)
-            comp == "paper";
+            comp = "paper";
         else
-            comp == "scissors";
+            comp = "scissors";
 
         //player
         if (input == 'r')
@@ -40,7 +40,58 @@ void rochambeau()
             temp = "scissors";
 
         //output
-        cout << "(You): " << temp << "  (Computer): " << comp << endl;
+        cout << "\n(You): " << temp << "  (Computer): " << comp << endl;
+
+        //test for win + score
+        if (temp == "rock") {
+            if (comp == "rock") {
+                cout << "* It's a Draw *";
+                score += 0;
+            }
+            else if (comp == "paper") {
+                cout << "* Computer Wins *";
+                score1++;
+            }
+            else {
+                cout << "* You Win *";
+                score++;
+            }
+        }
+        else if (temp == "paper") {
+            if (comp == "paper") {
+                cout << "* It's a Draw *";
+                score += 0;
+            }
+            else if (comp == "scissors") {
+                cout << "* Computer Wins *";
+                score1++;
+            }
+            else {
+                cout << "* You Win *";
+                score++;
+            }
+        }
+        else if (temp == "scissors") {
+            if (comp == "scissors") {
+                cout << "* It's a Draw *";
+                score += 0;
+            }
+            else if (comp == "rock") {
+                cout << "* Computer Wins *";
+                score1++;
+            }
+            else {
+                cout << "* You Win *";
+                score++;
+            }
+        }
+        else {
+            cout << "ERROR";
+            break;
+        }
+
+        //output score
+        cout << "\nYour Score: " << score << "  Computer Score: " << score1;
 
         cout << "Enter 'r' (rock), 'p' (paper), 's' (scissors), anything else to quit\n";
         cin >> input;
