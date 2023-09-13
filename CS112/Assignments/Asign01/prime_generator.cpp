@@ -1,9 +1,9 @@
 // CS 112 Fall 2023 – Assignment #1
 // Jordan Cobb
-//Signature: prime_generator: int -> ints
+//Signature: prime_generator: int -> ints as cout statement
 /* Purpose:
-expects an integer for the user 
-returns a double after altering the ints */
+expects an integer from the user between 2 and max int value
+returns list of prime numbers between 2 and desired input */
 
 #include <cstdlib>
 #include <iostream>
