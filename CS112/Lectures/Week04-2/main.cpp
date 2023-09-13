@@ -34,7 +34,7 @@ int main()
         cout << "I didn't allocate an interger!\n";
     }
     else {
-        cout << "Your integer value is " << *schrodingerPtr;
+        cout << "Your integer value is " << *schrodingerPtr << endl;
     }
 
     return EXIT_SUCCESS;
