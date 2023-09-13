@@ -1,5 +1,11 @@
 // CS 112 Fall 2023 – Assignment #1
 // Jordan Cobb
+//Signature: rochambeau: char -> random selection for computer, adjusted score
+/* Purpose:
+expects a char from the user representing rock, paper, scissors
+returns the random generated selection for the computer and
+decides who the winner of the match is, then adjusts the
+scores accoordingly */
 
 #include <cstdlib>
 #include <iostream>
