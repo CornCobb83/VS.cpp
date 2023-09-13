@@ -61,12 +61,13 @@ int main()
     cin >> arraySize;
 
     char *charPtr = new char[arraySize];
-    char temp = 'a';
+    char temp = 'A';
     for (int i = 0; i < arraySize; i++) {
         charPtr[i] = temp;
         cout << charPtr[i];
         temp++;
     }
+    cout << endl;
 
     return EXIT_SUCCESS;
 }
