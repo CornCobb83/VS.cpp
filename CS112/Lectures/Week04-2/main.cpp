@@ -58,12 +58,14 @@ int main()
 
     int arraySize;
     cout << "How big an array do you want? ";
-    cin arraySize;
+    cin >> arraySize;
 
     char *charPtr = new char[arraySize];
     char temp = 'a';
     for (int i = 0; i < arraySize; i++) {
-        charPtr[i]
+        charPtr[i] = temp;
+        cout << charPtr[i];
+        temp++;
     }
 
     return EXIT_SUCCESS;
