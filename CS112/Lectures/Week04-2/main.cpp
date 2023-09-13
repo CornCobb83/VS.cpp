@@ -67,6 +67,9 @@ int main()
         cout << charPtr[i];
         temp++;
     }
+
+    delete [] charPtr;
+    
     cout << endl;
 
     return EXIT_SUCCESS;
