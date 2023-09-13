@@ -53,7 +53,14 @@ int main()
          << "&dblPtr is " << &dblPtr << endl
          << "*&dblPtr is " << *&dblPtr << endl;
 
-         
+// How about arrays? CAn I allocate an entore array
+// dynamically> YES!!!!
+
+    int arraySize;
+    cout << "How big an array do you want? ";
+    cin arraySize;
+
+    char *charPtr = new char[arraySize];
 
     return EXIT_SUCCESS;
 }
