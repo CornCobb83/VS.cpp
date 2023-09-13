@@ -1,5 +1,10 @@
-// CS 112 Fall 2023 – Assignment #1
+// CS 112 Fall 2023 – Assignment #1 Part 1
 // Jordan Cobb
+//Signature: change_calc: int -> double
+/* Purpose:
+expects 4 int inputs passed through the function
+returns a double after altering the ints */
+
 
 #include <cstdlib>
 #include <iostream>
