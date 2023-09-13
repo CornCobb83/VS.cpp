@@ -16,6 +16,7 @@ int main()
     cout << *intPtr << endl;
 
     delete intPtr;
+    intPtr = NULL;
 
     int *schrodingerPtr;
 
