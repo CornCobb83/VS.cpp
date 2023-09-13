@@ -1,5 +1,10 @@
 // CS 112 Fall 2023 – Assignment #1
 // Jordan Cobb
+//Signature: mton_to_ounce: double -> double as cout statement
+/* Purpose:
+expects an input from the user that is >= 0
+returns the modified value in the for of a cout statement as long as
+input >= 0 */
 
 #include <cstdlib>
 #include <iostream>

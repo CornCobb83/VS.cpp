@@ -5,7 +5,6 @@
 expects 4 int inputs passed through the function
 returns a double after altering the ints */
 
-
 #include <cstdlib>
 #include <iostream>
 #include <string>

@@ -1,5 +1,9 @@
 // CS 112 Fall 2023 – Assignment #1
 // Jordan Cobb
+//Signature: prime_generator: int -> ints
+/* Purpose:
+expects an integer for the user 
+returns a double after altering the ints */
 
 #include <cstdlib>
 #include <iostream>
