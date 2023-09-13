@@ -15,6 +15,8 @@ int main()
     *intPtr = 75;
     cout << *intPtr << endl;
 
+    delete intPtr;
+
     int *schrodingerPtr;
 
     cout << "Shall I dynamically allocate an int? ";
