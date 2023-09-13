@@ -3,8 +3,12 @@ using namespace std;
 
 int main() {
 
-   int a;
-   cout << a << endl;
+   for (int i = 0; i < 100; i++) {
+      int *a;
+      a = new int;
+      cout << a << endl;
+      delete a;
+   }
 
    return 0;
 }
