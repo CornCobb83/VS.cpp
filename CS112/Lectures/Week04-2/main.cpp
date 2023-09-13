@@ -29,5 +29,12 @@ int main()
         schrodingerPtr = NULL;
     }
 
+    if (schrodingerPtr == NULL) {
+        cout << "I didn't allocate an interger!\n";
+    }
+    else {
+        cout << "Your integer value is " << *schrodingerPtr;
+    }
+
     return EXIT_SUCCESS;
 }
