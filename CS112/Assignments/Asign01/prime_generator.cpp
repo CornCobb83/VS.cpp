@@ -19,8 +19,10 @@ void prime_generator()
     int num;
     cout << "Enter a possitive integer\n";
     cin >> num;
-    abs(num);
 
+    if (num < 0) {
+        num *= -1;
+    }
     for (int i = 2; i <= num; i++) {
         if (i == 2 || i == 3 || i == 5 || i == 7)
             cout << i << " ";
