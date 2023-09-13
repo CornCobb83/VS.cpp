@@ -19,7 +19,7 @@ void prime_generator()
     int num;
     cout << "Enter a possitive integer\n";
     cin >> num;
-    rabs(num);
+    abs(num);
 
     for (int i = 2; i <= num; i++) {
         if (i == 2 || i == 3 || i == 5 || i == 7)
