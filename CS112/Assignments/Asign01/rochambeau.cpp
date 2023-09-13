@@ -20,7 +20,7 @@ void rochambeau()
     cin >> input;
     tolower(input);
 
-    while ((input == 'r' || input == 'p' || input == 's'))
+    while ((input == 'r' || input == 'p' || input == 's')||(input == 'R' || input == 'P' || input == 'S'))
     {
         //computer
         int num = (rand() % 3) + 1;
@@ -32,9 +32,9 @@ void rochambeau()
             comp = "scissors";
 
         //player
-        if (input == 'r')
+        if (input == 'r' || input == 'R')
             temp = "rock";
-        else if (input == 'p')
+        else if (input == 'p' || input == 'P')
             temp = "paper";
         else
             temp = "scissors";
