@@ -22,7 +22,8 @@ int main()
     cin >> yn;
     if (yn == 'y') {
         schrodingerPtr = new int;
-        *schrodingerPtr = 3000;
+        cout << "What value do you like? ";
+        cin >> *schrodingerPtr;
     }
     else {
         cout << "int not allocated" << endl;
