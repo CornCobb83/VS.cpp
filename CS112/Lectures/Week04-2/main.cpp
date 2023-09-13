@@ -40,5 +40,7 @@ int main()
         cout << "Your integer value is " << *schrodingerPtr << endl;
     }
 
+    delete schrodingerPtr;
+
     return EXIT_SUCCESS;
 }
