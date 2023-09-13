@@ -61,6 +61,10 @@ int main()
     cin arraySize;
 
     char *charPtr = new char[arraySize];
+    char temp = 'a';
+    for (int i = 0; i < arraySize; i++) {
+        charPtr[i]
+    }
 
     return EXIT_SUCCESS;
 }
