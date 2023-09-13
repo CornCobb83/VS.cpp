@@ -42,5 +42,15 @@ int main()
 
     delete schrodingerPtr;
 
+    // CODE WE PROBABLY SHOULD NEVER WRITE
+
+    double *dblPtr = new double;
+    *dblPtr = 17.457;
+
+    cout << "dblPtr is " << dblPtr << endl
+         << "*dblPtr is " << *dblPtr << endl
+         << "&*dblPtr is " << &*dblPtr << endl
+         << 
+
     return EXIT_SUCCESS;
 }
