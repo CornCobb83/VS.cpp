@@ -9,6 +9,7 @@ returns list of prime numbers between 2 and desired input */
 #include <iostream>
 #include <string>
 #include <iomanip>
+#include <cmath>
 #include "prime_generator.h"
 
 using namespace std;
@@ -18,6 +19,7 @@ void prime_generator()
     int num;
     cout << "Enter a possitive integer\n";
     cin >> num;
+    rabs(num);
 
     for (int i = 2; i <= num; i++) {
         if (i == 2 || i == 3 || i == 5 || i == 7)
