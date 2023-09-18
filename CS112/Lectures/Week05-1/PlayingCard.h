@@ -7,4 +7,17 @@
 
 using namespace std;
 
+    class PlayingCard {
+        public:
+
+        
+
+        private:
+
+        int rank;
+        char suit;
+        bool visible;
+
+    };
+
 #endif
