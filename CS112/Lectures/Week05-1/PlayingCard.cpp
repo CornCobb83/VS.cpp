@@ -6,6 +6,9 @@
 using namespace std;
 
 PlayingCard::PlayingCard() {
+    rank = 0;
+    suit = 'X';
+    visible = false;
 }
 
 PlayingCard::PlayingCard(int a_rank, char a_suit) {

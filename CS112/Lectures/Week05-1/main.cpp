@@ -7,10 +7,13 @@ using namespace std;
 
 int main()
 {
+    cout << boolalpha;
 
-    PayingCard fred;
+    PlayingCard fred;
 
-    
+    cout << "fred has rank " << fred.getRank() << endl
+        << "fred had suit " << fred.getSuit() << endl
+        << "Is fred visible? " << fred.getVisible() << endl;
 
     return 0;
 }
