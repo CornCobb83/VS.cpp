@@ -45,3 +45,15 @@ PlayingCard::PlayingCard(int a_rank, char a_suit, bool is_visible) {
 
     visible = true;
 }
+
+int PlayingCard::getRank() {
+    return Rank;
+}
+
+char PlayingCard::getSuit() {
+    return suit;
+}
+
+bool PlayingCard::getVisible() {
+    return visible;
+}
