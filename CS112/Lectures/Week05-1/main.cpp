@@ -8,6 +8,7 @@ using namespace std;
 int main()
 {
 
+    PayingCard fred;
 
     return 0;
 }

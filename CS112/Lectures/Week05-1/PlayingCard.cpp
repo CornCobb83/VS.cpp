@@ -47,7 +47,7 @@ PlayingCard::PlayingCard(int a_rank, char a_suit, bool is_visible) {
 }
 
 int PlayingCard::getRank() {
-    return Rank;
+    return rank;
 }
 
 char PlayingCard::getSuit() {
