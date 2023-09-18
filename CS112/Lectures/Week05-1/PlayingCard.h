@@ -10,7 +10,9 @@ using namespace std;
     class PlayingCard {
         public:
 
-        
+        PlayingCard();
+        PlayingCard(int a_rank, char a_suit);
+        PlayingCard(int a_rank, char a_suit, bool is_visible);
 
         private:
 
