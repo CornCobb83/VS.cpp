@@ -14,6 +14,10 @@ using namespace std;
         PlayingCard(int a_rank, char a_suit);
         PlayingCard(int a_rank, char a_suit, bool is_visible);
 
+        int getRank();
+        char getSuit();
+        bool getVisible();
+
         private:
 
         int rank;

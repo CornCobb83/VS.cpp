@@ -1,11 +1,11 @@
 #include <cstdlib>
 #include <iostream>
 #include <string>
-#includde "PlayingCard.h"
+#include "PlayingCard.h"
 
 using namespace std;
 
-PlayigCard::PlayingCard() {
+PlayingCard::PlayingCard() {
 }
 
 PlayingCard::PlayingCard(int a_rank, char a_suit) {
