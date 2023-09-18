@@ -4,3 +4,6 @@
 #includde "PlayingCard.h"
 
 using namespace std;
+
+PlayigCard::PlayingCard() {
+}
