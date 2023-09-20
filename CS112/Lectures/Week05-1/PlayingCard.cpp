@@ -60,3 +60,4 @@ char PlayingCard::getSuit() const {
 bool PlayingCard::getVisible() const {
     return visible;
 }
+
