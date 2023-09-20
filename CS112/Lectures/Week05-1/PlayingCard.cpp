@@ -50,6 +50,8 @@ PlayingCard::PlayingCard(int a_rank, char a_suit, bool is_visible) {
     visible = true;
 }
 
+
+
 int PlayingCard::getRank() const {
     return rank;
 }
