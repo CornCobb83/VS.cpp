@@ -15,6 +15,7 @@ using namespace std;
         PlayingCard();
         PlayingCard(int a_rank, char a_suit);
         PlayingCard(int a_rank, char a_suit, bool is_visible);
+        PlayingCard(bool is_visible);
 
         //ACCESSORS
         int getRank () const;
