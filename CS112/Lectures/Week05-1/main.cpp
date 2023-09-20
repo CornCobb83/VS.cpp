@@ -43,5 +43,22 @@ int main()
     barney.printCard();
     cout << endl;
 
+    PlayingCard randomCard1(true);
+    PlayingCard randomCard2(true);
+    PlayingCard randomCard3(true);
+    PlayingCard randomCard4(true);
+    PlayingCard randomCard5(true);
+
+    randomCard1.printCard();
+    cout << endl;
+    randomCard2.printCard();
+    cout << endl;
+    randomCard3.printCard();
+    cout << endl;
+    randomCard4.printCard();
+    cout << endl;
+    randomCard5.printCard();
+    cout << endl;
+
     return 0;
 }
