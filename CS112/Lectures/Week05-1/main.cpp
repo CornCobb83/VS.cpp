@@ -1,6 +1,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <string>
+#include <cmath>
 #include "PlayingCard.h"
 
 using namespace std;
@@ -8,6 +9,7 @@ using namespace std;
 int main()
 {
     cout << boolalpha;
+    srand(time(NULL));
 
     PlayingCard fred;
 
