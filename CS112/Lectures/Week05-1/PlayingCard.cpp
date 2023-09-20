@@ -49,14 +49,14 @@ PlayingCard::PlayingCard(int a_rank, char a_suit, bool is_visible) {
     visible = true;
 }
 
-int PlayingCard::getRank() {
+int PlayingCard::getRank() const {
     return rank;
 }
 
-char PlayingCard::getSuit() {
+char PlayingCard::getSuit() const {
     return suit;
 }
 
-bool PlayingCard::getVisible() {
+bool PlayingCard::getVisible() const {
     return visible;
 }
