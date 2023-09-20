@@ -54,9 +54,11 @@ PlayingCard::PlayingCard(bool is_visible) {
     visible = is_visible;
     int randomRank, randomSuitNumber;
     randomRank = (rand() % 13) + 1;
-    randomSuit = (rand() % 4) + 1;
-    char suitArray[5] = {'X', 'H', 'D', 'C', 'S'};
-    char randomSuit
+    randomSuit = (rand() % 4);
+    char suitArray[5] = {'H', 'D', 'C', 'S'};
+    char randomSuit = suitArray[randomSuitNumber];
+    rank = randomRank;
+    suit = randomSuit;
 }
 
 int PlayingCard::getRank() const {
