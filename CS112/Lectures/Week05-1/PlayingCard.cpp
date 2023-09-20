@@ -65,3 +65,32 @@ void PlayingCard::flipCard() {
     visible = !visible;
 }
 
+void PlayingCard::printCard() const {
+    string rankName[14] =
+        {"ERROR", "Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"};
+    string thisCardRank = rankName[rank];
+    string thisCardSuit;
+    switch(suit) {
+        case 'H':
+            thisCardSuit = "Hearts";
+            break:
+        case 'D':
+            thisCardSuit = "Diamonds";
+            break:
+        case 'C':
+            thisCardSuit = "Clubs";
+            break:
+        case 'S':
+            thisCardSuit = "Spades";
+            break:
+        default:
+            thisCardSuit = "ERROR";
+    };
+
+    if (!visible) {
+        cout << "***hidden***";
+    }
+    else {
+        cout << "The " << thisCardRank << " of " << thisCardSuit;
+    }
+}
