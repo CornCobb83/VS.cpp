@@ -64,3 +64,4 @@ bool PlayingCard::getVisible() const {
 void PlayingCard::flipCard() {
     visible = !visible;
 }
+

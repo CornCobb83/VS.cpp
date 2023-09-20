@@ -23,6 +23,8 @@ using namespace std;
         //MUTATORS
         void flipCard();
 
+        void printCard();
+
         private:
 
         int rank;
