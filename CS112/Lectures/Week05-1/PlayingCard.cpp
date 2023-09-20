@@ -53,7 +53,8 @@ PlayingCard::PlayingCard(int a_rank, char a_suit, bool is_visible) {
 PlayingCard::PlayingCard(bool is_visible) {
     visible = is_visible;
     int randomRank, randomSuit;
-    randomRank = rand() % 13 + 1;
+    randomRank = (rand() % 13) + 1;
+    randomSuit = (rand() % 4) + 1;
 }
 
 int PlayingCard::getRank() const {
