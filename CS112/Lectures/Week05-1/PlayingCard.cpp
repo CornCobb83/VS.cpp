@@ -73,16 +73,16 @@ void PlayingCard::printCard() const {
     switch(suit) {
         case 'H':
             thisCardSuit = "Hearts";
-            break:
+            break;
         case 'D':
             thisCardSuit = "Diamonds";
-            break:
+            break;
         case 'C':
             thisCardSuit = "Clubs";
-            break:
+            break;
         case 'S':
             thisCardSuit = "Spades";
-            break:
+            break;
         default:
             thisCardSuit = "ERROR";
     };

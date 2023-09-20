@@ -29,9 +29,13 @@ int main()
 
     barney.flipCard();
 
-    cout << "barney has rank " << barney.getRank() << endl
-        << "barney had suit " << barney.getSuit() << endl
-        << "Is barney visible? " << barney.getVisible() << endl;
+    // cout << "barney has rank " << barney.getRank() << endl
+    //     << "barney had suit " << barney.getSuit() << endl
+    //     << "Is barney visible? " << barney.getVisible() << endl;
+
+    cout << "The card barney is ";
+    barney.printCard();
+    cout << endl;
 
     return 0;
 }
