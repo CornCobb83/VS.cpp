@@ -27,5 +27,11 @@ int main()
         << "barney had suit " << barney.getSuit() << endl
         << "Is barney visible? " << barney.getVisible() << endl;
 
+    barney.flipCard();
+
+    cout << "barney has rank " << barney.getRank() << endl
+        << "barney had suit " << barney.getSuit() << endl
+        << "Is barney visible? " << barney.getVisible() << endl;
+
     return 0;
 }
