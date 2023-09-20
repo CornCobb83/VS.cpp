@@ -10,13 +10,17 @@ using namespace std;
     class PlayingCard {
         public:
 
+        //CONSTRUCTORS
         PlayingCard();
         PlayingCard(int a_rank, char a_suit);
         PlayingCard(int a_rank, char a_suit, bool is_visible);
 
+        //ACCESSORS
         int getRank () const;
         char getSuit() const;
         bool getVisible() const;
+
+        //MUTATORS
 
         private:
 
