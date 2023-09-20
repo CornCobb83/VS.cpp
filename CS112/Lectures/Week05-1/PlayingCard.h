@@ -23,7 +23,7 @@ using namespace std;
         //MUTATORS
         void flipCard();
 
-        void printCard();
+        void printCard() const;
 
         private:
 
