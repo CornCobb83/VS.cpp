@@ -21,6 +21,7 @@ using namespace std;
         bool getVisible() const;
 
         //MUTATORS
+        void flipCard();
 
         private:
 
