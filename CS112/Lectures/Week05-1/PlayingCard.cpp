@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include "PlayingCard.h"
+#include <cmath>
 
 using namespace std;
 
