@@ -11,8 +11,10 @@ using namespace std;
 
 void spell(bool& opponentActive, double wandPower)
 {
-    if (opponentActive)
-        cout << (rand() % wandPower);
+    if (opponentActive) {
+        int roll = (rand() % 4) + 1;
+        cout << roll << endl;
+    }
     else
         cout << "Casted on an unconcious opponent\n";
 }
