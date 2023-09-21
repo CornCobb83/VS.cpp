@@ -9,7 +9,7 @@
 
 using namespace std;
 int main() {
-    srand(static_cast<unsigned int>(time(nullptr)));
+    srand(time(NULL));
 
     double ANGELINA_WANDPOWER = 0.25;
     double CEDRIC_WANDPOWER = 0.50;
