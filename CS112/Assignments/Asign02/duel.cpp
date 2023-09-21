@@ -28,10 +28,15 @@ void spell(bool& opponentActive, double wandPower)
 int startDuel(bool& angela, bool& cedric, bool& eloise, double angelaW, double cedricW, double eloiseW)
 {
     int count = 3, winner = 0;
-    while ((angela && cedric) || (angela && cedric)) {
+    while ((angela && cedric) || (angela && eloise) || (cedric && eloise)) {
         if ((angela) && (eloise))
             spell(eloise, angelaW);
         else if ((angela) && (cedric))
+            spell(cedric, angelaW);
+
+        if ((cedric) && (eloise))
+            spell(eloise, angelaW);
+        else if ((cedic) && (cedric))
             spell(cedric, angelaW);
     }
     return winner;
