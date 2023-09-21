@@ -32,4 +32,5 @@ int startDuel()
         spell(eloiseActive, ELOISE_WANDPOWER);
         count = 1;
     }
+    return count;
 }
