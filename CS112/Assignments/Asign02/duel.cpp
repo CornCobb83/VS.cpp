@@ -29,6 +29,7 @@ int startDuel()
 {
     int count = 3;
     while (count > 1) {
-        
+        spell(eloiseActive, ELOISE_WANDPOWER);
+        count = 1;
     }
 }
