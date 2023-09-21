@@ -25,7 +25,8 @@ int main() {
     cout << endl;
     if (count > 0) {
         for (int i = 0; i < count; i++) {
-            cout << startDuel(angelaActive, cedricActive, eloiseActive, ANGELINA_WANDPOWER, CEDRIC_WANDPOWER, ELOISE_WANDPOWER) << endl;
+            int duel = startDuel(angelaActive, cedricActive, eloiseActive, ANGELINA_WANDPOWER, CEDRIC_WANDPOWER, ELOISE_WANDPOWER);
+            cout << duel << endl;
         }
     }
     else
