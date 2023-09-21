@@ -9,6 +9,8 @@
 
 using namespace std;
 int main() {
+    srand(time(NULL));
+
     double ANGELINA_WANDPOWER = 0.25;
     double CEDRIC_WANDPOWER = 0.50;
     double ELOISE_WANDPOWER = 0.75;
