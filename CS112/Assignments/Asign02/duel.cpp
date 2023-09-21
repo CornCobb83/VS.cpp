@@ -11,5 +11,8 @@ using namespace std;
 
 void spell(bool& opponentActive, double wandPower)
 {
-    
+    if (opponentActive)
+        
+    else
+        cout << "Casted on an unconcious opponent\n";
 }
