@@ -28,7 +28,7 @@ int main() {
     else
         cout << "Invalid input\n";
 
-    startDuel(angelaActive, cedricActive, );
+    startDuel(angelaActive, cedricActive, eloiseActive, ANGELINA_WANDPOWER, CEDRIC_WANDPOWER, ELOISE_WANDPOWER);
     //spell(eloiseActive, ELOISE_WANDPOWER);
 
     return 0;
