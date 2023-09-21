@@ -12,7 +12,7 @@ using namespace std;
 void spell(bool& opponentActive, double wandPower)
 {
     if (opponentActive)
-        rand() 
+        cout << (rand() % wandPower);
     else
         cout << "Casted on an unconcious opponent\n";
 }
