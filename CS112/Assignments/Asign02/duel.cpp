@@ -12,7 +12,7 @@ using namespace std;
 void spell(bool& opponentActive, double wandPower)
 {
     if (opponentActive) {
-        srand(time(NULL));
+        srand(static_cast<unsigned int>(time(nullptr)));
         int roll = (rand() % 4) + 1;
         //cout << roll << endl;
         if (roll <= (wandPower * 4)) {
