@@ -42,9 +42,11 @@ int main() {
     else
         cout << "Invalid input\n";
 
-    // Only prints if user enters 100, to represent win presents
-    if (count == 100)
-        cout << win1 << "%   " << win2 << "%   " << win3 << "%\n";
+    win1 = (win1 / count) * 100;
+    win1 = (win2 / count) * 100;
+    win1 = (win3 / count) * 100;
+
+    cout << "Angela: " << win1 << "%   " << "Cedric: " << win2 << "%   " << "Eloise: " << win3 << "%\n";
 
     //spell(eloiseActive, ELOISE_WANDPOWER);
 
