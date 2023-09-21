@@ -10,6 +10,8 @@
 
 using namespace std;
 
+int startDuel();
+
 void spell(bool& opponentActive, double wandPower);
 
 #endif

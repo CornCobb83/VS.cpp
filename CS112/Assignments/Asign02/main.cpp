@@ -19,6 +19,7 @@ int main() {
     bool cedricActive = true;
     bool eloiseActive = true;
 
+    startDuel();
     spell(eloiseActive, ELOISE_WANDPOWER);
 
     return 0;

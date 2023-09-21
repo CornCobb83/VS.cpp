@@ -24,3 +24,11 @@ void spell(bool& opponentActive, double wandPower)
     else
         cout << "Casted on an unconcious opponent\n";
 }
+
+int startDuel()
+{
+    int count = 3;
+    while (count > 1) {
+        
+    }
+}
