@@ -22,13 +22,15 @@ int main() {
     cout << "How many duels would you like to create?\n";
     int count;
     cin >> count;
+    cout << endl;
     if (count > 0) {
-
+        for (int i = 0; i < count; i++) {
+            cout << startDuel(angelaActive, cedricActive, eloiseActive, ANGELINA_WANDPOWER, CEDRIC_WANDPOWER, ELOISE_WANDPOWER) << endl;
+        }
     }
     else
         cout << "Invalid input\n";
 
-    startDuel(angelaActive, cedricActive, eloiseActive, ANGELINA_WANDPOWER, CEDRIC_WANDPOWER, ELOISE_WANDPOWER);
     //spell(eloiseActive, ELOISE_WANDPOWER);
 
     return 0;

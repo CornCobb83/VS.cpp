@@ -13,13 +13,13 @@ void spell(bool& opponentActive, double wandPower)
 {
     if (opponentActive) {
         int roll = (rand() % 4) + 1;
-        cout << roll << endl;
+        //cout << roll << endl;
         if (roll <= (wandPower * 4)) {
-            cout << "hit\n";
             opponentActive = false;
+            //cout << "hit\n";
         }
-        else
-            cout << "miss\n";
+        //else
+            //cout << "miss\n";
         }
     else
         cout << "Casted on an unconcious opponent\n";
@@ -60,4 +60,6 @@ int startDuel(bool& angela, bool& cedric, bool& eloise, double angelaW, double c
         return 2;
     if (eloise)
         return 3;
+
+return 0;
 }
