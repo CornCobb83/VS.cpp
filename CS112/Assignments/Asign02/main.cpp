@@ -29,6 +29,8 @@ int main() {
         for (int i = 0; i < count; i++) {
             int duel = startDuel(angelaActive, cedricActive, eloiseActive, ANGELINA_WANDPOWER, CEDRIC_WANDPOWER, ELOISE_WANDPOWER);
             cout << startDuel(angelaActive, cedricActive, eloiseActive, ANGELINA_WANDPOWER, CEDRIC_WANDPOWER, ELOISE_WANDPOWER) << endl;
+
+            // For me to evaluate win %s
             if (duel == 1)
                 win1++;
             else if (duel == 2)
@@ -40,7 +42,9 @@ int main() {
     else
         cout << "Invalid input\n";
 
-    cout << win1 << "%   " << win2 << "%   " << win3 << "%\n";
+    // Only prints if user enters 100, to represent win presents
+    if (count == 100)
+        cout << win1 << "%   " << win2 << "%   " << win3 << "%\n";
 
     //spell(eloiseActive, ELOISE_WANDPOWER);
 
