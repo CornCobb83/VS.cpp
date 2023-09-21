@@ -43,11 +43,13 @@ int main() {
     else
         cout << "Invalid input\n";
 
-    win1 = (win1 / (count + 0.00)) * 100;
-    win2 = (win2 / (count + 0.00)) * 100;
-    win3 = (win3 / (count + 0.00)) * 100;
+    double win4 = (win1 / (count + 0.00)) * 100;
+    double win5 = (win2 / (count + 0.00)) * 100;
+    double win6 = (win3 / (count + 0.00)) * 100;
 
-    cout << fixed << setprecision(0) << "Angela: " << win1 << "%   " << "Cedric: " << win2 << "%   " << "Eloise: " << win3 << "%\n";
+    cout << fixed << setprecision(0) << "Angela: " << win1 << " wins - " << win4 << "%   "
+                                    << "Cedric: " << win2 << " wins - " << win5 << "%   "
+                                    << "Eloise: " << win3 << " wins - " << win6 << "%\n";
 
     //spell(eloiseActive, ELOISE_WANDPOWER);
 
