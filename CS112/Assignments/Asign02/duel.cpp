@@ -29,7 +29,8 @@ int startDuel(bool& angela, bool& cedric, bool& eloise, double angelaW, double c
 {
     int count = 3, winner = 0;
     while (count > 1) {
-        spell(eloise, cedricW);
+        if (angela)
+            spell(eloise, cedricW);
         count = 1;
     }
     return winner;
