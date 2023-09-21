@@ -28,7 +28,7 @@ int main() {
     if (count > 0) {
         for (int i = 0; i < count; i++) {
             int duel = startDuel(angelaActive, cedricActive, eloiseActive, ANGELINA_WANDPOWER, CEDRIC_WANDPOWER, ELOISE_WANDPOWER);
-            cout << startDuel(angelaActive, cedricActive, eloiseActive, ANGELINA_WANDPOWER, CEDRIC_WANDPOWER, ELOISE_WANDPOWER) << endl;
+            cout << duel << endl;
 
             // For me to evaluate win %s
             if (duel == 1)
