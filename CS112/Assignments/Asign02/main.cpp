@@ -19,6 +19,15 @@ int main() {
     bool cedricActive = true;
     bool eloiseActive = true;
 
+    cout << "How many duels would you like to create?\n";
+    int count;
+    cin >> count;
+    if (count > 0) {
+        
+    }
+    else
+        cout << "Invalid input\n"
+
     startDuel();
     spell(eloiseActive, ELOISE_WANDPOWER);
 
