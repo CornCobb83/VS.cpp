@@ -14,6 +14,7 @@ void spell(bool& opponentActive, double wandPower)
     if (opponentActive) {
         int roll = (rand() % 4) + 1;
         cout << roll << endl;
+        if ()
     }
     else
         cout << "Casted on an unconcious opponent\n";
