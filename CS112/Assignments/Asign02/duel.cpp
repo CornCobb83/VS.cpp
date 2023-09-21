@@ -8,8 +8,8 @@
 #include "duel.h"
 
 using namespace std;
-int main() {
 
+void spell(bool& opponentActive, double wandPower)
+{
     
-
 }
