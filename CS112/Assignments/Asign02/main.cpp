@@ -3,6 +3,7 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <iomanip>
 #include <string>
 #include <cmath>
 #include "duel.h"
