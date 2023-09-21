@@ -23,10 +23,10 @@ int main() {
     int count;
     cin >> count;
     if (count > 0) {
-        
+
     }
     else
-        cout << "Invalid input\n"
+        cout << "Invalid input\n";
 
     startDuel();
     spell(eloiseActive, ELOISE_WANDPOWER);
