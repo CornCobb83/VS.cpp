@@ -29,6 +29,8 @@ int startDuel(bool& angela, bool& cedric, bool& eloise, double angelaW, double c
 {
     int count = 3, winner = 0;
     while ((angela && cedric) || (angela && eloise) || (cedric && eloise)) {
+        count = 3;
+
         if ((angela) && (eloise))
             spell(eloise, angelaW);
         else if ((angela) && (cedric))
@@ -36,13 +38,26 @@ int startDuel(bool& angela, bool& cedric, bool& eloise, double angelaW, double c
 
         if ((cedric) && (eloise))
             spell(eloise, cedricW);
-        else if ((cedic) && (angela))
+        else if ((cedric) && (angela))
             spell(angela, cedricW);
 
         if ((cedric) && (eloise))
             spell(cedric, eloiseW);
         else if ((eloise) && (angela))
             spell(angela, eloiseW);
+
+        if (!angela)
+            count--;
+        if (!cedric)
+            count--;
+        if (!eloise)
+            count--;
     }
-    return winner;
+
+    if (angela)
+        return 1;
+    if (cedric)
+        return 2;
+    if (eloise)
+        return 3;
 }
