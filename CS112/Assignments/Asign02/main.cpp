@@ -9,7 +9,15 @@
 
 using namespace std;
 int main() {
+    double ANGELINA_WANDPOWER = 0.25;
+    double CEDRIC_WANDPOWER = 0.50;
+    double ELOISE_WANDPOWER = 0.75;
 
-    
+    bool angelaActive = true;
+    bool cedricActive = true;
+    bool eloiseActive = true;
 
+    spell(eloiseActive, CEDRIC_WANDPOWER);
+
+    return 0;
 }
