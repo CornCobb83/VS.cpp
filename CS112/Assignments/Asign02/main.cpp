@@ -28,8 +28,8 @@ int main() {
     else
         cout << "Invalid input\n";
 
-    startDuel();
-    spell(eloiseActive, ELOISE_WANDPOWER);
+    startDuel(angelaActive, cedricActive, );
+    //spell(eloiseActive, ELOISE_WANDPOWER);
 
     return 0;
 }
