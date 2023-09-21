@@ -19,7 +19,7 @@ int main() {
     bool cedricActive = true;
     bool eloiseActive = true;
 
-    int win1 = 0, win2 = 0, win3 = 0;
+    double win1 = 0.00, win2 = 0.00, win3 = 0.00;
 
     cout << "How many duels would you like to create?\n";
     int count;
@@ -42,11 +42,11 @@ int main() {
     else
         cout << "Invalid input\n";
 
-    win1 = (win1 / count) * 100;
-    win1 = (win2 / count) * 100;
-    win1 = (win3 / count) * 100;
+    win1 = (win1 / (count + 0.00)) * 100;
+    win2 = (win2 / (count + 0.00)) * 100;
+    win3 = (win3 / (count + 0.00)) * 100;
 
-    cout << "Angela: " << win1 << "%   " << "Cedric: " << win2 << "%   " << "Eloise: " << win3 << "%\n";
+    cout << fixed << setprecision(0) << "Angela: " << win1 << "%   " << "Cedric: " << win2 << "%   " << "Eloise: " << win3 << "%\n";
 
     //spell(eloiseActive, ELOISE_WANDPOWER);
 
