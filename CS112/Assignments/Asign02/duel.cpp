@@ -12,15 +12,15 @@ using namespace std;
 void spell(bool& opponentActive, double wandPower)
 {
     if (opponentActive) {
-        for (int i = 0; i < 10; i++) {
         int roll = (rand() % 4) + 1;
         cout << roll << endl;
-        if (roll <= (wandPower * 4))
-            cout << "hit" << endl;
-        else
-            cout << "miss" <<  endl;
+        if (roll <= (wandPower * 4)) {
+            cout << "hit\n";
+            opponentActive = false;
         }
-    }
+        else
+            cout << "miss\n";
+        }
     else
         cout << "Casted on an unconcious opponent\n";
 }

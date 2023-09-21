@@ -19,7 +19,7 @@ int main() {
     bool cedricActive = true;
     bool eloiseActive = true;
 
-    spell(eloiseActive, CEDRIC_WANDPOWER);
+    spell(eloiseActive, ELOISE_WANDPOWER);
 
     return 0;
 }
