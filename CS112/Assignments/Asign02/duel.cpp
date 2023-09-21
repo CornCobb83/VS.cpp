@@ -35,9 +35,14 @@ int startDuel(bool& angela, bool& cedric, bool& eloise, double angelaW, double c
             spell(cedric, angelaW);
 
         if ((cedric) && (eloise))
-            spell(eloise, angelaW);
-        else if ((cedic) && (cedric))
-            spell(cedric, angelaW);
+            spell(eloise, cedricW);
+        else if ((cedic) && (angela))
+            spell(angela, cedricW);
+
+        if ((cedric) && (eloise))
+            spell(cedric, eloiseW);
+        else if ((eloise) && (angela))
+            spell(angela, eloiseW);
     }
     return winner;
 }
