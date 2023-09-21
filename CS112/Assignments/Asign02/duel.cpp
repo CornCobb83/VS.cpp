@@ -27,10 +27,10 @@ void spell(bool& opponentActive, double wandPower)
 
 int startDuel()
 {
-    int count = 3;
+    int count = 3, winner = 0;
     while (count > 1) {
         spell(eloiseActive, ELOISE_WANDPOWER);
         count = 1;
     }
-    return count;
+    return winner;
 }
