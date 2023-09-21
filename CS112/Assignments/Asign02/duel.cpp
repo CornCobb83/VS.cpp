@@ -13,7 +13,7 @@ void spell(bool& opponentActive, double wandPower)
 {
     if (opponentActive) {
         int roll = (rand() % 4) + 1;
-        cout << roll << endl;
+        //cout << roll << endl;
         if (roll <= (wandPower * 4)) {
             opponentActive = false;
             //cout << "hit\n";
