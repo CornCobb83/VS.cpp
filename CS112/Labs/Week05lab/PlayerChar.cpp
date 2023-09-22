@@ -46,10 +46,11 @@ PlayerChar::PlayerChar(string a_name, string a_role) {
 
 PlayerChar::PlayerChar(const PlayerChar& existingPlayer) {
     PlayerChar new_player (existingPlayer);
-    playerName = "Copy of " + existingPlayer.getName();
-    playerStrength = existingPlayer.getStrength();
-    playerAgility = existingPlayer.getAgility();
-    playerRole = existingPlayer.getRole();
+    //playerName = "Copy of " + existingPlayer.getName();
+    //playerStrength = existingPlayer.getStrength();
+    //playerAgility = existingPlayer.getAgility();
+    //playerRole = existingPlayer.getRole();
+    PlayerChar("Copy of " + existingPlayer.getName(), existingPlayer.getStrength(), existingPlayer.getAgility(), existingPlayer.getRole());
 }
 
 // The "default" (zero-argument) PlayerChar will be

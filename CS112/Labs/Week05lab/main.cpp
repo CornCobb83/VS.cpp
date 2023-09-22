@@ -32,7 +32,7 @@ int main() {
     david.printPlayerInfo();
     david.agilityBoost(25);
     david.printPlayerInfo();
-    playerChar(david);
+    PlayerChar(david);
 
     return EXIT_SUCCESS;
 }
