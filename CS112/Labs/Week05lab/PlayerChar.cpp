@@ -45,7 +45,7 @@ PlayerChar::PlayerChar(string a_name, string a_role) {
 }
 
 PlayerChar::PlayerChar(const PlayerChar& existingPlayer) {
-    
+    playerName =
 }
 
 // The "default" (zero-argument) PlayerChar will be

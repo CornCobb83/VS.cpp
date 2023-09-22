@@ -27,6 +27,7 @@ public:
 
     PlayerChar(string, int, double, string);
     PlayerChar(string, string);
+    PlayerChar(const PlayerChar&);
     PlayerChar();
 
     // Headers for accessors
