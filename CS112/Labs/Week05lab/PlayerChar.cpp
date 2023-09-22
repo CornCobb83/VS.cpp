@@ -100,8 +100,9 @@ void PlayerChar::resetStrength() {
 }
 
 void PlayerChar::agilityBoost(int percentage) {
+    double temp = (percentage + 0.00);
     if  (percentage >= 0 && percentage <= 50) {
-        playerAgility += ((percentage / 100) + 1);
+        playerAgility += ((temp / 100) + 1);
     }
     else
         cout << "Invalid Value\n";
