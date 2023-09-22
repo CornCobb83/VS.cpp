@@ -34,6 +34,7 @@ public:
     int getStrength() const;
     double getAgility() const;
     string getRole() const;
+    int getOriginalStrength() const;
 
     // Headers for mutators
 

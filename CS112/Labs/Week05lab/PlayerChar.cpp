@@ -20,6 +20,8 @@ using namespace std;
 // creates a Sprite named Ariel with a strength of 250
 // and an agility of 5.0
 
+int originalStrength = 0;
+
 PlayerChar::PlayerChar(string a_name, int a_strength,
                        double an_agility, string a_role) {
     playerName = a_name;
