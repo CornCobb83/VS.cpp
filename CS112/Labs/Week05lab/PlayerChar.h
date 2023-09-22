@@ -1,10 +1,5 @@
 //    CS 112 Spring 2023 - Week 05 Lab
 //    C++ Classes and Methods
-// PlayingCard: bool -> void
-// Expects the value of visible
-// Returns nothing
-// Side effects: creates an instance of PllayngCard
-// with randomy assigned suit and rank
 
 #include <cstdlib>
 #include <iostream>
@@ -43,8 +38,10 @@ public:
     // Headers for mutators
 
     void setName(string);
-    void setStrength()
-    
+    void setStrength(int);
+    void setAgility(double);
+    void setRole(string);
+
 
     // Headers for other functions
 
