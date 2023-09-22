@@ -64,6 +64,10 @@ int PlayerChar::getStrength() const {
     return playerStrength;
 }
 
+int PlayerChar::getOriginalStrength() const {
+    return originalStrength;
+}
+
 double PlayerChar::getAgility() const {
     return playerAgility;
 }
@@ -88,7 +92,7 @@ void PlayerChar::increaseStrength(int increase) {
 }
 
 void PlayerChar::resetStrength() {
-    playerStrength = originalStrength;
+    playerStrength = getOriginalStrength();
 }
 
 // OTHER FUNCTIONS
