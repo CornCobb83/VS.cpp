@@ -21,6 +21,7 @@ int main() {
     // david will be a default PlayerChar (Fred the Ogre)
 
     PlayerChar david;
+    PlayerChar sally()
 
     // Call to a PlayerChar method
 
@@ -32,7 +33,11 @@ int main() {
     david.printPlayerInfo();
     david.agilityBoost(25);
     david.printPlayerInfo();
-    PlayerChar(david);
+    PlayerChar new_player (david);
+    new_player.printPlayerInfo();
+    david.resetStrength();
+    david.printPlayerInfo();
+
 
     return EXIT_SUCCESS;
 }
