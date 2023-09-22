@@ -59,11 +59,11 @@ string PlayerChar::getName() const {
     return playerName;
 }
 
-string PlayerChar::getStrength() const {
+int PlayerChar::getStrength() const {
     return playerStrength;
 }
 
-string PlayerChar::getAgility() const {
+double PlayerChar::getAgility() const {
     return playerAgility;
 }
 
@@ -81,6 +81,11 @@ string PlayerChar::getRole() const {
 void PlayerChar::setName(string new_name) {
     playerName = new_name;
 }
+
+void PlayerChar::increaseStrngth(string new_name) {
+    playerName = new_name;
+}
+
 
 // OTHER FUNCTIONS
 
