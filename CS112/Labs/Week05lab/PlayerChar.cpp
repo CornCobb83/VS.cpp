@@ -20,7 +20,7 @@ using namespace std;
 // creates a Sprite named Ariel with a strength of 250
 // and an agility of 5.0
 
-int originalStrength = 0;
+//int originalStrength = 0;
 
 PlayerChar::PlayerChar(string a_name, int a_strength,
                        double an_agility, string a_role) {
@@ -38,6 +38,7 @@ PlayerChar::PlayerChar(string a_name, int a_strength,
 PlayerChar::PlayerChar(string a_name, string a_role) {
     playerName = a_name;
     playerStrength = DEFAULT_STRENGTH;
+    originalStrength = DEFAULT_STRENGTH;
     playerAgility = DEFAULT_AGILITY;
     playerRole = a_role;
 }
@@ -48,6 +49,7 @@ PlayerChar::PlayerChar(string a_name, string a_role) {
 PlayerChar::PlayerChar() {
     playerName = DEFAULT_NAME;
     playerStrength = DEFAULT_STRENGTH;
+    originalStrength = DEFAULT_STRENGTH;
     playerAgility = DEFAULT_AGILITY;
     playerRole = DEFAULT_ROLE;
 }
@@ -95,6 +97,10 @@ void PlayerChar::increaseStrength(int increase) {
 
 void PlayerChar::resetStrength() {
     playerStrength = getOriginalStrength();
+}
+
+void PlayerChar::agilityBoost(int percentage) {
+    if(increase < 0 || increase >50)
 }
 
 // OTHER FUNCTIONS
