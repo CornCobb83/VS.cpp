@@ -4,7 +4,7 @@
 // Expects the value of visible
 // Returns nothing
 // Side effects: creates an instance of PllayngCard
-//with randomy assigned suit and rank
+// with randomy assigned suit and rank
 
 #include <cstdlib>
 #include <iostream>
