@@ -25,6 +25,10 @@ int main() {
     // Call to a PlayerChar method
 
     david.printPlayerInfo();
+    david.increaseStrength(50);
+    david.printPlayerInfo();
+    david.resetStrength();
+    david.printPlayerInfo();
 
     return EXIT_SUCCESS;
 }
