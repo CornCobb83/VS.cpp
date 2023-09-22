@@ -82,8 +82,8 @@ void PlayerChar::setName(string new_name) {
     playerName = new_name;
 }
 
-void PlayerChar::increaseStrength(string new_name) {
-    playerName = new_name;
+void PlayerChar::increaseStrength(int increase) {
+    playerStrength += increase;
 }
 
 
