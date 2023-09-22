@@ -86,6 +86,9 @@ void PlayerChar::increaseStrength(int increase) {
     playerStrength += increase;
 }
 
+void PlayerChar::resetStrength() {
+    playerStrength = DEFAULT_STRENGTH;
+}
 
 // OTHER FUNCTIONS
 

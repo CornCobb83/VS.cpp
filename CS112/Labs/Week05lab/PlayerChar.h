@@ -41,6 +41,8 @@ public:
     void setStrength(int);
     void setAgility(double);
     void setRole(string);
+    void increaseStrength(int);
+    void resetStrength();
 
 
     // Headers for other functions
