@@ -37,11 +37,13 @@ public:
 
     string getName() const;
     int getStrength() const;
-double getAgility() const;
+    double getAgility() const;
+    string getRole() const;
 
     // Headers for mutators
 
     void setName(string);
+    void setStrength()
     
 
     // Headers for other functions
