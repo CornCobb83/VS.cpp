@@ -1,10 +1,6 @@
 //    CS 112 Fall 2023 - Week 05 Lab
 //    C++ Classes and Methods
-// PlayingCard: bool -> void
-// Expects the value of visible
-// Returns nothing
-// Side effects: creates an instance of PllayngCard
-// with randomy assigned suit and rank
+
 
 #include <cstdlib>
 #include <iostream>
