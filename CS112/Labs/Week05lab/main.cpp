@@ -1,6 +1,6 @@
 //    CS 112 Fall 2023 - Week 05 Lab
 //    C++ Classes and Methods
-//    Jorddan Cobb and Aja Brunet
+//    Jordan Cobb and Aja Brunet
 
 #include <cstdlib>
 #include <iostream>
@@ -21,7 +21,8 @@ int main() {
     // david will be a default PlayerChar (Fred the Ogre)
 
     PlayerChar david;
-    PlayerChar sally()
+    PlayerChar ariel("Ariel", 250, 5.0, "Sprite");
+    PlayerChar sally("Sally", 200, 3, "Faun");
 
     // Call to a PlayerChar method
 
@@ -29,7 +30,6 @@ int main() {
     david.printPlayerInfo();
     david.increaseStrength(50);
     david.printPlayerInfo();
-    david.resetStrength();
     david.printPlayerInfo();
     david.agilityBoost(25);
     david.printPlayerInfo();
@@ -37,6 +37,10 @@ int main() {
     new_player.printPlayerInfo();
     david.resetStrength();
     david.printPlayerInfo();
+    ariel.printPlayerInfo();
+    sally.printPlayerInfo();
+
+
 
 
     return EXIT_SUCCESS;
