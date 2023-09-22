@@ -59,6 +59,18 @@ string PlayerChar::getName() const {
     return playerName;
 }
 
+string PlayerChar::getStrength() const {
+    return playerStrength;
+}
+
+string PlayerChar::getAgility() const {
+    return playerAgility;
+}
+
+string PlayerChar::getRole() const {
+    return playerRole;
+}
+
 // MUTATORS
 
 // setName: string -> void
