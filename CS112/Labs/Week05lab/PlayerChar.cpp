@@ -1,5 +1,6 @@
 //    CS 112 Fall 2023 - Week 05 Lab
 //    C++ Classes and Methods
+//    Jordan Cobb and Aja Brunet
 
 #include <cstdlib>
 #include <iostream>
@@ -41,6 +42,10 @@ PlayerChar::PlayerChar(string a_name, string a_role) {
     originalStrength = DEFAULT_STRENGTH;
     playerAgility = DEFAULT_AGILITY;
     playerRole = a_role;
+}
+
+PlayerChar::PlayerChar(const PlayerChar& existingPlayer) {
+    
 }
 
 // The "default" (zero-argument) PlayerChar will be

@@ -1,5 +1,6 @@
 //    CS 112 Spring 2023 - Week 05 Lab
 //    C++ Classes and Methods
+//    Jordan Cobb and Aja Brunet
 
 #include <cstdlib>
 #include <iostream>
