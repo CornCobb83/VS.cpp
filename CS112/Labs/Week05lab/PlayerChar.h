@@ -58,6 +58,7 @@ private:
     int    playerStrength;
     double playerAgility;
     string playerRole;
+    int    originalStrength;
 
 };
 

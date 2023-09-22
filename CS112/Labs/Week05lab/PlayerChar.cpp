@@ -24,6 +24,7 @@ PlayerChar::PlayerChar(string a_name, int a_strength,
                        double an_agility, string a_role) {
     playerName = a_name;
     playerStrength = a_strength;
+    originalStrength = a_strength;
     playerAgility = an_agility;
     playerRole = a_role;
 }
@@ -87,7 +88,7 @@ void PlayerChar::increaseStrength(int increase) {
 }
 
 void PlayerChar::resetStrength() {
-    playerStrength = DEFAULT_STRENGTH;
+    playerStrength = originalStrength;
 }
 
 // OTHER FUNCTIONS
