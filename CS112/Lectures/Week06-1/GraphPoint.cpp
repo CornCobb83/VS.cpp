@@ -15,3 +15,11 @@ GraphPoint::GraphPoint(double x, double y) {
     xCoord = x;
     yCoord = y;
 }
+
+double GraphPoint:getX() const {
+    return xCoord;
+}
+
+double GraphPoint:getY() const {
+    return yCoord;
+}
