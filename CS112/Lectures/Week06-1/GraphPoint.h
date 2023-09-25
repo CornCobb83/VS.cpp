@@ -27,6 +27,8 @@ public:
 
     string to_String() const;
 
+    double distance(const GraphPoint& p2) const;
+
 private:
     double xCoord;
     double yCoord;
