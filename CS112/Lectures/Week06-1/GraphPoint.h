@@ -25,7 +25,7 @@ public:
 
     void display() const;
 
-    string toString
+    string to_String() const;
 
 private:
     double xCoord;
