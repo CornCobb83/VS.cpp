@@ -8,6 +8,9 @@
 
 using namespace std;
 
+const double X_DEFAULT = 0.0;
+const double Y_DEFAULT = 0.0;
+
 class GraphPoint (
 public:
 
