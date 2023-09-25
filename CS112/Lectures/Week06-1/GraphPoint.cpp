@@ -23,3 +23,16 @@ double GraphPoint:getX() const {
 double GraphPoint:getY() const {
     return yCoord;
 }
+
+void GraphPoint::setX(double newX) {
+    xCoord = newX;
+}
+
+void GraphPoint::setY(double newY) {
+    yCoord = newY;
+}
+
+void GraphPoint::display() const {
+    cout << "(" << xCoord << ", "
+        << yCoord << ")" << endl;
+}
