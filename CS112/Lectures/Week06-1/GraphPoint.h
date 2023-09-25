@@ -30,7 +30,7 @@ public:
     double distance(const GraphPoint& p2) const;
 
     bool operator ==(const graohPoint& rhs) const;
-    xxx operator  =(const GraphPoint& rhs);
+    GraphPoint& operator  =(const GraphPoint& rhs);
 
 private:
     double xCoord;
