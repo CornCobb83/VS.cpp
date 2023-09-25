@@ -25,6 +25,8 @@ public:
 
     void display() const;
 
+    string toString
+
 private:
     double xCoord;
     double yCoord;
