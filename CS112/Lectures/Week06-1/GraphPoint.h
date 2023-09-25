@@ -21,6 +21,10 @@ public:
     void setX(double newX);
     void setY(double newY);
 
+    void setCoords(double newX, double newY);
+
+    void display() const;
+
 private:
     double xCoord;
     double yCoord;
