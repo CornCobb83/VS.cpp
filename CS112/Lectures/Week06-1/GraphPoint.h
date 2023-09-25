@@ -29,7 +29,7 @@ public:
 
     double distance(const GraphPoint& p2) const;
 
-    bool 
+    bool operator ==()
 
 private:
     double xCoord;
