@@ -29,6 +29,8 @@ public:
 
     double distance(const GraphPoint& p2) const;
 
+    bool 
+
 private:
     double xCoord;
     double yCoord;
