@@ -25,11 +25,16 @@ void spell(bool& opponentActive, double wandPower)
         cout << "Casted on an unconcious opponent\n";
 }
 
-int startDuel(bool angela, bool cedric, bool eloise, double angelaW, double cedricW, double eloiseW)
+int startDuel()
 {
     bool angela = true;
     bool cedric = true;
-    bool 
+    bool eloise = true;
+
+    double angelaw = 0.25;
+    double cedricw = 0.50;
+    double eloisew = 0.75;
+
     int count = 3;
     while ((angela && cedric) || (angela && eloise) || (cedric && eloise)) {
         count = 3;
