@@ -28,7 +28,7 @@ public:
 
     void display() const;
 
-    string to_String() const;
+    string to_String();
 
     void flipPoint();
 
