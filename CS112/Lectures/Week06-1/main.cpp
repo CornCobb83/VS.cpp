@@ -9,6 +9,7 @@ using namespace std;
 int main() {
     cout << boolalpha;
 
+    GraphPoint myPoint;
     cout  << "Zero arg myPoint: ";
     myPoint.display();
 
