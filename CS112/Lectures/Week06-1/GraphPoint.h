@@ -30,6 +30,8 @@ public:
 
     string to_String() const;
 
+    void flipPoint();
+
     //double distance(const GraphPoint& p2) const;
 
     //bool operator ==(const graohPoint& rhs) const;
