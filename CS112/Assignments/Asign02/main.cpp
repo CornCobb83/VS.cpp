@@ -12,14 +12,6 @@ using namespace std;
 int main() {
     srand(time(NULL));
 
-    double ANGELINA_WANDPOWER = 0.25;
-    double CEDRIC_WANDPOWER = 0.50;
-    double ELOISE_WANDPOWER = 0.75;
-
-    bool angelaActive = true;
-    bool cedricActive = true;
-    bool eloiseActive = true;
-
     double win1 = 0.00, win2 = 0.00, win3 = 0.00;
 
     cout << "How many duels would you like to create?\n";
