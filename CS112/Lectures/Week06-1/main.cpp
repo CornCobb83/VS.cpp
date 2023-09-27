@@ -35,7 +35,7 @@ int main() {
     cout << myPoint.distance(otherPoint) << endl;
 
     cout << "Assign newPoint to be other:";
-    GraphPoint newPoint();
+    GraphPoint newPoint;
     newPoint = otherPoint;
     newPoint.display();
 
