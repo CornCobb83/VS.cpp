@@ -10,7 +10,7 @@
 
 using namespace std;
 
-int startDuel(bool angela, bool cedric, bool eloise, double angelaW, double cedricW, double eloiseW);
+int startDuel();
 
 void spell(bool& opponentActive, double wandPower);
 
