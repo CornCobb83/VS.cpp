@@ -49,8 +49,8 @@ int main() {
     double win6 = (win3 / (count + 0.00)) * 100;
 
     cout << fixed << setprecision(0) << "Angela: " << win1 << " wins - " << win4 << "%   "
-                                    << "Cedric: " << win2 << " wins - " << win5 << "%   "
-                                    << "Eloise: " << win3 << " wins - " << win6 << "%\n";
+                                     << "Cedric: " << win2 << " wins - " << win5 << "%   "
+                                     << "Eloise: " << win3 << " wins - " << win6 << "% \n";
 
     spell(eloiseActive, ELOISE_WANDPOWER);
 
