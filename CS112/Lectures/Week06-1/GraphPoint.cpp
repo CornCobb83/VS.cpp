@@ -63,3 +63,10 @@ GraphPoint& GraphPoint::operator =(const GraphPoint& rhs) {
 
     return *this;
 }
+
+bool GraphPoint::operator ==(const GraphPoint& rhs) {
+    bool xEqual = (abs(xCoord - rhs.xCoord) < 0.001);
+    bool yEqual = (abs(yCoord - rhs.yCoord) < 0.001);
+
+    return (xEqual && yEqual);
+}

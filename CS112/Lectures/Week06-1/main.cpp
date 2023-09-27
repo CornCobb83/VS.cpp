@@ -42,8 +42,16 @@ int main() {
     cout << (newPoint == otherPoint) << endl;
 
     cout << "Changing newPoint to: ";
-    newPoint
+    newPoint.setX(234.6);
     newPoint.display();
+
+    cout << "Are otherPoint and newPoint the same? ";
+    cout << (newPoint == otherPoint) << endl;
+
+    cout << "Sum og newPoint and newPoint is: ";
+    GraphPoint sumPoint;
+    sumPoint = newPoint + otherPoint;
+    sumPoint.display();
 
     return EXIT_SUCCESS;
 }
