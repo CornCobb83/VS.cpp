@@ -31,9 +31,9 @@ int startDuel()
     bool cedric = true;
     bool eloise = true;
 
-    double angelaw = 0.25;
-    double cedricw = 0.50;
-    double eloisew = 0.75;
+    double angelaW = 0.25;
+    double cedricW = 0.50;
+    double eloiseW = 0.75;
 
     int count = 3;
     while ((angela && cedric) || (angela && eloise) || (cedric && eloise)) {
