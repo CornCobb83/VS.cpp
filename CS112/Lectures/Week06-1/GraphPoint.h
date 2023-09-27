@@ -32,9 +32,9 @@ public:
 
     void flipPoint();
 
-    //double distance(const GraphPoint& p2) const;
+    double distance(const GraphPoint& p2) const;
 
-    //bool operator ==(const graohPoint& rhs) const;
+    bool operator ==(const graohPoint& rhs) const;
     //GraphPoint& operator  =(const GraphPoint& rhs);
 
     GraphPoint operator + (const GraphPoint& rhs);
