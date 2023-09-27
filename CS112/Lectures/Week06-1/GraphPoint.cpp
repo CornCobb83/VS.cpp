@@ -70,3 +70,11 @@ bool GraphPoint::operator ==(const GraphPoint& rhs) {
 
     return (xEqual && yEqual);
 }
+
+GraphPoint GraphPoint::operator +(const GraphPoint& rhs) {
+    GraphPoint result;
+    result.setX(xCoord + rhs.getX());
+    result.setY(yCoord + rhs.getY());
+
+    return result;
+}
