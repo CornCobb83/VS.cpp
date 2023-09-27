@@ -32,6 +32,8 @@ void GraphPoint::setY(double newY) {
     yCoord = newY;
 }
 
+
+
 void GraphPoint::display() const {
     cout << "(" << xCoord << ", "
          << yCoord << ")" << endl;

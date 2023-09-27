@@ -30,10 +30,12 @@ public:
 
     string to_String() const;
 
-    double distance(const GraphPoint& p2) const;
+    //double distance(const GraphPoint& p2) const;
 
-    bool operator ==(const graohPoint& rhs) const;
-    GraphPoint& operator  =(const GraphPoint& rhs);
+    //bool operator ==(const graohPoint& rhs) const;
+    //GraphPoint& operator  =(const GraphPoint& rhs);
+    
+    GraphPoint operator + (const GraphPoint& rhs);
 
 private:
     double xCoord;
