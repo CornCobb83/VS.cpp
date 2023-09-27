@@ -48,11 +48,11 @@ string GraphPoint::to_String() {
     return std::to_String(xCoord) + " " + std::to_String(yCoord);
 }
 
-double GraphPoint::distance(const GraphPoint& p2) const{
+double GraphPoint::distance(const GraphPoint& p2) const {
     double xDiff = xCoord - p2.yCoord;
     double yDiff = yCoord - p2.yCoord;
     double xDiffSqr = pow(xDiff, 2);
     double yDiffSqr = pow(yDiff, 2);
-    
+
     return sqrt(xDiffSqr + yDiffSqr);
 }
