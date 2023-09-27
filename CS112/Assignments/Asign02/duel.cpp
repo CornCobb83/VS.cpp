@@ -27,6 +27,8 @@ void spell(bool& opponentActive, double wandPower)
         cout << "Casted on an unconcious opponent\n";
 }
 
+// 
+
 int startDuel()
 {
     bool angela = true;
