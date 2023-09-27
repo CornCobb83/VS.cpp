@@ -27,6 +27,9 @@ void spell(bool& opponentActive, double wandPower)
 
 int startDuel(bool angela, bool cedric, bool eloise, double angelaW, double cedricW, double eloiseW)
 {
+    bool angela = true;
+    bool cedric = true;
+    bool 
     int count = 3;
     while ((angela && cedric) || (angela && eloise) || (cedric && eloise)) {
         count = 3;
