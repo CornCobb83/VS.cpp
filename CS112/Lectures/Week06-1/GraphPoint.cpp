@@ -32,7 +32,12 @@ void GraphPoint::setY(double newY) {
     yCoord = newY;
 }
 
-
+void GraphPoint::flipPoint() {
+    double temp;
+    temp = xCoord;
+    xCoord = yCoord;
+    yCoord = temp;
+}
 
 void GraphPoint::display() const {
     cout << "(" << xCoord << ", "
