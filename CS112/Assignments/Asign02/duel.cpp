@@ -9,7 +9,8 @@
 
 using namespace std;
 
-// Functions takes in two variables and returns bool status: opponentActive & wandpower -> opponentactive (true/ false)
+// Function takes in two variables and returns bool status:
+//opponentActive & wandpower -> opponentactive (true/ false)
 
 void spell(bool& opponentActive, double wandPower)
 {
@@ -27,7 +28,8 @@ void spell(bool& opponentActive, double wandPower)
         cout << "Casted on an unconcious opponent\n";
 }
 
-// 
+// Function has no input, and returns an integer (1, 2, 3)
+// Runs the program until 2/3 bools values are set to flase
 
 int startDuel()
 {
