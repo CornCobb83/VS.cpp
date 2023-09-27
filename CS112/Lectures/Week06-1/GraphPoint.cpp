@@ -61,5 +61,5 @@ GraphPoint& GraphPoint::operator =(const GraphPoint& rhs) {
     xCoord = rhs.xCoord;
     yCoord = rhs.yCoord;
 
-    return
+    return *this;
 }
