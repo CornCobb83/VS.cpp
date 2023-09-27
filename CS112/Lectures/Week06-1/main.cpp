@@ -1,5 +1,6 @@
 #include <cstdlib>
 #include <iostream>
+#include <iomanip>
 #include <string>
 #include "GraphPoint.h"
 #include <cmath>
@@ -34,7 +35,7 @@ int main() {
     cout << myPoint.distance(otherPoint) << endl;
 
     cout << "Assign newPoint to be other:";
-    GraphPoint = newPoint();
+    GraphPoint newPoint();
     newPoint = otherPoint;
     newPoint.display();
 
@@ -48,7 +49,7 @@ int main() {
     cout << "Are otherPoint and newPoint the same? ";
     cout << (newPoint == otherPoint) << endl;
 
-    cout << "Sum og newPoint and newPoint is: ";
+    cout << "Sum of newPoint and newPoint is: ";
     GraphPoint sumPoint;
     sumPoint = newPoint + otherPoint;
     sumPoint.display();
