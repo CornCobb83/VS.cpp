@@ -56,3 +56,10 @@ double GraphPoint::distance(const GraphPoint& p2) const {
 
     return sqrt(xDiffSqr + yDiffSqr);
 }
+
+GraphPoint& GraphPoint::operator =(const GraphPoint& rhs) {
+    xCoord = rhs.xCoord;
+    yCoord = rhs.yCoord;
+
+    return
+}
