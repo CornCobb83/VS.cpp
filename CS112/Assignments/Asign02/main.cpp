@@ -30,7 +30,7 @@ int main() {
     if (count > 0) {
         for (int i = 0; i < count; i++) {
             int duel = startDuel();
-            cout << duel << endl;
+            cout << i + 1 << ": " << duel << endl;
 
             // For me to evaluate win %s
             if (duel == 1)
