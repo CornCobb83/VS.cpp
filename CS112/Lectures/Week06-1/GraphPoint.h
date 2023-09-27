@@ -11,7 +11,7 @@ using namespace std;
 const double X_DEFAULT = 0.0;
 const double Y_DEFAULT = 0.0;
 
-class GraphPoint (
+class GraphPoint {
 public:
 
     GraphPoint();
@@ -34,13 +34,13 @@ public:
 
     //bool operator ==(const graohPoint& rhs) const;
     //GraphPoint& operator  =(const GraphPoint& rhs);
-    
+
     GraphPoint operator + (const GraphPoint& rhs);
 
 private:
     double xCoord;
     double yCoord;
 
-)
+};
 
 #endif

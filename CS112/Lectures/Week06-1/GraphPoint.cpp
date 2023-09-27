@@ -16,11 +16,11 @@ GraphPoint::GraphPoint(double x, double y) {
     yCoord = y;
 }
 
-double GraphPoint:getX() const {
+double GraphPoint::getX() const {
     return xCoord;
 }
 
-double GraphPoint:getY() const {
+double GraphPoint::getY() const {
     return yCoord;
 }
 
@@ -45,5 +45,5 @@ void GraphPoint::display() const {
 }
 
 string GraphPoint::to_String() const{
-    retuurn std::to_String(xCoord) + " " + to_String(yCoord);
+    return std::to_String(xCoord) + " " + to_String(yCoord);
 }
