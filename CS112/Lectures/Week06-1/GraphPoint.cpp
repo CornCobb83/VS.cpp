@@ -45,5 +45,5 @@ void GraphPoint::display() const {
 }
 
 string GraphPoint::to_String() const{
-    return to_String(xCoord) + " " + to_String(yCoord);
+    return std::to_String(xCoord) + " " + std::to_String(yCoord);
 }
