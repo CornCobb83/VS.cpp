@@ -10,6 +10,7 @@
 
 using namespace std;
 int main() {
+    cout << boolalpha;
     srand(time(NULL));
 
     double ANGELINA_WANDPOWER = 0.25;

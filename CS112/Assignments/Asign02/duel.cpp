@@ -9,6 +9,8 @@
 
 using namespace std;
 
+// Functions takes in two variables and returns bool status: opponentActive & wandpower -> opponentactive (true/ false)
+
 void spell(bool& opponentActive, double wandPower)
 {
     if (opponentActive) {
