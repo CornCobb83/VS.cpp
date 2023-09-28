@@ -37,28 +37,24 @@ int startDuel()
     bool cedric = true;
     bool eloise = true;
 
-    double angelaW = 0.25;
-    double cedricW = 0.50;
-    double eloiseW = 0.75;
-
     int count = 3;
     while ((angela && cedric) || (angela && eloise) || (cedric && eloise)) {
         count = 3;
 
         if ((angela) && (eloise))
-            spell(eloise, angelaW);
+            spell(eloise, ANGELINA_WANDPOWER);
         else if ((angela) && (cedric))
-            spell(cedric, angelaW);
+            spell(cedric, ANGELINA_WANDPOWER);
 
         if ((cedric) && (eloise))
-            spell(eloise, cedricW);
+            spell(eloise, CEDRIC_WANDPOWER);
         else if ((cedric) && (angela))
-            spell(angela, cedricW);
+            spell(angela, CEDRIC_WANDPOWER);
 
         if ((cedric) && (eloise))
-            spell(cedric, eloiseW);
+            spell(cedric, ELOISE_WANDPOWER);
         else if ((eloise) && (angela))
-            spell(angela, eloiseW);
+            spell(angela, ELOISE_WANDPOWER);
 
         if (!angela)
             count--;
