@@ -49,7 +49,7 @@ int startDuel()
         else if ((cedric) && (angela))
             spell(angela, CEDRIC_WANDPOWER);
 
-        if ((cedric) && (eloise))
+        if ((eloise) && (cedric))
             spell(cedric, ELOISE_WANDPOWER);
         else if ((eloise) && (angela))
             spell(angela, ELOISE_WANDPOWER);
