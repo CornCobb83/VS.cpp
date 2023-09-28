@@ -37,7 +37,6 @@ int startDuel()
     bool cedric = true;
     bool eloise = true;
 
-    int count = 3;
     while ((angela && cedric) || (angela && eloise) || (cedric && eloise)) {
 
         if ((angela) && (eloise))
@@ -54,7 +53,6 @@ int startDuel()
             spell(cedric, ELOISE_WANDPOWER);
         else if ((eloise) && (angela))
             spell(angela, ELOISE_WANDPOWER);
-
     }
 
     if (angela)
