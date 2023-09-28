@@ -20,8 +20,8 @@ int main() {
     double win1 = 0.00, win2 = 0.00, win3 = 0.00;
 
     //tests
-    spell(angelaActive, CEDRIC_WANDPOWER);
-    spell(angelaActive, CEDRIC_WANDPOWER)
+    //spell(angelaActive, CEDRIC_WANDPOWER);
+    //spell(eloiseActive, CEDRIC_WANDPOWER);
 
     cout << "How many duels would you like to create?\n";
     int count;
