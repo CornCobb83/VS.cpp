@@ -52,7 +52,5 @@ int main() {
                                      << "Cedric: " << win2 << " wins - " << win5 << "%   "
                                      << "Eloise: " << win3 << " wins - " << win6 << "% \n";
 
-    spell(eloiseActive, ELOISE_WANDPOWER);
-
     return 0;
 }
