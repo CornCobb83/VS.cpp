@@ -19,6 +19,9 @@ int main() {
 
     double win1 = 0.00, win2 = 0.00, win3 = 0.00;
 
+    //tests
+    spell(angelaActive, )
+
     cout << "How many duels would you like to create?\n";
     int count;
     cin >> count;

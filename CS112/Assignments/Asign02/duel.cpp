@@ -40,9 +40,9 @@ int startDuel()
     while ((angela && cedric) || (angela && eloise) || (cedric && eloise)) {
 
         if ((angela) && (eloise))
-            spell(eloise, ANGELINA_WANDPOWER);
+            spell(eloise, ANGELA_WANDPOWER);
         else if ((angela) && (cedric))
-            spell(cedric, ANGELINA_WANDPOWER);
+            spell(cedric, ANGELA_WANDPOWER);
 
         if ((cedric) && (eloise))
             spell(eloise, CEDRIC_WANDPOWER);

@@ -10,7 +10,7 @@
 
 using namespace std;
 
-const double ANGELINA_WANDPOWER = 0.25;
+const double ANGELA_WANDPOWER = 0.25;
 const double CEDRIC_WANDPOWER = 0.50;
 const double ELOISE_WANDPOWER = 0.75;
 
