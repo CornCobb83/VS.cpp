@@ -1,14 +1,12 @@
 #include <iostream>
+#include "test.h"
 using namespace std;
 
 int main() {
-
-   for (int i = 0; i < 100; i++) {
-      int *a;
-      a = new int;
-      cout << a << endl;
-      delete a;
-   }
+   int sum;
+   sum = add(2, 3);
+   add7(sum);
+   cout << sum << endl;
 
    return 0;
 }
