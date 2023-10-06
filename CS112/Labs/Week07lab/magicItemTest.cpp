@@ -16,9 +16,9 @@ using namespace std;
 
 int main() {
     cout << boolalpha;
-
-    MagicItem* item4Ptr =new MagicItem();
-    item4Ptr->itemType = "Arrow";
+    int *myIntPtr;
+    MagicItem *myItemPtr;
+    myItemPtr = new MagicItem("Arrow", 10, 2.99, 0.1);
 
     //Tests of MagicItem methods
     MagicItem item1;
@@ -28,7 +28,7 @@ int main() {
     item1.print();
     item2.print();
     item3.print();
-    item4Ptr->print();
+    myItemPtr->print();
 
     return EXIT_SUCCESS;
 }
