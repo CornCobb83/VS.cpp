@@ -16,24 +16,30 @@ public:
     // Declarations for constructors
     //one for all, one for none, one for some
     magicItem();
-
     magicItem(type, level, cost, weight);
-
     magicItem(type, level);
 
     // Declarations for accessors
-
+    string getType();
+    int getLevel();
+    double getCost();
+    double getWeight();
 
     // Declarations for mutators
+    void setType();
+    void setLevel();
+    void setCost();
+    void setWeight();
 
     // Declarations for other methods
+    void print();
 
 private:
     // Declarations of data members
-    itemType;
-    itemLevel;
-    itemCost;
-    itemWeight;
+    string itemType;
+    int itemLevel;
+    double itemCost;
+    double itemWeight;
 
 };
 
