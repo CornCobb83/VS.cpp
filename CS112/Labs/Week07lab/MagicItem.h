@@ -33,7 +33,7 @@ public:
 
     // Declarations for other methods
     void print() const;
-    string to_String() const;
+    string to_string() const;
 
 private:
     // Declarations of data members

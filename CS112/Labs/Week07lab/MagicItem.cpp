@@ -57,8 +57,8 @@ void MagicItem::setWeight(double weight) {
 
 // OTHER METHODS
 
-string MagicItem::to_String() const{
-    return itemType + " " + to_String(itemLevel) + " " + to_String(itemCost) + " " + to_String(itemWeight);
+string MagicItem::to_string() const{
+    return itemType + " " + to_string(itemLevel) + " " + to_string(itemCost) + " " + to_string(itemWeight);
 }
 
 void MagicItem::print() const{
