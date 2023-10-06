@@ -70,6 +70,6 @@ int main() {
     cout << item2.to_string() << endl;
     cout << endl;
 
-    delete myIntPtr;
+    delete myItemPtr;
     return EXIT_SUCCESS;
 }
