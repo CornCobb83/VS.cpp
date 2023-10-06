@@ -18,8 +18,8 @@ int main() {
 
     // Tests of MagicItem methods
     MagicItem.item1;
-    MagicItem.item2("sword", 2, 5.55, 6.0);
-    MagicItem.item3("wand", 5);
+    MagicItem item2("sword", 2, 5.55, 6.0);
+    MagicItem item3("wand", 5);
 
     item1.print();
     item2.print();

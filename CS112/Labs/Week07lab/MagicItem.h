@@ -17,7 +17,7 @@ public:
     //one for all, one for none, one for some
     magicItem();
     magicItem(string type, int level, double cost, double weight);
-    magicItem(type, level);
+    magicItem(string type, int level);
 
     // Declarations for accessors
     string getType();
