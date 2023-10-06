@@ -16,6 +16,9 @@ using namespace std;
 int main() {
     cout << boolalpha;
 
+    MagicItem* item4 =new MagicItem();
+    item4->type = item4.setType("Arrow");
+
     //Tests of MagicItem methods
     MagicItem item1;
     MagicItem item2("sword", 2, 5.55, 6.0);
@@ -24,6 +27,8 @@ int main() {
     item1.print();
     item2.print();
     item3.print();
+
+
 
     return EXIT_SUCCESS;
 }
