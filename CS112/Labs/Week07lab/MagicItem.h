@@ -14,8 +14,15 @@ using namespace std;
 class MagicItem {
 public:
     // Declarations for constructors
+    //one for all, one for none, one for some
+    magicItem();
+
+    magicItem(type, level, cost, weight);
+
+    magicItem(type, level);
 
     // Declarations for accessors
+
 
     // Declarations for mutators
 
@@ -23,6 +30,10 @@ public:
 
 private:
     // Declarations of data members
+    itemType;
+    itemLevel;
+    itemCost;
+    itemWeight;
 
 };
 
