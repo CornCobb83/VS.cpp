@@ -5,6 +5,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <string>
+#include <iomanip>
 #include "MagicItem.h"
 
 using namespace std;

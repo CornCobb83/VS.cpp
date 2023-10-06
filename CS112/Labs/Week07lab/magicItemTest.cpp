@@ -9,6 +9,7 @@
 #include <cmath>
 #include <fstream>
 #include <ctime>
+#include <iomanip>
 #include "MagicItem.h"
 
 using namespace std;
@@ -16,8 +17,8 @@ using namespace std;
 int main() {
     cout << boolalpha;
 
-    MagicItem* item4 =new MagicItem();
-    item4->type = item4.setType("Arrow");
+    MagicItem* item4Ptr =new MagicItem();
+    item4Ptr->itemType = "Arrow";
 
     //Tests of MagicItem methods
     MagicItem item1;
@@ -27,8 +28,7 @@ int main() {
     item1.print();
     item2.print();
     item3.print();
-
-
+    item4Ptr->print();
 
     return EXIT_SUCCESS;
 }
