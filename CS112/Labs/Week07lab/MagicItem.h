@@ -16,7 +16,7 @@ public:
     // Declarations for constructors
     //one for all, one for none, one for some
     magicItem();
-    magicItem(type, level, cost, weight);
+    magicItem(string type, int level, double cost, double weight);
     magicItem(type, level);
 
     // Declarations for accessors
@@ -33,6 +33,7 @@ public:
 
     // Declarations for other methods
     void print();
+    string to_String();
 
 private:
     // Declarations of data members
