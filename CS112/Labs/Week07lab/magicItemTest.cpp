@@ -69,6 +69,6 @@ int main() {
 
     cout << item2.to_string() << endl;
 
-    delete MagicItem::myIntPtr;
+    delete myIntPtr;
     return EXIT_SUCCESS;
 }
