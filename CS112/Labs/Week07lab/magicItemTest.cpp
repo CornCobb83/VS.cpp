@@ -29,22 +29,22 @@ int main() {
     cout << "Item 1 type: " << item1.getType() << endl;
     cout << "Item 1 level: " << item1.getLevel() << endl;
     cout << "Item 1 cost: " << item1.getCost() << endl;
-    cout << "Item 1 weight: " << item1.getWeight() << endl;
+    cout << "Item 1 weight: " << item1.getWeight() << endl << endl;
 
     cout << "Item 2 type: " << item2.getType() << endl;
     cout << "Item 2 level: " << item2.getLevel() << endl;
     cout << "Item 2 cost: " << item2.getCost() << endl;
-    cout << "Item 2 weight: " << item2.getWeight() << endl;
+    cout << "Item 2 weight: " << item2.getWeight() << endl << endl;
 
     cout << "Item 3 type: " << item3.getType() << endl;
     cout << "Item 3 level: " << item3.getLevel() << endl;
     cout << "Item 3 cost: " << item3.getCost() << endl;
-    cout << "Item 3 weight: " << item3.getWeight() << endl;
+    cout << "Item 3 weight: " << item3.getWeight() << endl << endl;
 
     cout << "Pointer item type: " << myItemPtr->getType() << endl;
     cout << "Pointer item level: " << myItemPtr->getLevel() << endl;
     cout << "Pointer item cost: " << myItemPtr->getCost() << endl;
-    cout << "Pointer item weight: " << myItemPtr->getWeight() << endl;
+    cout << "Pointer item weight: " << myItemPtr->getWeight() << endl << endl;
 
     //Calling Mutators
     item1.setType("Bow");
