@@ -10,34 +10,34 @@
 using namespace std;
 
 // CONSTRUCTORS
-MagicItem::magicItem() {
+MagicItem::MagicItem() {
     itemType = "Unknown";
     itemLevel = 0;
     itemCost = 0.0;
     itemWeight = 0.0;
 }
-MagicItem::magicItem(string type, int level, double cost, double weight) {
+MagicItem::MagicItem(string type, int level, double cost, double weight) {
     itemType = type;
     itemLevel = level;
     itemCost = cost;
     itemWeight = weight;
 }
-MagicItem::magicItem(string type, int level) {
+MagicItem::MagicItem(string type, int level) {
     itemType = type;
     itemLevel = level;
 }
 
 // ACCESSORS
-string MagicItem::getType(){
+string MagicItem::getType() const{
     return itemType;
 }
-int MagicItem::getLevel();{
+int MagicItem::getLevel() const{
     return itemLevel;
 }
-double MagicItem::getCost(){
+double MagicItem::getCost() const{
     return itemCost;
 }
-double MagicItem::getWeight(){
+double MagicItem::getWeight() const{
     return itemWeight;
 }
 
@@ -57,10 +57,10 @@ void MagicItem::setWeight(double weight) {
 
 // OTHER METHODS
 string MagicItem::to_String() {
-    return std::to_String();
+    return std::to_String(type);
 }
 
-void MagicItem::print() {
+void MagicItem::print() const{
     cout << "***************\n"
          << "Item type: " << itemType << endl
          << "Item level: " << itemLevel << endl
