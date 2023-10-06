@@ -70,5 +70,5 @@ void MagicItem::print() const{
          << "Item type: " << itemType << endl
          << "Item level: " << itemLevel << endl
          << "Item Cost: " << itemCost << endl
-         << "Item Weight: " << itemWeight << endl;
+         << "Item Weight: " << itemWeight << endl << endl;
 }

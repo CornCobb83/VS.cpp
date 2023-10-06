@@ -68,6 +68,7 @@ int main() {
     myItemPtr->print();
 
     cout << item2.to_string() << endl;
+    cout << endl;
 
     delete myIntPtr;
     return EXIT_SUCCESS;
