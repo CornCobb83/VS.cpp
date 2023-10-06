@@ -56,8 +56,12 @@ void MagicItem::setWeight(double weight) {
 }
 
 // OTHER METHODS
-string MagicItem::to_String() {
-    return std::to_String(type);
+string MagicItem::to_String() const{
+    return to_String(input);
+}
+
+string MagicItem::to_String() const{
+    return to_String(input);
 }
 
 void MagicItem::print() const{
