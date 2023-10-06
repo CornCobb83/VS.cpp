@@ -26,10 +26,10 @@ public:
     double getWeight();
 
     // Declarations for mutators
-    void setType();
-    void setLevel();
-    void setCost();
-    void setWeight();
+    void setType(string type);
+    void setLevel(int level);
+    void setCost(double cost);
+    void setWeight(double weight);
 
     // Declarations for other methods
     void print();

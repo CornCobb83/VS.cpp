@@ -22,7 +22,7 @@ MagicItem::magicItem(string type, int level, double cost, double weight) {
     itemCost = cost;
     itemWeight = weight;
 }
-MagicItem::magicItem(type, level) {
+MagicItem::magicItem(string type, int level) {
     itemType = type;
     itemLevel = level;
 }
@@ -42,20 +42,29 @@ double MagicItem::getWeight(){
 }
 
 // MUTATORS
-void MagicItem::setType(string& type) {
+void MagicItem::setType(string type) {
     itemType = type;
 }
 void MagicItem::setLevel(int level) {
     itemLevel = level;
 }
-void MagicItem::setCost(double& cost) {
-
+void MagicItem::setCost(double cost) {
+    itemCost = cost;
 }
-void MagicItem::setWeight(double& weight) {
-
+void MagicItem::setWeight(double weight) {
+    itemWeight = weight;
 }
 
 // OTHER METHODS
 string MagicItem::to_String() {
     return std::to_String();
+}
+
+void MagicItem::print() {
+    cout << "***************\n"
+         << "Item type: " << itemType << endl
+         << "Item level: " << itemLevel << endl
+         << "Item Cost: " << itemCost << endl
+         << "Item Weight: " << itemWeight << endl
+         << "***************\n";
 }
