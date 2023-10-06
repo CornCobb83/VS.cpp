@@ -16,14 +16,14 @@ using namespace std;
 int main() {
     cout << boolalpha;
 
-    // Tests of MagicItem methods
-    // MagicItem.item1;
-    // MagicItem.item2("sword", 2, 5.55, 6.0);
-    // MagicItem.item3("wand", 5);
+    //Tests of MagicItem methods
+    MagicItem item1;
+    MagicItem item2("sword", 2, 5.55, 6.0);
+    MagicItem item3("wand", 5);
 
-    // item1.print();
-    // item2.print();
-    // item3.print();
+    item1.print();
+    item2.print();
+    item3.print();
 
     return EXIT_SUCCESS;
 }

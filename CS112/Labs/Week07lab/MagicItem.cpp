@@ -25,6 +25,8 @@ MagicItem::MagicItem(string type, int level, double cost, double weight) {
 MagicItem::MagicItem(string type, int level) {
     itemType = type;
     itemLevel = level;
+    itemCost = 0.0;
+    itemWeight = 0.0;
 }
 
 // ACCESSORS
@@ -58,14 +60,14 @@ void MagicItem::setWeight(double weight) {
 // OTHER METHODS
 
 string MagicItem::to_string() const{
-    return itemType + " " + to_string(itemLevel) + " " + to_string(itemCost) + " " + to_string(itemWeight);
+    return itemType + " " + std::to_string(itemLevel) + " " + std::to_string(itemCost) + " " + std::to_string(itemWeight);
 }
 
 void MagicItem::print() const{
-    cout << "***************\n"
+    cout << fixed << setprecision(2)
+         << "***************\n"
          << "Item type: " << itemType << endl
          << "Item level: " << itemLevel << endl
          << "Item Cost: " << itemCost << endl
-         << "Item Weight: " << itemWeight << endl
-         << "***************\n";
+         << "Item Weight: " << itemWeight << endl;
 }
