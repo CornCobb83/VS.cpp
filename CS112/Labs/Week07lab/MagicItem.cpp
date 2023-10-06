@@ -43,10 +43,10 @@ double MagicItem::getWeight(){
 
 // MUTATORS
 void MagicItem::setType(string& type) {
-    
+    itemType = type;
 }
 void MagicItem::setLevel(int level) {
-
+    itemLevel = level;
 }
 void MagicItem::setCost(double& cost) {
 
