@@ -25,6 +25,11 @@ int main() {
     MagicItem item2("sword", 2, 5.55, 6.0);
     MagicItem item3("wand", 5);
 
+    //Calling Accessors
+    cout << "Item 1 type: " << item1.getType() << endl;
+    cout << "Item 2 level: " << item2.getLevel() << endl;
+    cout << "Item 2 cost: " << item3.g
+
     item1.print();
     item2.print();
     item3.print();
