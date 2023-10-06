@@ -61,7 +61,7 @@ string MagicItem::to_String() const{
 }
 
 string MagicItem::to_String() const{
-    return itemType + " " + to_String(itemLevel) + to_String(itemCost);
+    return itemType + " " + to_String(itemLevel) + " " + to_String(itemCost) + " " + to_String(itemWeight);
 }
 
 void MagicItem::print() const{
