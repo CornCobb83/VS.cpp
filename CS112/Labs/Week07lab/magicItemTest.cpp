@@ -22,18 +22,72 @@ int main() {
 
     //Tests of MagicItem methods
     MagicItem item1;
-    MagicItem item2("sword", 2, 5.55, 6.0);
-    MagicItem item3("wand", 5);
+    MagicItem item2("Sword", 2, 5.55, 6.0);
+    MagicItem item3("Wand", 5);
 
     //Calling Accessors
     cout << "Item 1 type: " << item1.getType() << endl;
+    cout << "Item 1 level: " << item1.getLevel() << endl;
+    cout << "Item 1 cost: " << item1.getCost() << endl;
+    cout << "Item 1 weight: " << item1.getWeight() << endl;
+
+    cout << "Item 2 type: " << item2.getType() << endl;
     cout << "Item 2 level: " << item2.getLevel() << endl;
-    cout << "Item 2 cost: " << item3.g
+    cout << "Item 2 cost: " << item2.getCost() << endl;
+    cout << "Item 2 weight: " << item2.getWeight() << endl;
+
+    cout << "Item 3 type: " << item3.getType() << endl;
+    cout << "Item 3 level: " << item3.getLevel() << endl;
+    cout << "Item 3 cost: " << item3.getCost() << endl;
+    cout << "Item 3 weight: " << item3.getWeight() << endl;
+
+    cout << "Pointer item type: " << myItemPtr=>getType() << endl;
+    cout << "Pointer item level: " << myItemPtr=>getLevel() << endl;
+    cout << "Pointer item cost: " << myItemPtr=>getCost() << endl;
+    cout << "Pointer item weight: " << myItemPtr=>getWeight() << endl;
+
+    //Calling Mutators
+    item1.setType("Bow");
+    item1.setLevel(3);
+    item1.setCost(7.25);
+    item1.setWeight(15.05)
+
+    item2.setType("Dagger");
+    item2.setLevel(1);
+    item2.setCost(5.55);
+    item2.setWeight(7.35)
+
+    item3.setType("Rubber Chicken");
+    item3.setLevel(100);
+    item3.setCost(9999999.99);
+    item3.setWeight(0.1)
 
     item1.print();
     item2.print();
     item3.print();
     myItemPtr->print();
 
+    //Calling Accessors again
+    cout << "Item 1 type: " << item1.getType() << endl;
+    cout << "Item 1 level: " << item1.getLevel() << endl;
+    cout << "Item 1 cost: " << item1.getCost() << endl;
+    cout << "Item 1 weight: " << item1.getWeight() << endl;
+
+    cout << "Item 2 type: " << item2.getType() << endl;
+    cout << "Item 2 level: " << item2.getLevel() << endl;
+    cout << "Item 2 cost: " << item2.getCost() << endl;
+    cout << "Item 2 weight: " << item2.getWeight() << endl;
+
+    cout << "Item 3 type: " << item3.getType() << endl;
+    cout << "Item 3 level: " << item3.getLevel() << endl;
+    cout << "Item 3 cost: " << item3.getCost() << endl;
+    cout << "Item 3 weight: " << item3.getWeight() << endl;
+
+    cout << "Pointer item type: " << myItemPtr=>getType() << endl;
+    cout << "Pointer item level: " << myItemPtr=>getLevel() << endl;
+    cout << "Pointer item cost: " << myItemPtr=>getCost() << endl;
+    cout << "Pointer item weight: " << myItemPtr=>getWeight() << endl;
+
+    delete myIntPtr;
     return EXIT_SUCCESS;
 }
