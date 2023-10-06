@@ -29,19 +29,31 @@ MagicItem::magicItem(type, level) {
 
 // ACCESSORS
 string MagicItem::getType(){
-    return Itemype;
+    return itemType;
 }
 int MagicItem::getLevel();{
-    return level;
+    return itemLevel;
 }
 double MagicItem::getCost(){
-    return cost;
+    return itemCost;
 }
 double MagicItem::getWeight(){
-    return weight;
+    return itemWeight;
 }
 
 // MUTATORS
+void MagicItem::setType(string& type) {
+    
+}
+void MagicItem::setLevel(int level) {
+
+}
+void MagicItem::setCost(double& cost) {
+
+}
+void MagicItem::setWeight(double& weight) {
+
+}
 
 // OTHER METHODS
 string MagicItem::to_String() {
