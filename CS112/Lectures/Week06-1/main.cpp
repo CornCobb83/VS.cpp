@@ -67,16 +67,16 @@ int main() {
     barneyPointPtr->display();
 
     cout << "Let's add those two points";
-    GraphPoint friendsPointPtr = new GraphPoint();
+    GraphPoint *friendsPointPtr = new GraphPoint();
     friendsPointPtr = fredPointPtr + *barneyPointPtr;
     friendsPointPtr->display();
 
     GraphPoint *namedPointPtr = new GraphPoint(15.2, -7.1, "David's Point");
 
-    namedPointPtr.display();
+    namedPointPtr->display();
     cout << endl;
 
-    GraphPoint *unnmaedPointPtr = new GraphPoint(5.6, 7.8);
+    GraphPoint *unnamedPointPtr = new GraphPoint(5.6, 7.8);
     unnamedPointPtr->display();
     cout << endl;
 
