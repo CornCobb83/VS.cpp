@@ -18,6 +18,8 @@ public:
 
     GraphPoint(double x, double y);
 
+    ~GraphPoint();
+
     double getX() const;
     double getY() const;
 
