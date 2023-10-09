@@ -39,6 +39,10 @@ double GraphPoint::getY() const {
     return yCoord;
 }
 
+string GraphPoint::setName() const{
+    return *pointNamePtr;
+}
+
 void GraphPoint::setX(double newX) {
     xCoord = newX;
 }
@@ -47,8 +51,8 @@ void GraphPoint::setY(double newY) {
     yCoord = newY;
 }
 
-void setName(string newName) {
-    name = newName;
+void GraphPoint::setName(string newName) {
+    *pointNamePtr = newName;
 }
 
 void GraphPoint::flipPoint() {
