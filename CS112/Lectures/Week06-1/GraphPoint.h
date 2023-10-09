@@ -34,11 +34,8 @@ public:
 
     double distance(const GraphPoint& p2) const;
 
-    GraphPoint& operator =(const GraphPoint& rhs);
-
     bool operator ==(const GraphPoint& rhs) const;
     //GraphPoint& operator  =(const GraphPoint& rhs);
-
     GraphPoint operator + (const GraphPoint& rhs);
 
 private:
