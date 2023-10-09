@@ -19,7 +19,8 @@ GraphPoint::GraphPoint(double x, double y) {
 GraphPoint::GraphPoint(double x, double y, string name) {
     xCoord = x;
     yCoord = y;
-
+    pointNamePtr = new string;
+    *pointNamePtr = name;
 }
 
 GraphPoint::~GraphPoint() {
