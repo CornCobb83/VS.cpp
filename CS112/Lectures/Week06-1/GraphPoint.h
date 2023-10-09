@@ -21,6 +21,8 @@ public:
 
     GraphPoint(double x, double y, string name);
 
+    GraphPoint(const GraphPoint& existingPoint);
+
     ~GraphPoint();
 
     double getX() const;

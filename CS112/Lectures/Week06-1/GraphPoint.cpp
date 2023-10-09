@@ -27,6 +27,13 @@ GraphPoint::GraphPoint(double x, double y, string name) {
     *pointNamePtr = name;
 }
 
+GraphPoint::GraphPoint(const GraphPoint& existingPoint) {
+    xCoord = existingPoint.getX();
+    yCoord = existingPoint.getY();
+    pointNamePtr = new string;
+    *pointNamePtr = existingPoint.getName();
+}
+
 GraphPoint::~GraphPoint() {
     cout << "*** Destructor Called ***" << endl;
 }
