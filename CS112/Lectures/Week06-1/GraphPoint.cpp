@@ -47,6 +47,10 @@ void GraphPoint::setY(double newY) {
     yCoord = newY;
 }
 
+void setName(string newName) {
+    name = newName;
+}
+
 void GraphPoint::flipPoint() {
     double temp;
     temp = xCoord;
