@@ -71,9 +71,26 @@ int main() {
     friendsPointPtr =fredPointPtr + *barneyPointPtr;
     friendsPointPtr->display();
 
-    
+    GraphPoint *namedPointPtr = new GraphPoint(15.2, -7.1, "David's Point");
 
-    delete fredPointerPtr;
+    namedPoointPtr.display();
+    cout << endl;
+
+    GraphPoint *unnmaedPointPtr = new GraphPoint(5.6, 7.8);
+    unnamedPointPtr->display();
+    cout << endl;
+
+    GraphPoint newNamedPoint(*namedPointPtr);
+    newNamedPoint.display();
+
+    newNamedPoint.setName("Fred's Point");
+    newNamedPoint.display();
+
+    cout << "What is the value of *namedPointPtr string? ";
+    cout << namedPointPtr->getName();
+    cout << endl;
+
+    delete fredPointPtr;
 
     return EXIT_SUCCESS;
 }
