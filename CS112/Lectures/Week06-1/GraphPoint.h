@@ -25,9 +25,11 @@ public:
 
     double getX() const;
     double getY() const;
+    string getName() const;
 
     void setX(double newX);
     void setY(double newY);
+    void setName(string newName);
 
     void setCoords(double newX, double newY);
 
