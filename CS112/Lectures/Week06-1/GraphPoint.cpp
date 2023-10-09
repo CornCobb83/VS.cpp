@@ -9,11 +9,15 @@ using namespace std;
 GraphPoint::GraphPoint() {
     xCoord = X_DEFAULT;
     yCoord = Y_DEFAULT;
+    pointNamePtr = new string;
+    *pointNamePtr = NAME_DEFAULT;
 }
 
 GraphPoint::GraphPoint(double x, double y) {
     xCoord = x;
     yCoord = y;
+    pointNamePtr = new string;
+    *pointNamePtr = NAME_DEFAULT;
 }
 
 GraphPoint::GraphPoint(double x, double y, string name) {
