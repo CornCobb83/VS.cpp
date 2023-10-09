@@ -16,6 +16,12 @@ GraphPoint::GraphPoint(double x, double y) {
     yCoord = y;
 }
 
+GraphPoint::GraphPoint(double x, double y, string name) {
+    xCoord = x;
+    yCoord = y;
+
+}
+
 GraphPoint::~GraphPoint() {
     cout << "*** Destructor Called ***" << endl;
 }
@@ -48,7 +54,7 @@ void GraphPoint::display() const {
          << yCoord << ")" << endl;
 }
 
-string GraphPoint::to_String() const{
+string GraphPoint::to_string() const{
     return std::to_string(xCoord) + " " + std::to_string(yCoord);
 }
 
