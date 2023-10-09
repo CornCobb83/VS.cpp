@@ -64,7 +64,7 @@ double GraphPoint::distance(const GraphPoint& p2) const {
 //     return *this;
 // }
 
-bool GraphPoint::operator ==(const GraphPoint& rhs) {
+bool GraphPoint::operator ==(const GraphPoint& rhs) const{
     bool xEqual = (abs(xCoord - rhs.xCoord) < 0.001);
     bool yEqual = (abs(yCoord - rhs.yCoord) < 0.001);
 
