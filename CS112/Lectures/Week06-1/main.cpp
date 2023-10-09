@@ -54,5 +54,7 @@ int main() {
     sumPoint = newPoint + otherPoint;
     sumPoint.display();
 
+    
+
     return EXIT_SUCCESS;
 }
