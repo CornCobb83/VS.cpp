@@ -106,6 +106,6 @@ GraphPoint GraphPoint::operator +(const GraphPoint& rhs) {
     GraphPoint result;
     result.setX(xCoord + rhs.getX());
     result.setY(yCoord + rhs.getY());
-
+    //this->setName(rhs.getName());
     return result;
 }
