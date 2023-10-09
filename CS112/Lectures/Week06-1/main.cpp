@@ -68,7 +68,7 @@ int main() {
 
     cout << "Let's add those two points";
     GraphPointfriendsPointPtr = new GraphPoint();
-    friendsPointPtr =fredPointPtr + *barneyPointPtr;
+    friendsPointPtr = fredPointPtr + *barneyPointPtr;
     friendsPointPtr->display();
 
     GraphPoint *namedPointPtr = new GraphPoint(15.2, -7.1, "David's Point");
