@@ -88,12 +88,12 @@ double GraphPoint::distance(const GraphPoint& p2) const {
     return sqrt(xDiffSqr + yDiffSqr);
 }
 
-// GraphPoint& GraphPoint::operator =(const GraphPoint& rhs) {
-//     xCoord = rhs.xCoord;
-//     yCoord = rhs.yCoord;
+GraphPoint& GraphPoint::operator =(const GraphPoint& rhs) {
+    xCoord = rhs.xCoord;
+    yCoord = rhs.yCoord;
 
-//     return *this;
-// }
+    return *this;
+}
 
 bool GraphPoint::operator ==(const GraphPoint& rhs) const{
     bool xEqual = (abs(xCoord - rhs.xCoord) < 0.001);
