@@ -71,7 +71,8 @@ void GraphPoint::flipPoint() {
 
 void GraphPoint::display() const {
     cout << "(" << xCoord << ", "
-         << yCoord << ")" << endl;
+         << yCoord << ") " << *pointNamePtr
+         << endl;
 }
 
 string GraphPoint::to_string() const{
