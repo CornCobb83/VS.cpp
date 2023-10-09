@@ -39,7 +39,7 @@ double GraphPoint::getY() const {
     return yCoord;
 }
 
-string GraphPoint::setName() const{
+string GraphPoint::getName() const{
     return *pointNamePtr;
 }
 
