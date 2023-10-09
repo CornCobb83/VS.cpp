@@ -16,6 +16,10 @@ GraphPoint::GraphPoint(double x, double y) {
     yCoord = y;
 }
 
+GraphPoint::~GraphPoint() {
+    cout << "*** Destructor Called ***" << endl;
+}
+
 double GraphPoint::getX() const {
     return xCoord;
 }
