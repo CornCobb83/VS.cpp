@@ -10,6 +10,7 @@ using namespace std;
 
 const double X_DEFAULT = 0.0;
 const double Y_DEFAULT = 0.0;
+const string NAME_DEFAULT = "Unnamed";
 
 class GraphPoint {
 public:
@@ -17,6 +18,8 @@ public:
     GraphPoint();
 
     GraphPoint(double x, double y);
+
+    GraphPoint(double x, double y, string name);
 
     ~GraphPoint();
 
@@ -43,6 +46,7 @@ public:
 private:
     double xCoord;
     double yCoord;
+    string *pointNamePtr;
 
 };
 
