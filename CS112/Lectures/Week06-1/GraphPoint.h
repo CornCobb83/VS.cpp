@@ -43,7 +43,7 @@ public:
 
     bool operator ==(const GraphPoint& rhs) const;
     //GraphPoint& operator  =(const GraphPoint& rhs);
-    GraphPoint operator + (const GraphPoint& rhs);
+    GraphPoint operator +(const GraphPoint& rhs);
 
 private:
     double xCoord;
