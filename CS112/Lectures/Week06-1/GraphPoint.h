@@ -27,6 +27,8 @@ public:
 
     GraphPoint(double x, double y, string name);
 
+    GraphPoint(double x, double y, string name, PointColor color);
+
     GraphPoint(const GraphPoint& existingPoint);
 
     ~GraphPoint();

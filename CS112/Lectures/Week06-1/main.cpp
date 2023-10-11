@@ -99,7 +99,7 @@ int main() {
     GraphPoint bluePoint(7.8, 9.0, "I'm a Blue Point!", Blue);
     bluePoint.display();
 
-    GraphPoint yellowPoint(1, 2, "It's Yellow!" Yellow);
+    GraphPoint yellowPoint(1, 2, "It's Yellow!", Yellow);
 
     GraphPoint changePoint(3, 4, "Starts off Green", Green);
     changePoint.display();
