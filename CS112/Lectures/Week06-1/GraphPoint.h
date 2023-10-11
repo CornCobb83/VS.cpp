@@ -15,6 +15,7 @@ enum PointColor {Black, Blue, Green, Red, Yellow};
 const double X_DEFAULT = 0.0;
 const double Y_DEFAULT = 0.0;
 const string NAME_DEFAULT = "Unnamed";
+const string COLOR_NAMES[5] = {"Black", "Blue", "Green", "Red", "Yellow"};
 
 class GraphPoint {
 public:
