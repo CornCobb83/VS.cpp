@@ -43,7 +43,7 @@ GraphPoint::GraphPoint(const GraphPoint& existingPoint) {
     yCoord = existingPoint.getY();
     pointNamePtr = new string;
     *pointNamePtr = existingPoint.getName();
-    colorValue = exiatingPoint.getColor();
+    colorValue = existingPoint.getColor();
 }
 
 GraphPoint::~GraphPoint() {
