@@ -98,6 +98,7 @@ void GraphPoint::display() const {
 
 string GraphPoint::to_string() const{
     return std::to_string(xCoord) + " " + std::to_string(yCoord);
+        *pointNamePtr + " " + COLOR_NAMES[colorValue];
 }
 
 double GraphPoint::distance(const GraphPoint& p2) const {

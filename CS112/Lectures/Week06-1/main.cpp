@@ -103,8 +103,11 @@ int main() {
 
     GraphPoint changePoint(3, 4, "Starts off Green", Green);
     changePoint.display();
-    changePoint.setColor("Red");
+    changePoint.setColor(Red);
     changePoint.display();
+
+    cout << "String from changePoint is:" << endl << "    ";
+    cout << changePoint.to_string() << endl;
 
     delete fredPointPtr;
 
