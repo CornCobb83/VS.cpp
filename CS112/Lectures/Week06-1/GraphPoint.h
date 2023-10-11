@@ -8,6 +8,10 @@
 
 using namespace std;
 
+// USER-DEFINED DATA TYPES
+
+
+
 const double X_DEFAULT = 0.0;
 const double Y_DEFAULT = 0.0;
 const string NAME_DEFAULT = "Unnamed";
