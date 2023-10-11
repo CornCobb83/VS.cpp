@@ -90,6 +90,17 @@ int main() {
     cout << namedPointPtr->getName();
     cout << endl;
 
+    cout << "*** GraphPoint Color Tests! ***" << endl;
+
+    GraphPoint blackPoint;
+    blackPoint.setName("I'm a BlackPoint!");
+    blackPoint.display();
+
+    GraphPoint bluePoint(7.8, 9.0, "I'm a Blue Point!", Blue);
+    bluePoint.display();
+
+    GraphPoint yellowPoint(1, 2, "It's Yellow!" Yellow);
+
     delete fredPointPtr;
 
     return EXIT_SUCCESS;
