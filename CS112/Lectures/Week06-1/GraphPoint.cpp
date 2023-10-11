@@ -39,6 +39,7 @@ GraphPoint::GraphPoint(const GraphPoint& existingPoint) {
 }
 
 GraphPoint::~GraphPoint() {
+    delete pointNamePtr;
     cout << "*** Destructor Called ***" << endl;
 }
 
