@@ -91,11 +91,15 @@ void GraphPoint::flipPoint() {
 }
 
 void GraphPoint::display() const {
-    
+    if (pointNamePtr != NULL) {
     cout << "A " << COLOR_NAMES[colorValue] << " point at "
          << "(" << xCoord << ", "
          << yCoord << ") " << *pointNamePtr
          << endl;
+    }
+    else {
+        cout << "WTF??? Pointer was NILL??" << endl;
+    }
 }
 
 string GraphPoint::to_string() const{
