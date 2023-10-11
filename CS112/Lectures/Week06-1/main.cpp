@@ -101,6 +101,11 @@ int main() {
 
     GraphPoint yellowPoint(1, 2, "It's Yellow!" Yellow);
 
+    GraphPoint changePoint(3, 4, "Starts off Green", Green);
+    changePoint.display();
+    changePoint.setColor("Red");
+    changePoint.display();
+
     delete fredPointPtr;
 
     return EXIT_SUCCESS;

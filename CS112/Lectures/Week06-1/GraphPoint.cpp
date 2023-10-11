@@ -30,6 +30,14 @@ GraphPoint::GraphPoint(double x, double y, string name) {
     colorValue = COLOR_DEFAULT;
 }
 
+GraphPoint::GraphPoint(double x, double y, string name, PointColor color) {
+    xCoord = x;
+    yCoord = y;
+    pointNamePtr = new string;
+    *pointNamePtr = name;
+    colorValue = color;
+}
+
 GraphPoint::GraphPoint(const GraphPoint& existingPoint) {
     xCoord = existingPoint.getX();
     yCoord = existingPoint.getY();
@@ -55,6 +63,10 @@ string GraphPoint::getName() const{
     return *pointNamePtr;
 }
 
+string GraphPoint::getColor() const{
+    return colorValue;
+}
+
 void GraphPoint::setX(double newX) {
     xCoord = newX;
 }
@@ -65,6 +77,10 @@ void GraphPoint::setY(double newY) {
 
 void GraphPoint::setName(string newName) {
     *pointNamePtr = newName;
+}
+
+void GraphPoint::setColor(PointColor newColor) {
+    colorValue = newColor;
 }
 
 void GraphPoint::flipPoint() {

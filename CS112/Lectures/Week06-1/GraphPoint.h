@@ -34,10 +34,12 @@ public:
     double getX() const;
     double getY() const;
     string getName() const;
+    PointColor getColor() const;
 
     void setX(double newX);
     void setY(double newY);
     void setName(string newName);
+    void setColor(PointColor newColor);
 
     void setCoords(double newX, double newY);
 
