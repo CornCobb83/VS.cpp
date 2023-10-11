@@ -11,6 +11,7 @@ GraphPoint::GraphPoint() {
     yCoord = Y_DEFAULT;
     pointNamePtr = new string;
     *pointNamePtr = NAME_DEFAULT;
+    colorValue = COLOR_DEFAULT;
 }
 
 GraphPoint::GraphPoint(double x, double y) {
@@ -18,6 +19,7 @@ GraphPoint::GraphPoint(double x, double y) {
     yCoord = y;
     pointNamePtr = new string;
     *pointNamePtr = NAME_DEFAULT;
+    colorValue = COLOR_DEFAULT;
 }
 
 GraphPoint::GraphPoint(double x, double y, string name) {
@@ -25,6 +27,7 @@ GraphPoint::GraphPoint(double x, double y, string name) {
     yCoord = y;
     pointNamePtr = new string;
     *pointNamePtr = name;
+    colorValue = COLOR_DEFAULT;
 }
 
 GraphPoint::GraphPoint(const GraphPoint& existingPoint) {
@@ -32,6 +35,7 @@ GraphPoint::GraphPoint(const GraphPoint& existingPoint) {
     yCoord = existingPoint.getY();
     pointNamePtr = new string;
     *pointNamePtr = existingPoint.getName();
+    colorValue = exiatingPoint.getColor();
 }
 
 GraphPoint::~GraphPoint() {
