@@ -10,7 +10,7 @@ using namespace std;
 
 // USER-DEFINED DATA TYPES
 
-
+enum PointColor {Black, Blue, Green, Red, Yellow};
 
 const double X_DEFAULT = 0.0;
 const double Y_DEFAULT = 0.0;
@@ -55,6 +55,7 @@ private:
     double xCoord;
     double yCoord;
     string *pointNamePtr;
+    PointColor colorValue;
 
 };
 
