@@ -91,7 +91,9 @@ void GraphPoint::flipPoint() {
 }
 
 void GraphPoint::display() const {
-    cout << "(" << xCoord << ", "
+    
+    cout << "A " << COLOR_NAMES[colorValue] << " point at "
+         << "(" << xCoord << ", "
          << yCoord << ") " << *pointNamePtr
          << endl;
 }
