@@ -12,9 +12,9 @@ class GameCard {
 public:
     // Declarations for constructors
     //one for all, one for none, one for some
-    MagicItem();
-    MagicItem(string type, int level, double cost, double weight);
-    MagicItem(string type, int level);
+    GameCard();
+    GameCard(string name, int level, string type);
+    GameCard(string name, int level);
 
     // Declarations for accessors
 
