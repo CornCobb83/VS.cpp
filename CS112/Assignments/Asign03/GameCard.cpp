@@ -7,24 +7,17 @@
 using namespace std;
 
 // CONSTRUCTORS
-GameCard::GameCard() {
-    itemType = "Unknown";
-    itemLevel = 0;
-    itemCost = 0.0;
-    itemWeight = 0.0;
-}
-GameCard::GameCard(string type, int level, double cost, double weight) {
-    itemType = type;
-    itemLevel = level;
-    itemCost = cost;
-    itemWeight = weight;
-}
-GameCard::GameCard(string type, int level) {
-    itemType = type;
-    itemLevel = level;
-    itemCost = 0.0;
-    itemWeight = 0.0;
-}
+    GameCard::GameCard(){
+
+    }
+
+    GameCard::GameCard(string name, int level, string type) {
+
+    }
+    
+    GameCard::GameCard(string name, string type) {
+
+    }
 
 // ACCESSORS
 
