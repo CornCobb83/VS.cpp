@@ -14,7 +14,7 @@ public:
     //one for all, one for none, one for some
     GameCard();
     GameCard(string name, int level, string type);
-    GameCard(string name, int level);
+    GameCard(string name, string type);
 
     // Declarations for accessors
 
