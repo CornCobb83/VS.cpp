@@ -63,7 +63,7 @@ string GraphPoint::getName() const{
     return *pointNamePtr;
 }
 
-string GraphPoint::getColor() const{
+PointColor GraphPoint::getColor() const{
     return colorValue;
 }
 
