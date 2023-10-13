@@ -14,7 +14,7 @@ int main() {
 
     GameCard card1;
 
-    
+    myCardPtr->display();
     card1.display();
 
     return 0;
