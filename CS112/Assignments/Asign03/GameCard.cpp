@@ -2,14 +2,14 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
-#include "MagicItem.h"
+#include "GameCard.h"
 
 using namespace std;
 
 // CONSTRUCTORS
 GameCard::GameCard(){
     cardName = "unknown";
-    cardLevel = "-1";
+    cardLevel = -1;
     cardtype = "unknown";
 }
 
@@ -57,5 +57,7 @@ string MagicItem::to_string() const{
 
 void MagicItem::display() const{
     cout << fixed << setprecision(2)
-         << endl;
+         << "Name:  " << cardName << endl
+         << "Level: " << cardLevel << endl
+         << "Type:  " << cardType << endl;
 }
