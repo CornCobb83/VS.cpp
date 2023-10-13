@@ -10,18 +10,18 @@ using namespace std;
 GameCard::GameCard(){
     cardName = "unknown";
     cardLevel = -1;
-    cardtype = "unknown";
+    cardType = "unknown";
 }
 
 GameCard::GameCard(string name, int level, string type) {
     cardName = name;
     cardLevel = level;
-    cardtype = type;
+    cardType = type;
 }
 
 GameCard::GameCard(string name, string type) {
     cardName = name;
-    cardtype = type;
+    cardType = type;
 }
 
 // ACCESSORS
