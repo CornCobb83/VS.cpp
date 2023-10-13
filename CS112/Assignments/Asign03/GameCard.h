@@ -27,6 +27,7 @@ public:
     void setType();
 
     // Declarations for other methods
+    string to_string() const;
     void display() const;
 
 private:
