@@ -8,6 +8,7 @@
 using namespace std;
 
 int main() {
+    cout << boolalpha;
 
     GameCard *myCardPtr;
     myCardPtr = new GameCard("Pikachu", 7, "Electric");
