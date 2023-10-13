@@ -64,7 +64,7 @@ string MagicItem::to_string() const{
     return itemType + " " + std::to_string(itemLevel) + " " + std::to_string(itemCost) + " " + std::to_string(itemWeight);
 }
 
-void MagicItem::print() const{
+void MagicItem::display() const{
     cout << fixed << setprecision(2)
          << "***************\n"
          << "Item type: " << itemType << endl

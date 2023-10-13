@@ -62,10 +62,10 @@ int main() {
     item3.setCost(9999999.99);
     item3.setWeight(0.1);
 
-    item1.print();
-    item2.print();
-    item3.print();
-    myItemPtr->print();
+    item1.display();
+    item2.display();
+    item3.display();
+    myItemPtr->display();
 
     cout << item2.to_string() << endl;
     cout << endl;

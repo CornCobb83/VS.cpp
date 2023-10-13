@@ -33,7 +33,7 @@ public:
     void setWeight(double weight);
 
     // Declarations for other methods
-    void print() const;
+    void display() const;
     string to_string() const;
 
 private:
