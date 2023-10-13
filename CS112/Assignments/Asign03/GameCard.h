@@ -22,9 +22,9 @@ public:
     string getType() const;
 
     // Declarations for mutators
-    void setName();
-    void setLevel();
-    void setType();
+    void setName(string name);
+    void setLevel(int level);
+    void setType(string type);
 
     // Declarations for other methods
     string to_string() const;

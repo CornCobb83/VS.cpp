@@ -25,37 +25,37 @@ GameCard::GameCard(string name, string type) {
 }
 
 // ACCESSORS
-string getName() const {
+string GameCard::getName() const {
     return cardName;
 }
 
-int getLevel() const {
+int GameCard::getLevel() const {
     return cardLevel;
 }
 
-string getType() const {
+string GameCard::getType() const {
     return cardType;
 }
 
 // MUTATORS
-void setName(string name) {
+void GameCard::setName(string name) {
     cardName = name;
 }
 
-void setLevel(int level) {
+void GameCard::setLevel(int level) {
     cardLevel = level;
 }
 
-void setType(string type) {
+void GameCard::setType(string type) {
     cardType = type;
 }
 
 // OTHER METHODS
-string MagicItem::to_string() const{
-    return cardName + " " + std::to_string(CardLevel) + " " + std::to_string(CardType);
+string GameCard::to_string() const{
+    return cardName + " " + std::to_string(cardLevel) + " " + cardType;
 }
 
-void MagicItem::display() const{
+void GameCard::display() const{
     cout << fixed << setprecision(2)
          << "Name:  " << cardName << endl
          << "Level: " << cardLevel << endl
