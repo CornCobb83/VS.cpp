@@ -16,6 +16,10 @@ int main() {
     GameCard card1("Squirtle", 5, "Water");
     GameCard card2;
 
+    card1.getName();
+    card1.getLevel();
+    card1.getType();
+
     card2.setName("Charmander");
     card2.setLevel(3);
     card2.setType("Fire");
