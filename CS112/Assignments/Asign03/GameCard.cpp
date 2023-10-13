@@ -8,15 +8,20 @@ using namespace std;
 
 // CONSTRUCTORS
     GameCard::GameCard(){
-
+        cardName = "unknown";
+        cardLevel = "-1";
+        cardtype = "unknown";
     }
 
     GameCard::GameCard(string name, int level, string type) {
-
+        cardName = name;
+        cardLevel = level;
+        cardtype = type;
     }
-    
-    GameCard::GameCard(string name, string type) {
 
+    GameCard::GameCard(string name, string type) {
+        cardName = name;
+        cardtype = type;
     }
 
 // ACCESSORS
@@ -29,9 +34,5 @@ using namespace std;
 
 void MagicItem::display() const{
     cout << fixed << setprecision(2)
-         << "***************\n"
-         << "Item type: " << itemType << endl
-         << "Item level: " << itemLevel << endl
-         << "Item Cost: " << itemCost << endl
-         << "Item Weight: " << itemWeight << endl << endl;
+         << endl;
 }

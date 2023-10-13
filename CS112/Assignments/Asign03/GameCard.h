@@ -17,17 +17,23 @@ public:
     GameCard(string name, string type);
 
     // Declarations for accessors
-
+    string getName() const;
+    int getLevel() const;
+    string getType() const;
 
     // Declarations for mutators
-
+    void setName();
+    void setLevel();
+    void setType();
 
     // Declarations for other methods
     void display() const;
 
 private:
     // Declarations of data members
-
+    string cardName;
+    int cardLevel;
+    string cardType;
 
 };
 
