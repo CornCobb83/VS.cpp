@@ -5,17 +5,18 @@
 #include <iostream>
 #include <string>
 #include <cmath>
+#include 
 
 using namespace std;
 
 // USER-DEFINED DATA TYPES
 
-enum PointColor {Black, Blue, Green, Red, Yellow};
+//enum PointColor {Black, Blue, Green, Red, Yellow};
 
 const double X_DEFAULT = 0.0;
 const double Y_DEFAULT = 0.0;
 const string NAME_DEFAULT = "Unnamed";
-const PointColor COLOR_DEFAULT = Black;
+//const PointColor COLOR_DEFAULT = Black;
 //const string COLOR_NAMES[5] = {"Black", "Blue", "Green", "Red", "Yellow"};
 
 class GraphPoint {
