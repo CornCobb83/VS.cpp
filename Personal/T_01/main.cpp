@@ -1,3 +1,4 @@
+
 #include <iostream>
 using namespace std;
 
@@ -51,7 +52,7 @@ int main() {
    node1->InsertAfter(node2);
 
    node3 = new IntNode(3);
-   node1->InsertAfter(node3);
+   node2->InsertAfter(node3);
 
    node4 = new IntNode(4);
    node3->InsertAfter(node4);
