@@ -13,17 +13,21 @@ const COLOR_DEFAULT = Black;
 const string COLOR_NAMES[5] = {"Black", "Blue", "Green", "Red", "Yellow"};
 
 class ColorPoint : public GraphPoint {
-    public:
+public:
     ColorPoint();
     ColorPoint(double x, double y);
     ColorPoint(double x, double y, PointColor color);
 
-    PointCOolor getColor();
+    PointColor getColor();
 
     void setColor(PointColor newColor);
 
     void display() const;
     // string to_string() const;
+
+private:
+
+    PointColor colorValue;
 }
 
 #endif
