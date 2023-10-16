@@ -5,7 +5,7 @@
 #include <iostream>
 #include <string>
 #include <cmath>
-#include 
+#include "ColorPoint.h"
 
 using namespace std;
 
