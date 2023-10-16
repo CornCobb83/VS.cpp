@@ -112,5 +112,8 @@ int main() {
 
     delete fredPointPtr;
 
+    ColorPoint colorPt1;
+    colorPt1
+
     return EXIT_SUCCESS;
 }

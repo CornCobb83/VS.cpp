@@ -9,7 +9,7 @@
 
 using namespace std;
 
-const COLOR_DEFAULT = Black;
+const PointColor COLOR_DEFAULT = Black;
 const string COLOR_NAMES[5] = {"Black", "Blue", "Green", "Red", "Yellow"};
 
 class ColorPoint : public GraphPoint {
