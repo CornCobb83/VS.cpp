@@ -22,7 +22,8 @@ class ColorPoint : public GraphPoint {
 
     void setColor(PointColor newColor);
 
-    
+    void display() const;
+    // string to_string() const;
 }
 
 #endif
