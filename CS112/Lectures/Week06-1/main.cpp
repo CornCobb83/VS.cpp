@@ -113,7 +113,10 @@ int main() {
     delete fredPointPtr;
 
     ColorPoint colorPt1;
-    colorPt1
+    colorPt1.display();
+    cout << endl;
+
+    //ColorPoint ColorPoint()
 
     return EXIT_SUCCESS;
 }

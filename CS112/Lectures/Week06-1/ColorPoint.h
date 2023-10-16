@@ -28,6 +28,6 @@ public:
 private:
 
     PointColor colorValue;
-}
+};
 
 #endif

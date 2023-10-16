@@ -35,7 +35,7 @@ GraphPoint::GraphPoint(double x, double y, string name, PointColor color) {
     yCoord = y;
     pointNamePtr = new string;
     *pointNamePtr = name;
-    colorValue = color;
+    //colorValue = color;
 }
 
 GraphPoint::GraphPoint(const GraphPoint& existingPoint) {
