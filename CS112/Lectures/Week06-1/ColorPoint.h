@@ -10,6 +10,7 @@
 
 using namespace std;
 
+enum PointColor {Black, Blue, Green, Red, Yellow};
 const PointColor COLOR_DEFAULT = Black;
 const string COLOR_NAMES[5] = {"Black", "Blue", "Green", "Red", "Yellow"};
 
