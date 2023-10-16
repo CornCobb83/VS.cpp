@@ -6,6 +6,7 @@
 #include <iomanip>
 #include <string>
 #include <cmath>
+#include "GraphPoint.h"
 
 using namespace std;
 
