@@ -3,6 +3,7 @@
 #include <iomanip>
 #include <string>
 #include "GraphPoint.h"
+#include "ColorPoint.h"
 #include <cmath>
 
 using namespace std;

@@ -16,7 +16,7 @@ const double X_DEFAULT = 0.0;
 const double Y_DEFAULT = 0.0;
 const string NAME_DEFAULT = "Unnamed";
 const PointColor COLOR_DEFAULT = Black;
-const string COLOR_NAMES[5] = {"Black", "Blue", "Green", "Red", "Yellow"};
+//const string COLOR_NAMES[5] = {"Black", "Blue", "Green", "Red", "Yellow"};
 
 class GraphPoint {
 public:
