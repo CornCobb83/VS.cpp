@@ -57,7 +57,9 @@ public:
     GraphPoint& operator  =(const GraphPoint& rhs);
     GraphPoint operator +(const GraphPoint& rhs);
 
-private:
+//private:
+protected:
+
     double xCoord;
     double yCoord;
     string *pointNamePtr;
