@@ -1,122 +1,76 @@
+// CS 112 Fall 2023 Week 09-1 Lecture
+// Demonstration of C++ Derived Classes
 #include <cstdlib>
 #include <iostream>
-#include <iomanip>
 #include <string>
-#include "GraphPoint.h"
+#include <iomanip>
+// #include "GraphPoint.h"
 #include "ColorPoint.h"
-#include <cmath>
-
 using namespace std;
-
 int main() {
-    cout << boolalpha;
-
-    cout << fixed << setprecision(2);
-
-    //Test constructors
-    GraphPoint myPoint;
-    cout << "Zero arg myPoint:";
-    myPoint.display();
-
-    GraphPoint otherPoint(3.0, 4.0);
-    cout << "two arg otherPoint: ";
-    otherPoint.display();
-
-    cout << "X coord of other Point is "
-        << otherPoint.getX() << endl;
-    cout << "Y coord of other Point is "
-        << otherPoint.getY() << endl;
-
-    cout << "otherPoint changed to : ";
-    otherPoint.setX(27.4567);
-    otherPoint.setY(-456.6725);
-    otherPoint.display();
-
-    cout << "DIstance: ";
-    cout << myPoint.distance(otherPoint) << endl;
-
-    cout << "Assign newPoint to be other:";
-    GraphPoint newPoint;
-    newPoint = otherPoint;
-    newPoint.display();
-
-    cout << "Are otherPoint and newPoint the same? ";
-    cout << (newPoint == otherPoint) << endl;
-
-    cout << "Changing newPoint to: ";
-    newPoint.setX(234.6);
-    newPoint.display();
-
-    cout << "Are otherPoint and newPoint the same? ";
-    cout << (newPoint == otherPoint) << endl;
-
-    cout << "Sum of newPoint and newPoint is: ";
-    GraphPoint sumPoint;
-    sumPoint = newPoint + otherPoint;
-    sumPoint.display();
-
-    GraphPoint *fredPointPtr;
-    GraphPoint *barneyPointPtr;
-
-    fredPointPtr = new GraphPoint(-23.1, 0.75);
-    barneyPointPtr = &newPoint;
-
-    cout << "fredPointPtr points to: ";
-    fredPointPtr->display();
-    // can also use, but not as good: (fredPointPtr).display();
-    cout << "barneyPointPtr points to: ";
-    barneyPointPtr->display();
-
-    cout << "Let's add those two points";
-    GraphPoint *friendsPointPtr = new GraphPoint();
-    *friendsPointPtr = *fredPointPtr + *barneyPointPtr;
-    friendsPointPtr->display();
-
-    GraphPoint *namedPointPtr = new GraphPoint(15.2, -7.1, "David's Point");
-
-    namedPointPtr->display();
-    cout << endl;
-
-    GraphPoint *unnamedPointPtr = new GraphPoint(5.6, 7.8);
-    unnamedPointPtr->display();
-    cout << endl;
-
-    GraphPoint newNamedPoint(*namedPointPtr);
-    newNamedPoint.display();
-
-    newNamedPoint.setName("Fred's Point");
-    newNamedPoint.display();
-
-    cout << "What is the value of *namedPointPtr string? ";
-    cout << namedPointPtr->getName();
-    cout << endl;
-
-    cout << "*** GraphPoint Color Tests! ***" << endl;
-
-    GraphPoint blackPoint;
-    blackPoint.setName("I'm a BlackPoint!");
-    blackPoint.display();
-
-    GraphPoint bluePoint(7.8, 9.0, "I'm a Blue Point!", Blue);
-    bluePoint.display();
-
-    GraphPoint yellowPoint(1, 2, "It's Yellow!", Yellow);
-
-    GraphPoint changePoint(3, 4, "Starts off Green", Green);
-    changePoint.display();
-    changePoint.setColor(Red);
-    changePoint.display();
-
-    cout << "String from changePoint is:" << endl << "    ";
-    cout << changePoint.to_string() << endl;
-
-    delete fredPointPtr;
-
-    ColorPoint colorPt1;
-    colorPt1.display();
-    cout << endl;
-
-    //ColorPoint ColorPoint()
-
-    return EXIT_SUCCESS;
+cout << boolalpha;
+cout << fixed << setprecision(2);
+// Test constructors
+GraphPoint myPoint;
+cout << "Zero arg myPoint: ";
+myPoint.display();
+cout << endl;
+GraphPoint otherPoint(3.0, 4.0);
+cout << "Two arg otherPoint: ";
+otherPoint.display();
+cout << endl;
+cout << "X coord of otherPoint is "
+<< otherPoint.getX() << endl;
+cout << "Y coord of otherPoint is "
+<< otherPoint.getY() << endl;
+cout << "otherPoint changed to: ";
+otherPoint.setX(27.4567);
+otherPoint.setY(-456.67275);
+otherPoint.display();
+cout << endl;
+cout << "otherPoint flipCoords to: ";
+otherPoint.flipCoords();
+otherPoint.display();
+cout << endl;
+cout << "otherPoint resetToOrigin: ";
+otherPoint.resetToOrigin();
+otherPoint.display();
+cout << endl;
+cout << "otherPoint reset to: ";
+otherPoint.setCoords(12.345, 67.899);
+otherPoint.display();
+cout << endl;
+cout << "Distance from myPoint to OtherPoint: ";
+cout << myPoint.distance(otherPoint) << endl;
+cout << "Compare to manually calculated distance: ";
+cout << (abs(myPoint.distance(otherPoint) - 69.01212) < 0.001)
+<< endl;
+cout << "Assign newPoint to be = otherPoint: ";
+GraphPoint newPoint;
+newPoint = otherPoint;
+newPoint.display();
+cout << endl;
+cout << "Are otherPoint and newPoint the same? ";
+cout << (newPoint == otherPoint) << endl;
+cout << endl;
+cout << "Changing newPoint to :";
+newPoint.setX(234.6);
+newPoint.display();
+cout << endl;
+cout << "Compare otherPoint and newPoint - should be FALSE: ";
+cout << (newPoint == otherPoint) << endl;
+cout << "Sum of newPoint and otherPoint is: ";
+GraphPoint sumPoint;
+sumPoint = newPoint + otherPoint;
+sumPoint.display();
+cout << endl;
+// ****** TESTING COLORPOINT DERIVED CLASS *****
+cout << "************************************" << endl;
+ColorPoint colorPt1;
+colorPt1.display();
+cout << endl;
+ColorPoint colorPt2(7.6, -4.5, Red);
+colorPt2.display();
+cout << endl;
+return EXIT_SUCCESS;
 }
