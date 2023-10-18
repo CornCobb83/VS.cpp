@@ -1,71 +1,35 @@
-#ifndef GRAPHPOINT_H
-#define GRAPHPOINT_H
+// CS 112 Fall 2023 - Week 09 Lecture 1
+// C++ Derived Classes
 
+#ifndef COLORPOINT_H
+#define COLORPOINT_H
 #include <cstdlib>
-#include <iostream>
 #include <string>
 #include <cmath>
-#include "ColorPoint.h"
-
+#include "GraphPoint.h"
 using namespace std;
 
-// USER-DEFINED DATA TYPES
-
-//enum PointColor {Black, Blue, Green, Red, Yellow};
-
-const double X_DEFAULT = 0.0;
-const double Y_DEFAULT = 0.0;
-const string NAME_DEFAULT = "Unnamed";
-//const PointColor COLOR_DEFAULT = Black;
-//const string COLOR_NAMES[5] = {"Black", "Blue", "Green", "Red", "Yellow"};
-
-class GraphPoint {
+// Data Type Definitions
+enum PointColor {Black, Blue, Green, Red, Yellow};
+// Constant Definitions
+const PointColor COLOR_DEFAULT = Black;
+const string COLORNAMES[5] =
+    {"black", "blue", "green", "red", "yellow"};
+class ColorPoint : public GraphPoint {
 public:
-
-    GraphPoint();
-
-    GraphPoint(double x, double y);
-
-    GraphPoint(double x, double y, string name);
-
-    GraphPoint(double x, double y, string name, PointColor color);
-
-    GraphPoint(const GraphPoint& existingPoint);
-
-    ~GraphPoint();
-
-    double getX() const;
-    double getY() const;
-    string getName() const;
-    PointColor getColor() const;
-
-    void setX(double newX);
-    void setY(double newY);
-    void setName(string newName);
-    void setColor(PointColor newColor);
-
-    void setCoords(double newX, double newY);
-
-    void display() const;
-
-    string to_string() const;
-
-    void flipPoint();
-
-    double distance(const GraphPoint& p2) const;
-
-    bool operator ==(const GraphPoint& rhs) const;
-    GraphPoint& operator  =(const GraphPoint& rhs);
-    GraphPoint operator +(const GraphPoint& rhs);
-
-//private:
-protected:
-
-    double xCoord;
-    double yCoord;
-    string *pointNamePtr;
-    PointColor colorValue;
-
+ColorPoint();
+ColorPoint(double x, double y);
+ColorPoint(double x, double y, PointColor color);
+// ACCESSORS
+// Will already inherit getX and getY
+// PointColor getColor();
+// MUTATORS
+// Will already inherit setX and setY
+// void setColor(PointColor newColor);
+// OTHER METHODS
+void display() const;
+// string to_string() const;
+private:
+PointColor colorValue;
 };
-
-#endif
+#endif /* COLORPOINT_H */
