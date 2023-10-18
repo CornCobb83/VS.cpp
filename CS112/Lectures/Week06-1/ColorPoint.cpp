@@ -39,6 +39,6 @@ cout << "ColorPoint is " << COLORNAMES[colorValue] << " at "
 << this->getY() << ")" << endl;
 }
 
-string ColorPoint::to_atring() const {
+string ColorPoint::to_string() const {
     return COLORNAMES[colorValue] + GraphPoint::to_string();
 }

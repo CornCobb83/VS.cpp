@@ -17,11 +17,12 @@ using namespace std;
 // CONSTRUCTORS
 // This constructor has been commedted out to show the
 // alternate way to initialize data members in a constructor
-GraphPoint::GraphPoint() {
-    xCoord = X_DEFAULT;
-    yCoord = Y_DEFAULT;
-    pointName = NAME_DEFAULT;
-}
+// GraphPoint::GraphPoint() {
+    //xCoord = X_DEFAULT;
+    //yCoord = Y_DEFAULT;
+    //pointName = NAME_DEFAULT;
+//}
+
 // The initialization section of a constructor can be used to
 // set the initial values of data members
 GraphPoint::GraphPoint() : xCoord(X_DEFAULT), yCoord(Y_DEFAULT) {
