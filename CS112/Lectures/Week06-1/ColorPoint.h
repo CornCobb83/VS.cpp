@@ -10,32 +10,36 @@
 using namespace std;
 
 // Data Type Definitions
-enum PointColor {Black, Blue, Green, Red, Yellow};
+    enum PointColor {Black, Blue, Green, Red, Yellow};
+
 // Constant Definitions
-const PointColor COLOR_DEFAULT = Black;
-const string COLORNAMES[5] =
-{"black", "blue", "green", "red", "yellow"};
-class ColorPoint : public GraphPoint {
+    const PointColor COLOR_DEFAULT = Black;
+    const string COLORNAMES[5] =
+    {"black", "blue", "green", "red", "yellow"};
+
+    class ColorPoint : public GraphPoint {
 public:
-ColorPoint();
-ColorPoint(double x, double y);
-ColorPoint(double x, double y, PointColor color);
-ColorPoint(const GraphPoint& existingPoint);
+
+    ColorPoint();
+    ColorPoint(double x, double y);
+    ColorPoint(double x, double y, PointColor color);
+    ColorPoint(const GraphPoint& existingPoint);
 
 // ACCESSORS
 // Will already inherit getX and getY
-PointColor getColor() const;
+    PointColor getColor() const;
 
 // MUTATORS
 // Will already inherit setX and setY
-void setColor(PointColor newColor);
+    void setColor(PointColor newColor);
 
 // OTHER METHODS
-void display() const;
-string to_string() const;
+    void display() const;
+    string to_string() const;
 
 private:
-PointColor colorValue;
+
+    PointColor colorValue;
 
 };
 

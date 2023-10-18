@@ -115,7 +115,13 @@ int main() {
     baseClassPtr = &sumColorPoint;
     cout << "Which display method will be called?" << endl;
     baseClassPtr->display();
+    cout << "Can I get the color of thid object?" << endl;
+    cout << COLORNAMES[derivedClassPtr->getColor()] << endl;
     cout << endl;
+
+    cout << "Now let's point to sumPoint" << endl;
+    baseClassPtr = &sumPoint;
+    //derivedClassPtr = &sumPoint;
 
     return EXIT_SUCCESS;
 }

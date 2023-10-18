@@ -7,34 +7,35 @@
 using namespace std;
 
 // NAMED CONSTANTS USED IN THE C++ CLASS
-const double X_DEFAULT = 0.0;
-const double Y_DEFAULT = 0.0;
+    const double X_DEFAULT = 0.0;
+    const double Y_DEFAULT = 0.0;
 
 class GraphPoint {
 public:
 
 // CONSTRUCTORS
-GraphPoint();
-GraphPoint(double x, double y);
-GraphPoint(double r, int theta);
+    GraphPoint();
+    GraphPoint(double x, double y);
+    GraphPoint(double r, int theta);
 
 // ACCESSORS
-double getX() const;
-double getY() const;
+    double getX() const;
+    double getY() const;
 // MUTATORS
-void setX(double newX);
-void setY(double newY);
-void flipCoords();
-void resetToOrigin();
-void setCoords(double newX, double newY);
+    void setX(double newX);
+    void setY(double newY);
+    void flipCoords();
+    void resetToOrigin();
+    void setCoords(double newX, double newY);
 
 // OTHER METHODS
-void display() const;
-string to_string() const;
-double distance(const GraphPoint& p2) const;
+    void display() const;
+    string to_string() const;
+    double distance(const GraphPoint& p2) const;
+
 // OPERATOR METHODS
-bool operator ==(const GraphPoint& rhs) const;
-GraphPoint operator +(const GraphPoint& rhs);
+    bool operator ==(const GraphPoint& rhs) const;
+    GraphPoint operator +(const GraphPoint& rhs);
 
 // protected is a section within the class definition
 // that works like private, but an important difference
@@ -49,7 +50,8 @@ GraphPoint operator +(const GraphPoint& rhs);
 
 private:
 // protected:
-double xCoord;
-double yCoord;
+    double xCoord;
+    double yCoord;
 };
+
 #endif /* GRAPHPOINT_H */
