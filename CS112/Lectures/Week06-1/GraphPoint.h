@@ -9,12 +9,15 @@ using namespace std;
 // NAMED CONSTANTS USED IN THE C++ CLASS
 const double X_DEFAULT = 0.0;
 const double Y_DEFAULT = 0.0;
+
 class GraphPoint {
 public:
+
 // CONSTRUCTORS
 GraphPoint();
 GraphPoint(double x, double y);
 GraphPoint(double r, int theta);
+
 // ACCESSORS
 double getX() const;
 double getY() const;
@@ -24,6 +27,7 @@ void setY(double newY);
 void flipCoords();
 void resetToOrigin();
 void setCoords(double newX, double newY);
+
 // OTHER METHODS
 void display() const;
 string to_string() const;
@@ -31,6 +35,7 @@ double distance(const GraphPoint& p2) const;
 // OPERATOR METHODS
 bool operator ==(const GraphPoint& rhs) const;
 GraphPoint operator +(const GraphPoint& rhs);
+
 // protected is a section within the class definition
 // that works like private, but an important difference
 // is that data members and methods listed in the

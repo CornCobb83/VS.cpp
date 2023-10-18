@@ -8,22 +8,37 @@
 #include "ColorPoint.h"
 
 using namespace std;
+
 // Constructors
 ColorPoint::ColorPoint(): GraphPoint() {
 colorValue = COLOR_DEFAULT;
 }
+
 ColorPoint::ColorPoint(double x, double y): GraphPoint(x, y) {
-colorValue = COLOR_DEFAULT;
+    colorValue = COLOR_DEFAULT;
 }
+
 ColorPoint::ColorPoint(double x, double y, PointColor color):
 GraphPoint(x, y) {
-colorValue = color;
+    colorValue = color;
 }
 // ACCESSORS
+PointColor getColor() const {
+    return colorValue;
+}
+
 // MUTATORS
+void ColorPoint::setColor(PointColor newColor) {
+    colorValue = newColor;
+}
+
 // OTHER METHODS
 void ColorPoint::display() const {
 cout << "ColorPoint is " << COLORNAMES[colorValue] << " at "
 << "(" << this->getX() << ", "
 << this->getY() << ")" << endl;
+}
+
+string ColorPoint::to_atring() const {
+    return COLORNAMES[colorValue] + GraphPoint::to_string();
 }

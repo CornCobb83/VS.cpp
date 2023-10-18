@@ -20,16 +20,22 @@ public:
 ColorPoint();
 ColorPoint(double x, double y);
 ColorPoint(double x, double y, PointColor color);
+
 // ACCESSORS
 // Will already inherit getX and getY
-// PointColor getColor();
+PointColor getColor() const;
+
 // MUTATORS
 // Will already inherit setX and setY
-// void setColor(PointColor newColor);
+void setColor(PointColor newColor);
+
 // OTHER METHODS
 void display() const;
-// string to_string() const;
+string to_string() const;
+
 private:
 PointColor colorValue;
+
 };
+
 #endif /* COLORPOINT_H */
