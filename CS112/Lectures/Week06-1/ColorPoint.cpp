@@ -23,10 +23,9 @@ GraphPoint(x, y) {
     colorValue = color;
 }
 
-ColorPoint::ColorPoint(const GraphPoint& existingPoint) {
-    GraphPoint(exitstingPoint) {
+ColorPoint::ColorPoint(const GraphPoint& existingPoint) :
+    GraphPoint(existingPoint) {
         colorValue = COLOR_DEFAULT;
-    }
 }
 
 // ACCESSORS
