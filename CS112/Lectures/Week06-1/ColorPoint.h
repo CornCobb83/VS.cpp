@@ -14,11 +14,10 @@ using namespace std;
 
 // Constant Definitions
     const PointColor COLOR_DEFAULT = Black;
-    const string COLORNAMES[5] =
-    {"black", "blue", "green", "red", "yellow"};
+    const string COLORNAMES[5] = {"black", "blue", "green", "red", "yellow"};
 
 class ColorPoint : public GraphPoint {
-    
+
     public:
 
     ColorPoint();
