@@ -10,41 +10,41 @@
 using namespace std;
 
 // Constructors
-    ColorPoint::ColorPoint(): GraphPoint() {
+ColorPoint::ColorPoint(): GraphPoint() {
+    colorValue = COLOR_DEFAULT;
+}
+
+ColorPoint::ColorPoint(double x, double y): GraphPoint(x, y) {
+    colorValue = COLOR_DEFAULT;
+}
+
+ColorPoint::ColorPoint(double x, double y, PointColor color):
+GraphPoint(x, y) {
+    colorValue = color;
+}
+
+ColorPoint::ColorPoint(const GraphPoint& existingPoint) :
+    GraphPoint(existingPoint) {
         colorValue = COLOR_DEFAULT;
-    }
-
-    ColorPoint::ColorPoint(double x, double y): GraphPoint(x, y) {
-        colorValue = COLOR_DEFAULT;
-    }
-
-    ColorPoint::ColorPoint(double x, double y, PointColor color):
-        GraphPoint(x, y) {
-            colorValue = color;
-    }
-
-    ColorPoint::ColorPoint(const GraphPoint& existingPoint) :
-        GraphPoint(existingPoint) {
-            colorValue = COLOR_DEFAULT;
-    }
+}
 
 // ACCESSORS
-    PointColor ColorPoint::getColor() const {
-        return colorValue;
-    }
+PointColor ColorPoint::getColor() const {
+    return colorValue;
+}
 
 // MUTATORS
-    void ColorPoint::setColor(PointColor newColor) {
-        colorValue = newColor;
-    }
+void ColorPoint::setColor(PointColor newColor) {
+    colorValue = newColor;
+}
 
 // OTHER METHODS
-    void ColorPoint::display() const {
+void ColorPoint::display() const {
     cout << "ColorPoint is " << COLORNAMES[colorValue] << " at "
     << "(" << this->getX() << ", "
     << this->getY() << ")" << endl;
-    }
+}
 
-    string ColorPoint::to_string() const {
-        return COLORNAMES[colorValue] + GraphPoint::to_string();
-    }
+string ColorPoint::to_string() const {
+    return COLORNAMES[colorValue] + GraphPoint::to_string();
+}

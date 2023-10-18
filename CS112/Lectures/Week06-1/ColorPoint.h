@@ -17,8 +17,9 @@ using namespace std;
     const string COLORNAMES[5] =
     {"black", "blue", "green", "red", "yellow"};
 
-    class ColorPoint : public GraphPoint {
-public:
+class ColorPoint : public GraphPoint {
+    
+    public:
 
     ColorPoint();
     ColorPoint(double x, double y);
@@ -37,7 +38,7 @@ public:
     void display() const;
     string to_string() const;
 
-private:
+    private:
 
     PointColor colorValue;
 
