@@ -1,35 +1,35 @@
+// CS 112 Fall 2023 - Week 09 Lecture 1
+// C++ Derived Classes
 #ifndef COLORPOINT_H
 #define COLORPOINT_H
 
 #include <cstdlib>
-#include <iostream>
-#include <iomanip>
 #include <string>
 #include <cmath>
 #include "GraphPoint.h"
-
 using namespace std;
 
+// Data Type Definitions
 enum PointColor {Black, Blue, Green, Red, Yellow};
+// Constant Definitions
 const PointColor COLOR_DEFAULT = Black;
-const string COLOR_NAMES[5] = {"Black", "Blue", "Green", "Red", "Yellow"};
-
-class ColorPoint: public GraphPoint {
+const string COLORNAMES[5] =
+{"black", "blue", "green", "red", "yellow"};
+class ColorPoint : public GraphPoint {
 public:
-    ColorPoint();
-    ColorPoint(double x, double y);
-    ColorPoint(double x, double y, PointColor color);
-
-    PointColor getColor();
-
-    void setColor(PointColor newColor);
-
-    void display() const;
-    // string to_string() const;
-
+ColorPoint();
+ColorPoint(double x, double y);
+ColorPoint(double x, double y, PointColor color);
+// ACCESSORS
+// Will already inherit getX and getY
+// PointColor getColor();
+// MUTATORS
+// Will already inherit setX and setY
+// void setColor(PointColor newColor);
+// OTHER METHODS
+void display() const;
+// string to_string() const;
 private:
-
-    PointColor colorValue;
+PointColor colorValue;
 };
-
-#endif
+#endif /* COLORPOINT_H */
