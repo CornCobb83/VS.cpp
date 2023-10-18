@@ -20,6 +20,7 @@ public:
 ColorPoint();
 ColorPoint(double x, double y);
 ColorPoint(double x, double y, PointColor color);
+ColorPoint(const GraphPoint& existingPoint);
 
 // ACCESSORS
 // Will already inherit getX and getY

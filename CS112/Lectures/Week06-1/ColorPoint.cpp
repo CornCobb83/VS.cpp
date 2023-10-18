@@ -22,8 +22,15 @@ ColorPoint::ColorPoint(double x, double y, PointColor color):
 GraphPoint(x, y) {
     colorValue = color;
 }
+
+ColorPoint::ColorPoint(const GraphPoint& existingPoint) {
+    GraphPoint(exitstingPoint) {
+        colorValue = COLOR_DEFAULT;
+    }
+}
+
 // ACCESSORS
-PointColor getColor() const {
+PointColor ColorPoint::getColor() const {
     return colorValue;
 }
 
