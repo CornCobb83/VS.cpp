@@ -9,10 +9,12 @@
 using namespace std;
 
 // CONSTRUCTORS
-TankPlayerCHar::TankPlayerChar():PlayerChar() {
+TankPlayerChar::TankPlayerChar():PlayerChar() {
     playerAggro = this->getStrength  / 2;
     playerStamina = (this->getStrength * this->getAgility) / 2;
 }
+
+
 
 
 // ACCESSORS
