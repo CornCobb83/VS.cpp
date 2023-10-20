@@ -35,7 +35,7 @@ void setStamina(double stamina);
 
 //OTHER METHODS
 
-bool operator ==(const PlayerChar& rhs) const;
+bool operator ==(const TankPlayerChar& rhs) const;
 
 void display() const;
 string to_string() const;
