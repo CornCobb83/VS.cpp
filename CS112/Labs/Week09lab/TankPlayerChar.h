@@ -11,8 +11,6 @@
 
 using namespace std;
 
-
-
 // Definition of derived class TankPlayerChar
 class TankPlayerChar : public PlayerChar {
 public:
@@ -41,8 +39,10 @@ void display() const;
 string to_string() const;
 
 private:
-    const int DEFAULT_AGGRO = 0;
-    const double DEFAULT_STAMINA = 0.0;
+    // const int DEFAULT_AGGRO = 0;
+    // const double DEFAULT_STAMINA = 0.0;
+    int playerAggro;
+    double playerStamina;
 
 };
 
