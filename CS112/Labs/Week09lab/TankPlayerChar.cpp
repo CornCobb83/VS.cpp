@@ -50,7 +50,7 @@ bool TankPlayerChar::operator ==(const TankPlayerChar& rhs) const {
 
     // double player1Value = playerStrength * playerAgility * playerAggro * playerStamina;
     // double player2Value = rhs.getStrength() * rhs.getAgility() * rhs.getAggro() * rhs.getStamina();
-    double player1Value = playerAggro * playerStamina;
+    double player1Value = PlayerChar::getStrength() * PlayerChar::getAgility() * playerAggro * playerStamina;
     double player2Value = rhs.getAggro() * rhs.getStamina();
 
     return (abs(player1Value - player2Value) < 100 );
@@ -66,9 +66,6 @@ void TankPlayerChar::display() const{
          << endl;
 }
 
-string PlayerChar::to_string() const {
-    return playerName + ", "
-         + ROLE_NAMES[playerRole] + ", "
-         + std::to_string(playerStrength) + ", "
-         + std::to_string(playerAgility);
+string TankPlayerChar::to_string() const {
+    return PlayerChar::to_string();
 }
