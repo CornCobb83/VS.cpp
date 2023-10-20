@@ -25,11 +25,11 @@ TankPlayerChar::TankPlayerChar(string name, Role role):PlayerChar(name, role) {
 }
 
 // ACCESSORS
-int TankPlayerChar::getAggro() {
+int TankPlayerChar::getAggro() const{
     return playerAggro;
 }
 
-double TankPlayerChar::getStamina() {
+double TankPlayerChar::getStamina() const{
     return playerStamina;
 }
 
@@ -39,13 +39,19 @@ void TankPlayerChar::setAggro(int aggro) {
 }
 
 void TankPlayerChar::setStamina(double stamina) {
-pplayerStamina = stamina;
+    playerStamina = stamina;
 }
-
 
 // OPERATOR METHODS
 
 
 
 // OTHER METHODS
-
+void TankPlayerChar::display() const{
+    cout << "*** CHARACTER INFORMATION ***" << endl
+         << "CHARACTER IS " << getName << " the "
+                            << getRole << endl
+         << "STRENGTH IS " << playerStrength << endl
+         << "AGILITY IS  " << playerAgility << endl
+         << endl;
+}

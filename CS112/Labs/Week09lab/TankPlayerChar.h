@@ -34,6 +34,12 @@ void setAggro(int aggro);
 void setStamina(double stamina);
 
 //OTHER METHODS
+
+bool operator ==(const PlayerChar& rhs) const;
+
+void display() const;
+string to_string() const;
+
 private:
     const TankPlayerChar DEFAULT_AGGRO = 0;
     const TankPlayerChar DEAFULT_STAMINA = 0.0;
