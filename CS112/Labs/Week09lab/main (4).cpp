@@ -48,49 +48,49 @@ int main() {
     mrSlateTank.display();
     (*dinoTankPtr).display();
 
-    // cout << "*** DISPLAY USING PLAYERCHAR METHOD ***" << endl;
+    cout << "*** DISPLAY USING PLAYERCHAR METHOD ***" << endl;
 
-    // joeTank.PlayerChar::display();
+    joeTank.PlayerChar::display();
 
-    // cout << "*** TESTING TO_STRING METHOD ***" << endl;
+    cout << "*** TESTING TO_STRING METHOD ***" << endl;
 
-    // cout << "String for Dino: " << dinoTankPtr->to_string();
-    // cout << endl << endl;
+    cout << "String for Dino: " << dinoTankPtr->to_string();
+    cout << endl << endl;
 
-    // cout << "*** TESTING ACCESSOR METHODS ***" << endl;
+    cout << "*** TESTING ACCESSOR METHODS ***" << endl;
 
-    // cout << barneyTankPtr->getName() << " has Aggro "
-    //         << barneyTankPtr->getAggro() << endl;
+    cout << barneyTankPtr->getName() << " has Aggro "
+            << barneyTankPtr->getAggro() << endl;
 
-    // cout << mrSlateTank.getName() << " has Stamina "
-    //         << mrSlateTank.getStamina() << endl;
+    cout << mrSlateTank.getName() << " has Stamina "
+            << mrSlateTank.getStamina() << endl;
 
-    // cout << "*** TESTING MUTATOR METHODS ***" << endl;
+    cout << "*** TESTING MUTATOR METHODS ***" << endl;
 
-    // barneyTankPtr->setAggro(543);
-    // mrSlateTank.setStamina(8.6);
+    barneyTankPtr->setAggro(543);
+    mrSlateTank.setStamina(8.6);
 
-    // cout << barneyTankPtr->getName() << " now has Aggro "
-    //         << barneyTankPtr->getAggro() << endl;
+    cout << barneyTankPtr->getName() << " now has Aggro "
+            << barneyTankPtr->getAggro() << endl;
 
-    // cout << mrSlateTank.getName() << " now has Stamina "
-    //         << mrSlateTank.getStamina() << endl;
+    cout << mrSlateTank.getName() << " now has Stamina "
+            << mrSlateTank.getStamina() << endl;
 
-    // cout << "*** TESTING == OPERATOR ***" << endl;
+    cout << "*** TESTING == OPERATOR ***" << endl;
 
-    // TankPlayerChar *jimTankPtr = new TankPlayerChar(joeTank);
+    TankPlayerChar *jimTankPtr = new TankPlayerChar(joeTank);
 
-    // if (*jimTankPtr == joeTank)
-    //     cout << "OK - Copy of TankPlayerChar equals original!" << endl;
-    // else
-    //     cout << "*** ERROR - Copy does NOT equal original ***" << endl;
+    if (*jimTankPtr == joeTank)
+        cout << "OK - Copy of TankPlayerChar equals original!" << endl;
+    else
+        cout << "*** ERROR - Copy does NOT equal original ***" << endl;
 
-    // joeTank.setStamina(0.1);
+    joeTank.setStamina(0.1);
 
-    // if (*jimTankPtr == joeTank)
-    //     cout << "*** ERROR - Original changed, but still == Copy ***" << endl;
-    // else
-    //     cout << "OK - Original with new aggro no longer equals Copy!" << endl;
+    if (*jimTankPtr == joeTank)
+        cout << "*** ERROR - Original changed, but still == Copy ***" << endl;
+    else
+        cout << "OK - Original with new aggro no longer equals Copy!" << endl;
 
     return EXIT_SUCCESS;
 }
