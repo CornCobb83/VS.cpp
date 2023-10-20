@@ -48,12 +48,14 @@ bool TankPlayerChar::operator ==(const TankPlayerChar& rhs) const {
     // multiplied together should be with 100 of each other
     // (though the names and Roles can be different)
 
-    // double player1Value = playerStrength * playerAgility * playerAggro * playerStamina;
+    PlayerChar
+    bool isAggro = (abs(playerAggro - rhs.getAggro()) < 50);
+    bool isStamina = (abs(playerStamina - rhs.getStamina()) < 100)
+    // double player1Value = PlayerChar::getStrength() * PlayerChar::getAgility() * playerAggro * playerStamina;
     // double player2Value = rhs.getStrength() * rhs.getAgility() * rhs.getAggro() * rhs.getStamina();
-    double player1Value = PlayerChar::getStrength() * PlayerChar::getAgility() * playerAggro * playerStamina;
-    double player2Value = rhs.getStrength() * rhs.getAgility() * rhs.getAggro() * rhs.getStamina();
 
-    return (abs(player1Value - player2Value) < 100 );
+    //return (abs(player1Value - player2Value) < 100 );
+    return (isAggro && isStamina);
 }
 
 // OTHER METHODS
