@@ -55,3 +55,10 @@ void TankPlayerChar::display() const{
          << "AGILITY IS  " << playerAgility << endl
          << endl;
 }
+
+string PlayerChar::to_string() const {
+    return playerName + ", "
+         + ROLE_NAMES[playerRole] + ", "
+         + std::to_string(playerStrength) + ", "
+         + std::to_string(playerAgility);
+}
