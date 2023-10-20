@@ -11,8 +11,7 @@
 
 using namespace std;
 
-const TankPlayerChar DEFAULT_AGGRO = 0;
-const TankPlayerChar DEAFULT_STAMINA = 0.0;
+
 
 // Definition of derived class TankPlayerChar
 class TankPlayerChar : public PlayerChar(
@@ -30,7 +29,8 @@ TankPlayerChar(int playerAggro, double inputlayerStamina);
 
 //OTHER METHODS
 private:
-
+    const TankPlayerChar DEFAULT_AGGRO = 0;
+    const TankPlayerChar DEAFULT_STAMINA = 0.0;
 
 );
 
