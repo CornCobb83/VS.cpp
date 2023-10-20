@@ -60,7 +60,7 @@ bool TankPlayerChar::operator ==(const TankPlayerChar& rhs) const {
 void TankPlayerChar::display() const{
     cout << "*** CHARACTER INFORMATION ***" << endl
          << "CHARACTER IS " << this->getName() << " the "
-                            << this->getRole() << endl
+                            << ROLE_NAMES[this->getRole()] << endl
          << "STRENGTH IS " << this->getStrength() << endl
          << "AGILITY IS  " << this->getAgility() << endl
          << "AGGRO IS " << playerAggro << endl
