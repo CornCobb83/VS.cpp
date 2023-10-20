@@ -1,4 +1,5 @@
 //    CS 112 Fall 2023 - Week 09 Lab
+// Jordan Cobb and Aja Brunet
 
 #include <cstdlib>
 #include <iostream>
@@ -51,10 +52,7 @@ bool TankPlayerChar::operator ==(const TankPlayerChar& rhs) const {
     bool playerEqual = PlayerChar::operator ==(rhs);
     bool isAggro = (abs(playerAggro - rhs.getAggro()) < 50);
     bool isStamina = (abs(playerStamina - rhs.getStamina()) < 100);
-    // double player1Value = PlayerChar::getStrength() * PlayerChar::getAgility() * playerAggro * playerStamina;
-    // double player2Value = rhs.getStrength() * rhs.getAgility() * rhs.getAggro() * rhs.getStamina();
 
-    //return (abs(player1Value - player2Value) < 100 );
     return (playerEqual && isAggro && isStamina);
 }
 
