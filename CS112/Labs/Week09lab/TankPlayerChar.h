@@ -14,7 +14,7 @@ using namespace std;
 
 
 // Definition of derived class TankPlayerChar
-class TankPlayerChar : public PlayerChar(
+class TankPlayerChar : public PlayerChar {
 public:
 //CONSTRUCTORS
 TankPlayerChar();
@@ -44,7 +44,7 @@ private:
     const TankPlayerChar DEFAULT_AGGRO = 0;
     const TankPlayerChar DEAFULT_STAMINA = 0.0;
 
-);
+};
 
 
 #endif /* TANKPLAYERCHAR_H */

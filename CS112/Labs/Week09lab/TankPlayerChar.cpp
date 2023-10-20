@@ -61,11 +61,15 @@ void TankPlayerChar::display() const{
     cout << "*** CHARACTER INFORMATION ***" << endl
          << "CHARACTER IS " << getName << " the "
                             << getRole << endl
-         << "STRENGTH IS " << playerStrength << endl
-         << "AGILITY IS  " << playerAgility << endl
+         << "STRENGTH IS " << getStrength << endl
+         << "AGILITY IS  " << getAgility << endl
+         << "AGGRO IS " << playerAggro << endl
+         << "STAMINA IS " << playerStamina << endl
          << endl;
 }
 
 string TankPlayerChar::to_string() const {
-    return PlayerChar::to_string();
+    return PlayerChar::to_string() + ", "
+         + std::to_string(playerAggro) + ", "
+         + std::to_string(playerStamina);
 }

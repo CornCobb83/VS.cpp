@@ -35,12 +35,12 @@ int main() {
     // TankPlayerChar test code -- UNCOMMENT TO TEST
     // **************************************************
 
-    // cout << "*** CREATING TANKPLAYERCHARS *** " << endl;
+    cout << "*** CREATING TANKPLAYERCHARS *** " << endl;
 
-    // TankPlayerChar *barneyTankPtr = new TankPlayerChar("Barney", Sprite);
-    // TankPlayerChar mrSlateTank("mrSlate");
-    // TankPlayerChar *dinoTankPtr = new TankPlayerChar("Dino", Orc);
-    // TankPlayerChar joeTank("Joe the Tank", Ogre);
+    TankPlayerChar *barneyTankPtr = new TankPlayerChar("Barney", Sprite);
+    TankPlayerChar mrSlateTank("mrSlate");
+    TankPlayerChar *dinoTankPtr = new TankPlayerChar("Dino", Orc);
+    TankPlayerChar joeTank("Joe the Tank", Ogre);
 
     // cout << "*** DISPLAYING TANKPLAYERCHARS ***" << endl;
 
