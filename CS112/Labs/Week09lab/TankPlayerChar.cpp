@@ -15,22 +15,32 @@ TankPlayerChar::TankPlayerChar():PlayerChar() {
 }
 
 TankPlayerChar::TankPlayerChar(string name):PlayerChar(name) {
-    playerAggro = inputPlayerAggro;
-    playerStamina = ;
+    playerAggro = this->getStrength  / 2;
+    playerStamina = (this->getStrength * this->getAgility) / 2;
 }
 
 TankPlayerChar::TankPlayerChar(string name, Role role):PlayerChar(name, role) {
-    playerAggro = inputPlayerAggro;
-    playerStamina = DEFUALT_STAMINA;
+    playerAggro = this->getStrength  / 2;
+    playerStamina = (this->getStrength * this->getAgility) / 2;
 }
 
-
 // ACCESSORS
+int TankPlayerChar::getAggro() {
+    return playerAggro;
+}
 
-
+double TankPlayerChar::getStamina() {
+    return playerStamina;
+}
 
 // MUTATORS
+void TankPlayerChar::setAggro(int aggro) {
+    playerAggro = aggro;
+}
 
+void TankPlayerChar::setStamina(double stamina) {
+pplayerStamina = stamina;
+}
 
 
 // OPERATOR METHODS

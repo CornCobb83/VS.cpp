@@ -26,9 +26,12 @@ TankPlayerChar(string name, Role role);
 // TankPlayerChar(int playerAggro, double inputlayerStamina);
 
 //ACCESSORS
-
+int getAggro() const;
+double getStamina() const;
 
 //MUTATORS
+void setAggro(int aggro);
+void setStamina(double stamina);
 
 //OTHER METHODS
 private:
