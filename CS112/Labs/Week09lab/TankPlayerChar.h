@@ -11,6 +11,8 @@
 
 using namespace std;
 
+const TankPlayerChar DEFAULT_AGGRO =
+
 // Definition of derived class TankPlayerChar
 class TankPlayerChar : public PlayerChar(
 public:

@@ -9,7 +9,10 @@
 using namespace std;
 
 // CONSTRUCTORS
-
+TankPlayerCHar::TankPlayerChar():PlayerChar() {
+    playerAggro = DEFAULT_AGGRO;
+    playerStamina = DEFAULT_STAMINA;
+}
 
 
 // ACCESSORS
