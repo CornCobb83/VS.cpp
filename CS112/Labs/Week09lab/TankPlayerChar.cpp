@@ -16,7 +16,7 @@ TankPlayerChar::TankPlayerChar():PlayerChar() {
 
 TankPlayerChar::TankPlayerChar(string name):PlayerChar(name) {
     playerAggro = inputPlayerAggro;
-    playerStamina = (this->getStrength * this->getAgility) / 2;
+    playerStamina = ;
 }
 
 TankPlayerChar::TankPlayerChar(string name, Role role):PlayerChar(name, role) {
