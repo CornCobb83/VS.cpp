@@ -10,11 +10,21 @@ using namespace std;
 
 // CONSTRUCTORS
 TankPlayerChar::TankPlayerChar():PlayerChar() {
-    playerAggro = this->getStrength  / 2;
-    playerStamina = (this->getStrength * this->getAgility) / 2;
+    playerAggro = DEFAULT_AGGRO;
+    playerStamina = DEFAULT_STAMINA:
+    // playerAggro = this->getStrength  / 2;
+    // playerStamina = (this->getStrength * this->getAgility) / 2;
 }
 
+TankPlayerChar::TankPlayerChar(int inputPlayerAggro):PlayerChar() {
+    playerAggro = inputPlayerAggro;
+    playerStamina = DEFUALT_STAMINA;
+}
 
+TankPlayerChar::TankPlayerChar(int inputPlayerAggro,double inputPlayerStamina):PlayerChar() {
+    playerAggro = inputPlayerAggro;
+    playerStamina = DEFUALT_STAMINA;
+}
 
 
 // ACCESSORS

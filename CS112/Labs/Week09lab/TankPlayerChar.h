@@ -11,7 +11,8 @@
 
 using namespace std;
 
-const TankPlayerChar DEFAULT_AGGRO =
+const TankPlayerChar DEFAULT_AGGRO = 0;
+const TankPlayerChar DEAFULT_STAMINA = 0.0;
 
 // Definition of derived class TankPlayerChar
 class TankPlayerChar : public PlayerChar(
@@ -19,7 +20,7 @@ public:
 //CONSTRUCTORS
 TankPlayerChar();
 TankPlayerChar(int playerAggro);
-TankPlayerChar(int playerAggro, double playerStamina);
+TankPlayerChar(int playerAggro, double inputlayerStamina);
 //TankPlayerChar(const PlayerChar& existingPoint);
 
 //ACCESSORS
