@@ -1,5 +1,5 @@
 //    CS 112 Fall 2023 - Week 09 Lab
-//    C++ Derived Classes
+//    Jordan Cobb and Aja Brunet
 
 #include <cstdlib>
 #include <iostream>
