@@ -51,7 +51,7 @@ bool TankPlayerChar::operator ==(const TankPlayerChar& rhs) const {
     // double player1Value = playerStrength * playerAgility * playerAggro * playerStamina;
     // double player2Value = rhs.getStrength() * rhs.getAgility() * rhs.getAggro() * rhs.getStamina();
     double player1Value = PlayerChar::getStrength() * PlayerChar::getAgility() * playerAggro * playerStamina;
-    double player2Value = rhs.getAggro() * rhs.getStamina();
+    double player2Value = rhs.getStrength() * rhs.getAgility() * rhs.getAggro() * rhs.getStamina();
 
     return (abs(player1Value - player2Value) < 100 );
 }
