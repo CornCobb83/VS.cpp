@@ -14,10 +14,18 @@ using namespace std;
 // Definition of derived class TankPlayerChar
 class TankPlayerChar : public PlayerChar(
 public:
+//CONSTRUCTORS
 TankPlayerChar();
-TankPlayerChar(int PlayerAggro, double playerStamina);
-TankPlayerChar(const PlayerChar& existingPoint);
+TankPlayerChar(int playerAggro);
+TankPlayerChar(int playerAggro, double playerStamina);
+//TankPlayerChar(const PlayerChar& existingPoint);
 
+//ACCESSORS
+
+
+//MUTATORS
+
+//OTHER METHODS
 private:
 
 
