@@ -11,7 +11,7 @@ using namespace std;
 // CONSTRUCTORS
 TankPlayerCHar::TankPlayerChar():PlayerChar() {
     playerAggro = this->getStrength  / 2;
-    playerStamina = this->get;
+    playerStamina = (this->getStrength * this->getAgility) / 2;
 }
 
 
