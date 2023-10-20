@@ -43,8 +43,16 @@ void TankPlayerChar::setStamina(double stamina) {
 }
 
 // OPERATOR METHODS
+bool PlayerChar::operator ==(const PlayerChar& rhs) const {
+    // For PlayerChars to be "equal", their strength and agility
+    // multiplied together should be with 100 of each other
+    // (though the names and Roles can be different)
 
+    double player1Value = playerStrength * playerAgility;
+    double player2Value = rhs.getStrength() * rhs.getAgility();
 
+    return (abs(player1Value - player2Value) < 100 );
+}
 
 // OTHER METHODS
 void TankPlayerChar::display() const{
