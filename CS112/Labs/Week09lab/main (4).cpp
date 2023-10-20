@@ -42,11 +42,11 @@ int main() {
     TankPlayerChar *dinoTankPtr = new TankPlayerChar("Dino", Orc);
     TankPlayerChar joeTank("Joe the Tank", Ogre);
 
-    // cout << "*** DISPLAYING TANKPLAYERCHARS ***" << endl;
+    cout << "*** DISPLAYING TANKPLAYERCHARS ***" << endl;
 
-    // barneyTankPtr->display();
-    // mrSlateTank.display();
-    // (*dinoTankPtr).display();
+    barneyTankPtr->display();
+    mrSlateTank.display();
+    (*dinoTankPtr).display();
 
     // cout << "*** DISPLAY USING PLAYERCHAR METHOD ***" << endl;
 

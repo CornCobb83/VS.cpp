@@ -11,17 +11,17 @@ using namespace std;
 // CONSTRUCTORS
 TankPlayerChar::TankPlayerChar():PlayerChar() {
     playerAggro = this->getStrength()  / 2;
-    playerStamina = (this->getStrength() * this->getAgility) / 2;
+    playerStamina = (this->getStrength() * this->getAgility()) / 2;
 }
 
 TankPlayerChar::TankPlayerChar(string name):PlayerChar(name) {
     playerAggro = this->getStrength()  / 2;
-    playerStamina = (this->getStrength() * this->getAgility) / 2;
+    playerStamina = (this->getStrength() * this->getAgility()) / 2;
 }
 
 TankPlayerChar::TankPlayerChar(string name, Role role):PlayerChar(name, role) {
     playerAggro = this->getStrength()  / 2;
-    playerStamina = (this->getStrength() * this->getAgility) / 2;
+    playerStamina = (this->getStrength() * this->getAgility()) / 2;
 }
 
 // ACCESSORS
