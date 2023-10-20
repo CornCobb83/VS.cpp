@@ -18,9 +18,12 @@ class TankPlayerChar : public PlayerChar(
 public:
 //CONSTRUCTORS
 TankPlayerChar();
-TankPlayerChar(int playerAggro);
-TankPlayerChar(int playerAggro, double inputlayerStamina);
-//TankPlayerChar(const PlayerChar& existingPoint);
+TankPlayerChar(string name);
+TankPlayerChar(string name, Role role);
+
+// TankPlayerChar();
+// TankPlayerChar(int playerAggro);
+// TankPlayerChar(int playerAggro, double inputlayerStamina);
 
 //ACCESSORS
 

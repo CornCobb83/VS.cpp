@@ -14,12 +14,12 @@ TankPlayerChar::TankPlayerChar():PlayerChar() {
     playerStamina = (this->getStrength * this->getAgility) / 2;
 }
 
-TankPlayerChar::TankPlayerChar(int inputPlayerAggro):PlayerChar() {
+TankPlayerChar::TankPlayerChar(string name):PlayerChar(name) {
     playerAggro = inputPlayerAggro;
     playerStamina = (this->getStrength * this->getAgility) / 2;
 }
 
-TankPlayerChar::TankPlayerChar(int inputPlayerAggro,double inputPlayerStamina):PlayerChar() {
+TankPlayerChar::TankPlayerChar(string name, Role role):PlayerChar(name, role) {
     playerAggro = inputPlayerAggro;
     playerStamina = DEFUALT_STAMINA;
 }
