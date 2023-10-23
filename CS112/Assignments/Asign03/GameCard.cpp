@@ -1,3 +1,6 @@
+// Assignment #3
+// Jordan Cobb
+
 #include <cstdlib>
 #include <iostream>
 #include <string>

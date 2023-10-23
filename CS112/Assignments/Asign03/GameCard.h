@@ -1,3 +1,6 @@
+// Assignment #3
+// Jordan Cobb
+
 #ifndef GAMECARD_H
 #define GAMECARD_H
 
