@@ -15,7 +15,19 @@ int main() {
     cout << fixed << setprecision(2);
 
     // ****** TESTING COLORPOINT DERIVED CLASS *****
+    // ****** POLYMORPHISM AND  DYNAMIC BINDING TESTS *****
 
+    ColorPoint p1;
+    ColorPoint p2;
+    cout << "ColorPoint p1 display(): ";
+    p1.display();
+
+    ColorPoint *p3Ptr = new ColorPoint(5, 6, Green);
+    ColorPoint *p4Ptr = new GraphPoint(7, 8);
+    cout << "ColorPoint *p3Ptr display(): ";
+    p3Ptr->display();
+    cout << "GraphPoint *p4Ptr display(): ";
+    p4Ptr->display();
 
     return EXIT_SUCCESS;
 }
