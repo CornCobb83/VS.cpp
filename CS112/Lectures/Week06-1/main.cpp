@@ -23,11 +23,13 @@ int main() {
     p1.display();
 
     ColorPoint *p3Ptr = new ColorPoint(5, 6, Green);
-    ColorPoint *p4Ptr = new GraphPoint(7, 8);
+    GraphPoint *p4Ptr = new GraphPoint(7, 8);
     cout << "ColorPoint *p3Ptr display(): ";
     p3Ptr->display();
     cout << "GraphPoint *p4Ptr display(): ";
     p4Ptr->display();
+
+    GraphPoint *pointArray[4];
 
     return EXIT_SUCCESS;
 }
