@@ -34,7 +34,7 @@ class ColorPoint : public GraphPoint {
     void setColor(PointColor newColor);
 
     // OTHER METHODS
-    void display() const;
+    virtual void display() const;
     string to_string() const;
 
     private:

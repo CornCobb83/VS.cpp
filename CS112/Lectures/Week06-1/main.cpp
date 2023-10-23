@@ -35,5 +35,10 @@ int main() {
     pointArray[2] = p3Ptr;
     pointArray[3] = p4Ptr;
 
+    for (int i = 0; i < 4; i++) {
+        cout << "Pointer at index " << i << ": ";
+        pointArray[i]->display();
+    }
+
     return EXIT_SUCCESS;
 }
