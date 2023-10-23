@@ -45,5 +45,5 @@ void ColorPoint::display() const {
 }
 
 string ColorPoint::to_string() const {
-    return COLORNAMES[colorValue] + GraphPoint::to_string();
+    return COLORNAMES[colorValue] + " " + GraphPoint::to_string();
 }
