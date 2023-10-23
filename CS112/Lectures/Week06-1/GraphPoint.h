@@ -35,7 +35,7 @@ class GraphPoint {
     // method display() if this is a dericed class object,
     // and you'll run the BASE Class method (display) if
     // this is only a base class object
-    virtural void display() const;
+    virtual void display() const;
     string to_string() const;
     double distance(const GraphPoint& p2) const;
 
