@@ -18,7 +18,7 @@ int main() {
     // ****** POLYMORPHISM AND  DYNAMIC BINDING TESTS *****
 
     ColorPoint p1;
-    ColorPoint p2;
+    GraphPoint p2;
     cout << "ColorPoint p1 display(): ";
     p1.display();
 
@@ -30,6 +30,10 @@ int main() {
     p4Ptr->display();
 
     GraphPoint *pointArray[4];
+    pointArray[0] = &p1;
+    pointArray[1] = &p2;
+    pointArray[2] = p3Ptr;
+    pointArray[3] = p4Ptr;
 
     return EXIT_SUCCESS;
 }
