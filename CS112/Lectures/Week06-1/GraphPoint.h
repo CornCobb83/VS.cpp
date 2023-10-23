@@ -31,7 +31,11 @@ class GraphPoint {
     void setCoords(double newX, double newY);
 
     // OTHER METHODS
-    void display() const;
+    // Virtual means that you'll run the DERIVED CLASS
+    // method display() if this is a dericed class object,
+    // and you'll run the BASE Class method (display) if
+    // this is only a base class object
+    virtural void display() const;
     string to_string() const;
     double distance(const GraphPoint& p2) const;
 
