@@ -27,12 +27,20 @@ int main() {
     card1.getType();
     cout << "Is card1 type Water? " << (card1.getName() == "Water") << endl;
 
+    cout << "Now we are testing card2 which should be set to 'unknown', -1, 'unknown'" << endl;
+    card1.getName();
+    cout << "Is card2 name unknown? " << (card2.getName() == "unknown") << endl;
+    card1.getLevel();
+    cout << "Is card2 level -1? " << (card2.getLevel() == -1) << endl;
+    card1.getType();
+    cout << "Is card2 type unknown? " << (card2.getName() == "unknown") << endl;
+
     cout << "Now we are changing the values of card2" << endl;
     card2.setName("Charmander");
     card2.setLevel(3);
     card2.setType("Fire");
 
-    cout << "Now we are testing card1 which should be set to 'Charmander', 3, 'Fire'" << endl;
+    cout << "Now we are testing card2 which should be set to 'Charmander', 3, 'Fire'" << endl;
     card2.getName();
     cout << "Is card2 name Charmander? " << (card2.getName() == "Charmander") << endl;
     card2.getLevel();
