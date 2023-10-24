@@ -29,6 +29,7 @@ GameCard::GameCard(string name, string type) {
 
 // ACCESSORS
 string GameCard::getName() const {
+    
     return cardName;
 }
 
