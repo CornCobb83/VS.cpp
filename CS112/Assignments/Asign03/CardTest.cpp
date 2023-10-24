@@ -20,6 +20,7 @@ int main() {
     GameCard card2;
 
     card1.getName();
+    cout << "Is card1 name Squirtle? " << (card1.getName() == "Squirtle") << endl;
     card1.getLevel();
     card1.getType();
 
@@ -28,8 +29,11 @@ int main() {
     card2.setType("Fire");
 
     card2.getName();
+    cout << "Is card2 name Charmander? " << (card2.getName() == "Charmander") << endl;
     card2.getLevel();
+    cout << "Is card2 level 3? " << (card2.getLevel() == 3) << endl;
     card2.getType();
+    cout << "Is card2 name Charmander? " << (card2.getName() == "Charmander") << endl;
 
     myCardPtr->display();
     card1.display();
