@@ -34,12 +34,12 @@ int main() {
     card2.setLevel(3);
     card2.setType("Fire");
 
-    cout << "Now we are testing card2 which should be set to 'Pikachu', 3, 'Fire'" << endl;
+    cout << "Now we are testing card2 which should be set to 'Charmander', 3, 'Fire'" << endl;
     cout << "Is card2 name Charmander? " << (card2.getName() == "Charmander") << endl;
     cout << "Is card2 level 3? " << (card2.getLevel() == 3) << endl;
     cout << "Is card2 type Fire? " << (card2.getType() == "Fire") << endl;
 
-    cout << "Now we are checking cardPtr which should be set to 'Charmander', 7, 'Electric'" << endl;
+    cout << "Now we are checking cardPtr which should be set to 'Pikachu', 7, 'Electric'" << endl;
     myCardPtr->display();
     cout << endl << "Now we are changing the values of cardPtr" << endl;
     myCardPtr->setName("Riachu");
