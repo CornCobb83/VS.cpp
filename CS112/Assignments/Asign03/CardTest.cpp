@@ -47,6 +47,7 @@ int main() {
     cout << "Is cardPtr name Riachu? " << (myCardPtr->getName() == "Riachu") << endl;
     cout << "Is cardPtr level 11? " << (myCardPtr->getLevel() == 11) << endl;
 
+    myCardPtr->display();
     card1.display();
     card2.display();
 
