@@ -8,10 +8,28 @@
 #include "VectorPoint.h"
 
 // CONSTRUCTORS
-ColorVectorPoint::ColorVectorPoint() : VectorPoint() {
+    VectorPoint() {
+        magValue = 0;
+        dirValue = 0;
+    }
 
-}
+    VectorPoint(double x, double y, double mag, double dir) {
+        
+    }
+    VectorPoint(double mag);
+    VectorPoint(int dir);
 
-// OTHER METHODS
+    // ACCESSORS
+    double getMag() const;
+    dir getDir() const;
+
+    // NO MUTATORS
+    void setMag(double mag);
+    void setDir(int dir);
+
+    // OTHER METHOD
+
+    virtual void display() const;
+    string to_string() const;
 
 using namespace std;

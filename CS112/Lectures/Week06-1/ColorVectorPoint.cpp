@@ -30,7 +30,7 @@ void ColorVectorPoint::display() const {
 }
 
 string ColorVectorPoint::to_string() const {
-    return COLORNAMES[colorValue] + " " + GraphPoint::to_string();
+    return this->ColorPoint::to_string() + ", " + std::to_string(this->getMag()) + ", " + std::to_string(this->getDir());
 }
 
 using namespace std;
