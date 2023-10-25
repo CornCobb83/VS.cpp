@@ -8,53 +8,58 @@
 #include "VectorPoint.h"
 
 // CONSTRUCTORS
-    VectorPoint() {
+    VectorPoint::VectorPoint() {
         magValue = MAG_DEFAULT;
         dirValue = DIR_DEFAULT;
     }
 
-    VectorPoint(double x, double y, double mag, double dir) : GraphPoint(x, y) {
+    VectorPoint::VectorPoint(double x, double y, double mag, double dir) : GraphPoint(x, y) {
         magValue = mag;
         dirValue = dir;
     }
 
-    VectorPoint(double mag) {
+    VectorPoint::VectorPoint(double mag) {
         magValue = mag;
         dirValue = DIR_DEFAULT;
     }
 
-    VectorPoint(int dir) {
+    VectorPoint::VectorPoint(int dir) {
         magValue = MAG_DEFAULT;
         dirValue = dir;
+    }
+
+    VectorPoint::VectorPoint(const GraphPoint& existingPoint) : GraphPoint(existingPoint) {
+        magValue = MAG_DEFAULT;
+        dirValue = DIR_DEFAULT;
     }
 
     // ACCESSORS
-    double getMag() const {
+    double VectorPoint::getMag() const {
         return magValue;
     }
 
-    dir getDir() const {
+    dir VectorPoint::getDir() const {
         return dirValue;
     }
 
     // NO MUTATORS
-    void setMag(double mag) {
+    void VectorPoint::setMag(double mag) {
         magValue = mag;
     }
 
-    void setDir(int dir) {
+    void VectorPoint::setDir(int dir) {
         dirValue = dir;
     }
 
     // OTHER METHOD
 
-    virtual void display() const {
+    virtual void VectorPoint::display() const {
         cout << "VectorPoint (" << this->getX() << ", "
         << this->getY() << ") with mag " << getMag()
         << "and dir " << getDir() << endl;
     }
 
-    string to_string() const {
+    string VectorPoint::to_string() const {
         return GraphPoint::to_string() + ", " + std::to_string(getMag()) + ", " + std::to_string(getDir());
     }
 

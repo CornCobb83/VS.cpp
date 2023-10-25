@@ -21,6 +21,7 @@ public:
     VectorPoint(double x, double y, double mag, double dir);
     VectorPoint(double mag);
     VectorPoint(int dir);
+    VectorPoint(const GraphPoint& existingPoint);
 
     // ACCESSORS
     double getMag() const;
