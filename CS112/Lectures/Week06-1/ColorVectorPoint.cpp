@@ -7,6 +7,6 @@
 // #include "GraphPoint.h"
 #include "ColorVectorPoint.h"
 
-
+ColorVectorPoint::ColorVectorPoint()
 
 using namespace std;
