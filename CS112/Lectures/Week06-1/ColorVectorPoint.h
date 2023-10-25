@@ -18,6 +18,17 @@ public:
     ColorVectorPoint(double x, double y);
     ColorVectorPoint(double x, double y, PointColor color, double mag, int dir);
 
-}
+    // NO ACCESSORS
+
+    // NO MUTATORS
+
+    // OTHER METHOD
+
+    virtual void display() const;
+    string to_string() const;
+
+private:
+
+};
 
 #endif
