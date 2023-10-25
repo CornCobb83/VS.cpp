@@ -16,6 +16,7 @@ public:
 
     ColorVectorPoint();
     ColorVectorPoint(double x, double y);
+    ColorVectorPoint(double x, double y, PointColor color, double mag, int dir);
 
 }
 
