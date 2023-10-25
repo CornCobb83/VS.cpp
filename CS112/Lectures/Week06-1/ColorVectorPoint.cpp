@@ -23,7 +23,14 @@ ColorVectorPoint::ColorVectorPoint(double x, double y, PointColor color, double 
 
 //OTHER METHODS
 void ColorVectorPoint::display() const {
-    
+    cout << "ColorVectorPoint is " << COLORNAMES[this->getColor()] << " at "
+    << "(" << this->getX() << ", "
+    << this->getY() << ") with mag " << this.getMag()
+    << "and dir " << this.getDir() << endl;
+}
+
+string ColorVectorPoint::to_string() const {
+    return COLORNAMES[colorValue] + " " + GraphPoint::to_string();
 }
 
 using namespace std;

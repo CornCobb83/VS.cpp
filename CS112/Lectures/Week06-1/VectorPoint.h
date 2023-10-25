@@ -15,11 +15,13 @@ public:
 
     // CONSTRUCTORS
     VectorPoint();
-    VectorPoint(x, y, mag, dir);
-    VectorPoint();
-    VectorPoint();
+    VectorPoint(double x, double y, double mag, double dir);
+    VectorPoint(double mag);
+    VectorPoint(int dir);
 
-    // NO ACCESSORS
+    // ACCESSORS
+    void getMag() const;
+    void getDir() const;
 
     // NO MUTATORS
 
