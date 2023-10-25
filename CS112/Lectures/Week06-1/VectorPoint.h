@@ -15,6 +15,9 @@ public:
 
     // CONSTRUCTORS
     VectorPoint();
+    VectorPoint(x, y, mag, dir);
+    VectorPoint();
+    VectorPoint();
 
     // NO ACCESSORS
 

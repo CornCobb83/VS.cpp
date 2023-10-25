@@ -13,14 +13,17 @@ ColorVectorPoint::ColorVectorPoint() : VectorPoint() {
 }
 
 ColorVectorPoint::ColorVectorPoint(double x, double y) : ColorPoint(x, y) {
-    this->setMag(COLOR_DEFAULT);
+    this->setMag(MAG_DEFAULT);
     this->setDir(DIR_DEFAULT);
 }
 
 ColorVectorPoint::ColorVectorPoint(double x, double y, PointColor color, double mag, double dir) : VectorPoint(x, y, mag, dir) {
-    this->setMag(COLOR_DEFAULT);
-    this->setDir(DIR_DEFAULT);
+    this->setColor(color);
 }
 
+//OTHER METHODS
+void ColorVectorPoint::display() const {
+    
+}
 
 using namespace std;
