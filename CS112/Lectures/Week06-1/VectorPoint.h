@@ -10,6 +10,9 @@
 #include "VectorPoint.h"
 using namespace std;
 
+MAG_DEFAULT = 0.0;
+DIR_DEFAULT = 0;
+
 class ColorVectorPoint : public ColorPoint, public VectorPoint {
 public:
 

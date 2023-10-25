@@ -9,22 +9,22 @@
 
 // CONSTRUCTORS
     VectorPoint() {
-        magValue = 0;
-        dirValue = 0;
+        magValue = MAG_DEFAULT;
+        dirValue = DIR_DEFAULT;
     }
 
-    VectorPoint(double x, double y, double mag, double dir) {
+    VectorPoint(double x, double y, double mag, double dir) : GraphPoint(x, y) {
         magValue = mag;
         dirValue = dir;
     }
 
     VectorPoint(double mag) {
         magValue = mag;
-        dirValue = 0;
+        dirValue = DIR_DEFAULT;
     }
 
     VectorPoint(int dir) {
-        magValue = 0;
+        magValue = MAG_DEFAULT;
         dirValue = dir;
     }
 
