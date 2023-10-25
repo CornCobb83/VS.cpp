@@ -14,6 +14,7 @@ using namespace std;
 class ColorVectorPoint : public ColorPoint, public VectorPoint {
 public:
 
+    // CONSTRUCTORS
     ColorVectorPoint();
     ColorVectorPoint(double x, double y);
     ColorVectorPoint(double x, double y, PointColor color, double mag, int dir);

@@ -7,6 +7,9 @@
 // #include "GraphPoint.h"
 #include "ColorVectorPoint.h"
 
-ColorVectorPoint::ColorVectorPoint()
+// CONSTRUCTORS
+ColorVectorPoint::ColorVectorPoint() : VectorPoint() {
+    
+}
 
 using namespace std;
