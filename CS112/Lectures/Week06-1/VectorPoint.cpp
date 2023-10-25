@@ -14,18 +14,37 @@
     }
 
     VectorPoint(double x, double y, double mag, double dir) {
-        
+        magValue = mag;
+        dirValue = dir;
     }
-    VectorPoint(double mag);
-    VectorPoint(int dir);
+
+    VectorPoint(double mag) {
+        magValue = mag;
+        dirValue = 0;
+    }
+
+    VectorPoint(int dir) {
+        magValue = 0;
+        dirValue = dir;
+    }
 
     // ACCESSORS
-    double getMag() const;
-    dir getDir() const;
+    double getMag() const {
+        return magValue;
+    }
+
+    dir getDir() const {
+        return dirValue;
+    }
 
     // NO MUTATORS
-    void setMag(double mag);
-    void setDir(int dir);
+    void setMag(double mag) {
+        magValue = mag;
+    }
+
+    void setDir(int dir) {
+        dirValue = dir;
+    }
 
     // OTHER METHOD
 

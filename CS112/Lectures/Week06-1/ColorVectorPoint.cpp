@@ -24,8 +24,8 @@ ColorVectorPoint::ColorVectorPoint(double x, double y, PointColor color, double 
 //OTHER METHODS
 void ColorVectorPoint::display() const {
     cout << "ColorVectorPoint is " << COLORNAMES[this->getColor()] << " at "
-    << "(" << this->getX() << ", "
-    << this->getY() << ") with mag " << this.getMag()
+    << "(" << this->VectorPoint::getX() << ", "
+    << this->VectorPoint::getY() << ") with mag " << this.getMag()
     << "and dir " << this.getDir() << endl;
 }
 
