@@ -20,10 +20,12 @@ public:
     VectorPoint(int dir);
 
     // ACCESSORS
-    void getMag() const;
-    void getDir() const;
+    double getMag() const;
+    dir getDir() const;
 
     // NO MUTATORS
+    void setMag(double mag);
+    void setDir(int dir);
 
     // OTHER METHOD
 
