@@ -6,8 +6,7 @@
 #include <cstdlib>
 #include <string>
 #include <cmath>
-#include "ColorVectorPoint.h"
-#include "ColorVectorPoint.h"
+#include "ColorPoint.h"
 #include "VectorPoint.h"
 using namespace std;
 
