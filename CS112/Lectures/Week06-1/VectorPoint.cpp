@@ -48,7 +48,14 @@
 
     // OTHER METHOD
 
-    virtual void display() const;
-    string to_string() const;
+    virtual void display() const {
+        cout << "VectorPoint (" << this->getX() << ", "
+        << this->getY() << ") with mag " << getMag()
+        << "and dir " << getDir() << endl;
+    }
+
+    string to_string() const {
+        return GraphPoint::to_string() + ", " + std::to_string(getMag()) + ", " + std::to_string(getDir());
+    }
 
 using namespace std;
