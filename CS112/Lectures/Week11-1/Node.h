@@ -23,11 +23,11 @@ public:
     Node(GraphPoint gp, Node *nextPtr);
 
     // Accessors
-    GraphPoint getPoint() const;
+    GraphPoint getNodeData() const;
     Node *getNextPtr() const;
 
     // Mutators
-    void setGraphPoint(const GraphPoint& newGraphPoint);
+    void setNodeData(const GraphPoint& newGraphPoint);
 
     // Other Methods
     void display();
@@ -36,6 +36,9 @@ public:
 private:
     // Mutators
     void setNextPtr(Node *newNextPtr);
+
+    // Data Members
+    GraphPoint nodeData;
 
 };
 
