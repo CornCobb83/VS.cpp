@@ -11,4 +11,17 @@
 
 using namespace std;
 
+// Constant declarations in class
+const Node* DEFAULT_PTR = NULL;
+
+class Node {
+public:
+
+    Node();
+    Node(GraphPoint gp);
+
+private:
+
+};
+
 #endif
