@@ -17,8 +17,16 @@ const Node* DEFAULT_PTR = NULL;
 class Node {
 public:
 
+    // Constructors
     Node();
     Node(GraphPoint gp);
+    Node(GraphPoint gp, Node *nextPtr);
+
+    // Accessors
+    GraphPoint getPoint() const;
+    GraphPoint *getNextPtr() const;
+
+    // 
 
 private:
 
