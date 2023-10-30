@@ -33,12 +33,14 @@ public:
     void display();
     string to_string();
 
-private:
+protected:
     // Mutators
     void setNextPtr(Node *newNextPtr);
 
+private:
     // Data Members
     GraphPoint nodeData;
+    Node *NextPtr;
 
 };
 
