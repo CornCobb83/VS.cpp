@@ -24,9 +24,11 @@ public:
 
     // Accessors
     GraphPoint getPoint() const;
-    GraphPoint *getNextPtr() const;
+    Node *getNextPtr() const;
 
-    // 
+    // Mutators
+    void setGraphPoint(const GraphPoint& newGraphPoint);
+    
 
 private:
 
