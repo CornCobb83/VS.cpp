@@ -44,5 +44,8 @@ void Node::display() {
     cout << "Node at address " << this << " contains ";
     nodeData.GraphPoint::display();
     cout << " and points to " << nextPtr << endl;
+}
 
+string Node::to_string() {
+    return nodeData.GraphPoint::to_string() + to_string(nextPtr);
 }
