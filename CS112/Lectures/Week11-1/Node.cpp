@@ -12,11 +12,11 @@ using namespace std;
 // Constructors
 Node::Node() {
     nodeData = GraphPoint();
-    nextPtr = DEFAULT_PTR;
+    nextPtr = NULL;
 }
 
 Node::Node(GraphPoint gp) : nodeData(gp) {
-    nextPtr = DEFAULT_PTR;
+    nextPtr = NULL;
 }
 
 Node::Node(GraphPoint gp, Node *ptr) : nodeData(gp), nextPtr(ptr) {}

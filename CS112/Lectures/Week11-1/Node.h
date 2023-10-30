@@ -12,7 +12,7 @@
 using namespace std;
 
 // Constant declarations in class
-const Node* DEFAULT_PTR = NULL;
+// const Node* DEFAULT_PTR = NULL;
 
 class Node {
 public:
