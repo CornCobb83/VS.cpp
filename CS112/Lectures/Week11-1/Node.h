@@ -35,7 +35,7 @@ public:
 
 protected:
     // Mutators
-    void setNextPtr(Node *newNextPtr);
+    void setNextPtr(const Node *newNextPtr);
 
 private:
     // Data Members
