@@ -9,3 +9,6 @@
 
 using namespace std;
 
+Node::Node() {
+    nodeData = 
+}
