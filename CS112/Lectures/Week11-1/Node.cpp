@@ -11,4 +11,5 @@ using namespace std;
 
 Node::Node() {
     nodeData = GraphPoint();
+    nextPtr = DEFAULT_PTR;
 }
