@@ -10,5 +10,5 @@
 using namespace std;
 
 Node::Node() {
-    nodeData = 
+    nodeData = GraphPoint();
 }
