@@ -13,3 +13,9 @@ Node::Node() {
     nodeData = GraphPoint();
     nextPtr = DEFAULT_PTR;
 }
+
+Node::Node(GraphPoint gp) : nodeData(gp) {
+    nextPtr = DEFAULT_PTR;
+}
+
+Node::Node(GraphPoint gp, Node *ptr) : nodeData(gp), nextPtr(ptr) {}
