@@ -29,11 +29,13 @@ public:
     // Mutators
     void setGraphPoint(const GraphPoint& newGraphPoint);
 
+    // Other Methods
+    void display();
+    string to_string();
 
 private:
     // Mutators
     void setNextPtr(Node *newNextPtr);
-    
 
 };
 
