@@ -25,7 +25,7 @@ public:
 
     // Declarations for accessors
     string getRarity() const;
-    string getFullArt() const;
+    bool getFullArt() const;
 
     // Declarations for mutators
     void setRarity(string rarity);
