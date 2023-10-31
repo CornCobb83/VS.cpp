@@ -51,5 +51,14 @@ int main() {
     card1.display();
     card2.display();
 
+    cout << "Testing is card1 is equal to card2" << endl;
+    cout << (card1 == card2) << endl;
+    cout << "Setting card1 equal to card2" << endl;
+    card2.setName("Squirtle");
+    card2.setLevel(5);
+    card2.setType("Water");
+    cout << "Testing is card1 is equal to card2" << endl;
+    cout << (card1 == card2) << endl;
+
     return 0;
 }
