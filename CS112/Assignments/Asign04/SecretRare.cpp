@@ -15,46 +15,27 @@ SecretRare::SecretRare(){
 }
 
 SecretRare::SecretRare(string name, int level, string type, string rarity) : GameCard(name, level, type){
-    cardRarity = rarity
+    cardRarity = rarity;
 }
 
 // ACCESSORS
-string SecretRare::getName() const {
+string SecretRare::getRarity() const {
 
-    return cardName;
-}
-
-int SecretRare::getLevel() const {
-    return cardLevel;
-}
-
-string SecretRare::getType() const {
-    return cardType;
+    return cardRarity;
 }
 
 // MUTATORS
-void SecretRare::setName(string name) {
-    cardName = name;
-}
-
-void SecretRare::setLevel(int level) {
-    cardLevel = level;
-}
-
-void SecretRare::setType(string type) {
-    cardType = type;
+void SecretRare::setRarity(string rarity) {
+    cardRarity = rarity;
 }
 
 // OTHER METHODS
 string SecretRare::to_string() const{
-    return cardName + " " + std::to_string(cardLevel) + " " + cardType;
+    return GameCard::to_string + " " + std::to_string(cardRarity);
 }
 
 void SecretRare::display() const{
+    GameCard::display();
     cout << fixed << setprecision(2)
-         << "***************" << endl
-         << "Pokemon Card" << endl
-         << "Name:  " << cardName << endl
-         << "Level: " << cardLevel << endl
-         << "Type:  " << cardType << endl;
+         << "Rarity:" << cardRarity << end;
 }
