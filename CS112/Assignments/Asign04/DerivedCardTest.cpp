@@ -71,7 +71,7 @@ int main() {
     card1.display();
     card2.display();
 
-    cout << "Testing Accessors" << endl;
+    cout << endl << "Testing Accessors" << endl;
     cout << "Does cardPtr return name Pikachu?  " << (myCardPtr->getName() == "Pikachu") << endl;
     cout << "Does cardPtr return level 7?   " << (myCardPtr->getLevel() == 7) << endl;
     cout << "Does cardPtr return type Electric? " << (myCardPtr->getType() == "Electric") << endl;
