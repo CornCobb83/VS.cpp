@@ -40,7 +40,7 @@ void SecretRare::setFullArt(bool art) {
 
 // OTHER METHODS
 bool SecretRare::operator ==(const SecretRare& rhs) const {
-    return (cardName == rhs.getName() && cardLevel == rhs.getLevel() && cardType == rhs.getType());
+    return (cardFullArt == rhs.getFullArt() && cardRarity == rhs.getRarity());
 }
 
 string SecretRare::to_string() const{
