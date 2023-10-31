@@ -11,7 +11,7 @@ using namespace std;
 
 // CONSTRUCTORS
 SecretRare::SecretRare() : GameCard() {
-    rarity = RARITY_DEFAULT;
+    cardRarity = RARITY_DEFAULT;
 }
 
 SecretRare::SecretRare(string name, int level, string type, string rarity) : GameCard(name, level, type) {
