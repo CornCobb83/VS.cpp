@@ -35,7 +35,7 @@ bool SecretRare::operator ==(const SecretRare& rhs) const {
 }
 
 string SecretRare::to_string() const{
-    return GameCard::to_string() + " " + std::to_string(cardRarity);
+    return GameCard::to_string() + " " + cardRarity;
 }
 
 void SecretRare::display() const{
