@@ -12,12 +12,13 @@
 
 using namespace std;
 
-// Definition of derived class TankPlayerChar
+// Definition of derived class SecretRare
 class SecretRare : public GameCard {
 public:
+
 //CONSTRUCTORS
-TankPlayerChar();
-TankPlayerChar(string name);
+SecretRare();
+SecretRare(string name);
 TankPlayerChar(string name, Role role);
 
 //ACCESSORS
