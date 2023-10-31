@@ -32,11 +32,10 @@ void SecretRare::setRarity(string rarity) {
 // OTHER METHODS
 bool SecretRare::operator ==(const SecretRare& rhs) const {
 
-    bool playerEqual = GameCard::operator ==(rhs);
-    bool isType = (abs(playerAggro - rhs.getAggro()) < 50);
-    bool isLevel = (abs(playerStamina - rhs.getStamina()) < 100);
+    string card1Value = cardLevel + cardType;
+    string card2Value = rhs.getLevel() + rhs.getType();
 
-    return (playerEqual && isAggro && isStamina);
+    return (card1Value == card2Value);
 }
 
 string SecretRare::to_string() const{
