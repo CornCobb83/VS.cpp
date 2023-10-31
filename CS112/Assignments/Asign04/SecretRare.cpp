@@ -5,7 +5,7 @@
 #include <iostream>
 #include <string>
 #include <cmath>
-#include "TankPlayerChar.h"
+#include "GameCard.h"
 
 using namespace std;
 

@@ -1,19 +1,19 @@
 // Assignment #4
 // Jordan Cobb
 
-#ifndef TANKPLAYERCHAR_H
-#define TANKPLAYERCHAR_H
+#ifndef SECRETRARE_H
+#define SECRETRARE_H
 
 #include <cstdlib>
 #include <iostream>
 #include <string>
 #include <cmath>
-#include "PlayerChar.h"
+#include "GameCard.h"
 
 using namespace std;
 
 // Definition of derived class TankPlayerChar
-class TankPlayerChar : public PlayerChar {
+class SecretRare : public GameCard {
 public:
 //CONSTRUCTORS
 TankPlayerChar();
