@@ -11,13 +11,11 @@ using namespace std;
 
 // CONSTRUCTORS
 SecretRare::SecretRare(){
-    cardName = "unknown";
-    cardLevel = -1;
-    cardType = "unknown";
+    rarity = RARITY_DEFAULT;
 }
 
-SecretRare::SecretRare(string name, int level, string type) : GameCard(name, level, type){
-    
+SecretRare::SecretRare(string name, int level, string type, string rarity) : GameCard(name, level, type){
+    cardRarity = rarity
 }
 
 // ACCESSORS

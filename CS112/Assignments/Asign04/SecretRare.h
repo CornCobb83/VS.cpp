@@ -12,6 +12,8 @@
 
 using namespace std;
 
+RARITY_DEFAULT = "normal";
+
 // Definition of derived class SecretRare
 class SecretRare : public GameCard {
 public:
@@ -33,7 +35,7 @@ public:
 
 private:
     // Declarations of data members
-    string rarity;
+    string cardRarity;
 
 };
 
