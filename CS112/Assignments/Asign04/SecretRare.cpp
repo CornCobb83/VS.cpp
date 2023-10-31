@@ -40,6 +40,5 @@ string SecretRare::to_string() const{
 
 void SecretRare::display() const{
     GameCard::display();
-    cout << fixed << setprecision(2)
-         << "Rarity:" << cardRarity << end;
+    cout << "Rarity: " << cardRarity << end;
 }
