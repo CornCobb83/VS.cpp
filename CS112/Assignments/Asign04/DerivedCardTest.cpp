@@ -86,7 +86,24 @@ int main() {
     cout << "Does card1 return rarity common? " << (card1.getRarity() == "common") << endl;
     cout << "Does card1 return false (Full Art)?  " << (card1.getFullArt() == false) << endl;
     cout << "Does card1 return rarity Ultra Rare? " << (card1.getRarity() == "Ultra Rare") << endl;
-    cout << "Does card1 return true (Full Art)?   " << (card1.getFullArt() == true) << endl;
+    cout << "Does card1 return true (Full Art)?   " << (card1.getFullArt() == true) << endl << endl;
+
+    cout << "Does card2 return name Squirtle?  " << (card2.getName() == "Squirtle") << endl;
+    cout << "Does card2 return level 5?   " << (card2.getLevel() == 5) << endl;
+    cout << "Does card2 return type Water? " << (card2.getType() == "Water") << endl;
+    cout << "Does card2 return rarity common? " << (card2.getRarity() == "common") << endl;
+    cout << "Does card2 return false (Full Art)?  " << (card2.getFullArt() == false) << endl;
+    cout << "Does card2 return rarity Ultra Rare? " << (card2.getRarity() == "Ultra Rare") << endl;
+    cout << "Does card2 return true (Full Art)?   " << (card2.getFullArt() == true) << endl << endl;
+
+    cout << "Let's change our 0 argument constructor" << endl;
+    card2.setName("Wobbuffet");
+    card2.setLevel(17);
+    card2.setType("Psychic");
+    card2.setRarity("Very Rare");
+    card2.setFullArt(true);
+    cout << "Card 2 has been changed from 0 arguments to:" << endl;
+    card2.display();
 
     return 0;
 }
