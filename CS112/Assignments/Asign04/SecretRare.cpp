@@ -12,21 +12,30 @@ using namespace std;
 // CONSTRUCTORS
 SecretRare::SecretRare() : GameCard() {
     cardRarity = RARITY_DEFAULT;
+    cardFullArt = FULLART_DEFAULT;
 }
 
-SecretRare::SecretRare(string name, int level, string type, string rarity) : GameCard(name, level, type) {
+SecretRare::SecretRare(string name, int level, string type, string rarity, bool art) : GameCard(name, level, type) {
     cardRarity = rarity;
+    cardFullArt = art;
 }
 
 // ACCESSORS
 string SecretRare::getRarity() const {
-
     return cardRarity;
+}
+
+bool SecretRare::getFullArt() const {
+    return cardFullArt;
 }
 
 // MUTATORS
 void SecretRare::setRarity(string rarity) {
     cardRarity = rarity;
+}
+
+void SecretRare::setFullArt(bool art) {
+    cardFullArt = art;
 }
 
 // OTHER METHODS

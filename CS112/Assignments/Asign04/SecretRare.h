@@ -13,6 +13,7 @@
 using namespace std;
 
 const string RARITY_DEFAULT = "common";
+const bool FULLART_DEFAULT = false;
 
 // Definition of derived class SecretRare
 class SecretRare : public GameCard {
@@ -20,14 +21,15 @@ public:
 
 //CONSTRUCTORS
     SecretRare();
-    SecretRare(string name, int level, string type, string rarity);
+    SecretRare(string name, int level, string type, string rarity, bool art);
 
     // Declarations for accessors
     string getRarity() const;
+    string getFullArt() const;
 
     // Declarations for mutators
     void setRarity(string rarity);
-
+    void setFullArt(bool art);
 
     // Declarations for other methods
     bool operator ==(const SecretRare& rhs) const;
@@ -37,6 +39,7 @@ public:
 private:
     // Declarations of data members
     string cardRarity;
+    bool cardFullArt;
 
 };
 
