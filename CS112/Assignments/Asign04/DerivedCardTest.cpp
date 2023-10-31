@@ -7,6 +7,7 @@
 #include <string>
 #include <cmath>
 #include "GameCard.h"
+#include "SecretRare.h"
 
 using namespace std;
 
