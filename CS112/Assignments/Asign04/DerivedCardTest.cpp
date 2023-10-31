@@ -116,5 +116,10 @@ int main() {
     cout << endl << "Testing base class display method for card 1" << endl;
     card1.GameCard::display();
 
+    cout << endl << "Testing to_string methods" << endl;
+    cout << "Does card 1 print out 'Squirtle 5 Water common 0'? " << (card1.to_string() == "Squirtle 5 Water common 0")
+    cout << "Does card 2 print out 'Wobbuffet 17 Psychic Very Rare 1'? " << (card2.to_string() == "Wobbuffet 17 Psychic Very Rare 1")
+    cout << "Does cardPtr print out 'Wobbuffet 17 Psychic Very Rare 1'? " << (card2.to_string() == "Wobbuffet 17 Psychic Very Rare 1")
+
     return 0;
 }
