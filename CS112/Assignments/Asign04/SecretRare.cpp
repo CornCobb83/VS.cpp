@@ -10,62 +10,60 @@
 using namespace std;
 
 // CONSTRUCTORS
-TankPlayerChar::TankPlayerChar():PlayerChar() {
-    playerAggro = this->getStrength()  / 2;
-    playerStamina = (this->getStrength() * this->getAgility()) / 2;
+SecretRare::SecretRare(){
+    cardName = "unknown";
+    cardLevel = -1;
+    cardType = "unknown";
 }
 
-TankPlayerChar::TankPlayerChar(string name):PlayerChar(name) {
-    playerAggro = this->getStrength()  / 2;
-    playerStamina = (this->getStrength() * this->getAgility()) / 2;
+SecretRare::SecretRare(string name, int level, string type) {
+    cardName = name;
+    cardLevel = level;
+    cardType = type;
 }
 
-TankPlayerChar::TankPlayerChar(string name, Role role):PlayerChar(name, role) {
-    playerAggro = this->getStrength()  / 2;
-    playerStamina = (this->getStrength() * this->getAgility()) / 2;
+SecretRare::SecretRare(string name, string type) {
+    cardName = name;
+    cardType = type;
 }
 
 // ACCESSORS
-int TankPlayerChar::getAggro() const{
-    return playerAggro;
+string SecretRare::getName() const {
+
+    return cardName;
 }
 
-double TankPlayerChar::getStamina() const{
-    return playerStamina;
+int SecretRare::getLevel() const {
+    return cardLevel;
+}
+
+string SecretRare::getType() const {
+    return cardType;
 }
 
 // MUTATORS
-void TankPlayerChar::setAggro(int aggro) {
-    playerAggro = aggro;
+void SecretRare::setName(string name) {
+    cardName = name;
 }
 
-void TankPlayerChar::setStamina(double stamina) {
-    playerStamina = stamina;
+void SecretRare::setLevel(int level) {
+    cardLevel = level;
 }
 
-// OPERATOR METHODS
-bool TankPlayerChar::operator ==(const TankPlayerChar& rhs) const {
-    // For PlayerChars to be "equal", their strength and agility
-    // multiplied together should be with 100 of each other
-    // (though the names and Roles can be different)
-
-    bool playerEqual = PlayerChar::operator ==(rhs);
-    bool isAggro = (abs(playerAggro - rhs.getAggro()) < 50);
-    bool isStamina = (abs(playerStamina - rhs.getStamina()) < 100);
-
-    return (playerEqual && isAggro && isStamina);
+void SecretRare::setType(string type) {
+    cardType = type;
 }
 
 // OTHER METHODS
-void TankPlayerChar::display() const{
-    PlayerChar::display();
-    cout << "AGGRO IS " << playerAggro << endl
-         << "STAMINA IS " << playerStamina << endl
-         << endl;
+string SecretRare::to_string() const{
+    return cardName + " " + std::to_string(cardLevel) + " " + cardType;
 }
 
-string TankPlayerChar::to_string() const {
-    return PlayerChar::to_string() + ", "
-         + std::to_string(playerAggro) + ", "
-         + std::to_string(playerStamina);
+void SecretRare::display() const{
+    cout << fixed << setprecision(2)
+         << "***************" << endl
+         << "Pokemon Card" << endl
+         << "Name:  " << cardName << endl
+         << "Level: " << cardLevel << endl
+         << "Type:  " << cardType << endl;
 }
