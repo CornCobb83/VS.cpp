@@ -117,9 +117,10 @@ int main() {
     card1.GameCard::display();
 
     cout << endl << "Testing to_string methods" << endl;
-    cout << "Does card 1 print out 'Squirtle 5 Water common 0'? " << (card1.to_string() == "Squirtle 5 Water common 0")
-    cout << "Does card 2 print out 'Wobbuffet 17 Psychic Very Rare 1'? " << (card2.to_string() == "Wobbuffet 17 Psychic Very Rare 1")
-    cout << "Does cardPtr print out 'Wobbuffet 17 Psychic Very Rare 1'? " << (card2.to_string() == "Wobbuffet 17 Psychic Very Rare 1")
+    cout << "Does card 1 print out 'Squirtle, 5, Water, common, 0'? " << (card1.to_string() == "Squirtle, 5, Water, common, 0") << endl;
+    cout << "Does card 2 print out 'Wobbuffet, 17, Psychic, Very Rare, 1'? " << (card2.to_string() == "Wobbuffet, 17, Psychic, Very Rare, 1") << endl;
+    cout << "Does cardPtr print out 'Pikachu, 7, Electric, Ultra Rare, 1'? " << (myCardPtr->to_string() == "Pikachu, 7, Electric, Ultra Rare, 1") << endl;
+    cout << "Does cardPtr print out 'This That For Testing'? " << (myCardPtr->to_string() == "This That For Testing") << endl;
 
     return 0;
 }

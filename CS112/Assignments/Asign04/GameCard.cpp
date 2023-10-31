@@ -60,7 +60,7 @@ bool GameCard::operator==(const GameCard& rhs) const {
 }
 
 string GameCard::to_string() const{
-    return cardName + " " + std::to_string(cardLevel) + " " + cardType;
+    return cardName + ", " + std::to_string(cardLevel) + ", " + cardType;
 }
 
 void GameCard::display() const{
