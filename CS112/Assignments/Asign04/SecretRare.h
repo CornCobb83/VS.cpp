@@ -17,28 +17,29 @@ class SecretRare : public GameCard {
 public:
 
 //CONSTRUCTORS
-SecretRare();
-SecretRare(string name);
-TankPlayerChar(string name, Role role);
+    SecretRare();
+    SecretRare(string name, int level, string type);
+    SecretRare(string name, string type);
 
-//ACCESSORS
-int getAggro() const;
-double getStamina() const;
+    // Declarations for accessors
+    string getName() const;
+    int getLevel() const;
+    string getType() const;
 
-//MUTATORS
-void setAggro(int aggro);
-void setStamina(double stamina);
+    // Declarations for mutators
+    void setName(string name);
+    void setLevel(int level);
+    void setType(string type);
 
-//OTHER METHODS
-
-bool operator ==(const TankPlayerChar& rhs) const;
-
-void display() const;
-string to_string() const;
+    // Declarations for other methods
+    string to_string() const;
+    void display() const;
 
 private:
-    int playerAggro;
-    double playerStamina;
+    // Declarations of data members
+    string cardName;
+    int cardLevel;
+    string cardType;
 
 };
 
