@@ -30,6 +30,7 @@ public:
 
 
     // Declarations for other methods
+    bool operator ==(const SecretRare& rhs) const;
     string to_string() const;
     void display() const;
 
