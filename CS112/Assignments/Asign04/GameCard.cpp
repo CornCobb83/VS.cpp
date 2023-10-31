@@ -56,9 +56,12 @@ void GameCard::setType(string type) {
 
 // OTHER METHODS
 bool GameCard::operator ==(const GameCard& rhs) const {
-
-    string card1Value = cardLevel + cardType;
-    string card2Value = rhs.getLevel() + rhs.getType();
+    string level = cardLevel;
+    string type = cardType;
+    string card1Value = level + type;
+    level = rhs.getLevel();
+    type = rhs.getType();
+    string card2Value = level + type;
 
     return (card1Value == card2Value);
 }
