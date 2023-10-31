@@ -22,14 +22,11 @@ public:
     SecretRare(string name, string type);
 
     // Declarations for accessors
-    string getName() const;
-    int getLevel() const;
-    string getType() const;
+    string getRarity() const;
 
     // Declarations for mutators
-    void setName(string name);
-    void setLevel(int level);
-    void setType(string type);
+    void setRarity(string rarity);
+
 
     // Declarations for other methods
     string to_string() const;
@@ -37,9 +34,7 @@ public:
 
 private:
     // Declarations of data members
-    string cardName;
-    int cardLevel;
-    string cardType;
+    string rarity;
 
 };
 
