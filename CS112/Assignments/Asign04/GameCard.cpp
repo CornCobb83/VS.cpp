@@ -57,10 +57,10 @@ void GameCard::setType(string type) {
 // OTHER METHODS
 bool GameCard::operator ==(const GameCard& rhs) const {
 
-    double cardValue = playerStrength * playerAgility;
-    double cardValue = rhs.getStrength() * rhs.getAgility();
+    string card1Value = cardLevel + cardType;
+    string card2Value = rhs.getLevel() + rhs.getType();
 
-    return (abs(player1Value - player2Value) < 100 );
+    return (card1Value == card2Value);
 }
 
 string GameCard::to_string() const{
