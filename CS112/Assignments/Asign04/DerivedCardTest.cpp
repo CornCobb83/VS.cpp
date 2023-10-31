@@ -61,9 +61,9 @@ int main() {
     // cout << (card1 == card2) << endl;
 
     SecretRare *myCardPtr;
-    myCardPtr = new GameCard("Pikachu", 7, "Electric");
+    myCardPtr = new GameCard("Pikachu", 7, "Electric", "Ultra Rare", true);
 
-    SecretRare card1("Squirtle", 5, "Water");
+    SecretRare card1("Squirtle", 5, "Water", "common");
     SecretRare card2;
 
     return 0;
