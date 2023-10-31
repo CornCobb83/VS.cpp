@@ -30,6 +30,15 @@ void SecretRare::setRarity(string rarity) {
 }
 
 // OTHER METHODS
+bool TankPlayerChar::operator ==(const TankPlayerChar& rhs) const {
+
+    bool playerEqual = PlayerChar::operator ==(rhs);
+    bool isAggro = (abs(playerAggro - rhs.getAggro()) < 50);
+    bool isStamina = (abs(playerStamina - rhs.getStamina()) < 100);
+
+    return (playerEqual && isAggro && isStamina);
+}
+
 string SecretRare::to_string() const{
     return GameCard::to_string + " " + std::to_string(cardRarity);
 }
