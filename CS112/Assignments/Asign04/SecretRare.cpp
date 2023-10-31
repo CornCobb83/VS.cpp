@@ -16,15 +16,8 @@ SecretRare::SecretRare(){
     cardType = "unknown";
 }
 
-SecretRare::SecretRare(string name, int level, string type) {
-    cardName = name;
-    cardLevel = level;
-    cardType = type;
-}
-
-SecretRare::SecretRare(string name, string type) {
-    cardName = name;
-    cardType = type;
+SecretRare::SecretRare(string name, int level, string type) : GameCard(name, level, type){
+    
 }
 
 // ACCESSORS
