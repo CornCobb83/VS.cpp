@@ -40,5 +40,5 @@ string SecretRare::to_string() const{
 
 void SecretRare::display() const{
     GameCard::display();
-    cout << "Rarity: " << cardRarity << end;
+    cout << "Rarity: " << cardRarity << endl;
 }
