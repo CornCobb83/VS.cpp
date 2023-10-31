@@ -10,11 +10,11 @@
 using namespace std;
 
 // CONSTRUCTORS
-SecretRare::SecretRare(){
+SecretRare::SecretRare() : GameCard() {
     rarity = RARITY_DEFAULT;
 }
 
-SecretRare::SecretRare(string name, int level, string type, string rarity) : GameCard(name, level, type){
+SecretRare::SecretRare(string name, int level, string type, string rarity) : GameCard(name, level, type) {
     cardRarity = rarity;
 }
 
@@ -30,11 +30,11 @@ void SecretRare::setRarity(string rarity) {
 }
 
 // OTHER METHODS
-bool TankPlayerChar::operator ==(const TankPlayerChar& rhs) const {
+bool SecretRare::operator ==(const SecretRare& rhs) const {
 
-    bool playerEqual = PlayerChar::operator ==(rhs);
-    bool isAggro = (abs(playerAggro - rhs.getAggro()) < 50);
-    bool isStamina = (abs(playerStamina - rhs.getStamina()) < 100);
+    bool playerEqual = GameCard::operator ==(rhs);
+    bool isType = (abs(playerAggro - rhs.getAggro()) < 50);
+    bool isLevel = (abs(playerStamina - rhs.getStamina()) < 100);
 
     return (playerEqual && isAggro && isStamina);
 }
