@@ -22,6 +22,7 @@ public:
 //CONSTRUCTORS
     SecretRare();
     SecretRare(string name, int level, string type, string rarity, bool art);
+    SecretRare(string name, int level, string type);
 
     // Declarations for accessors
     string getRarity() const;

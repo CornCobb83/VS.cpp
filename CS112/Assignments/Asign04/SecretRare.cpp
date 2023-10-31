@@ -20,6 +20,11 @@ SecretRare::SecretRare(string name, int level, string type, string rarity, bool 
     cardFullArt = art;
 }
 
+SecretRare::SecretRare(string name, int level, string type) : GameCard(name, level, type) {
+    cardRarity = RARITY_DEFAULT;
+    cardFullArt = FULLART_DEFAULT;
+}
+
 // ACCESSORS
 string SecretRare::getRarity() const {
     return cardRarity;
