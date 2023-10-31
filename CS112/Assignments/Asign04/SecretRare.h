@@ -12,7 +12,7 @@
 
 using namespace std;
 
-RARITY_DEFAULT = "common";
+const string RARITY_DEFAULT = "common";
 
 // Definition of derived class SecretRare
 class SecretRare : public GameCard {
