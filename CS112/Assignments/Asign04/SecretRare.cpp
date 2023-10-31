@@ -31,11 +31,7 @@ void SecretRare::setRarity(string rarity) {
 
 // OTHER METHODS
 bool SecretRare::operator ==(const SecretRare& rhs) const {
-
-    string card1Value = cardLevel + cardType;
-    string card2Value = rhs.getLevel() + rhs.getType();
-
-    return (card1Value == card2Value);
+    return (cardName == rhs.getName() && cardLevel == rhs.getLevel() && cardType == rhs.getType());
 }
 
 string SecretRare::to_string() const{
