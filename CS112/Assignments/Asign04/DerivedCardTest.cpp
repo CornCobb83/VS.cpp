@@ -71,5 +71,22 @@ int main() {
     card1.display();
     card2.display();
 
+    cout << "Testing Accessors" << endl;
+    cout << "Does cardPtr return name Pikachu?  " << (myCardPtr->getName() == "Pikachu") << endl;
+    cout << "Does cardPtr return level 7?   " << (myCardPtr->getLevel() == 7) << endl;
+    cout << "Does cardPtr return type Electric? " << (myCardPtr->getType() == "Electric") << endl;
+    cout << "Does cardPtr return rarity common? " << (myCardPtr->getRarity() == "common") << endl;
+    cout << "Does cardPtr return false (Full Art)?  " << (myCardPtr->getFullArt() == false) << endl;
+    cout << "Does cardPtr return rarity Ultra Rare? " << (myCardPtr->getRarity() == "Ultra Rare") << endl;
+    cout << "Does cardPtr return true (Full Art)?   " << (myCardPtr->getFullArt() == true) << endl << endl;
+
+    cout << "Does card1 return name Squirtle?  " << (card1.getName() == "Squirtle") << endl;
+    cout << "Does card1 return level 5?   " << (card1.getLevel() == 5) << endl;
+    cout << "Does card1 return type Water? " << (card1.getType() == "Water") << endl;
+    cout << "Does card1 return rarity common? " << (card1.getRarity() == "common") << endl;
+    cout << "Does card1 return false (Full Art)?  " << (card1.getFullArt() == false) << endl;
+    cout << "Does card1 return rarity Ultra Rare? " << (card1.getRarity() == "Ultra Rare") << endl;
+    cout << "Does card1 return true (Full Art)?   " << (card1.getFullArt() == true) << endl;
+
     return 0;
 }
