@@ -29,7 +29,7 @@ GameCard::GameCard(string name, string type) {
 
 // ACCESSORS
 string GameCard::getName() const {
-    
+
     return cardName;
 }
 
@@ -55,6 +55,14 @@ void GameCard::setType(string type) {
 }
 
 // OTHER METHODS
+bool GameCard::operator ==(const GameCard& rhs) const {
+
+    double cardValue = playerStrength * playerAgility;
+    double cardValue = rhs.getStrength() * rhs.getAgility();
+
+    return (abs(player1Value - player2Value) < 100 );
+}
+
 string GameCard::to_string() const{
     return cardName + " " + std::to_string(cardLevel) + " " + cardType;
 }

@@ -30,6 +30,7 @@ public:
     void setType(string type);
 
     // Declarations for other methods
+    bool operator ==(const GameCard& rhs) const;
     string to_string() const;
     void display() const;
 
