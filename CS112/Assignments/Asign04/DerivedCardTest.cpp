@@ -105,5 +105,7 @@ int main() {
     cout << "Card 2 has been changed from 0 arguments to:" << endl;
     card2.display();
 
+    card1.GameCard::display();
+
     return 0;
 }
