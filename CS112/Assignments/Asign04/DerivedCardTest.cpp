@@ -105,6 +105,15 @@ int main() {
     cout << "Card 2 has been changed from 0 arguments to:" << endl;
     card2.display();
 
+    cout << endl << "Testing display methods" << endl;
+    cout << "Card 1 will display: " << card1.to_string() << endl;
+    card1.display();
+    cout << "Card 2 will display: " << card2.to_string() << endl;
+    card2.display();
+    cout << "CardPtr will display: " << myCardPtr->to_string() << endl;
+    myCardPtr->display();
+
+    cout << endl << "Testing base class display method for card 1" << endl;
     card1.GameCard::display();
 
     return 0;
