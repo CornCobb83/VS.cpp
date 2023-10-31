@@ -67,5 +67,9 @@ int main() {
     SecretRare card1("Squirtle", 5, "Water");
     SecretRare card2;
 
+    myCardPtr->display();
+    card1.display();
+    card2.display();
+
     return 0;
 }

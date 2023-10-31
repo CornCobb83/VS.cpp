@@ -12,7 +12,7 @@
 
 using namespace std;
 
-const string RARITY_DEFAULT = "Ultra Rare";
+const string RARITY_DEFAULT = "common";
 const bool FULLART_DEFAULT = false;
 
 // Definition of derived class SecretRare
