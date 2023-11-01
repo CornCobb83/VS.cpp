@@ -1,37 +1,46 @@
-// CS 112 Fall 2023 - Week 09 Lecture 1
-// C++ Derived Classes
-#ifndef COLORPOINT_H
-#define COLORPOINT_H
+// CS 112 Fall 2023 Week 10-2 Lecture
+// Demonstration of C++ Multiple Inheritance
+
+#ifndef VECTORPOINT_H
+#define VECTORPOINT_H
 
 #include <cstdlib>
 #include <string>
 #include <cmath>
-#include "ColorVectorPoint.h"
-#include "VectorPoint.h"
+#include "GraphPoint.h"
+
 using namespace std;
 
-MAG_DEFAULT = 0.0;
-DIR_DEFAULT = 0;
+// Data Type Definitions
 
-class ColorVectorPoint : public ColorPoint, public VectorPoint {
+// Constant definition
+const double MAG_DEFAULT = 0.0;
+const int    DIR_DEFAULT = 0;
+
+class VectorPoint : public GraphPoint {
 public:
-
-    // CONSTRUCTORS
     VectorPoint();
-    VectorPoint(double x, double y, double mag, double dir);
-    VectorPoint(double mag);
-    VectorPoint(int dir);
+    VectorPoint(double x, double y);
+    VectorPoint(double x, double y, double mag, int dir);
+    VectorPoint(const VectorPoint& existingPoint);
     VectorPoint(const GraphPoint& existingPoint);
 
     // ACCESSORS
+    // Will already inherit getX and getY
+
     double getMag() const;
-    dir getDir() const;
+    int getDir() const;
 
-    // NO MUTATORS
-    void setMag(double mag);
-    void setDir(int dir);
+    // MUTATORS
+    // Will already inherit setX and setY
 
-    // OTHER METHOD
+    void setMag(double newMag);
+    void setDir(int newDir);
+
+    // OTHER METHODS
+
+    // It's good style to put "virtual" in the method
+    // header here, but it's NOT required!
 
     virtual void display() const;
     string to_string() const;
@@ -39,8 +48,8 @@ public:
 private:
 
     double magValue;
-    int dirValue;
+    int    dirValue;
 
 };
 
-#endif
+#endif /* VECTORPOINT_H */
