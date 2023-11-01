@@ -21,11 +21,11 @@ LinkedList::LinkedList() {
 
 LinkedList::addToList(double x, double y) {
     GraphPoint newPoint(x, y);
-    Node *newNode;
-    newNode = new Node(newPoint);
+    Node *newNodePtr;
+    newNodePtr = new Node(newPoint);
     // Now to insert that node into the list
-    NewNode->setNextPtr(headPtr);
-    headPtr = newNode;
+    NewNodePtr->setNextPtr(headPtr);
+    headPtr = newNodePtr;
 }
 
 void LinkedList::display() {

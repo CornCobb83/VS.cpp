@@ -1,6 +1,9 @@
 // CS 112 Fall 2023 Week 11-1 Lecture
 // Demonstration of C++ Collection Class
 
+#ifndef LINKEDLIST_H
+#define LINKEDLIST_H
+
 #include <cstdlib>
 #include <iostream>
 #include <string>
@@ -27,3 +30,5 @@ private:
     Node *headPtr;
 
 };
+
+#endif
