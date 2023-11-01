@@ -6,6 +6,7 @@
 #include <iomanip>
 #include "GraphPoint.h"
 #include "ColorPoint.h"
+#include "Node.h"
 
 using namespace std;
 
