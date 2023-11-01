@@ -35,13 +35,14 @@ void LinkedList::display() {
     }
     Node *currentNodePtr = headPtr;
     cout << "Start at ";
-    (currentPtr->getNodeData()).display();
+    (currentNodePtr->getNodeData()).display();
     cout << endl;
-    currentPtr = currentPtr->getNextPtr();
-    while (currentPtr != NULL) {
-        cout << "   points to ";
-        (currentPtr->getNodeData()).display();
-        currentPtr = currentPtr->getNextPtr();
+    currentNodePtr = currentNodePtr->getNextPtr();
+    while (currentNodePtr != NULL) {
+        cout << endl << "   points to ";
+        (currentNodePtr->getNodeData()).display();
+        currentNodePtr = currentNodePtr->getNextPtr();
 
     }
+    cout << endl << "   and that's all!" << endl;
 }
