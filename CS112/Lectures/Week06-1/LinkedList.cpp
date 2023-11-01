@@ -24,5 +24,18 @@ LinkedList::addToList(double x, double y) {
     Node *newNode;
     newNode = new Node(newPoint);
     // Now to insert that node into the list
-    
+    NewNode->setNextPtr(headPtr);
+    headPtr = newNode;
+}
+
+void LinkedList::display() {
+    if (headPtr == NULL) {
+        cout << "* NO ITEMS IN LIST *" << endl;
+        return;
+    }
+    Node *currentNodePtr = headPtr;
+    cout << "Start at ";
+    (currentPtr->getNodeData()).display();
+    cout << endl;
+    currentPtr = currentPtr->getNextPtr();
 }

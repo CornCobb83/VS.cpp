@@ -165,7 +165,17 @@ int main() {
     wilmaNode.display();
     cout << wilmaNode.to_string() << endl;
 
+    cout << endl << "*** LINKEDLIST TEST ***" << endl;
 
+    LinkedList myList;
+
+    mylist.display();
+
+    myList.addToList(5, 6);
+    myList.addToList(3, 4);
+    myList.addToList(1, 2);
+
+    myList.display();
 
     return EXIT_SUCCESS;
 }

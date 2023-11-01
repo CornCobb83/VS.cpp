@@ -17,6 +17,9 @@ class LinkedList {
     // Mutators
     void addToList(double x, double y);
 
+    // Other Methods
+    void display();
+
 protected:
 
 private:
