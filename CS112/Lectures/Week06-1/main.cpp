@@ -169,7 +169,7 @@ int main() {
 
     LinkedList myList;
 
-    mylist.display();
+    myList.display();
 
     myList.addToList(5, 6);
     myList.addToList(3, 4);

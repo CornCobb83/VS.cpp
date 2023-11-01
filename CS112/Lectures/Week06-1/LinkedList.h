@@ -13,9 +13,11 @@
 using namespace std;
 
 class LinkedList {
-
+public:
     // Constructor
     LinkedList();
+
+    
 
     // Mutators
     void addToList(double x, double y);

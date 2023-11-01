@@ -24,7 +24,7 @@ void LinkedList::addToList(double x, double y) {
     Node *newNodePtr;
     newNodePtr = new Node(newPoint);
     // Now to insert that node into the list
-    NewNodePtr->setNextPtr(headPtr);
+    newNodePtr->setNextPtr(headPtr);
     headPtr = newNodePtr;
 }
 
