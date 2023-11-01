@@ -7,6 +7,7 @@
 #include "GraphPoint.h"
 #include "ColorPoint.h"
 #include "Node.h"
+#include "LinkedList.h"
 
 using namespace std;
 
@@ -163,6 +164,8 @@ int main() {
     Node wilmaNode(wilmaPt, &fredNode);
     wilmaNode.display();
     cout << wilmaNode.to_string() << endl;
+
+
 
     return EXIT_SUCCESS;
 }
