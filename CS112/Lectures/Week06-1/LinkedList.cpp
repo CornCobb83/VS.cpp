@@ -28,7 +28,7 @@ LinkedList::~LinkedList() {
     Node *tempPtr;
     while (currentPtr != NULL) {
         tempPtr = currentPtr;
-        currentPtr = currentPtr->getNextPTr();
+        currentPtr = currentPtr->getNextPtr();
         delete tempPtr;
         cout << "BOOM! ";
     }
@@ -52,12 +52,11 @@ void LinkedList::display() {
         return;
     }
     Node *currentNodePtr = headPtr;
-    cout << "Start at ";
+    cout << "   Start at ";
     (currentNodePtr->getNodeData()).display();
-    cout << endl;
     currentNodePtr = currentNodePtr->getNextPtr();
     while (currentNodePtr != NULL) {
-        cout << endl << "   points to ";
+        cout << "   points to ";
         (currentNodePtr->getNodeData()).display();
         currentNodePtr = currentNodePtr->getNextPtr();
     }
