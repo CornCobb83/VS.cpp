@@ -24,6 +24,9 @@ LinkedList::~LinkedList() {
     }
     Node *currentPtr - headPtr->getNextPtr();
     delete headPtr;
+    while (currentPtr != NULL) {
+        currentPtr = currentPtr->getNextPTr();
+    }
 }
 
 // Mutators

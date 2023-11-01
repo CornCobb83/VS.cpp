@@ -32,6 +32,7 @@ public:
 
     // MUTATORS
     void setNodeData(GraphPoint& newNodeData);
+    void setNextPtr(Node *newNextPtr);
 
     // OTHER METHODS
     void display();
@@ -44,7 +45,6 @@ protected:
     // can't break the Linked List by manually
     // setting pointers -- we'll maintain the integrity
     // of the Linked List by not allowing users to do this!
-    void setNextPtr(Node *newNextPtr);
 
 private:
     // DATA MEMBERS
