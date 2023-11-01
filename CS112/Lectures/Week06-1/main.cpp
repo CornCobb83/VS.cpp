@@ -125,28 +125,43 @@ int main() {
 
     // ****** POLYMORPHISM AND  DYNAMIC BINDING TESTS *****
 
-    ColorPoint p1;
-    GraphPoint p2;
-    cout << "ColorPoint p1 display(): ";
-    p1.display();
+    // ColorPoint p1;
+    // GraphPoint p2;
+    // cout << "ColorPoint p1 display(): ";
+    // p1.display();
 
-    ColorPoint *p3Ptr = new ColorPoint(5, 6, Green);
-    GraphPoint *p4Ptr = new GraphPoint(7, 8);
-    cout << "ColorPoint *p3Ptr display(): ";
-    p3Ptr->display();
-    cout << "GraphPoint *p4Ptr display(): ";
-    p4Ptr->display();
+    // ColorPoint *p3Ptr = new ColorPoint(5, 6, Green);
+    // GraphPoint *p4Ptr = new GraphPoint(7, 8);
+    // cout << "ColorPoint *p3Ptr display(): ";
+    // p3Ptr->display();
+    // cout << "GraphPoint *p4Ptr display(): ";
+    // p4Ptr->display();
 
-    GraphPoint *pointArray[4];
-    pointArray[0] = &p1;
-    pointArray[1] = &p2;
-    pointArray[2] = p3Ptr;
-    pointArray[3] = p4Ptr;
+    // GraphPoint *pointArray[4];
+    // pointArray[0] = &p1;
+    // pointArray[1] = &p2;
+    // pointArray[2] = p3Ptr;
+    // pointArray[3] = p4Ptr;
 
-    for (int i = 0; i < 4; i++) {
-        cout << "Pointer at index " << i << ": ";
-        pointArray[i]->display();
-    }
+    // for (int i = 0; i < 4; i++) {
+    //     cout << "Pointer at index " << i << ": ";
+    //     pointArray[i]->display();
+    // }
+
+    // Let's create a GraphPoint and make a Node
+    // containing the values of that GraphPoint
+    GraphPoint fredPt(27.1, 84.3);
+    Node fredNode(fredPt);
+    fredNode.display();
+    cout << fredNode.to_string() << endl;
+
+    // Now let's create a second GraphPoint and
+    // make another Node that contains these values
+    // and also points to the previous Node
+    GraphPoint wilmaPt(3.4, 5.6);
+    Node wilmaNode(wilmaPt, &fredNode);
+    wilmaNode.display();
+    cout << wilmaNode.to_string() << endl;
 
     return EXIT_SUCCESS;
 }
