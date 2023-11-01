@@ -19,7 +19,7 @@ LinkedList::LinkedList() {
 
 // Mutators
 
-LinkedList::addToList(double x, double y) {
+void LinkedList::addToList(double x, double y) {
     GraphPoint newPoint(x, y);
     Node *newNodePtr;
     newNodePtr = new Node(newPoint);
