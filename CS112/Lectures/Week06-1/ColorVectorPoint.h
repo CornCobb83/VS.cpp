@@ -1,28 +1,31 @@
-// CS 112 Fall 2023 - Week 09 Lecture 1
-// C++ Derived Classes
-#ifndef COLORPOINT_H
-#define COLORPOINT_H
+// CS 112 Fall 2023 Week 10-2 Lecture
+// Demonstration of C++ Multiple Inheritance
+
+#ifndef COLORVECTORPOINT_H
+#define COLORVECTORPOINT_H
 
 #include <cstdlib>
 #include <string>
 #include <cmath>
+// #include "GraphPoint.h"
 #include "ColorPoint.h"
 #include "VectorPoint.h"
+
 using namespace std;
 
 class ColorVectorPoint : public ColorPoint, public VectorPoint {
 public:
 
-    // CONSTRUCTORS
     ColorVectorPoint();
     ColorVectorPoint(double x, double y);
-    ColorVectorPoint(double x, double y, PointColor color, double mag, int dir);
+    ColorVectorPoint(double x, double y, PointColor color,
+                     double mag, int dir);
 
-    // NO ACCESSORS
+    // NO ACCESSORS!
 
-    // NO MUTATORS
+    // NO MUTATORS!
 
-    // OTHER METHOD
+    // OTHER METHODS
 
     virtual void display() const;
     string to_string() const;
@@ -31,4 +34,4 @@ private:
 
 };
 
-#endif
+#endif /* COLORVECTORPOINT_H */
