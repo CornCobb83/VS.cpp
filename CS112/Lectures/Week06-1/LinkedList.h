@@ -17,7 +17,8 @@ public:
     // Constructor
     LinkedList();
 
-    
+    // Destructor
+    ~LinkedList();
 
     // Mutators
     void addToList(double x, double y);

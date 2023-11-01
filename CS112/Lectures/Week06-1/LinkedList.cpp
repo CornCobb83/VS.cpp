@@ -17,6 +17,15 @@ LinkedList::LinkedList() {
     headPtr = NULL;
 }
 
+// Destructor
+LinkedList::~LinkedList() {
+    if (headPtr == NULL) {
+        return;
+    }
+    Node *currentPtr - headPtr->getNextPtr();
+    delete headPtr;
+}
+
 // Mutators
 
 void LinkedList::addToList(double x, double y) {
