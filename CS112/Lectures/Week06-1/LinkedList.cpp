@@ -24,8 +24,11 @@ LinkedList::~LinkedList() {
     }
     Node *currentPtr - headPtr->getNextPtr();
     delete headPtr;
+    Node *tempPtr;
     while (currentPtr != NULL) {
+        tempPtr  currentPtr;
         currentPtr = currentPtr->getNextPTr();
+        delete tempPtr;
     }
 }
 
