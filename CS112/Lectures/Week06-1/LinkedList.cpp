@@ -21,5 +21,8 @@ LinkedList::LinkedList() {
 
 LinkedList::addToList(double x, double y) {
     GraphPoint newPoint(x, y);
-    Node
+    Node *newNode;
+    newNode = new Node(newPoint);
+    // Now to insert that node into the list
+    
 }
