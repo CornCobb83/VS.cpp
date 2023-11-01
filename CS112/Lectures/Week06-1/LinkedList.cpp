@@ -38,4 +38,10 @@ void LinkedList::display() {
     (currentPtr->getNodeData()).display();
     cout << endl;
     currentPtr = currentPtr->getNextPtr();
+    while (currentPtr != NULL) {
+        cout << "   points to ";
+        (currentPtr->getNodeData()).display();
+        currentPtr = currentPtr->getNextPtr();
+
+    }
 }
