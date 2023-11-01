@@ -42,7 +42,6 @@ void LinkedList::display() {
         cout << endl << "   points to ";
         (currentNodePtr->getNodeData()).display();
         currentNodePtr = currentNodePtr->getNextPtr();
-
     }
-    cout << endl << "   and that's all!" << endl;
+    cout << "   and that's all!" << endl;
 }
