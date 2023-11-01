@@ -22,14 +22,17 @@ LinkedList::~LinkedList() {
     if (headPtr == NULL) {
         return;
     }
-    Node *currentPtr - headPtr->getNextPtr();
+    Node *currentPtr = headPtr->getNextPtr();
     delete headPtr;
+    cout << "BOOM! ";
     Node *tempPtr;
     while (currentPtr != NULL) {
-        tempPtr  currentPtr;
+        tempPtr = currentPtr;
         currentPtr = currentPtr->getNextPTr();
         delete tempPtr;
+        cout << "BOOM! ";
     }
+    cout << endl;
 }
 
 // Mutators
