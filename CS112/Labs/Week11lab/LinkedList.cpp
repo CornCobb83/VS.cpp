@@ -116,9 +116,13 @@ bool LinkedList::addNodeAfter(int nodePosition, int newValue) {
 
     while (currentNodePtr != NULL) {
         if (length == nodePosition) {
-            currentNodePtr = setNodeData(newValue);
-            for (int i = length; i < listlength() + 1; i++) {
-                
+            Node *temp = currentNodePtr;
+            currentNodePtr->setNodeData(newValue);
+
+            for (int i = length; i < listLength() + 1; i++) {
+
+                temp = currentNodePtr->setNextPtr(currentNodePtr->getValueAt(i));
+                temp = currentNodePtr;
             }
         }
 
