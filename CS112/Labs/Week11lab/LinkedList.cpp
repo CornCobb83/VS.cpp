@@ -109,7 +109,7 @@ int LinkedList::getValueAt(int nodePosition) const {
 }
 
 bool LinkedList::addNodeAfter(int nodePosition, int newValue) {
-    if (nodePosition + 1 > listLength())
+    if (nodePosition < 0 || nodePosition <= listLength())
         return false;
 
     Node *currentNodePtr = headPtr;
@@ -117,12 +117,6 @@ bool LinkedList::addNodeAfter(int nodePosition, int newValue) {
 
     while (currentNodePtr != NULL) {
         if (length == nodePosition) {
-            Node *newNode = new Node(newValue);
-            newNode->setNextPtr(currentNodePtr->getNextPtr());
-            currentNodePtr->setNextPtr(newNode);
-            return true;
-        }
-        else if (0 == nodePosition) {
             Node *newNode = new Node(newValue);
             newNode->setNextPtr(currentNodePtr->getNextPtr());
             currentNodePtr->setNextPtr(newNode);
