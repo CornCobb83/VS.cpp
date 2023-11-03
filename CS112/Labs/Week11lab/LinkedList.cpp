@@ -109,21 +109,18 @@ int LinkedList::getValueAt(int nodePosition) const {
 }
 
 bool LinkedList::addNodeAfter(int nodePosition, int newValue) {
-    Node *currentNodePtr = headPtr;
-    int length = 1;
     if (nodePosition > listLength())
         return false;
 
+    Node *currentNodePtr = headPtr;
+    int length = 1;
+
     while (currentNodePtr != NULL) {
         if (length == nodePosition) {
-            Node *temp = currentNodePtr;
-            currentNodePtr->setNodeData(newValue);
-
-            for (int i = length; i < listLength() + 1; i++) {
-                temp = currentNodePtr;
-                currentNodePtr->setNextPtr(currentNodePtr->getNodeData());
-                temp = currentNodePtr;
-            }
+            Node *newNode = new Node(newValue);
+            newNode->setNextPtr(currentNodePtr->getNextPtr());
+            currentNodePtr->setNextPtr(newNode);
+            return true;
         }
 
         length++;
