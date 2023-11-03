@@ -81,6 +81,9 @@ int LinkedList::getValueAt(int nodePosition) const {
     while (currentNodePtr != NULL) {
         length++;
         currentNodePtr = currentNodePtr->getNextPtr();
+        if (currentNodePtr->getNextPtr() == NULL) {
+            return -99999;
+        }
         if (length == nodePosition)
             return currentNodePtr->getNodeData();
     }
