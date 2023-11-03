@@ -131,6 +131,6 @@ bool LinkedList::addNodeAfter(int nodePosition, int newValue) {
 }
 
 bool LinkedList::removeNodeAt(int nodePosition) {
-    return false;  // REMOVE THIS LINE
+    
 }
 
