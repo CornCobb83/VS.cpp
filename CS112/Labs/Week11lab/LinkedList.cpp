@@ -1,7 +1,7 @@
 //    CS 112 Fall 2023 - Week 11 Lab
 //    C++ Container Class LinkedList
 //
-//    David C. Tuttle
+//    Jordan Cobb and Aja Brunet
 //    Last Modified: 31 Oct 2023
 
 #include <cstdlib>
@@ -98,8 +98,11 @@ bool LinkedList::addNodeAfter(int nodePosition, int newValue) {
     int length = 1;
     while (currentNodePtr != NULL) {
         if (length == nodePosition) {
-
+            
         }
+
+        length++;
+        currentNodePtr = currentNodePtr->getNextPtr();
     }
 }
 
