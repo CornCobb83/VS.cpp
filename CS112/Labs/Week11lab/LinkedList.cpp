@@ -121,7 +121,7 @@ bool LinkedList::addNodeAfter(int nodePosition, int newValue) {
     int length = 1;
 
     while (currentNodePtr != NULL) {
-        if (length == nodePosition - 1) {
+        if (length == nodePosition) {
             newNode->setNextPtr(currentNodePtr->getNextPtr());
             currentNodePtr->setNextPtr(newNode);
             return true;
@@ -135,7 +135,7 @@ bool LinkedList::addNodeAfter(int nodePosition, int newValue) {
 }
 
 bool LinkedList::removeNodeAt(int nodePosition) {
-    if (nodePosition <= 0 || nodePosition >= listLength())
+    if (nodePosition < 0 || nodePosition >= listLength())
         return false;
 
     if (nodePosition == 0) {
