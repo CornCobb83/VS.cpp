@@ -114,7 +114,9 @@ bool LinkedList::addNodeAfter(int nodePosition, int newValue) {
 
     Node *newNode = new Node(newValue);
     if (nodePosition == 0) {
-        
+        newNode->setNextPtr(headPtr);
+        headPtr = newNode;
+        return true;
     }
 
     Node *currentNodePtr = headPtr;
