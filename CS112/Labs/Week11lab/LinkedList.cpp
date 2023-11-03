@@ -93,12 +93,12 @@ int LinkedList::getValueAt(int nodePosition) const {
     return -99999;
 }
 
-bool LinkedList::addNodeAfter(int nodePosition, Node *newNodePtr) {
+bool LinkedList::addNodeAfter(int nodePosition, int newValue) {
     Node *currentNodePtr = headPtr;
     int length = 1;
     while (currentNodePtr != NULL) {
         if (length == nodePosition) {
-            
+
         }
     }
 }

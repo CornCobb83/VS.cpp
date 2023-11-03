@@ -30,7 +30,7 @@ public:
 
     int listLength() const;
     int getValueAt(int nodePosition) const;
-    bool addNodeAfter(int nodePosition, Node *newNodePtr);
+    bool addNodeAfter(int nodePosition, int newValue);
     bool removeNodeAt(int nodePosition);
 
 private:
