@@ -17,37 +17,12 @@ int main() {
 
     cout << "*** DEMONSTRATION OF CONTAINER CLASS LinkedList\n";
 
-    // First, let's make some Nodes
-
-    // Testing the Node class
-    // Let's make a Node containing 100
-
-    Node *node100Ptr = new Node(100);
-    cout << endl << "*** INFO ABOUT node 100\n";
-    node100Ptr->display();
-
-    // Now let's make two more Nodes with 200 and 300
-
-    Node *node200Ptr = new Node(200);
-    cout << endl << "*** INFO ABOUT node 200\n";
-    node200Ptr->display();
-
-    Node *node300Ptr = new Node(300);
-    cout << endl << "*** INFO ABOUT node 300\n";
-    node300Ptr->display();
-
-    // NOTE: At this point, we have three separate Nodes,
-    // NOT in a List!  We'll put them into a new List below
-
     // A CONTAINER CLASS is a class definition written as a
     // collection of other data types
 
-    // I want to link these Nodes together to make a LinkedList
-    // First, put a Node in the list -- we'll put node 300
-    // in *first* because the other nodes will be inserted
-    // in the LinkedList at the head *before* this one
+    // Let's make a Linked List containing one value, 300
 
-    LinkedList myList = LinkedList(node300Ptr);
+    LinkedList myList = LinkedList(300);
 
     // Let's print the LinkedList with only one Node
     cout << endl << "*** LIST WITH ONLY ONE NODE\n";
@@ -56,8 +31,8 @@ int main() {
     // Let's add node 200 and node 100 to the list, in that
     // order, so we'll have node 100 -> node 200 -> node 300
 
-    myList.addToHead(node200Ptr);
-    myList.addToHead(node100Ptr);
+    myList.addToHead(200);
+    myList.addToHead(100);
 
     cout << endl << "*** LIST WITH THREE NODES\n";
     myList.display();
@@ -68,7 +43,7 @@ int main() {
     // ********************************************************
 
     cout << "************************************************\n";
-    cout << "*** WEEK 12 LAB METHOD TESTS\n";
+    cout << "*** WEEK 11 LAB METHODS - TESTING\n";
     cout << "************************************************\n";
     cout << endl;
 
@@ -82,8 +57,7 @@ int main() {
     cout << myList.getValueAt(4) << endl << endl;
 
     cout << "*** addNodeAfter test #1 (should print true): ";
-    Node *node250Ptr = new Node(250);
-    cout << myList.addNodeAfter(2, node250Ptr) << endl << endl;
+    cout << myList.addNodeAfter(2, 250) << endl << endl;
 
     cout << "*** listLength test #2 (should print 4): ";
     cout << myList.listLength() << endl << endl;
@@ -92,44 +66,46 @@ int main() {
     myList.display();
     cout << endl;
 
-    Node *node123Ptr = new Node(123);
-    cout << "*** addNodeAfter test #2 (should not succeed, print false): ";
-    cout << myList.addNodeAfter(0, node123Ptr) << endl << endl;
+    cout << "*** addNodeAfter test #2 (should add to head, print true): ";
+    cout << myList.addNodeAfter(0, 50) << endl << endl;
 
     cout << "*** addNodeAfter test #3 (should not succeed, print false): ";
-    cout << myList.addNodeAfter(5, node123Ptr) << endl << endl;
+    cout << myList.addNodeAfter(5, 456) << endl << endl;
 
-    cout << "*** listLength test #3 (should print 4): ";
+    cout << "*** listLength test #3 (should print 5): ";
     cout << myList.listLength() << endl << endl;
 
-    cout << "*** Printing list - should be 100, 200, 250, 300:\n";
+    cout << "*** Printing list - should be 50, 100, 200, 250, 300:\n";
     myList.display();
     cout << endl;
 
     cout << "*** removeNodeAt test #1 (should print true): ";
     cout << myList.removeNodeAt(4) << endl << endl;
 
-    cout << "*** Printing list - should be 100, 200, 250:\n";
+    cout << "*** Printing list - should be 50, 100, 200, 300:\n";
     myList.display();
     cout << endl;
 
     cout << "*** removeNodeAt test #2 (should not succeed, print false): ";
-    cout << myList.removeNodeAt(4) << endl << endl;
+    cout << myList.removeNodeAt(5) << endl << endl;
 
     cout << "*** removeNodeAt test #3 (should print true): ";
     cout << myList.removeNodeAt(2) << endl << endl;
 
-    cout << "*** listLength test #4 (should print 2): ";
+    cout << "*** listLength test #4 (should print 3): ";
     cout << myList.listLength() << endl << endl;
 
-    cout << "*** Printing list - should be 100, 250:\n";
+    cout << "*** Printing list - should be 50, 200, 300:\n";
     myList.display();
     cout << endl;
 
     cout << "*** removeNodeAt test #4 (should print true): ";
     cout << myList.removeNodeAt(1) << endl << endl;
 
-    cout << "*** Printing list - should be 250 only:\n";
+    cout << "*** removeNodeAt test #5 (should print true): ";
+    cout << myList.removeNodeAt(1) << endl << endl;
+
+    cout << "*** Printing list - should be 300 only:\n";
     myList.display();
     cout << endl;
 
@@ -140,11 +116,8 @@ int main() {
     myList.display();
     cout << endl;
 
-    // Be nice -- delete what you allocate!
-
-    delete node100Ptr, node200Ptr, node300Ptr;
-    delete node250Ptr;
-    delete node123Ptr;
+    // Destructor will be called automatically upon exit of main()
+    // and will deallocate the dynamically allocated Nodes
 
     return EXIT_SUCCESS;
 }
