@@ -97,16 +97,20 @@ bool LinkedList::addNodeAfter(int nodePosition, int newValue) {
     int length = 1;
     if (nodePosition > listLength())
         return false;
+
     while (currentNodePtr != NULL) {
         if (length == nodePosition) {
             currentNodePtr = setNodeData(newValue);
+            for (int i = length; i < listlength() + 1; i++) {
+                
+            }
         }
 
         length++;
         currentNodePtr = currentNodePtr->getNextPtr();
     }
-    
-    return true
+
+    return false;
 }
 
 bool LinkedList::removeNodeAt(int nodePosition) {
