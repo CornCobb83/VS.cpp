@@ -58,10 +58,10 @@ void LinkedList::display() {
 // METHODS TO BE WRITTEN FOR LAB
 
 int LinkedList::listLength() const {
-    int length = 0;
     if(headPtr == NULL) {
         return 0;
     }
+    int length = 1;
     Node *currentNodePtr = headPtr;
     currentNodePtr = currentNodePtr->getNextPtr();
     while (currentNodePtr != NULL) {
@@ -79,7 +79,7 @@ int LinkedList::getValueAt(int nodePosition) const {
             currentNodePtr = currentNodePtr->getNextPtr();
         }
     }
-    return currentNodePtr;
+    return currentNodePtr->getNodeData();
 }
 
 bool LinkedList::addNodeAfter(int nodePosition, Node *newNodePtr) {
