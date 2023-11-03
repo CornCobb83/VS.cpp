@@ -146,7 +146,7 @@ bool LinkedList::removeNodeAt(int nodePosition) {
     }
 
     Node *currentNodePtr = headPtr;
-    int length = 1;
+    int length = 0;
 
     while (currentNodePtr != NULL) {
         if (length == nodePosition) {
