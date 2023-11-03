@@ -78,7 +78,6 @@ int LinkedList::getValueAt(int nodePosition) const {
 
     int length = 1;
     Node *currentNodePtr = headPtr;
-
     if (nodePosition < 1) {
         return -99999;
     }
@@ -91,12 +90,17 @@ int LinkedList::getValueAt(int nodePosition) const {
         length++;
         currentNodePtr = currentNodePtr->getNextPtr();
     }
-
     return -99999;
 }
 
 bool LinkedList::addNodeAfter(int nodePosition, Node *newNodePtr) {
-    return false;  // REMOVE THIS LINE
+    Node *currentNodePtr = headPtr;
+    int length = 1;
+    while (currentNodePtr != NULL) {
+        if (length == nodePosition) {
+            
+        }
+    }
 }
 
 bool LinkedList::removeNodeAt(int nodePosition) {
