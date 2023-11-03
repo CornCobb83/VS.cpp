@@ -72,7 +72,7 @@ int LinkedList::listLength() const {
 }
 
 int LinkedList::getValueAt(int nodePosition) const {
-    
+    while ()
 }
 
 bool LinkedList::addNodeAfter(int nodePosition, Node *newNodePtr) {
