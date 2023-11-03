@@ -74,17 +74,14 @@ void LinkedList::display() {
 // METHODS TO BE WRITTEN FOR LAB
 
 int LinkedList::listLength() const {
-    if(headPtr == NULL) {
-        return 0;
-    }
     int length = 0;
     Node *currentNodePtr = headPtr;
-    currentNodePtr = currentNodePtr->getNextPtr();
-    
+
     while (currentNodePtr != NULL) {
         length++;
         currentNodePtr = currentNodePtr->getNextPtr();
     }
+
     return length;
 }
 
