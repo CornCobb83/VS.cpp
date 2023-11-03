@@ -131,12 +131,29 @@ bool LinkedList::addNodeAfter(int nodePosition, int newValue) {
 }
 
 bool LinkedList::removeNodeAt(int nodePosition) {
-  Node *currentNodePtr = nullptr;
 
-  if (currentNodePtr != nullptr) {
-    currentNodePtr->next = nodeToDelete->next;
-  }
+    if (nodePosition == 0) {
+        Node *deteteNode = headPtr;
+        headPtr = headPtr->getNextPtr();
+        delete nodeToDelete;
+        return true;
+    }
 
-  delete current;
+    Node *currentNodePtr = headPtr;
+    int length = 0;
+
+    while (currentNodePtr != nullptr) {
+        if (length + 1 == nodePosition) {
+            Node *nodeToDelete = currentNodePtr->getNextPtr();
+            currentNodePtr->setNextPtr(nodeToDelete->getNextPtr());
+            delete nodeToDelete;
+            return true;
+        }
+
+        length++;
+        currentNodePtr = currentNodePtr->getNextPtr();
+    }
+
+    return false;
 }
 
