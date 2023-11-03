@@ -1,8 +1,5 @@
 //    CS 112 Fall 2023 - Week 11 Lab
-//    C++ Container Class LinkedList
-//
-//    David C. Tuttle
-//    Last Modified: 31 Oct 2023
+//    Jordan Cobb and Aja Brunet
 
 #include <cstdlib>
 #include <iostream>
