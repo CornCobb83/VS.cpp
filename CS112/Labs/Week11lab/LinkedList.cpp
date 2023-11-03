@@ -123,7 +123,7 @@ bool LinkedList::addNodeAfter(int nodePosition, int newValue) {
     int length = 0;
 
     while (currentNodePtr != NULL) {
-        if (length == nodePosition) {
+        if (length == nodePosition - 1) {
             newNode->setNextPtr(currentNodePtr->getNextPtr());
             currentNodePtr->setNextPtr(newNode);
             return true;
