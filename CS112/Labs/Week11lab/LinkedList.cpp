@@ -84,7 +84,7 @@ int LinkedList::getValueAt(int nodePosition) const {
         if (length == nodePosition)
             return currentNodePtr->getNodeData();
     }
-    return 0;
+    return currentNodePtr->getNodeData();
 }
 
 bool LinkedList::addNodeAfter(int nodePosition, Node *newNodePtr) {
