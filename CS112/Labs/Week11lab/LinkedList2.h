@@ -17,20 +17,13 @@ using namespace std;
 class LinkedList {
 public:
 
-    // CONSTRUCTORS
     LinkedList();
-    LinkedList(int firstValue);
+    LinkedList(Node *firstNodePtr);
 
-    // DESCTRUCTOR
-    ~LinkedList();
+    Node* getHeadPtr();
 
-    // ACCESSORS
-    Node* getHeadPtr() const;
+    void addToHead(Node *newNodePtr);
 
-    // MUTATORS
-    void addToHead(int newValue);
-
-    // OTHER METHODS
     void display();
 
     // METHODS TO BE WRITTEN IN LAB
