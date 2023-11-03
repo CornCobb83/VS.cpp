@@ -99,12 +99,14 @@ bool LinkedList::addNodeAfter(int nodePosition, int newValue) {
         return false;
     while (currentNodePtr != NULL) {
         if (length == nodePosition) {
-            currentNodePtr
+            currentNodePtr = setNodeData(newValue);
         }
 
         length++;
         currentNodePtr = currentNodePtr->getNextPtr();
     }
+    
+    return true
 }
 
 bool LinkedList::removeNodeAt(int nodePosition) {
