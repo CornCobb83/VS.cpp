@@ -72,6 +72,7 @@ int LinkedList::listLength() const {
 }
 
 int LinkedList::getValueAt(int nodePosition) const {
+    if (this.listLength() )
     Node *currentNodePtr = headPtr;
     currentNodePtr = currentNodePtr->getNextPtr();
     while (currentNodePtr != NULL) {
