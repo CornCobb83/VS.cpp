@@ -77,9 +77,10 @@ int LinkedList::listLength() const {
     if(headPtr == NULL) {
         return 0;
     }
-    int length = 1;
+    int length = 0;
     Node *currentNodePtr = headPtr;
     currentNodePtr = currentNodePtr->getNextPtr();
+    
     while (currentNodePtr != NULL) {
         length++;
         currentNodePtr = currentNodePtr->getNextPtr();
