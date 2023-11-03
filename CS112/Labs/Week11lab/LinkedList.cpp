@@ -58,11 +58,22 @@ void LinkedList::display() {
 // METHODS TO BE WRITTEN FOR LAB
 
 int LinkedList::listLength() const {
-    return 0;  // REMOVE THIS LINE
+    int length = 0;
+    if(headPtr == NULL) {
+        cout << "* NO ITEMS IN LIST *" << endl;
+        return;
+    }
+    Node *currentNodePtr = headPtr;
+    currentNodePtr = currentNodePtr->getNextPtr();
+    while (currentNodePtr != NULL) {
+        length++;
+        currentNodePtr = currentNodePtr->getNextPtr();
+    }
+    return length;
 }
 
 int LinkedList::getValueAt(int nodePosition) const {
-    return 0;  // REMOVE THIS LINE
+    return ;
 }
 
 bool LinkedList::addNodeAfter(int nodePosition, Node *newNodePtr) {
