@@ -60,8 +60,7 @@ void LinkedList::display() {
 int LinkedList::listLength() const {
     int length = 0;
     if(headPtr == NULL) {
-        cout << "* NO ITEMS IN LIST *" << endl;
-        return;
+        return 0;
     }
     Node *currentNodePtr = headPtr;
     currentNodePtr = currentNodePtr->getNextPtr();
@@ -73,7 +72,7 @@ int LinkedList::listLength() const {
 }
 
 int LinkedList::getValueAt(int nodePosition) const {
-    return ;
+    
 }
 
 bool LinkedList::addNodeAfter(int nodePosition, Node *newNodePtr) {
