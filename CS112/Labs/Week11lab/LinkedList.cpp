@@ -72,15 +72,19 @@ int LinkedList::listLength() const {
 }
 
 int LinkedList::getValueAt(int nodePosition) const {
-    
+    if(headPtr == NULL) {
+        return -99999;
+    }
+    int length = 1;
     Node *currentNodePtr = headPtr;
     currentNodePtr = currentNodePtr->getNextPtr();
     while (currentNodePtr != NULL) {
-        for (int i = 0; i < nodePosition; i++) {
-            currentNodePtr = currentNodePtr->getNextPtr();
-        }
+        length++;
+        currentNodePtr = currentNodePtr->getNextPtr();
+        if (length == nodePosition)
+            return length;
     }
-    return currentNodePtr->getNodeData();
+    return length;
 }
 
 bool LinkedList::addNodeAfter(int nodePosition, Node *newNodePtr) {
