@@ -74,15 +74,59 @@ void LinkedList::display() {
 // METHODS TO BE WRITTEN FOR LAB
 
 int LinkedList::listLength() const {
-    return 0;  // REMOVE THIS LINE
+    if(headPtr == NULL) {
+        return 0;
+    }
+    int length = 1;
+    Node *currentNodePtr = headPtr;
+    currentNodePtr = currentNodePtr->getNextPtr();
+    while (currentNodePtr != NULL) {
+        length++;
+        currentNodePtr = currentNodePtr->getNextPtr();
+    }
+    return length;
 }
 
 int LinkedList::getValueAt(int nodePosition) const {
-    return 0;  // REMOVE THIS LINE
+    if (headPtr == NULL) {
+        return -99999;
+    }
+
+    int length = 1;
+    Node *currentNodePtr = headPtr;
+    if (nodePosition > listLength())
+        return false;
+
+    while (currentNodePtr != NULL) {
+        if (length == nodePosition) {
+            return currentNodePtr->getNodeData();
+        }
+
+        length++;
+        currentNodePtr = currentNodePtr->getNextPtr();
+    }
+    return -99999;
 }
 
 bool LinkedList::addNodeAfter(int nodePosition, int newValue) {
-    return false;  // REMOVE THIS LINE
+    Node *currentNodePtr = headPtr;
+    int length = 1;
+    if (nodePosition > listLength())
+        return false;
+
+    while (currentNodePtr != NULL) {
+        if (length == nodePosition) {
+            currentNodePtr = setNodeData(newValue);
+            for (int i = length; i < listlength() + 1; i++) {
+
+            }
+        }
+
+        length++;
+        currentNodePtr = currentNodePtr->getNextPtr();
+    }
+
+    return false;
 }
 
 bool LinkedList::removeNodeAt(int nodePosition) {
