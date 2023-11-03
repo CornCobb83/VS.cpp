@@ -109,7 +109,7 @@ int LinkedList::getValueAt(int nodePosition) const {
 }
 
 bool LinkedList::addNodeAfter(int nodePosition, int newValue) {
-    if (nodePosition > listLength() )
+    if (nodePosition + 1 > listLength())
         return false;
 
     Node *currentNodePtr = headPtr;
