@@ -75,17 +75,20 @@ int LinkedList::getValueAt(int nodePosition) const {
     if(headPtr == NULL) {
         return -99999;
     }
+    if(LinkedList::listLength() < nodePosition) {
+        return -9999;
+    }
     int length = 1;
     Node *currentNodePtr = headPtr;
     currentNodePtr = currentNodePtr->getNextPtr();
     while (currentNodePtr != NULL) {
         length++;
         currentNodePtr = currentNodePtr->getNextPtr();
+        if (length == nodePosition)
+            return currentNodePtr->getNodeData();
         if (currentNodePtr->getNextPtr() == NULL) {
             return -99999;
         }
-        if (length == nodePosition)
-            return currentNodePtr->getNodeData();
     }
     return currentNodePtr->getNodeData();
 }
