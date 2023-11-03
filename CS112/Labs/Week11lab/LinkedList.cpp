@@ -146,10 +146,10 @@ bool LinkedList::removeNodeAt(int nodePosition) {
     }
 
     Node *currentNodePtr = headPtr;
-    int length = 1;
+    int length = 0;
 
     while (currentNodePtr != NULL) {
-        if (length + 1 == nodePosition) {
+        if (length == nodePosition) {
             Node *deleteNode = currentNodePtr->getNextPtr();
             currentNodePtr->setNextPtr(deleteNode->getNextPtr());
             delete deleteNode;
