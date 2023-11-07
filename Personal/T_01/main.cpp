@@ -10,14 +10,15 @@ int main() {
 
    cout << ptr << endl;
    cout << &ptr << endl;
-   cout << *ptr << endl;
+   cout << *ptr << endl << endl;
 
    food = "Burger";
-   cout << endl;
 
    cout << ptr << endl;
    cout << &ptr << endl;
-   cout << *ptr << endl;
+   cout << *ptr << endl << endl;
+
+   delete ptr;
 
    return 0;
 }
