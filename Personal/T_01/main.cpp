@@ -18,19 +18,6 @@ int main() {
    cout << &ptr << endl;
    cout << *ptr << endl << endl;
 
-   string array[2] = {"this", "that"};
-
-   ptr = array;
-
-   cout << ptr << endl;
-   cout << &ptr << endl;
-   cout << *ptr << endl << endl;
-
-   for ( int i = 0; i < 2; i++ ) {
-      cout << "*(ptr + " << i << ") : ";
-      cout << *(ptr + i) << endl;
-   }
-
    delete ptr;
 
    return 0;
