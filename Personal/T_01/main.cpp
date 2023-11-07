@@ -18,6 +18,14 @@ int main() {
    cout << &ptr << endl;
    cout << *ptr << endl << endl;
 
+   string array = {"this", "that"};
+
+   *ptr = &array[0];
+
+   cout << ptr << endl;
+   cout << &ptr << endl;
+   cout << *ptr << endl << endl;
+
    delete ptr;
 
    return 0;
