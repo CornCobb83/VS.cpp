@@ -33,9 +33,9 @@ int main() {
 
    cout << *(my_array + 2) << endl << endl;
 
-   delete[] my_array;
    delete ptr;
    delete ptr2;
+   delete[] my_array;
 
    return 0;
 }
