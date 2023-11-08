@@ -19,6 +19,8 @@ int main() {
    cout << &ptr << endl;
    cout << *ptr << endl << endl;
 
+   int array[5] 
+
    delete ptr;
 
    return 0;
