@@ -29,6 +29,11 @@ int main() {
 
    cout << *(ptr2 + 1) << endl << endl;
 
+   int *my_array = new int[10];
+
+   cout << *(my_array + 2) << endl << endl;
+
+   delete[] my_array;
    delete ptr;
    delete ptr2;
 
