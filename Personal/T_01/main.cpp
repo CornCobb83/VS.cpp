@@ -30,7 +30,7 @@ int main() {
    cout << *(ptr2 + 1) << endl << endl;
 
    delete ptr;
-   delete ptr2[];
+   delete ptr2;
 
    return 0;
 }
