@@ -37,7 +37,7 @@ public:
     string to_string() const;
     void display() const;
 
-private:
+protected:
     // Declarations of data members
     string cardRarity;
     bool cardFullArt;
