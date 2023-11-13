@@ -23,6 +23,8 @@ public:
 
 private:
     // Declarations of data members
+    string PackName;
+    int packSize;
 
 };
 
