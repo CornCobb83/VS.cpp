@@ -21,8 +21,8 @@ public:
 
     // Declarations for constructors
     CardPack();
-    CardPack(string name, int level, string type, string rarity, bool art, string Pname, int size);
-    CardPack(string name, int size);
+    CardPack(string name, int level, string type, string Pname, int size);
+    CardPack(string Pname, int size);
 
     // Declarations for accessors
     string getName() const;
@@ -33,6 +33,8 @@ public:
     void setSize(int size);
 
     // Declarations for other methods
+
+    // Other
     void display() const;
 
 private:

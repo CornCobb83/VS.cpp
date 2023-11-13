@@ -18,8 +18,8 @@ using namespace std;
         packName = Pname;
         packSize = size;
     }
-    CardPack::CardPack(string name, int size) : GameCard() {
-        packName = name;
+    CardPack::CardPack(string Pname, int size) : GameCard() {
+        packName = Pname;
         packSize = size;
     }
 
