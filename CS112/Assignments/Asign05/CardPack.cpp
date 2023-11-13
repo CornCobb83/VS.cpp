@@ -15,7 +15,8 @@ using namespace std;
         packSize = DEFAULT_SIZE;
     }
     CardPack::CardPack(string name, int level, string type, string rarity, bool art, string name, int size) {
-        
+        packName = name;
+        packSize = size;
     }
     CardPack::CardPack(string name, int size) : GameCard() {
         packName = name;
