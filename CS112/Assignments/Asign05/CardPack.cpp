@@ -10,21 +10,25 @@
 using namespace std;
 
     // Declarations for constructors
-    CardPack();
-    CardPack(string name, int level, string type, string rarity, bool art, string name, int size);
-    CardPack(string name, int size);
+    CardPack::CardPack() : GameCard() {}
+    CardPack::CardPack(string name, int level, string type, string rarity, bool art, string name, int size);
+    CardPack::CardPack(string name, int size);
 
     // Declarations for accessors
-    string getName() const {
+    string CardPack::getName() const {
         return packName;
     }
-    int getSize() const {
+    int CardPack::getSize() const {
         return packSize;
     }
 
     // Declarations for mutators
-    void setName();
-    void setSize();
+    void CardPack::setName(string name) {
+        packName = name;
+    }
+    void CardPack::setSize(int size) {
+        packSize = size;
+    }
 
     // Declarations for other methods
-    void display() const;
+    void CardPack::display() const;

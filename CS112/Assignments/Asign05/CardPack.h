@@ -27,8 +27,8 @@ public:
     int getSize() const;
 
     // Declarations for mutators
-    void setName();
-    void setSize();
+    void setName(string name);
+    void setSize(int size);
 
     // Declarations for other methods
     void display() const;
