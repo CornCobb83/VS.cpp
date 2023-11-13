@@ -46,7 +46,8 @@ using namespace std;
         }
         return *this;
     }
-    bool CardPack::operator==(const CardPack& other) const {
+    bool CardPack::operator==(const CardPack& rhs) const {
+        return (packName == rhs.CardPack::getName() && packSize == rhs.CardPack::getSize());
     }
     CardPack::~CardPack() {
         delete[] thePack;
