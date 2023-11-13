@@ -13,8 +13,8 @@
 using namespace std;
 
 const int PACKSIZE = 10;
-const DEFAULT_NAME = "unknown";
-const DEFAULT_SIZE = 10;
+const string DEFAULT_NAME = "unknown";
+const int DEFAULT_SIZE = 10;
 
 class CardPack : public GameCard {
 public:
