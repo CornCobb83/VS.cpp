@@ -39,7 +39,7 @@ private:
     // Declarations of data members
     string packName;
     int packSize;
-    SecretRare *cardPtr;
+    SecretRare *thePack;
 
 };
 
