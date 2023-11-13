@@ -14,7 +14,7 @@ using namespace std;
         packName = DEFAULT_NAME;
         packSize = DEFAULT_SIZE;
     }
-    CardPack::CardPack(string name, int level, string type, string rarity, bool art, string name, int size) {
+    CardPack::CardPack(string name, int level, string type, string rarity, bool art, string name, int size) : SecretRare(){
         packName = name;
         packSize = size;
     }
