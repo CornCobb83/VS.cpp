@@ -19,12 +19,10 @@ int main() {
 
     try {
         if (!(cin >> userNum)) {
-            clearInputBuffer();
             throw invalid_argument("basic_ios::clear: iostream error");
         }
 
         if (!(cin >> divNum)) {
-            clearInputBuffer();
             throw invalid_argument("basic_ios::clear: iostream error");
         }
         else if (divNum == 0) {
