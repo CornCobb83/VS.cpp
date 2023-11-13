@@ -16,9 +16,11 @@ using namespace std;
 
     // Declarations for accessors
     string getName() const {
-        return 
+        return packName;
     }
-    int getSize() const;
+    int getSize() const {
+        return packSize;
+    }
 
     // Declarations for mutators
     void setName();

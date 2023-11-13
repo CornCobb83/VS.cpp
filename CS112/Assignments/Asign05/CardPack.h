@@ -35,7 +35,7 @@ public:
 
 private:
     // Declarations of data members
-    string PackName;
+    string packName;
     int packSize;
     SecretRare *cardPtr;
 
