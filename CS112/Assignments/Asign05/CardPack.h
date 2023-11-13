@@ -21,7 +21,7 @@ public:
 
     // Declarations for constructors
     CardPack();
-    CardPack(string name, int level, string type, string rarity, bool art, string name, int size);
+    CardPack(string name, int level, string type, string rarity, bool art, string Pname, int size);
     CardPack(string name, int size);
 
     // Declarations for accessors
