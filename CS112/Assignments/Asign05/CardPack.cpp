@@ -9,7 +9,7 @@
 
 using namespace std;
 
-    // Declarations for constructors
+    // Constructors
     CardPack::CardPack() : GameCard() {
         packName = DEFAULT_NAME;
         packSize = DEFAULT_SIZE;
@@ -23,7 +23,7 @@ using namespace std;
         packSize = size;
     }
 
-    // Declarations for accessors
+    // Accessors
     string CardPack::getName() const {
         return packName;
     }
@@ -31,7 +31,7 @@ using namespace std;
         return packSize;
     }
 
-    // Declarations for mutators
+    // Mutators
     void CardPack::setName(string name) {
         packName = name;
     }
