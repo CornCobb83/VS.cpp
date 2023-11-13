@@ -8,6 +8,7 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
+#include <GameCard.h>
 
 using namespace std;
 
@@ -25,6 +26,7 @@ private:
     // Declarations of data members
     string PackName;
     int packSize;
+    GameCard *cardPtr;
 
 };
 
