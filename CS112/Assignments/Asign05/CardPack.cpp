@@ -48,9 +48,17 @@ using namespace std;
 
     // Declarations for other methods
     CardPack& CardPack::operator=(const CardPack& rhs) {
-        packName = rhs.packName;
-        packSize = rhs.packSize;
+        if (this != &rhs) {
+            GameCard::operator=(rhs);
 
+            delete[] thePack;
+            packName = rhs.packName;
+            packSize = rhs.packSize;
+            thePack = new GameCard[packSize];
+            for (int i = 0; i < packSize; ++i) {
+                thePack[i] = rhs.thePack[i];
+            }
+        }
         return *this;
     }
     bool CardPack::operator==(const CardPack& rhs) const {
