@@ -31,6 +31,7 @@ public:
     void setSize();
 
     // Declarations for other methods
+    void display() const;
 
 private:
     // Declarations of data members
