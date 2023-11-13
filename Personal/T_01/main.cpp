@@ -1,31 +1,44 @@
-#include <string>
 #include <iostream>
+#include <stdexcept>
 
 using namespace std;
 
+// Function to clear the input buffer
+void clearInputBuffer() {
+    cin.clear();
+    while (cin.get() != '\n') {
+        continue;
+    }
+}
+
 int main() {
-    string inputName;
-    int age;
+    int userNum;
+    int divNum;
 
-    cin.exceptions(ios::failbit);
+    cin.exceptions(ios::failbit);  // Allow cin to throw exceptions
 
-    while (true) {
-        cin >> inputName;
-        if (inputName == "-1") {
-            break;
+    try {
+        if (!(cin >> userNum)) {
+            clearInputBuffer();
+            throw invalid_argument("basic_ios::clear: iostream error");
         }
 
-        try {
-            if (!(cin >> age)) {
-                throw inputName;
-            } else {
-                    cout << inputName << " " << (age + 1) << endl;
-                }
-            }
-         catch (string name) {
-            cout << name << " 0" << endl;
-            cin.clear();
+        if (!(cin >> divNum)) {
+            clearInputBuffer();
+            throw invalid_argument("basic_ios::clear: iostream error");
         }
+        else if (divNum == 0) {
+            throw runtime_error("Runtime Exception: Divide by zero!");
+        }
+        else {
+            cout << userNum / divNum << endl;
+        }
+    }
+    catch (const invalid_argument& e) {
+        cout << "Input Exception: " << e.what() << endl;
+    }
+    catch (const runtime_error& e) {
+        cout << e.what() << endl;
     }
 
     return 0;
