@@ -15,6 +15,7 @@ using namespace std;
         packSize = DEFAULT_SIZE;
         thePack = new GameCard[packSize];
     }
+
     CardPack::CardPack(string name, int level, string type, string Pname, int size) : GameCard(name, level, type) {
         packName = Pname;
         if (size > PACKSIZE)
@@ -22,6 +23,7 @@ using namespace std;
         packSize = size;
         thePack = new GameCard[packSize];
     }
+
     CardPack::CardPack(string Pname, int size) : GameCard() {
         packName = Pname;
         if (size > PACKSIZE)
@@ -34,6 +36,7 @@ using namespace std;
     string CardPack::getName() const {
         return packName;
     }
+
     int CardPack::getSize() const {
         return packSize;
     }
@@ -42,6 +45,7 @@ using namespace std;
     void CardPack::setName(string name) {
         packName = name;
     }
+
     void CardPack::setSize(int size) {
         packSize = size;
     }
@@ -61,9 +65,11 @@ using namespace std;
         }
         return *this;
     }
+
     bool CardPack::operator==(const CardPack& rhs) const {
-        return (packName == rhs.CardPack::getName() && packSize == rhs.CardPack::getSize());
+        return (packName == rhs.getName() && packSize == rhs.getSize());
     }
+
     CardPack::~CardPack() {
         delete[] thePack;
     }
