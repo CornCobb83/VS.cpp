@@ -18,16 +18,16 @@ using namespace std;
 
     CardPack::CardPack(string name, int level, string type, string Pname, int size) : GameCard(name, level, type) {
         packName = Pname;
-        if (size > PACKSIZE)
-            size = PACKSIZE;
+        if (size > MAX_PACKSIZE)
+            size = MAX_PACKSIZE;
         packSize = size;
         thePack = new GameCard[packSize];
     }
 
     CardPack::CardPack(string Pname, int size) : GameCard() {
         packName = Pname;
-        if (size > PACKSIZE)
-            size = PACKSIZE;
+        if (size > MAX_PACKSIZE)
+            size = MAX_PACKSIZE;
         packSize = size;
         thePack = new GameCard[packSize];
     }
@@ -80,3 +80,13 @@ using namespace std;
     cout << "Pack Name: " << packName << endl
          << "Pack Size: " << packSize << endl;
     }
+
+    void CardPack::addCard(const GameCard& newCard) {
+    if (packSize < MAX_PACKSIZE) {
+        thePack[packSize] = newCard;
+        packSize++;
+    }
+    else {
+        cout << "Card pack is full." << endl;
+    }
+}
