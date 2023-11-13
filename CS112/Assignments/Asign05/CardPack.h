@@ -16,7 +16,8 @@ class CardPack : SecretRare{
 public:
 
     // Declarations for constructors
-    
+    CardPack();
+    CardPack(string name, int size);
 
     // Declarations for accessors
 
