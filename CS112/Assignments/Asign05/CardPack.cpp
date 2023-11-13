@@ -10,10 +10,12 @@
 using namespace std;
 
     // Declarations for constructors
-    CardPack::CardPack() : GameCard() {}
+    CardPack::CardPack() : GameCard() {
+        
+    }
     CardPack::CardPack(string name, int level, string type, string rarity, bool art, string name, int size);
     CardPack::CardPack(string name, int size) : GameCard() {
-        
+
     }
 
     // Declarations for accessors

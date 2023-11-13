@@ -13,6 +13,8 @@
 using namespace std;
 
 const int PACKSIZE = 10;
+const DEFAULT_NAME =
+const DEFAULT_SIZE =
 
 class CardPack : SecretRare {
 public:
