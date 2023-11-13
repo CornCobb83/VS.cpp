@@ -12,6 +12,8 @@
 
 using namespace std;
 
+
+
 class CardPack : SecretRare {
 public:
 
@@ -21,9 +23,12 @@ public:
     CardPack(string name, int size);
 
     // Declarations for accessors
-
+    string getName() const;
+    int getSize() const;
 
     // Declarations for mutators
+    void setName();
+    void setSize();
 
     // Declarations for other methods
 
