@@ -13,14 +13,21 @@ using namespace std;
     CardPack::CardPack() : GameCard() {
         packName = DEFAULT_NAME;
         packSize = DEFAULT_SIZE;
+        thePack = new GameCard[packSize];
     }
     CardPack::CardPack(string name, int level, string type, string Pname, int size) : GameCard(name, level, type) {
         packName = Pname;
+        if (size > PACKSIZE)
+            size = PACKSIZE;
         packSize = size;
+        thePack = new GameCard[packSize];
     }
     CardPack::CardPack(string Pname, int size) : GameCard() {
         packName = Pname;
+        if (size > PACKSIZE)
+            size = PACKSIZE;
         packSize = size;
+        thePack = new GameCard[packSize];
     }
 
     // Accessors
