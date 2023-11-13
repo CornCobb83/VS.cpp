@@ -40,6 +40,17 @@ using namespace std;
     }
 
     // Declarations for other methods
+    CardPack& CardPack::operator=(const CardPack& other) {
+
+    }
+    bool CardPack::operator==(const CardPack& other) const {
+
+    }
+    CardPack::~CardPack() {
+
+    }
+
+    // Other
     void CardPack::display() const {
         GameCard::display();
     cout << "Pack Name: " << packName << endl

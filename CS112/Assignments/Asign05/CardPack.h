@@ -33,6 +33,9 @@ public:
     void setSize(int size);
 
     // Declarations for other methods
+    CardPack& operator=(const CardPack& other);
+    bool operator==(const CardPack& other) const;
+    ~CardPack();
 
     // Other
     void display() const;
