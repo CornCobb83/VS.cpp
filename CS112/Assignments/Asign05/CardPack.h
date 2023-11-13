@@ -12,7 +12,7 @@
 
 using namespace std;
 
-
+const int PACKSIZE = 10;
 
 class CardPack : SecretRare {
 public:
