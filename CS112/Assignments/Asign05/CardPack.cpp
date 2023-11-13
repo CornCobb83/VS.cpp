@@ -41,9 +41,9 @@ using namespace std;
 
     // Declarations for other methods
     CardPack& CardPack::operator=(const CardPack& rhs) {
-        if (this != &rhs) {
-            this = rhs;
-        }
+        packName = rhs.packName;
+        packSize = rhs.packSize;
+
         return *this;
     }
     bool CardPack::operator==(const CardPack& rhs) const {
