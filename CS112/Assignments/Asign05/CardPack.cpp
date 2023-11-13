@@ -42,6 +42,6 @@ using namespace std;
     // Declarations for other methods
     void CardPack::display() const {
         GameCard::display();
-    cout << "Pack Name: " << cardRarity << endl
-         << "Pack Size: " << cardFullArt << endl;
+    cout << "Pack Name: " << packName << endl
+         << "Pack Size: " << packSize << endl;
     }

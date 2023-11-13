@@ -16,7 +16,7 @@ const int PACKSIZE = 10;
 const DEFAULT_NAME = "unknown";
 const DEFAULT_SIZE = 10;
 
-class CardPack : GameCard {
+class CardPack : public GameCard {
 public:
 
     // Declarations for constructors
