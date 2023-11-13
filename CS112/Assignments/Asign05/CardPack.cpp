@@ -10,15 +10,15 @@
 using namespace std;
 
     // Constructors
-    CardPack::CardPack() : SecretRare() {
+    CardPack::CardPack() : GameCard() {
         packName = DEFAULT_NAME;
         packSize = DEFAULT_SIZE;
     }
-    CardPack::CardPack(string name, int level, string type, string rarity, bool art, string Pname, int size) : SecretRare(name, level, type, rarity, art) {
+    CardPack::CardPack(string name, int level, string type, string Pname, int size) : GameCard(name, level, type) {
         packName = Pname;
         packSize = size;
     }
-    CardPack::CardPack(string name, int size) : SecretRare() {
+    CardPack::CardPack(string name, int size) : GameCard() {
         packName = name;
         packSize = size;
     }
@@ -41,7 +41,7 @@ using namespace std;
 
     // Declarations for other methods
     void CardPack::display() const {
-        SecretRare::display();
+        GameCard::display();
     cout << "Pack Name: " << cardRarity << endl
          << "Pack Size: " << cardFullArt << endl;
     }

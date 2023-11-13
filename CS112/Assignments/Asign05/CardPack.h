@@ -16,7 +16,7 @@ const int PACKSIZE = 10;
 const DEFAULT_NAME = "unknown";
 const DEFAULT_SIZE = 10;
 
-class CardPack : SecretRare {
+class CardPack : GameCard {
 public:
 
     // Declarations for constructors
@@ -39,7 +39,7 @@ private:
     // Declarations of data members
     string packName;
     int packSize;
-    SecretRare *thePack;
+    GameCard *thePack;
 
 };
 
