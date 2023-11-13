@@ -11,11 +11,15 @@ using namespace std;
 
     // Declarations for constructors
     CardPack::CardPack() : GameCard() {
+        packName = DEFAULT_NAME;
+        packSize = DEFAULT_SIZE;
+    }
+    CardPack::CardPack(string name, int level, string type, string rarity, bool art, string name, int size) {
         
     }
-    CardPack::CardPack(string name, int level, string type, string rarity, bool art, string name, int size);
     CardPack::CardPack(string name, int size) : GameCard() {
-
+        packName = name;
+        packSize = size;
     }
 
     // Declarations for accessors
