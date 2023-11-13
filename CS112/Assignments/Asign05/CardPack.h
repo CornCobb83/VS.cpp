@@ -8,13 +8,15 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
-#include <GameCard.h>
+#include <SecretRare.h>
 
 using namespace std;
 
-class CardPack {
+class CardPack : SecretRare{
 public:
+
     // Declarations for constructors
+    
 
     // Declarations for accessors
 
@@ -26,7 +28,7 @@ private:
     // Declarations of data members
     string PackName;
     int packSize;
-    GameCard *cardPtr;
+    SecretRare *cardPtr;
 
 };
 
