@@ -13,6 +13,7 @@
         "type_traits": "cpp",
         "utility": "cpp",
         "typeinfo": "cpp",
-        "new": "cpp"
+        "new": "cpp",
+        "stdexcept": "cpp"
     }
 }
