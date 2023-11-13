@@ -40,14 +40,15 @@ using namespace std;
     }
 
     // Declarations for other methods
-    CardPack& CardPack::operator=(const CardPack& other) {
-
+    CardPack& CardPack::operator=(const CardPack& rhs) {
+        if (this != &rhs) {
+        }
+        return *this;
     }
     bool CardPack::operator==(const CardPack& other) const {
-
     }
     CardPack::~CardPack() {
-
+        delete[] thePack;
     }
 
     // Other
