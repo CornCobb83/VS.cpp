@@ -40,4 +40,6 @@ using namespace std;
     }
 
     // Declarations for other methods
-    void CardPack::display() const;
+    void CardPack::display() const {
+        
+    }
