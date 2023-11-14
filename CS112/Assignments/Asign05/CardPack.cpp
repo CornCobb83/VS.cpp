@@ -72,6 +72,7 @@ using namespace std;
 
     CardPack::~CardPack() {
         delete[] thePack;
+        thePack = nullptr;
     }
 
     // Other
