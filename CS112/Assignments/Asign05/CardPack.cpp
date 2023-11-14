@@ -51,7 +51,7 @@ using namespace std;
     }
 
     // Declarations for other methods
-    CardPack& CardPack::operator=(const CardPack& rhs) {
+    CardPack& CardPack::operator =(const CardPack& rhs) {
         if (this != &rhs) {
             GameCard::operator=(rhs);
 
@@ -66,7 +66,7 @@ using namespace std;
         return *this;
     }
 
-    bool CardPack::operator==(const CardPack& rhs) const {
+    bool CardPack::operator ==(const CardPack& rhs) const {
         return (packName == rhs.getName() && packSize == rhs.getSize());
     }
 
