@@ -8,7 +8,7 @@
 #include <cmath>
 #include "GameCard.h"
 #include "SecretRare.h"
-#include "CardPack"
+#include "CardPack.h"
 
 using namespace std;
 
@@ -27,6 +27,8 @@ int main() {
     card2.setType("Fire");
 
     CardPack pack1;
+    cout << "Testing the output of a default pack" << endl;
+    pack1.display();
 
     return 0;
 }
