@@ -28,7 +28,6 @@ int main() {
 
     CardPack *pack1 = new CardPack;
     cout << "*** Testing the output of a default pack ***" << endl;
-    pack1->display();
 
     pack1->addCard(*myCardPtr);
     pack1->addCard(card1);
