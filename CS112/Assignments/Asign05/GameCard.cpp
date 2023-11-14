@@ -70,10 +70,16 @@ using namespace std;
     }
 
     GameCard::GameCard(const GameCard* rhs) {
-        cardName = rhs.cardName;
-        cardLevel = rhs.cardLevel;
-        cardType = rhs.cardType;
+    if (rhs != nullptr) {
+        cardName = rhs->cardName;
+        cardLevel = rhs->cardLevel;
+        cardType = rhs->cardType;
     }
+    else {
+        
+    }
+}
+
 
     GameCard& GameCard::operator =(const GameCard& rhs) {
         if (this != &rhs) {
@@ -84,14 +90,18 @@ using namespace std;
         return *this;
     }
 
-    GameCard& GameCard::operator =(const GameCard* rhs) {
-        if (this != &rhs) {
-            cardName = rhs.cardName;
-            cardLevel = rhs.cardLevel;
-            cardType = rhs.cardType;
-        }
-        return *this;
+    GameCard& GameCard::operator=(const GameCard* rhs) {
+    if (rhs != nullptr) {
+        cardName = rhs->cardName;
+        cardLevel = rhs->cardLevel;
+        cardType = rhs->cardType;
     }
+    else {
+
+    }
+    return *this;
+}
+
 
     void GameCard::display() const{
         cout << fixed << setprecision(2)
