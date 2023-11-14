@@ -26,7 +26,7 @@ int main() {
     card2.setLevel(3);
     card2.setType("Fire");
 
-    
+    CardPack pack1;
 
     return 0;
 }
