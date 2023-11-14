@@ -39,7 +39,12 @@ int main() {
     cout << "Added 4 created cards to the pack using addCard()" << endl << endl;
     pack1->display();
 
+    CardPack *copyPack = new CardPack;
+
+    copyPack = pack1;
+
     delete[] pack1;
+    delete[] copyPack;
 
     return 0;
 }
