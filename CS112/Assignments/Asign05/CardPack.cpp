@@ -91,7 +91,8 @@ using namespace std;
         if (packSize < MAX_PACKSIZE) {
             thePack[packSize] = new GameCard(newCard);
             packSize++;
-        } else {
+        }
+        else {
             cout << "Card pack is full." << endl;
         }
     }
