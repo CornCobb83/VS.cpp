@@ -8,7 +8,7 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
-#include "GameCard.h"
+#include "SecretRare.h"
 
 using namespace std;
 
