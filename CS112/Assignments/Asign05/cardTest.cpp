@@ -40,11 +40,15 @@ int main() {
     pack1->setName("Pack 1");
     pack1->display();
 
-    CardPack *copyPack = new CardPack;
+    cout << "Coppied 4 created cards to new pack using '='" << endl << endl;
 
+    CardPack *copyPack = new CardPack;
     copyPack = pack1;
     copyPack->setName("Pack Copy");
     copyPack->display();
+    cout << endl;
+
+    cout << "Are the two packs equal?" << (pack1 == copyPack) << endl << endl;
 
     delete[] pack1;
     delete[] copyPack;
