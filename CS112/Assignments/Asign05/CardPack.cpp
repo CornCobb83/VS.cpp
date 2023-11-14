@@ -87,11 +87,10 @@ using namespace std;
     }
 
     void CardPack::addCard(const GameCard& newCard) {
-    if (packSize < MAX_PACKSIZE) {
-        thePack[packSize] = GameCard(newCard);
-        packSize++;
+        if (packSize < MAX_PACKSIZE) {
+            thePack[packSize] = newCard;
+            ++packSize;
+        } else {
+            cout << "Card pack is full." << endl;
+        }
     }
-    else {
-        cout << "Card pack is full." << endl;
-    }
-}
