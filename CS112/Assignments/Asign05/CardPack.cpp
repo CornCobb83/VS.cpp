@@ -74,8 +74,10 @@ using namespace std;
     }
 
     CardPack::~CardPack() {
+        for (int i = 0; i < packSize; i++) {
+            delete thePack[i];
+        }
         delete[] thePack;
-        thePack = nullptr;
     }
 
     // Other
