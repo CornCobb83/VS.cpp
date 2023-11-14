@@ -10,7 +10,7 @@
 using namespace std;
 
     // Constructors
-    CardPack::CardPack() : GameCard() {
+    CardPack::CardPack() : SecretRare() {
         packName = DEFAULT_NAME;
         packSize = DEFAULT_SIZE;
         for (int i = 0; i < packSize; i++) {
@@ -18,7 +18,7 @@ using namespace std;
         }
     }
 
-    CardPack::CardPack(string name, int level, string type, string Pname, int size) : GameCard(name, level, type) {
+    CardPack::CardPack(string name, int level, string type, string Pname, int size) : SecretRare(name, level, type) {
         packName = Pname;
         if (size > MAX_PACKSIZE)
             size = MAX_PACKSIZE;
@@ -28,7 +28,7 @@ using namespace std;
         }
     }
 
-    CardPack::CardPack(string Pname, int size) : GameCard() {
+    CardPack::CardPack(string Pname, int size) : SecretRare() {
         packName = Pname;
         if (size > MAX_PACKSIZE)
             size = MAX_PACKSIZE;

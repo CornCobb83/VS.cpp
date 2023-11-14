@@ -8,7 +8,7 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
-#include "GameCard.h"
+#include "SecretRare.h"
 
 using namespace std;
 
@@ -16,7 +16,7 @@ const int MAX_PACKSIZE = 10;
 const string DEFAULT_NAME = "unknown";
 const int DEFAULT_SIZE = 0;
 
-class CardPack : public GameCard {
+class CardPack : public SecretRare {
 public:
 
     // Declarations for constructors
@@ -33,19 +33,19 @@ public:
     void setSize(int size);
 
     // Declarations for other methods
-    CardPack& operator=(const CardPack& other);
-    bool operator==(const CardPack& other) const;
+    SecretRare& operator=(const SecretRare& other);
+    bool operator==(const SecretRare& other) const;
     ~CardPack();
 
     // Other
     void display() const;
-    void addCard(const GameCard& newCard);
+    void addCard(const SecretRare& newCard);
 
 private:
     // Declarations of data members
     string packName;
     int packSize;
-    GameCard *thePack[MAX_PACKSIZE];
+    SecretRare *thePack[MAX_PACKSIZE];
 
 };
 
