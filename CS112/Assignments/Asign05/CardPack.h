@@ -8,7 +8,7 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
-#include "SecretRare.h"
+#include "GameCard.h"
 
 using namespace std;
 
@@ -33,8 +33,8 @@ public:
     void setSize(int size);
 
     // Declarations for other methods
-    SecretRare& operator=(const SecretRare& other);
-    bool operator==(const SecretRare& other) const;
+    CardPack& operator=(const CardPack& other);
+    bool operator==(const CardPack& other) const;
     ~CardPack();
 
     // Other
