@@ -15,6 +15,17 @@ using namespace std;
 int main() {
     cout << boolalpha;
 
+    // From original CardTest.cpp
+    GameCard *myCardPtr;
+    myCardPtr = new GameCard("Pikachu", 7, "Electric");
+
+    GameCard card1("Squirtle", 5, "Water");
+    GameCard card2;
+
+    card2.setName("Charmander");
+    card2.setLevel(3);
+    card2.setType("Fire");
+
     
 
     return 0;
