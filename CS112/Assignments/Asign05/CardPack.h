@@ -45,7 +45,7 @@ private:
     // Declarations of data members
     string packName;
     int packSize;
-    GameCard **thePack;
+    GameCard *thePack;
 
 };
 
