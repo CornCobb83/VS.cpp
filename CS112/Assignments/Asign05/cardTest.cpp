@@ -26,11 +26,11 @@ int main() {
     card2.setLevel(3);
     card2.setType("Fire");
 
-    CardPack pack1;
+    CardPack *pack1 = new CardPack;
     cout << "*** Testing the output of a default pack ***" << endl;
-    pack1.display();
+    pack1->display();
 
-    pack1.addCard(*myCardPtr);
+    pack1->addCard(*myCardPtr);
     // pack1.addCard(card1);
     // pack1.addCard(card2);
 
