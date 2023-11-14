@@ -54,6 +54,7 @@ string SecretRare::to_string() const{
 
 void SecretRare::display() const{
     GameCard::display();
+    if (cardRarity != RARITY_DEFAULT && cardFullArt != FULLART_DEFAULT)
     cout << "Rarity:   " << cardRarity << endl
          << "Full Art: " << cardFullArt << endl;
 }
