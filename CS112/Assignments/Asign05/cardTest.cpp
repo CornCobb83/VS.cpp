@@ -30,8 +30,8 @@ int main() {
     cout << "*** Testing the output of a default pack ***" << endl;
     pack1.display();
 
-    // pack1.addCard(*myCardPtr);
-    pack1.addCard(card1);
+    pack1.addCard(*myCardPtr);
+    // pack1.addCard(card1);
     // pack1.addCard(card2);
 
     // cout << "Added 3 created cards to the pack using addCard()" << endl;
