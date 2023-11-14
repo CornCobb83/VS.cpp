@@ -14,6 +14,9 @@ using namespace std;
         packName = DEFAULT_NAME;
         packSize = DEFAULT_SIZE;
         thePack = new GameCard[packSize];
+        for (int i = 0; i < packSize; i++) {
+            thePack[i] = new GameCard();
+        }
     }
 
     CardPack::CardPack(string name, int level, string type, string Pname, int size) : GameCard(name, level, type) {

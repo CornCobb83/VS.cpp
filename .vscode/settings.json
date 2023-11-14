@@ -14,6 +14,7 @@
         "utility": "cpp",
         "typeinfo": "cpp",
         "new": "cpp",
-        "stdexcept": "cpp"
+        "stdexcept": "cpp",
+        "initializer_list": "cpp"
     }
 }
