@@ -33,9 +33,9 @@ public:
     bool operator ==(const GameCard& rhs) const;
     string to_string() const;
     // Copy
-    GameCard(const GameCard& other);
+    GameCard(const GameCard& rhs);
     // =Operator
-    GameCard& operator =(const GameCard& other);
+    GameCard& operator =(const GameCard& rhs);
     void display() const;
 
 protected:
