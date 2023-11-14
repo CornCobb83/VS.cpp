@@ -80,9 +80,6 @@ using namespace std;
     }
 
     CardPack::~CardPack() {
-        for (int i = 0; i < packSize; i++) {
-            delete thePack[i];
-        }
         delete[] thePack;
     }
 
@@ -100,7 +97,6 @@ using namespace std;
 
     void CardPack::addCard(const GameCard& newCard) {
         if (packSize < MAX_PACKSIZE) {
-            delete thePack[packSize];
             thePack[packSize] = new GameCard(newCard);
             packSize++;
         }
