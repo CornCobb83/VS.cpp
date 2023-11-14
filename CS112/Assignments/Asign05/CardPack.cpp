@@ -71,7 +71,10 @@ using namespace std;
     }
 
     bool CardPack::operator ==(const CardPack& rhs) const {
-        return (packSize == rhs.getSize());
+        bool isEqual = false;
+
+        
+        return isEqual;
     }
 
     CardPack::~CardPack() {
