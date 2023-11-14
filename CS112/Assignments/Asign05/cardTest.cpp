@@ -27,7 +27,12 @@ int main() {
     card2.setType("Fire");
 
     CardPack pack1;
-    cout << "Testing the output of a default pack" << endl;
+    cout << "*** Testing the output of a default pack ***" << endl;
+    pack1.display();
+
+    
+
+    cout << "Added 3 created cards to the pack using addCard()" << endl;
     pack1.display();
 
     return 0;

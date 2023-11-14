@@ -76,9 +76,14 @@ using namespace std;
 
     // Other
     void CardPack::display() const {
+    if (packSize > 0) {
         GameCard::display();
-    cout << "Pack Name: " << packName << endl
-         << "Pack Size: " << packSize << endl;
+        cout << "Pack Name: " << packName << endl
+            << "Pack Size: " << packSize << endl;
+        }
+    else {
+        cout << "There are no cards in this pack" << endl;
+        }
     }
 
     void CardPack::addCard(const GameCard& newCard) {

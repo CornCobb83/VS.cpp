@@ -14,7 +14,7 @@ using namespace std;
 
 const int MAX_PACKSIZE = 10;
 const string DEFAULT_NAME = "unknown";
-const int DEFAULT_SIZE = 10;
+const int DEFAULT_SIZE = 0;
 
 class CardPack : public GameCard {
 public:
