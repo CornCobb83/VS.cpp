@@ -63,6 +63,21 @@ string GameCard::to_string() const{
     return cardName + ", " + std::to_string(cardLevel) + ", " + cardType;
 }
 
+GameCard::GameCard(const GameCard& rhs) {
+    cardName = rhs.cardName;
+    cardLevel = rhs.cardLevel;
+    cardType = rhs.cardType;
+}
+
+GameCard& GameCard::operator=(const GameCard& rhs) {
+    if (this != &rhs) {
+        cardName = rhs.cardName;
+        cardLevel = rhs.cardLevel;
+        cardType = rhs.cardType;
+    }
+    return *this;
+}
+
 void GameCard::display() const{
     cout << fixed << setprecision(2)
          << "***************" << endl
