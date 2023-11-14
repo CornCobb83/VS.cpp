@@ -89,7 +89,8 @@ using namespace std;
 
     void CardPack::addCard(const GameCard& newCard) {
         if (packSize < MAX_PACKSIZE) {
-            thePack[packSize] = newCard;
+            delete thePack[packSize];
+            thePack[packSize] = new GameCard(newCard);
             packSize++;
         }
         else {
