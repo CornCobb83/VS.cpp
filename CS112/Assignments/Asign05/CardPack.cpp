@@ -13,7 +13,6 @@ using namespace std;
     CardPack::CardPack() : GameCard() {
         packName = DEFAULT_NAME;
         packSize = DEFAULT_SIZE;
-        thePack = new GameCard[packSize];
     }
 
     CardPack::CardPack(string name, int level, string type, string Pname, int size) : GameCard(name, level, type) {
@@ -21,7 +20,6 @@ using namespace std;
         if (size > MAX_PACKSIZE)
             size = MAX_PACKSIZE;
         packSize = size;
-        thePack = new GameCard[packSize];
     }
 
     CardPack::CardPack(string Pname, int size) : GameCard() {
@@ -29,7 +27,6 @@ using namespace std;
         if (size > MAX_PACKSIZE)
             size = MAX_PACKSIZE;
         packSize = size;
-        thePack = new GameCard[packSize];
     }
 
     // Accessors
