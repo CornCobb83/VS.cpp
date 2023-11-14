@@ -53,7 +53,7 @@ using namespace std;
     // Declarations for other methods
     CardPack& CardPack::operator =(const CardPack& rhs) {
         if (this != &rhs) {
-            GameCard::operator=(rhs);
+            GameCard::operator =(rhs);
 
             delete[] thePack;
             packName = rhs.packName;
