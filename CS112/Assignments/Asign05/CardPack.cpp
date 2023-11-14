@@ -14,7 +14,7 @@ using namespace std;
         packName = DEFAULT_NAME;
         packSize = DEFAULT_SIZE;
         for (int i = 0; i < packSize; i++) {
-            thePack[i] = new GameCard();
+            thePack[i] = new SecretRare();
         }
     }
 
@@ -24,7 +24,7 @@ using namespace std;
             size = MAX_PACKSIZE;
         packSize = size;
         for (int i = 0; i < packSize; i++) {
-            thePack[i] = new GameCard();
+            thePack[i] = new SecretRare();
         }
     }
 
@@ -34,7 +34,7 @@ using namespace std;
             size = MAX_PACKSIZE;
         packSize = size;
         for (int i = 0; i < packSize; i++) {
-            thePack[i] = new GameCard();
+            thePack[i] = new SecretRare();
         }
     }
 
@@ -59,7 +59,7 @@ using namespace std;
     // Declarations for other methods
     CardPack& CardPack::operator =(const CardPack& rhs) {
         if (this != &rhs) {
-            GameCard::operator =(rhs);
+            SecretRare::operator =(rhs);
 
             packName = rhs.packName;
             packSize = rhs.packSize;
@@ -98,9 +98,9 @@ using namespace std;
         }
     }
 
-    void CardPack::addCard(const GameCard& newCard) {
+    void CardPack::addCard(const SecretRare& newCard) {
         if (packSize < MAX_PACKSIZE) {
-            thePack[packSize] = new GameCard(newCard);
+            thePack[packSize] = new SecretRare(newCard);
             packSize++;
         }
         else {
