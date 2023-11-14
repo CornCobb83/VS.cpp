@@ -69,7 +69,22 @@ using namespace std;
         cardType = rhs.cardType;
     }
 
+    GameCard::GameCard(const GameCard* rhs) {
+        cardName = rhs.cardName;
+        cardLevel = rhs.cardLevel;
+        cardType = rhs.cardType;
+    }
+
     GameCard& GameCard::operator =(const GameCard& rhs) {
+        if (this != &rhs) {
+            cardName = rhs.cardName;
+            cardLevel = rhs.cardLevel;
+            cardType = rhs.cardType;
+        }
+        return *this;
+    }
+
+    GameCard& GameCard::operator =(const GameCard* rhs) {
         if (this != &rhs) {
             cardName = rhs.cardName;
             cardLevel = rhs.cardLevel;
