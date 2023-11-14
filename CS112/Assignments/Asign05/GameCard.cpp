@@ -63,7 +63,7 @@ string GameCard::to_string() const{
     return cardName + ", " + std::to_string(cardLevel) + ", " + cardType;
 }
 
-void GameCard::GameCard(const GameCard& rhs) {
+GameCard::GameCard(const GameCard& rhs) {
     cardName = rhs.cardName;
     cardLevel = rhs.cardLevel;
     cardType = rhs.cardType;
