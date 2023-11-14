@@ -78,17 +78,15 @@ using namespace std;
         for (int i = 0; i < packSize; ++i) {
             delete thePack[i];
         }
-        delete[] thePack;
     }
 
     // Other
     void CardPack::display() const {
         if (packSize > 0) {
-            //GameCard::display();
             cout << "Pack Name: " << packName << endl
-                << "Pack Size: " << packSize << endl;
+                 << "Pack Size: " << packSize << endl
+                 << "Cards in the Pack:" << endl << endl;
 
-            cout << "Cards in the Pack:" << endl;
             for (int i = 0; i < packSize; ++i) {
                 cout << "Card " << i + 1 << ": ";
                 thePack[i]->display();

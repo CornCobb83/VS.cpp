@@ -34,7 +34,7 @@ int main() {
     pack1->addCard(card1);
     pack1->addCard(card2);
 
-    cout << "Added 3 created cards to the pack using addCard()" << endl;
+    cout << "Added 3 created cards to the pack using addCard()" << endl << endl;
     pack1->display();
 
     delete[] pack1;

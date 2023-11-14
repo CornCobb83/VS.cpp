@@ -110,7 +110,6 @@ using namespace std;
     void GameCard::display() const{
         cout << fixed << setprecision(2)
             << "***************" << endl
-            << "Pokemon Card" << endl
             << "Name:     " << cardName << endl
             << "Level:    " << cardLevel << endl
             << "Type:     " << cardType << endl;
