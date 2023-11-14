@@ -13,7 +13,7 @@ using namespace std;
     CardPack::CardPack() : GameCard() {
         packName = DEFAULT_NAME;
         packSize = DEFAULT_SIZE;
-        thePack = new GameCard[packSize];
+        thePack = new GameCard*[packSize];
         for (int i = 0; i < packSize; i++) {
             thePack[i] = new GameCard();
         }
@@ -24,7 +24,10 @@ using namespace std;
         if (size > MAX_PACKSIZE)
             size = MAX_PACKSIZE;
         packSize = size;
-        thePack = new GameCard[packSize];
+        thePack = new GameCard*[packSize];
+        for (int i = 0; i < packSize; i++) {
+            thePack[i] = new GameCard();
+        }
     }
 
     CardPack::CardPack(string Pname, int size) : GameCard() {
@@ -32,7 +35,10 @@ using namespace std;
         if (size > MAX_PACKSIZE)
             size = MAX_PACKSIZE;
         packSize = size;
-        thePack = new GameCard[packSize];
+        thePack = new GameCard*[packSize];
+        for (int i = 0; i < packSize; i++) {
+            thePack[i] = new GameCard();
+        }
     }
 
     // Accessors
