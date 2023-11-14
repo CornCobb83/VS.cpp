@@ -76,7 +76,9 @@ using namespace std;
         cardType = rhs->cardType;
     }
     else {
-        
+        cardName = "unknown";
+        cardLevel = -1;
+        cardType = "unknown";
     }
 }
 
@@ -97,7 +99,9 @@ using namespace std;
         cardType = rhs->cardType;
     }
     else {
-
+        cardName = "unknown";
+        cardLevel = -1;
+        cardType = "unknown";
     }
     return *this;
 }
