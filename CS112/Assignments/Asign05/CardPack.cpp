@@ -75,7 +75,8 @@ using namespace std;
 
         for (int i = 0; i < packSize; i++) {
             if (thePack[i] != rhs[i]) {
-                
+                isEqual = false;
+                break;
             }
         }
 
