@@ -13,9 +13,8 @@ using namespace std;
     CardPack::CardPack() : GameCard() {
         packName = DEFAULT_NAME;
         packSize = DEFAULT_SIZE;
-        thePack = new GameCard;
         for (int i = 0; i < packSize; i++) {
-            thePack[i] = GameCard;
+            thePack[i] = new GameCard();
         }
     }
 
@@ -24,9 +23,8 @@ using namespace std;
         if (size > MAX_PACKSIZE)
             size = MAX_PACKSIZE;
         packSize = size;
-        thePack = new GameCard[packSize];
         for (int i = 0; i < packSize; i++) {
-            thePack[i] = GameCard;
+            thePack[i] = new GameCard();
         }
     }
 
@@ -35,9 +33,8 @@ using namespace std;
         if (size > MAX_PACKSIZE)
             size = MAX_PACKSIZE;
         packSize = size;
-        thePack = new GameCard[packSize];
         for (int i = 0; i < packSize; i++) {
-            thePack[i] = GameCard;
+            thePack[i] = new GameCard();
         }
     }
 
@@ -64,10 +61,8 @@ using namespace std;
         if (this != &rhs) {
             GameCard::operator =(rhs);
 
-            delete[] thePack;
             packName = rhs.packName;
             packSize = rhs.packSize;
-            thePack = new GameCard[packSize];
             for (int i = 0; i < packSize; ++i) {
                 thePack[i] = rhs.thePack[i];
             }
