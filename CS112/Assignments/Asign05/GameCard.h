@@ -32,6 +32,10 @@ public:
     // Declarations for other methods
     bool operator ==(const GameCard& rhs) const;
     string to_string() const;
+    // Copy
+    void GameCard(const GameCard& other)
+    // =Operator
+    GameCard& operator =(const GameCard& other)
     void display() const;
 
 protected:
