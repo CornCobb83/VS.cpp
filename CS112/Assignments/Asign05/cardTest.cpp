@@ -37,5 +37,7 @@ int main() {
     // cout << "Added 3 created cards to the pack using addCard()" << endl;
     // pack1.display();
 
+    delete pack1;
+
     return 0;
 }
