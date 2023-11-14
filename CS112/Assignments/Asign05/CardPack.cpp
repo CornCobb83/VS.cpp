@@ -71,9 +71,14 @@ using namespace std;
     }
 
     bool CardPack::operator ==(const CardPack& rhs) const {
-        bool isEqual = false;
+        bool isEqual = true;
 
-        
+        for (int i = 0; i < packSize; i++) {
+            if (thePack[i] != rhs[i]) {
+                
+            }
+        }
+
         return isEqual;
     }
 
