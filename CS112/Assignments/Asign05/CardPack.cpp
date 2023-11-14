@@ -94,7 +94,8 @@ using namespace std;
                 thePack[i]->display();
                 cout << endl;
             }
-        } else {
+        }
+        else {
             cout << "There are no cards in this pack" << endl;
         }
     }
