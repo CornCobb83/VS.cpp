@@ -84,7 +84,7 @@ using namespace std;
     // Other
     void CardPack::display() const {
         if (packSize > 0) {
-            GameCard::display();
+            //GameCard::display();
             cout << "Pack Name: " << packName << endl
                 << "Pack Size: " << packSize << endl;
 
