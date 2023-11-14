@@ -31,11 +31,11 @@ int main() {
     pack1->display();
 
     pack1->addCard(*myCardPtr);
-    // pack1.addCard(card1);
-    // pack1.addCard(card2);
+    pack1->addCard(card1);
+    pack1->addCard(card2);
 
-    // cout << "Added 3 created cards to the pack using addCard()" << endl;
-    // pack1.display();
+    cout << "Added 3 created cards to the pack using addCard()" << endl;
+    pack1->display();
 
     delete pack1;
 
