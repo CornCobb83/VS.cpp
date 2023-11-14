@@ -21,6 +21,7 @@ int main() {
 
     SecretRare card1("Squirtle", 5, "Water");
     SecretRare card2;
+    SecretRare card3("Charzard", 5, "Fire", "Ultra Rare", true);
 
     card2.setName("Charmander");
     card2.setLevel(3);
@@ -33,6 +34,7 @@ int main() {
     pack1->addCard(*myCardPtr);
     pack1->addCard(card1);
     pack1->addCard(card2);
+    pack1->addCard(card3);
 
     cout << "Added 3 created cards to the pack using addCard()" << endl << endl;
     pack1->display();
