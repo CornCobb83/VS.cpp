@@ -10,31 +10,31 @@
 using namespace std;
 
     // Constructors
-    CardPack::CardPack() : SecretRare() {
+    CardPack::CardPack() : RareCard() {
         packName = DEFAULT_NAME;
         packSize = DEFAULT_SIZE;
         for (int i = 0; i < packSize; i++) {
-            thePack[i] = new SecretRare();
+            thePack[i] = new RareCard();
         }
     }
 
-    CardPack::CardPack(string name, int level, string type, string Pname, int size) : SecretRare(name, level, type) {
+    CardPack::CardPack(string name, int level, string type, string Pname, int size) : RareCard(name, level, type) {
         packName = Pname;
         if (size > MAX_PACKSIZE)
             size = MAX_PACKSIZE;
         packSize = size;
         for (int i = 0; i < packSize; i++) {
-            thePack[i] = new SecretRare();
+            thePack[i] = new RareCard();
         }
     }
 
-    CardPack::CardPack(string Pname, int size) : SecretRare() {
+    CardPack::CardPack(string Pname, int size) : RareCard() {
         packName = Pname;
         if (size > MAX_PACKSIZE)
             size = MAX_PACKSIZE;
         packSize = size;
         for (int i = 0; i < packSize; i++) {
-            thePack[i] = new SecretRare();
+            thePack[i] = new RareCard();
         }
     }
 
@@ -59,7 +59,7 @@ using namespace std;
     // Declarations for other methods
     CardPack& CardPack::operator =(const CardPack& rhs) {
         if (this != &rhs) {
-            SecretRare::operator =(rhs);
+            RareCard::operator =(rhs);
 
             packName = rhs.packName;
             packSize = rhs.packSize;
@@ -104,9 +104,9 @@ using namespace std;
         }
     }
 
-    void CardPack::addCard(const SecretRare& newCard) {
+    void CardPack::addCard(const RareCard& newCard) {
         if (packSize < MAX_PACKSIZE) {
-            thePack[packSize] = new SecretRare(newCard);
+            thePack[packSize] = new RareCard(newCard);
             packSize++;
         }
         else {

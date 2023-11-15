@@ -39,13 +39,13 @@ public:
 
     // Other
     void display() const;
-    void addCard(const SecretRare& newCard);
+    void addCard(const RareCard& newCard);
 
 private:
     // Declarations of data members
     string packName;
     int packSize;
-    SecretRare *thePack[MAX_PACKSIZE];
+    SecreRareCardtRare *thePack[MAX_PACKSIZE];
 
 };
 
