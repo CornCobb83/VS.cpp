@@ -1,8 +1,8 @@
 // Assignment #4
 // Jordan Cobb
 
-#ifndef SECRETRARE_H
-#define SECRETRARE_H
+#ifndef RARECARD_H
+#define RARECARD_H
 
 #include <cstdlib>
 #include <iostream>
@@ -15,14 +15,14 @@ using namespace std;
 const string RARITY_DEFAULT = "Common";
 const bool FULLART_DEFAULT = false;
 
-// Definition of derived class SecretRare
-class SecretRare : public GameCard {
+// Definition of derived class RareCard
+class RareCard : public GameCard {
 public:
 
 //CONSTRUCTORS
-    SecretRare();
-    SecretRare(string name, int level, string type, string rarity, bool art);
-    SecretRare(string name, int level, string type);
+    RareCard();
+    RareCard(string name, int level, string type, string rarity, bool art);
+    RareCard(string name, int level, string type);
 
     // Declarations for accessors
     string getRarity() const;
@@ -33,7 +33,7 @@ public:
     void setFullArt(bool art);
 
     // Declarations for other methods
-    bool operator ==(const SecretRare& rhs) const;
+    bool operator ==(const RareCard& rhs) const;
     string to_string() const;
     void display() const;
 

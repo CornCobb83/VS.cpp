@@ -7,7 +7,7 @@
 #include <string>
 #include <cmath>
 #include "GameCard.h"
-#include "SecretRare.h"
+#include "RareCard.h"
 #include "CardPack.h"
 
 using namespace std;
@@ -16,12 +16,13 @@ int main() {
     cout << boolalpha;
 
     // From original CardTest.cpp
-    SecretRare *myCardPtr;
-    myCardPtr = new SecretRare("Pikachu", 7, "Electric");
+    RareCard *myCardPtr;
+    myCardPtr = new RareCard("Pikachu", 7, "Electric");
 
-    SecretRare card1("Squirtle", 5, "Water");
-    SecretRare card2;
-    SecretRare card3("Charzard", 17, "Fire", "Ultra Rare", true);
+    RareCard card1("Squirtle", 5, "Water");
+    RareCard card2;
+    RareCard card3("Charzard", 17, "Fire", "Ultra Rare", true);
+    RareCard card4("Mew", 99, "Psychic", "Secret Rare", false);
 
     card2.setName("Charmander");
     card2.setLevel(3);
@@ -50,8 +51,8 @@ int main() {
     cout << endl;
 
     cout << "Are the two packs equal? " << (pack1 == copyPack) << endl;
-    cout << "I just change a value in pack1" << endl;
-    
+    cout << "I just added a card in pack1" << endl;
+    pack1->addCard(card1);
     cout << "Are the two packs equal now? " << (pack1 == copyPack) << endl;
 
     delete[] pack1;

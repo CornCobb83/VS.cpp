@@ -5,54 +5,54 @@
 #include <iostream>
 #include <string>
 #include <cmath>
-#include "SecretRare.h"
+#include "RareCard.h"
 
 using namespace std;
 
 // CONSTRUCTORS
-SecretRare::SecretRare() : GameCard() {
+RareCard::RareCard() : GameCard() {
     cardRarity = RARITY_DEFAULT;
     cardFullArt = FULLART_DEFAULT;
 }
 
-SecretRare::SecretRare(string name, int level, string type, string rarity, bool art) : GameCard(name, level, type) {
+RareCard::RareCard(string name, int level, string type, string rarity, bool art) : GameCard(name, level, type) {
     cardRarity = rarity;
     cardFullArt = art;
 }
 
-SecretRare::SecretRare(string name, int level, string type) : GameCard(name, level, type) {
+RareCard::RareCard(string name, int level, string type) : GameCard(name, level, type) {
     cardRarity = RARITY_DEFAULT;
     cardFullArt = FULLART_DEFAULT;
 }
 
 // ACCESSORS
-string SecretRare::getRarity() const {
+string RareCard::getRarity() const {
     return cardRarity;
 }
 
-bool SecretRare::getFullArt() const {
+bool RareCard::getFullArt() const {
     return cardFullArt;
 }
 
 // MUTATORS
-void SecretRare::setRarity(string rarity) {
+void RareCard::setRarity(string rarity) {
     cardRarity = rarity;
 }
 
-void SecretRare::setFullArt(bool art) {
+void RareCard::setFullArt(bool art) {
     cardFullArt = art;
 }
 
 // OTHER METHODS
-bool SecretRare::operator ==(const SecretRare& rhs) const {
+bool RareCard::operator ==(const RareCard& rhs) const {
     return (cardFullArt == rhs.getFullArt() && cardRarity == rhs.getRarity() && cardLevel == rhs.getLevel());
 }
 
-string SecretRare::to_string() const{
+string RareCard::to_string() const{
     return GameCard::to_string() + ", " + cardRarity + ", " + std::to_string(cardFullArt);
 }
 
-void SecretRare::display() const{
+void RareCard::display() const{
     GameCard::display();
     if (cardRarity != RARITY_DEFAULT && cardFullArt != FULLART_DEFAULT) {
     cout << "Rarity:   " << cardRarity << endl
