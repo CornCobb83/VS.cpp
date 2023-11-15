@@ -41,7 +41,7 @@ int main() {
     pack1->display();
 
     cout << "Coppied 4 created cards to new pack using '='" << endl;
-    cout << "Displaying: " << endl << endl;
+    cout << "Displaying pack copy: " << endl << endl;
 
     CardPack *copyPack = new CardPack;
     copyPack = pack1;
@@ -50,7 +50,9 @@ int main() {
     cout << endl;
 
     cout << "Are the two packs equal? " << (pack1 == copyPack) << endl;
-    cout << "I just change a value
+    cout << "I just change a value in pack1" << endl;
+    
+    cout << "Are the two packs equal now? " << (pack1 == copyPack) << endl;
 
     delete[] pack1;
     delete[] copyPack;
