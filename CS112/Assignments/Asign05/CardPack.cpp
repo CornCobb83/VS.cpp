@@ -71,20 +71,17 @@ using namespace std;
     }
 
     bool CardPack::operator ==(const CardPack& rhs) const {
-        bool isEqual = true;
-
         for (int i = 0; i < packSize; i++) {
             if (thePack[i] != rhs[i]) {
-                isEqual = false;
-                break;
+                return false;
             }
         }
 
-        return isEqual;
+        return true;
     }
 
     CardPack::~CardPack() {
-        for (int i = 0; i < packSize; ++i) {
+        for (int i = 0; i < packSize; i++) {
             delete thePack[i];
         }
     }
