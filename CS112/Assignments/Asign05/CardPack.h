@@ -45,7 +45,7 @@ private:
     // Declarations of data members
     string packName;
     int packSize;
-    SecreRareCardtRare *thePack[MAX_PACKSIZE];
+    RareCard *thePack[MAX_PACKSIZE];
 
 };
 
