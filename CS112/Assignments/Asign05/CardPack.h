@@ -16,7 +16,7 @@ const int MAX_PACKSIZE = 10;
 const string DEFAULT_NAME = "unknown";
 const int DEFAULT_SIZE = 0;
 
-class CardPack : public SecretRare {
+class CardPack : public RareCard {
 public:
 
     // Declarations for constructors
