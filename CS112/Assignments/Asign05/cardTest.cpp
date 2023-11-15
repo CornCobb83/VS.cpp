@@ -55,8 +55,6 @@ int main() {
     pack1->addCard(card1);
     cout << "Are the two packs equal now? " << (pack1 == copyPack) << endl;
 
-    pack1->display();
-
     delete[] pack1;
     delete[] copyPack;
 
