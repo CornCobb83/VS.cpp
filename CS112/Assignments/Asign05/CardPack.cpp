@@ -72,7 +72,7 @@ using namespace std;
 
     bool CardPack::operator ==(const CardPack& rhs) const {
         for (int i = 0; i < packSize; i++) {
-            if (thePack[i] != rhs[i]) {
+            if (thePack[i] != rhs.thePack[i]) {
                 return false;
             }
         }
