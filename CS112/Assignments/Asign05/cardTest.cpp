@@ -19,7 +19,7 @@ int main() {
     SecretRare *myCardPtr;
     myCardPtr = new SecretRare("Pikachu", 7, "Electric");
 
-    GameCard card1("Squirtle", 5, "Water");
+    SecretRare card1("Squirtle", 5, "Water");
     SecretRare card2;
     SecretRare card3("Charzard", 17, "Fire", "Ultra Rare", true);
 
