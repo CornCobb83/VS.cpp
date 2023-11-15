@@ -1,65 +1,62 @@
-// // Assignment #3
+// // Assignment #5
 // // Jordan Cobb
 
-// #include <cstdlib>
-// #include <iostream>
-// #include <iomanip>
-// #include <string>
-// #include <cmath>
-// #include "GameCard.h"
-// #include "SecretRare.h"
+#include <cstdlib>
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <cmath>
+#include "GameCard.h"
+#include "RareCard.h"
+#include "CardPack.h"
 
-// using namespace std;
+using namespace std;
 
-// int main() {
-//     cout << boolalpha;
+int main() {
+    cout << boolalpha;
 
-//     GameCard *myCardPtr;
-//     myCardPtr = new GameCard("Pikachu", 7, "Electric");
+    // From original CardTest.cpp
+    RareCard *myCardPtr;
+    myCardPtr = new RareCard("Pikachu", 7, "Electric");
 
-//     GameCard card1("Squirtle", 5, "Water");
-//     GameCard card2;
+    RareCard card1("Squirtle", 5, "Water");
+    RareCard card2;
+    RareCard card3("Charzard", 17, "Fire", "Ultra Rare", true);
+    RareCard card4("Mew", 99, "Psychic", "Secret Rare", false);
 
-//     cout << "Now we are testing card1 which should be set to 'Squirtle', 5, 'Water'" << endl;
-//     cout << "Is card1 name Squirtle? " << (card1.getName() == "Squirtle") << endl;
-//     cout << "Is card1 level 5? " << (card1.getLevel() == 5) << endl;
-//     cout << "Is card1 type Water? " << (card1.getName() == "Water") << endl;
+    card2.setName("Charmander");
+    card2.setLevel(3);
+    card2.setType("Fire");
 
-//     cout << "Now we are testing card2 which should be set to 'unknown', -1, 'unknown'" << endl;
-//     cout << "Is card2 name unknown? " << (card2.getName() == "unknown") << endl;
-//     cout << "Is card2 level -1? " << (card2.getLevel() == -1) << endl;
-//     cout << "Is card2 type unknown? " << (card2.getType() == "unknown") << endl;
+    CardPack *pack1 = new CardPack;
+    cout << "*** Testing the output of a default pack ***" << endl;
+    pack1->display();
 
-//     cout << "Now we are changing the values of card2" << endl;
-//     card2.setName("Charmander");
-//     card2.setLevel(3);
-//     card2.setType("Fire");
+    pack1->addCard(*myCardPtr);
+    pack1->addCard(card1);
+    pack1->addCard(card2);
+    pack1->addCard(card3);
 
-//     cout << "Now we are testing card2 which should be set to 'Charmander', 3, 'Fire'" << endl;
-//     cout << "Is card2 name Charmander? " << (card2.getName() == "Charmander") << endl;
-//     cout << "Is card2 level 3? " << (card2.getLevel() == 3) << endl;
-//     cout << "Is card2 type Fire? " << (card2.getType() == "Fire") << endl;
+    cout << "Added 4 created cards to the pack using addCard()" << endl << endl;
+    pack1->setName("Pack 1");
+    pack1->display();
 
-//     cout << "Now we are checking cardPtr which should be set to 'Pikachu', 7, 'Electric'" << endl;
-//     myCardPtr->display();
-//     cout << endl << "Now we are changing the values of cardPtr" << endl;
-//     myCardPtr->setName("Riachu");
-//     myCardPtr->setLevel(11);
-//     cout << "Is cardPtr name Riachu? " << (myCardPtr->getName() == "Riachu") << endl;
-//     cout << "Is cardPtr level 11? " << (myCardPtr->getLevel() == 11) << endl;
+    cout << "Coppied 4 created cards to new pack using '='" << endl;
+    cout << "Displaying pack copy: " << endl << endl;
 
-//     myCardPtr->display();
-//     card1.display();
-//     card2.display();
+    CardPack *copyPack = new CardPack;
+    copyPack = pack1;
+    copyPack->setName("Pack Copy");
+    copyPack->display();
+    cout << endl;
 
-//     cout << "Testing is card1 is equal to card2" << endl;
-//     cout << (card1 == card2) << endl;
-//     cout << "Setting card1 equal to card2" << endl;
-//     card2.setName("Squirtle");
-//     card2.setLevel(5);
-//     card2.setType("Water");
-//     cout << "Testing is card1 is equal to card2" << endl;
-//     cout << (card1 == card2) << endl;
+    cout << "Are the two packs equal? " << (pack1 == copyPack) << endl;
+    cout << "I just added a card in pack1" << endl;
+    pack1->addCard(card1);
+    cout << "Are the two packs equal now? " << (pack1 == copyPack) << endl;
 
-//     return 0;
-// }
+    delete[] pack1;
+    delete[] copyPack;
+
+    return 0;
+}
