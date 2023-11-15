@@ -48,8 +48,8 @@ int main() {
     copyPack->display();
     cout << endl;
 
-    cout << "Are the two packs equal? " << (pack1 == copyPack) << endl << endl;
-    cout << "
+    cout << "Are the two packs equal? " << (pack1 == copyPack) << endl;
+    cout << "I just change a value 
 
     delete[] pack1;
     delete[] copyPack;
