@@ -32,6 +32,10 @@ int main() {
     cout << "*** Testing the output of a default pack ***" << endl;
     pack1.display();
 
+    CardPack pack2("Deafult7", 7);
+    cout << "*** Testing the output of a default pack with 7 size***" << endl;
+    pack2.display();
+
     pack1.addCard(*myCardPtr);
     pack1.addCard(card1);
     pack1.addCard(card2);
@@ -52,9 +56,7 @@ int main() {
     cout << "Are the two packs equal? " << (pack1 == copyPack) << endl;
     cout << "I just created a new card pack with a default card" << endl;
 
-    CardPack newPack;
-
-    cout << "Are the two packs equal? " << (pack1 == newPack) << endl << endl;
+    cout << "Are the two packs equal? " << (pack1 == pack2) << endl << endl;
 
     cout << "Let's change some cards in our pack1 using mutators!" << endl;
     cout << "Changing card at index 2, card 3, from Charmander to"
