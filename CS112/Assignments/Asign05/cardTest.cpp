@@ -51,11 +51,11 @@ int main() {
     cout << endl;
 
     cout << "Are the two packs equal? " << (pack1 == copyPack) << endl;
-    cout << "I just created a new card back with a default card" << endl;
+    cout << "I just created a new card pack with a default card" << endl;
 
-    
+    CardPack *newPack = new CardPack;
 
-    cout << "Are the two packs equal? " << (pack1 == copyPack) << endl;
+    cout << "Are the two packs equal? " << (pack1 == newPack) << endl;
 
     delete[] pack1;
     delete[] copyPack;
