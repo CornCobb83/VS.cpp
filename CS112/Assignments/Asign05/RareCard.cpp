@@ -25,9 +25,9 @@ RareCard::RareCard(string name, int level, string type) : GameCard(name, level, 
     cardFullArt = FULLART_DEFAULT;
 }
 
-RareCard::RareCard(RareCard& newCard) {
-    cardRarity = RARITY_DEFAULT;
-    cardFullArt = FULLART_DEFAULT;
+RareCard::RareCard(const RareCard& newCard) : GameCard(newCard) {
+    cardRarity = newCard.cardRarity;
+    cardFullArt = newCard.cardFullArt;
 }
 
 // ACCESSORS
