@@ -54,8 +54,7 @@ int main() {
     copyPack.display();
 
     cout << "Are the two packs equal? " << (pack1 == copyPack) << endl;
-    cout << "I just created a new card pack with a default card" << endl;
-
+    cout << "Let's test if pack1 is equal to our default7 pack" << endl;
     cout << "Are the two packs equal? " << (pack1 == pack2) << endl << endl;
 
     cout << "Let's change some cards in our pack1 using mutators!" << endl;
