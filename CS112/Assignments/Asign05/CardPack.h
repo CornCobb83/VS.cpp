@@ -31,7 +31,7 @@ public:
     // Declarations for mutators
     void setName(string name);
     void setSize(int size);
-    void setCard(const RareCard& newCard);
+    void setCard(int index, const RareCard& newCard);
 
     // Declarations for other methods
     CardPack& operator=(const CardPack& other);
