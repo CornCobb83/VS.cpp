@@ -57,8 +57,6 @@ using namespace std;
     // Declarations for other methods
     CardPack& CardPack::operator =(const CardPack& rhs) {
         if (this != &rhs) {
-            RareCard::operator =(rhs);
-
             packName = rhs.packName;
             packSize = rhs.packSize;
             for (int i = 0; i < packSize; ++i) {
