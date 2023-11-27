@@ -16,12 +16,11 @@ const int MAX_PACKSIZE = 10;
 const string DEFAULT_NAME = "unknown";
 const int DEFAULT_SIZE = 0;
 
-class CardPack : public RareCard {
+class CardPack {
 public:
 
     // Declarations for constructors
     CardPack();
-    CardPack(string name, int level, string type, string Pname, int size);
     CardPack(string Pname, int size);
 
     // Declarations for accessors

@@ -28,31 +28,31 @@ int main() {
     card2.setLevel(3);
     card2.setType("Fire");
 
-    CardPack *pack1 = new CardPack;
+    CardPack pack1;
     cout << "*** Testing the output of a default pack ***" << endl;
-    pack1->display();
+    pack1.display();
 
-    pack1->addCard(*myCardPtr);
-    pack1->addCard(card1);
-    pack1->addCard(card2);
-    pack1->addCard(card3);
+    pack1.addCard(*myCardPtr);
+    pack1.addCard(card1);
+    pack1.addCard(card2);
+    pack1.addCard(card3);
 
     cout << "Added 4 created cards to the pack using addCard()" << endl << endl;
-    pack1->setName("Pack 1");
-    pack1->display();
+    pack1.setName("Pack 1");
+    pack1.display();
 
     cout << "Coppied 4 created cards to new pack using '='" << endl;
     cout << "Displaying pack copy: " << endl << endl;
 
-    CardPack *copyPack = new CardPack;
+    CardPack copyPack;
     copyPack = pack1;
-    copyPack->setName("Pack Copy");
-    copyPack->display();
+    copyPack.setName("Pack Copy");
+    copyPack.display();
 
     cout << "Are the two packs equal? " << (pack1 == copyPack) << endl;
     cout << "I just created a new card pack with a default card" << endl;
 
-    CardPack *newPack = new CardPack;
+    CardPack newPack;
 
     cout << "Are the two packs equal? " << (pack1 == newPack) << endl << endl;
 
@@ -61,19 +61,21 @@ int main() {
              " a new Vaporeon card" << endl;
 
     RareCard card5("Vapreon", 13, "Water");
-    pack1->setCard(2, card5);
-    pack1->display();
+    pack1.setCard(2, card5);
+    pack1.display();
 
     cout << "Let's change some cards in our copyPack using mutators!" << endl;
     cout << "Changing card at index 1, card 2, from Squirtle to"
              " to the Vaporeon card" << endl;
 
-    copyPack->setCard(1, card5);
-    copyPack->display();
+    copyPack.setCard(1, card5);
+    copyPack.display();
 
-    delete[] pack1;
-    delete[] copyPack;
-    delete[] newPack;
+    cout << "Let's get the card at index 2 of pack1 to verify the getCard() function" << endl;
+    cout << "The card at index 2 is:" << endl;
+
+    pack1.getCard(2)->display();
+    cout << endl;
 
     return 0;
 }

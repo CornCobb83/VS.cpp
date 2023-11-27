@@ -10,7 +10,7 @@
 using namespace std;
 
     // Constructors
-    CardPack::CardPack() : RareCard() {
+    CardPack::CardPack() {
         packName = DEFAULT_NAME;
         packSize = DEFAULT_SIZE;
         for (int i = 0; i < packSize; i++) {
@@ -18,17 +18,7 @@ using namespace std;
         }
     }
 
-    CardPack::CardPack(string name, int level, string type, string Pname, int size) : RareCard(name, level, type) {
-        packName = Pname;
-        if (size > MAX_PACKSIZE)
-            size = MAX_PACKSIZE;
-        packSize = size;
-        for (int i = 0; i < packSize; i++) {
-            thePack[i] = new RareCard();
-        }
-    }
-
-    CardPack::CardPack(string Pname, int size) : RareCard() {
+    CardPack::CardPack(string Pname, int size) {
         packName = Pname;
         if (size > MAX_PACKSIZE)
             size = MAX_PACKSIZE;
@@ -47,7 +37,9 @@ using namespace std;
         return packSize;
     }
 
-    const RareCard
+    const RareCard* CardPack::getCard(int index) const {
+        return thePack[index];
+    }
 
     // Mutators
     void CardPack::setName(string name) {
