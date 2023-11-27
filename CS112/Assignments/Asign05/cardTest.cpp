@@ -48,7 +48,6 @@ int main() {
     copyPack = pack1;
     copyPack->setName("Pack Copy");
     copyPack->display();
-    cout << endl;
 
     cout << "Are the two packs equal? " << (pack1 == copyPack) << endl;
     cout << "I just created a new card pack with a default card" << endl;
