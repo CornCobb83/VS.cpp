@@ -57,12 +57,19 @@ int main() {
     cout << "Are the two packs equal? " << (pack1 == newPack) << endl << endl;
 
     cout << "Let's change some cards in our pack1 using mutators!" << endl;
+    cout << "Changing card at index 2, card 3, from Charmander to"
+             " a new Vaporeon card" << endl;
 
     RareCard card5("Vapreon", 13, "Water");
     pack1->setCard(2, card5);
     pack1->display();
 
-    cout << endl;
+    cout << "Let's change some cards in our copyPack using mutators!" << endl;
+    cout << "Changing card at index 1, card 2, from Squirtle to"
+             " to the Vaporeon card" << endl;
+
+    copyPack->setCard(1, card5);
+    copyPack->display();
 
     delete[] pack1;
     delete[] copyPack;
