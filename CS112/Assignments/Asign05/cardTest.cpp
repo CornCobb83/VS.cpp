@@ -58,6 +58,7 @@ int main() {
 
     delete[] pack1;
     delete[] copyPack;
+    delete[] newPack;
 
     // add more here
 
