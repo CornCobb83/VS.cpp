@@ -47,6 +47,8 @@ using namespace std;
         return packSize;
     }
 
+    const RareCard
+
     // Mutators
     void CardPack::setName(string name) {
         packName = name;
