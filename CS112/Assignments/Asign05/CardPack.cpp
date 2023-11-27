@@ -57,7 +57,7 @@ using namespace std;
     }
 
     void CardPack::setCard(int index, RareCard& newCard) {
-        thePack[index] = newCard&;
+        thePack[index] = newCard;
     }
 
     // Declarations for other methods
