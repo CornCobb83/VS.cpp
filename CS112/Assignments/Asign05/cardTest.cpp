@@ -54,13 +54,19 @@ int main() {
 
     CardPack *newPack = new CardPack;
 
-    cout << "Are the two packs equal? " << (pack1 == newPack) << endl;
+    cout << "Are the two packs equal? " << (pack1 == newPack) << endl << endl;
+
+    cout << "Let's change some cards in our pack1 using mutators!" << endl;
+
+    RareCard card5("Vapreon", 13, "Water");
+    pack1->setCard(2, card5);
+    pack1->display();
+
+    cout << endl;
 
     delete[] pack1;
     delete[] copyPack;
     delete[] newPack;
-
-    // add more here
 
     return 0;
 }
