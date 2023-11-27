@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-cardTest",
+      "appliesTo": "CS112/Assignments/Asign05/cardTest.cpp",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-cardTest",
+      "appliesTo": "CS112/Assignments/Asign05/cardTest.cpp",
+      "type": "launch"
+    }
+  ]
+}
