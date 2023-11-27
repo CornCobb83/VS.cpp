@@ -56,6 +56,10 @@ using namespace std;
         packSize = size;
     }
 
+    void CardPack::setCard(int index, RareCard& newCard) {
+        thePack[index] = new RareCard(newCard);
+    }
+
     // Declarations for other methods
     CardPack& CardPack::operator =(const CardPack& rhs) {
         if (this != &rhs) {

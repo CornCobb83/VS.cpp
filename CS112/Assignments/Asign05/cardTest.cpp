@@ -48,17 +48,32 @@ int main() {
     copyPack = pack1;
     copyPack->setName("Pack Copy");
     copyPack->display();
-    cout << endl;
 
     cout << "Are the two packs equal? " << (pack1 == copyPack) << endl;
-    cout << "I just added a card in pack1" << endl;
-    pack1->addCard(card1);
-    cout << "Are the two packs equal now? " << (pack1 == copyPack) << endl;
+    cout << "I just created a new card pack with a default card" << endl;
+
+    CardPack *newPack = new CardPack;
+
+    cout << "Are the two packs equal? " << (pack1 == newPack) << endl << endl;
+
+    cout << "Let's change some cards in our pack1 using mutators!" << endl;
+    cout << "Changing card at index 2, card 3, from Charmander to"
+             " a new Vaporeon card" << endl;
+
+    RareCard card5("Vapreon", 13, "Water");
+    pack1->setCard(2, card5);
+    pack1->display();
+
+    cout << "Let's change some cards in our copyPack using mutators!" << endl;
+    cout << "Changing card at index 1, card 2, from Squirtle to"
+             " to the Vaporeon card" << endl;
+
+    copyPack->setCard(1, card5);
+    copyPack->display();
 
     delete[] pack1;
     delete[] copyPack;
-
-    // add more here
+    delete[] newPack;
 
     return 0;
 }
