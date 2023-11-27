@@ -56,8 +56,8 @@ using namespace std;
         packSize = size;
     }
 
-    void CardPack::setCard(int index, const RareCard& newCard) {
-        thePack[index] = newCard;
+    void CardPack::setCard(int index, RareCard& newCard) {
+        thePack[index] = newCard&;
     }
 
     // Declarations for other methods
