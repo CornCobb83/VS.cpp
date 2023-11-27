@@ -23,7 +23,7 @@ public:
     RareCard();
     RareCard(string name, int level, string type, string rarity, bool art);
     RareCard(string name, int level, string type);
-    RareCard(const RareCard& newCard);
+    RareCard(RareCard& newCard);
 
     // Declarations for accessors
     string getRarity() const;
