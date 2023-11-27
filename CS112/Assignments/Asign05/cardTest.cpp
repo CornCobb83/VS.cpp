@@ -51,9 +51,9 @@ int main() {
     cout << endl;
 
     cout << "Are the two packs equal? " << (pack1 == copyPack) << endl;
-    cout << "I just added a card in pack1" << endl;
+    cout << "I just created a new card back with a default card" << endl;
     pack1->addCard(card1);
-    cout << "Are the two packs equal now? " << (pack1 == copyPack) << endl;
+    cout << "Are the two packs equal? " << (pack1 == copyPack) << endl;
 
     delete[] pack1;
     delete[] copyPack;
