@@ -52,7 +52,9 @@ int main() {
 
     cout << "Are the two packs equal? " << (pack1 == copyPack) << endl;
     cout << "I just created a new card back with a default card" << endl;
-    pack1->addCard(card1);
+
+    
+
     cout << "Are the two packs equal? " << (pack1 == copyPack) << endl;
 
     delete[] pack1;
