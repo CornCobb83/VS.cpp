@@ -31,8 +31,9 @@ int main() {
     CardPack pack1;
     cout << "*** Testing the output of a default pack ***" << endl;
     pack1.display();
+    cout << endl;
 
-    CardPack pack2("Deafult7", 7);
+    CardPack pack2("Default7", 7);
     cout << "*** Testing the output of a default pack with 7 size***" << endl;
     pack2.display();
 
