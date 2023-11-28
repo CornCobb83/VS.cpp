@@ -88,9 +88,12 @@ using namespace std;
     }
 
     CardPack::~CardPack() {
+        int count = 0;
         for (int i = 0; i < packSize; i++) {
             delete thePack[i];
+            count++;
         }
+        cout << count << " pointer objects deleted" << endl;
     }
 
     // Other
