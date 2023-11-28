@@ -45,7 +45,7 @@ int main() {
     pack1.setName("Pack 1");
     pack1.display();
 
-    cout << "Coppied 4 created cards to new pack using '='" << endl;
+    cout << "Copied 4 created cards to new pack using '='" << endl;
     cout << "Displaying pack copy: " << endl << endl;
 
     CardPack copyPack;
