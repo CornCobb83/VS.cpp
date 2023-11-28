@@ -79,5 +79,11 @@ int main() {
     pack1.getCard(2)->display();
     cout << endl;
 
+    cout << "Testing default getCard function with no call" << endl;
+    cout << "Should default to index 0:" << endl;
+
+    pack1.getCard()->display();
+    cout << endl;
+
     return 0;
 }
