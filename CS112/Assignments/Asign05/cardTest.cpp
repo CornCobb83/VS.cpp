@@ -104,7 +104,10 @@ int main() {
     }
 
     pack2.setName("Mew Pack");
-    
+    card4.setName("Mewtwo");
+    card4.setLevel(999);
+    card4.setFullArt(true);
+    pack2.setCard(2, card4);
     pack2.display();
 
     CardPack pack3("Misc", 15);
