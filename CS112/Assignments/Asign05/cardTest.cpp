@@ -104,7 +104,7 @@ int main() {
     }
 
     pack2.setName("Mew Pack");
-    pack.setCard(2)
+    
     pack2.display();
 
     CardPack pack3("Misc", 15);

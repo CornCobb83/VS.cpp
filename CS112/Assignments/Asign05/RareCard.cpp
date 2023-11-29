@@ -69,7 +69,7 @@ string RareCard::to_string() const{
 
 void RareCard::display() const{
     GameCard::display();
-    if (cardRarity != RARITY_DEFAULT && cardFullArt != FULLART_DEFAULT) {
+    if (cardRarity != RARITY_DEFAULT || cardFullArt != FULLART_DEFAULT) {
     cout << "Rarity:   " << cardRarity << endl
          << "Full Art: " << cardFullArt << endl;
     }
