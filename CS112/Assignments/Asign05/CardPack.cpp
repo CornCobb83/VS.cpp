@@ -120,5 +120,3 @@ using namespace std;
             cout << "Card pack is full." << endl;
         }
     }
-
-

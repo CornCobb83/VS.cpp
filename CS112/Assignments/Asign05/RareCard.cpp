@@ -63,20 +63,6 @@ RareCard& RareCard::operator =(const RareCard& rhs) {
     return *this;
 }
 
-RareCard& RareCard::operator =(const RareCard* rhs) {
-    if (this != nullptr) {
-        cardRarity = rhs->cardRarity;
-        cardFullArt = rhs->cardFullArt;
-        GameCard::operator =(rhs);
-    }
-    else {
-        cardRarity = RARITY_DEFAULT;
-        cardFullArt = FULLART_DEFAULT;
-    }
-
-    return *this;
-}
-
 string RareCard::to_string() const{
     return GameCard::to_string() + ", " + cardRarity + ", " + std::to_string(cardFullArt);
 }

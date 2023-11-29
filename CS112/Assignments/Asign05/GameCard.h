@@ -34,10 +34,8 @@ public:
     string to_string() const;
     // Copy
     GameCard(const GameCard& rhs);
-    GameCard(const GameCard* rhs);
     // =Operator
     GameCard& operator =(const GameCard& rhs);
-    GameCard& operator =(const GameCard* rhs);
     void display() const;
 
 protected:
