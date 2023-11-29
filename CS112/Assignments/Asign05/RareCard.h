@@ -35,7 +35,7 @@ public:
 
     // Declarations for other methods
     bool operator ==(const RareCard& rhs) const;
-    RareCard& operator =(const RareCard& rhs) const;
+    RareCard& operator =(const RareCard& rhs);
     string to_string() const;
     void display() const;
 
