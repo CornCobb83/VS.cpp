@@ -29,12 +29,12 @@ int main() {
     card2.setType("Fire");
 
     CardPack pack1;
-    cout << "*** Testing the output of a default pack ***" << endl;
+    cout << "***Testing the output of a default pack***" << endl;
     pack1.display();
     cout << endl;
 
     CardPack pack2("Default7", 7);
-    cout << "*** Testing the output of a default pack with 7 size***" << endl;
+    cout << "***Testing the output of a default pack with 7 size***" << endl;
     pack2.display();
 
     pack1.addCard(*myCardPtr);
