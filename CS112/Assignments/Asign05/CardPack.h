@@ -42,7 +42,6 @@ public:
     // Other
     void display() const;
     void addCard(const RareCard& newCard);
-    void addCard(const RareCard* newCard);
 
 private:
     // Declarations of data members

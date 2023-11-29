@@ -104,7 +104,7 @@ int main() {
     }
 
     pack2.setName("Mew Pack");
-    RareCard card41("Mew", 99, "Psychic", "One of a Kind", true);
+    RareCard card41("Mewtwo", 100, "Psychic", "One of a Kind", true);
     myCardPtr = &card41;
     pack2.setCard(2, *myCardPtr);
     pack2.display();
