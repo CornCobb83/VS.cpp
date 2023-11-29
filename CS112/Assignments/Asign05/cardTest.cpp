@@ -62,7 +62,7 @@ int main() {
     cout << "Changing card at index 2, card 3, from Charmander to"
              " a new Vaporeon card" << endl;
 
-    RareCard card5("Vapreon", 13, "Water");
+    RareCard card5("Vaporeon", 13, "Water");
     pack1.setCard(2, card5);
     pack1.display();
 
