@@ -21,7 +21,7 @@ int main() {
 
     RareCard card1("Squirtle", 5, "Water");
     RareCard card2;
-    RareCard card3("Charzard", 17, "Fire", "Ultra Rare", true);
+    RareCard card3("Charizard", 17, "Fire", "Ultra Rare", true);
     RareCard card4("Mew", 99, "Psychic", "Secret Rare", false);
 
     card2.setName("Charmander");
