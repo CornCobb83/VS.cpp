@@ -120,3 +120,13 @@ using namespace std;
             cout << "Card pack is full." << endl;
         }
     }
+
+    void CardPack::addCard(const RareCard* newCard) {
+        if (packSize < MAX_PACKSIZE) {
+            thePack[packSize] = new RareCard(newCard);
+            packSize++;
+        }
+        else {
+            cout << "Card pack is full." << endl;
+        }
+    }
