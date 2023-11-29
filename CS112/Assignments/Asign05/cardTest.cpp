@@ -105,8 +105,8 @@ int main() {
 
     pack2.setName("Mew Pack");
     RareCard card41("Mew", 99, "Psychic", "One of a Kind", true);
-    myCardPtr = card41;
-    pack2.setCard(2, myCardPtr&);
+    myCardPtr = &card41;
+    pack2.setCard(2, myCardPtr);
     pack2.display();
 
     cout << "***Making a third pack to test the destructor, and max cards in packs***" << endl;
