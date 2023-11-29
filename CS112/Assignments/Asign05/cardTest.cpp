@@ -67,7 +67,7 @@ int main() {
     pack1.display();
 
     cout << "***Let's change some cards in our copyPack using mutators!***" << endl;
-    cout << "Changing card at index 1, card 2, from Squirtle to"
+    cout << "Changing card at index 1, card 2, from Squirtle"
              " to the Vaporeon card" << endl;
 
     copyPack.setCard(1, card5);
