@@ -64,10 +64,14 @@ RareCard& RareCard::operator =(const RareCard& rhs) {
 }
 
 RareCard& RareCard::operator =(const RareCard* rhs) {
-    if (this != rhs) {
+    if (this != nullptr) {
         cardRarity = rhs->cardRarity;
         cardFullArt = rhs->cardFullArt;
         GameCard::operator =(rhs);
+    }
+    else {
+        cardRarity = RARITY_DEFAULT;
+        cardFullArt = FULLART_DEFAULT;
     }
 
     return *this;
