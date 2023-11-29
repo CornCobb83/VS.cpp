@@ -10,7 +10,7 @@
 using namespace std;
 
     // CONSTRUCTORS
-    GameCard::GameCard(){
+    GameCard::GameCard() {
         cardName = "unknown";
         cardLevel = -1;
         cardType = "unknown";
@@ -70,17 +70,17 @@ using namespace std;
     }
 
     GameCard::GameCard(const GameCard* rhs) {
-    if (rhs != nullptr) {
-        cardName = rhs->cardName;
-        cardLevel = rhs->cardLevel;
-        cardType = rhs->cardType;
+        if (rhs != nullptr) {
+            cardName = rhs->cardName;
+            cardLevel = rhs->cardLevel;
+            cardType = rhs->cardType;
+        }
+        else {
+            cardName = "unknown";
+            cardLevel = -1;
+            cardType = "unknown";
+        }
     }
-    else {
-        cardName = "unknown";
-        cardLevel = -1;
-        cardType = "unknown";
-    }
-}
 
 
     GameCard& GameCard::operator =(const GameCard& rhs) {
@@ -92,7 +92,7 @@ using namespace std;
         return *this;
     }
 
-    GameCard& GameCard::operator=(const GameCard* rhs) {
+    GameCard& GameCard::operator =(const GameCard* rhs) {
     if (rhs != nullptr) {
         cardName = rhs->cardName;
         cardLevel = rhs->cardLevel;
