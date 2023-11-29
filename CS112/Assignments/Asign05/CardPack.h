@@ -26,8 +26,8 @@ public:
     // Declarations for accessors
     string getName() const;
     int getSize() const;
-    const RareCard* getCard() const;
-    const RareCard* getCard(int index) const;
+    RareCard* getCard() const;
+    RareCard* getCard(int index) const;
 
     // Declarations for mutators
     void setName(string name);

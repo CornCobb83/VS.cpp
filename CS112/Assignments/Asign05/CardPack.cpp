@@ -34,11 +34,11 @@ using namespace std;
         return packSize;
     }
 
-    const RareCard* CardPack::getCard() const {
+    RareCard* CardPack::getCard() const {
         return thePack[0];
     }
 
-    const RareCard* CardPack::getCard(int index) const {
+    RareCard* CardPack::getCard(int index) const {
         if (index <= packSize)
             return thePack[index];
         else
