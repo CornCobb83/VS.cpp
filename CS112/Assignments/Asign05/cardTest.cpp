@@ -114,5 +114,8 @@ int main() {
     cout << "(as well as the other packs with 4 and 7 pointer objects)" << endl << endl;
     CardPack pack3("Misc", 15);
 
+    myCardPtr = nullptr;
+    delete myCardPtr;
+
     return 0;
 }
