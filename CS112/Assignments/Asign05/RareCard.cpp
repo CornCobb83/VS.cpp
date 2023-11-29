@@ -53,8 +53,8 @@ bool RareCard::operator ==(const RareCard& rhs) const {
     return (cardFullArt == rhs.getFullArt() && cardRarity == rhs.getRarity() && cardLevel == rhs.getLevel());
 }
 
-RareCard& RareCard::operator =()const RareCard& rhs) const {
-    
+RareCard& RareCard::operator =(const RareCard& rhs) const {
+    if (this != rhs)
 }
 
 string RareCard::to_string() const{

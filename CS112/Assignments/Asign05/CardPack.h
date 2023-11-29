@@ -35,8 +35,8 @@ public:
     void setCard(int index, RareCard& newCard);
 
     // Declarations for other methods
-    CardPack& operator=(const CardPack& other);
-    bool operator==(const CardPack& other) const;
+    CardPack& operator=(const CardPack& rhs);
+    bool operator==(const CardPack& rhs) const;
     ~CardPack();
 
     // Other
