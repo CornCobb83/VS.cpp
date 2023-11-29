@@ -58,7 +58,7 @@ int main() {
     cout << "Let's test if pack1 is equal to our default7 pack" << endl;
     cout << "Are the two packs equal? " << (pack1 == pack2) << endl << endl;
 
-    cout << "Let's change some cards in our pack1 using mutators!" << endl;
+    cout << "***Let's change some cards in our pack1 using mutators!***" << endl;
     cout << "Changing card at index 2, card 3, from Charmander to"
              " a new Vaporeon card" << endl;
 
@@ -66,26 +66,28 @@ int main() {
     pack1.setCard(2, card5);
     pack1.display();
 
-    cout << "Let's change some cards in our copyPack using mutators!" << endl;
+    cout << "***Let's change some cards in our copyPack using mutators!***" << endl;
     cout << "Changing card at index 1, card 2, from Squirtle to"
              " to the Vaporeon card" << endl;
 
     copyPack.setCard(1, card5);
     copyPack.display();
 
-    cout << "Let's get the card at index 2 of pack1 to verify the getCard() function" << endl;
+    cout << "***Let's get the card at index 2 of pack1 to verify the getCard() function***" << endl;
     cout << "The card at index 2 is:" << endl;
 
     pack1.getCard(2)->display();
     cout << endl;
 
-    cout << "Testing default getCard function with no call" << endl;
+    cout << "***Testing default getCard function with no call***" << endl;
     cout << "Should default to index 0:" << endl;
 
     pack1.getCard()->display();
     cout << endl;
 
-    cout << pack1.getCard()->to_string() << endl << endl;
+    cout << "***Testing the to_string method of cards at index 0 and 3 in pack 1***" << endl;
+    cout << pack1.getCard()->to_string() << endl;
+    cout << pack1.getCard(3)->to_string() << endl << endl;
 
     CardPack pack3("Misc", 15);
 
