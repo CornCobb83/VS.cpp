@@ -53,16 +53,14 @@ bool RareCard::operator ==(const RareCard& rhs) const {
     return (cardFullArt == rhs.getFullArt() && cardRarity == rhs.getRarity() && cardLevel == rhs.getLevel());
 }
 
-RareCard& RareCard::operator =(const RareCard& rhs) const {
+RareCard& RareCard::operator =(const RareCard& rhs) {
     if (this != &rhs) {
         cardRarity = rhs.cardRarity;
         cardFullArt = rhs.cardFullArt;
-        GameCard::cardName = rhs.GameCard::cardName;
-        GameCard::cardLevel = rhs.GameCard::cardLevel;
-        GameCard::cardType = rhs.GameCard::cardType;
+        GameCard::operator =(rhs);
     }
 
-    return this*;
+    return *this;
 }
 
 string RareCard::to_string() const{
