@@ -54,7 +54,15 @@ bool RareCard::operator ==(const RareCard& rhs) const {
 }
 
 RareCard& RareCard::operator =(const RareCard& rhs) const {
-    if (this != rhs)
+    if (this != &rhs) {
+        cardRarity = rhs.cardRarity;
+        cardFullArt = rhs.cardFullArt;
+        GameCard::cardName = rhs.GameCard::cardName;
+        GameCard::cardLevel = rhs.GameCard::cardLevel;
+        GameCard::cardType = rhs.GameCard::cardType;
+    }
+
+    return this*;
 }
 
 string RareCard::to_string() const{
