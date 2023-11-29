@@ -13,9 +13,6 @@ using namespace std;
     CardPack::CardPack() {
         packName = DEFAULT_NAME;
         packSize = DEFAULT_SIZE;
-        for (int i = 0; i < packSize; i++) {
-            thePack[i] = new RareCard();
-        }
     }
 
     CardPack::CardPack(string Pname, int size) {
