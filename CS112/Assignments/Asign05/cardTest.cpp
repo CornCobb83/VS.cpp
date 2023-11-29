@@ -111,7 +111,7 @@ int main() {
     pack2.display();
 
     cout << "***Making a third pack to test the destructor, and max cards in packs***" << endl;
-    cout << "Should create and delete 10 default pointers" << endl;
+    cout << "Should create and delete 10 default pointers from input of 15 (max is 10)" << endl;
     cout << "(as well as the other packs with 4 and 7 pointer objects)" << endl << endl;
     CardPack pack3("Misc", 15);
 
