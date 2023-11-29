@@ -90,7 +90,9 @@ int main() {
     cout << pack1.getCard(3)->to_string() << endl << endl;
 
     cout << "***Testing = operator by setting the previous to_string cards to each other***" << endl;
-    pack1.getCard() = pack1.getCard(3);
+    RareCard card11 = pack1.getCard();
+    RareCard card12 = pack1.getCard(3);
+    card11 = card12;
     cout << pack1.getCard()->to_string() << endl;
     cout << pack1.getCard(3)->to_string() << endl << endl;
 
