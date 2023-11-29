@@ -96,6 +96,8 @@ int main() {
 
     pack1.display();
 
+    for ()
+
     CardPack pack3("Misc", 15);
 
     return 0;
