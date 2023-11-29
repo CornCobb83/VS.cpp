@@ -96,7 +96,15 @@ int main() {
 
     pack1.display();
 
-    for ()
+    cout << "Now let's set an entire pack to a certain card, and set the third card to a rarer card" << endl;
+
+    for (int i = 0; i < pack2.getSize(); i++) {
+        *pack2.getCard(i) = card4;
+    }
+
+    pack2.setName("Mew Pack");
+    pack.setCard(2)
+    pack2.display();
 
     CardPack pack3("Misc", 15);
 
