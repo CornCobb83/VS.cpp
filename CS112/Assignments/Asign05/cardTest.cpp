@@ -85,5 +85,7 @@ int main() {
     pack1.getCard()->display();
     cout << endl;
 
+    CardPack pack3("Misc", 15);
+
     return 0;
 }
