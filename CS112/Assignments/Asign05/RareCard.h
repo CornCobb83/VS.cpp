@@ -19,7 +19,7 @@ const bool FULLART_DEFAULT = false;
 class RareCard : public GameCard {
 public:
 
-//CONSTRUCTORS
+    //CONSTRUCTORS
     RareCard();
     RareCard(string name, int level, string type, string rarity, bool art);
     RareCard(string name, int level, string type);
