@@ -53,6 +53,10 @@ bool RareCard::operator ==(const RareCard& rhs) const {
     return (cardFullArt == rhs.getFullArt() && cardRarity == rhs.getRarity() && cardLevel == rhs.getLevel());
 }
 
+RareCard& RareCard::operator =()const RareCard& rhs) const {
+    
+}
+
 string RareCard::to_string() const{
     return GameCard::to_string() + ", " + cardRarity + ", " + std::to_string(cardFullArt);
 }
