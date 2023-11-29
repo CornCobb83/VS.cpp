@@ -94,6 +94,8 @@ int main() {
     cout << pack1.getCard()->to_string() << endl;
     cout << pack1.getCard(3)->to_string() << endl << endl;
 
+    pack1.display();
+
     CardPack pack3("Misc", 15);
 
     return 0;
