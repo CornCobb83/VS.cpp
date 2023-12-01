@@ -36,11 +36,12 @@ void reverseStringVector() {
     int capacity = 10;
     cout << "Enter letters one by one." << endl;
     cin >> letter;
-    while (letter != '.' && vector.size() < capacity) {
+    while ((letter != '.') && (vector.size() < capacity)) {
         vector.push_back(letter);
         cin >> letter;
     }
-    for (int i=vector.size(); i < vector.size(); i++) {
-
+    for (int i=(vector.size())-1; i >= 0; i--) {
+        cout << vector.at(i);
     }
+    cout << endl << "Capacity: " << capacity << endl;
 }
