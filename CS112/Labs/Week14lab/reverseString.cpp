@@ -14,15 +14,35 @@ char letter;
 
 void reverseString() {
     char array[10];
-    cout << "Enter letters one by one." << endl;
+    int size = 0;
+    cout << "Enter letters one by one. (max 10)" << endl;
     cin >> letter;
-    while (letter != '.') {
-        
+    while (letter != '.' && size < 10) {
+        array[size] = letter;
+        size++;
+        cin >> letter;
     }
+
+    for (int i = array.size(); i > 0; i--) {
+        cout << array[i];
+    }
+
+    cout << endl;
 }
 
 void reverseStringVector() {
-    vector<char>
+    vector<char> vector;
+    char letter;
+    int capacity = 10;
     cout << "Enter letters one by one." << endl;
-    while (letter != '.' && )
-}
+    cin >> letter;
+    while (letter != '.' && vector.size() < capacity) {
+        vector.push_back(letter);
+        cin >> letter;
+    }
+    for (int i=vector.size; i < vector.size(); i++) {
+
+    }
+c}
+out << letter;
+ }      cin >> letter;
