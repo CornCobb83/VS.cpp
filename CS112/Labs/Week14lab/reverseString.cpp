@@ -27,6 +27,7 @@ void reverseString() {
     for (int i = size; i >= 0; i--) {
         cout << array[i];
     }
+    
 
     cout << endl;
 }
@@ -45,5 +46,6 @@ void reverseStringVector() {
     for (int i=(vector.size())-1; i >= 0; i--) {
         cout << vector.at(i);
     }
-    cout << endl << "Capacity: " << capacity << endl;
+    cout << endl << "Capacity: " << capacity << endl
+            "Current size: " << vector.size() << endl;
 }
