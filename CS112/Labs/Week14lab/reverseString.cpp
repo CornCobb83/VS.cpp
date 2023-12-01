@@ -23,7 +23,7 @@ void reverseString() {
         cin >> letter;
     }
 
-    for (int i = size; i > 0; i--) {
+    for (int i = size; i >= 0; i--) {
         cout << array[i];
     }
 
