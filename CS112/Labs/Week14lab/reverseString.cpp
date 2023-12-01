@@ -20,7 +20,8 @@ void reverseString() {
     while (letter != '.' && size < 10) {
         array[size] = letter;
         size++;
-        cin >> letter;
+        if (size != 10)
+            cin >> letter;
     }
 
     for (int i = size; i >= 0; i--) {
@@ -38,7 +39,8 @@ void reverseStringVector() {
     cin >> letter;
     while ((letter != '.') && (vector.size() < capacity)) {
         vector.push_back(letter);
-        cin >> letter;
+        if (vector.size() != 10)
+            cin >> letter;
     }
     for (int i=(vector.size())-1; i >= 0; i--) {
         cout << vector.at(i);
