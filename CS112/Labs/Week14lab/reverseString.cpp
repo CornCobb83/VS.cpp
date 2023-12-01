@@ -34,9 +34,10 @@ void reverseString() {
 }
 
 void reverseStringVector() {
-    vector<char> vector;
     char letter;
     int capacity = 10;
+    vector<char> vector;
+    vector.reserve(capacity);
     cout << "Enter letters one by one." << endl;
     cin >> letter;
     while ((letter != '.') && (vector.size() < capacity)) {
@@ -47,6 +48,6 @@ void reverseStringVector() {
     for (int i=(vector.size())-1; i >= 0; i--) {
         cout << vector.at(i);
     }
-    cout << endl << "Capacity: " << capacity << endl <<
+    cout << endl << "Capacity: " << vector.capacity() << endl <<
             "Current size: " << vector.size() << endl;
 }
