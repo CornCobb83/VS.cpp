@@ -10,4 +10,10 @@
 
 using namespace std;
 
-void reverseString
+void reverseString() {
+    cout << "Enter"
+}
+
+void reverseStringVector() {
+    
+}

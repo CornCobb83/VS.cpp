@@ -12,6 +12,8 @@
 
 using namespace std;
 
-void reverseString
+void reverseString();
+
+void reverseStringVector();
 
 #endif REVERSESTRING_H
