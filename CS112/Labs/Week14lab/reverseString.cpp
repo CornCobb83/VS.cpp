@@ -10,10 +10,19 @@
 
 using namespace std;
 
+char letter;
+
 void reverseString() {
-    cout << "Enter"
+    char array[10];
+    cout << "Enter letters one by one." << endl;
+    cin >> letter;
+    while (letter != '.') {
+        
+    }
 }
 
 void reverseStringVector() {
-    
+    vector<char>
+    cout << "Enter letters one by one." << endl;
+    while (letter != '.' && )
 }
