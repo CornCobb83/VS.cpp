@@ -43,6 +43,4 @@ void reverseStringVector() {
     for (int i=vector.size; i < vector.size(); i++) {
 
     }
-c}
-out << letter;
- }      cin >> letter;
+}
