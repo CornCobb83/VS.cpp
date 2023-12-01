@@ -42,7 +42,7 @@ void reverseStringVector() {
     cin >> letter;
     while ((letter != '.') && (vector.size() < capacity)) {
         vector.push_back(letter);
-        if (vector.size() != 10)
+        if (vector.size() != capacity)
             cin >> letter;
     }
     for (int i=(vector.size())-1; i >= 0; i--) {
