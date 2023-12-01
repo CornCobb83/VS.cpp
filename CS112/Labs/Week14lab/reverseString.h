@@ -16,4 +16,4 @@ void reverseString();
 
 void reverseStringVector();
 
-#endif REVERSESTRING_H
+#endif

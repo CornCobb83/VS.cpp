@@ -23,7 +23,7 @@ void reverseString() {
         cin >> letter;
     }
 
-    for (int i = array.size(); i > 0; i--) {
+    for (int i = size; i > 0; i--) {
         cout << array[i];
     }
 
@@ -40,7 +40,7 @@ void reverseStringVector() {
         vector.push_back(letter);
         cin >> letter;
     }
-    for (int i=vector.size; i < vector.size(); i++) {
+    for (int i=vector.size(); i < vector.size(); i++) {
 
     }
 }
