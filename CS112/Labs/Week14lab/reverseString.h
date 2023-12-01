@@ -2,13 +2,16 @@
 //  C++ Vectors
 // Jordan Cobb and Aja Brunet
 
+#ifndef REVERSESTRING_H
+#define REVERSESTRING_H
+
 #include <cstdlib>
 #include <iostream>
 #include <string>
 #include <vector>
-#include "reverseString.h"
 
 using namespace std;
 
-vo
-id reverseString
+void reverseString
+
+#endif REVERSESTRING_H
