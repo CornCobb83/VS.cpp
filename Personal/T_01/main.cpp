@@ -1,3 +1,4 @@
+
 #include <iostream>
 using namespace std;
 
@@ -10,15 +11,15 @@ void FindNumber(int number, int lowVal, int highVal) {
    cout << midVal;
 
    if (number == midVal) {
-      cout << " p" << endl;
+      cout << " e" << endl;
    }
    else {
       if (number < midVal) {
-         cout << " q" << endl;
+         cout << " f" << endl;
          FindNumber(number, lowVal, midVal);
       }
       else {
-         cout << " r" << endl;
+         cout << " g" << endl;
          FindNumber(number, midVal + 1, highVal);
       }
    }
@@ -28,7 +29,7 @@ int main() {
    int number;
 
    cin >> number;
-   FindNumber(number, 0, 12);
+   FindNumber(number, 0, 14);
 
    return 0;
 }
